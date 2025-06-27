@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from git_commit_push import git_push_existing_ttl
 from template_to_try import process_ror_file
+from release_dictionnary_version import release_version_ror
 
 def version_key(version_str):
     version_parts = version_str[1:].split('.')
@@ -9,9 +10,7 @@ def version_key(version_str):
 
 def list_json_files_in_releases(releases_root, output_dir):
 
-    release_folders = [d for d in os.listdir(releases_root) 
-                      if os.path.isdir(os.path.join(releases_root, d)) and d.startswith('v')]
-    
+    release_folders = release_version_ror(releases_root)
     release_folders.sort(key=version_key)
 
     for release in release_folders:
