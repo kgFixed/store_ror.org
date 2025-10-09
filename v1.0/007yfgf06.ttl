@@ -7,20 +7,20 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-<https://ror.org/02w3v2f07> a org:Organization ;
-    rdfs:label "Canadian Centre for Electron Microscopy" ;
-    schema:name "Canadian Centre for Electron Microscopy" ;
-    schema:foundingDate "2004"^^xsd:gYear ;
+<https://ror.org/007yfgf06> a org:Organization ;
+    rdfs:label "Naos Marine and Molecular Laboratories" ;
+    schema:name "Naos Marine and Molecular Laboratories" ;
+    schema:foundingDate "1963"^^xsd:gYear ;
     org:status "active" ;
     org:classification "Facility" ; 
-    org:abbreviation "CCEM" ;
-    schema:url <https://ccem.mcmaster.ca/> ; 
+    org:alternativeName "Naos Island Laboratories" ;
+    schema:url <https://stri.si.edu/facility/naos> ; 
     schema:location [
             a schema:Place ;
-            geo:asWKT "POINT(-79.84963 43.25011)"^^geo:wktLiteral ;
-            schema:addressLocality "Hamilton" ;
-            schema:addressCountry "CA" ;
-            owl:sameAs <http://sws.geonames.org/5969782/> ;
+            geo:asWKT "POINT(-79.53209 8.91467)"^^geo:wktLiteral ;
+            schema:addressLocality "Isla Naos" ;
+            schema:addressCountry "PA" ;
+            owl:sameAs <http://sws.geonames.org/3703983/> ;
                 dct:license <http://creativecommons.org/licenses/by/3.0/> ;
             ] ; 
     .
