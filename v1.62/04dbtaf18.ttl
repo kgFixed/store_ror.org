@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04dbtaf18> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2025"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-02-26"^^xsd:date ;
+    dct:modified "2025-03-26"^^xsd:date ;
+    org:abbreviation 'ASNR'^^xsd:string@fr ; 
+    org:alternativeName 'The Nuclear Safety and Radiation Protection Authority'^^xsd:string@en ; 
+    schema:url <http://asnr.fr> ; 
+    schema:mainEntityOfPage <https://www.asnr.fr> ;
+    owl:sameAs <https://fr.wikipedia.org/wiki/Autorit%25C3%25A9_de_s%25C3%25BBret%25C3%25A9_nucl%25C3%25A9aire_et_de_radioprotection_%2528France%2529> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/01ha22c77> ;
+        rdfs:label 'Institut de Radioprotection et de Sûreté Nucléaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/02sprfq10> ;
+        rdfs:label 'Autorité de Sûreté Nucléaire'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.29275 48.79325)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Fontenay-aux-Roses" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3017924/> ;
+    ] ; 
+    .

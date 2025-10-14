@@ -1,0 +1,123 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01xkakk17> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-03-26"^^xsd:date ;
+    org:alternativeName 'Fachhochschule Westschweiz'^^xsd:string@de ; 
+    org:abbreviation 'HES-SO'^^xsd:string@None ; 
+    org:alternativeName 'Haute École Spécialisée de Suisse Occidentale'^^xsd:string@fr ; 
+    org:alternativeName 'University of Applied Sciences and Arts Western Switzerland'^^xsd:string@en ; 
+    schema:url <http://hes-so.ch> ; 
+    schema:mainEntityOfPage <https://www.hes-so.ch> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Applied_Sciences_Western_Switzerland> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.5681.a> ;
+    schema:sameAs <http://isni.org/isni/0000000109431999> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zzkv309> ;
+        rdfs:label 'HES-SO Arc'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kkwkt79> ;
+        rdfs:label 'HES-SO Fribourg'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007gfwn20> ;
+        rdfs:label 'HES-SO Genève'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03r5zec51> ;
+        rdfs:label 'HES-SO Valais-Wallis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0278ff426> ;
+        rdfs:label 'Haute école de travail social et de la santé Lausanne - HETSL, HES-SO'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/028xjkf45> ;
+        rdfs:label 'HEMU - Haute École de Musique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kqs4h17> ;
+        rdfs:label 'EHL Hospitality Business School'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0067qp350> ;
+        rdfs:label 'La Manufacture - Haute école des arts de la scène'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rzr3z90> ;
+        rdfs:label 'HEIG-VD'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03nf8d138> ;
+        rdfs:label 'CHANGINS - Haute école de viticulture et œnologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04j47fz63> ;
+        rdfs:label 'Haute École de Santé Vaud'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jwjxy73> ;
+        rdfs:label 'ECAL/Ecole cantonale d\'art de Lausanne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yr4wk92> ;
+        rdfs:label 'Institut et Haute Ecole de la Santé La Source'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.34453 47.36493)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Delémont" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "Jura" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2661035/> ;
+    ] ; 
+    .

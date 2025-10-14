@@ -1,0 +1,187 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00d0nc645> a org:Organization ;
+    rdfs:label 'Microsoft (United States)'^^xsd:string ;
+    schema:name 'Microsoft (United States)'^^xsd:string ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-03-26"^^xsd:date ;
+    org:alternativeName 'Microsoft Corporation'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.microsoft.com/en-us> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Microsoft> ; 
+    schema:sameAs <https://api.crossref.org/funders/100004318> ;
+    schema:sameAs <https://grid.ac/institutions/grid.419815.0> ;
+    schema:sameAs <http://isni.org/isni/0000000121813404> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02fyxhe35> ;
+        rdfs:label 'LinkedIn (United States)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05168yk81> ;
+        rdfs:label 'Microsoft (Belgium)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00hc2mf91> ;
+        rdfs:label 'Microsoft (Brazil)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xhxg104> ;
+        rdfs:label 'Microsoft (Canada)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015drfm81> ;
+        rdfs:label 'Microsoft (Denmark)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nehjf29> ;
+        rdfs:label 'Microsoft (Finland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0521n7n83> ;
+        rdfs:label 'Microsoft (France)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001dd4s60> ;
+        rdfs:label 'Microsoft (Germany)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ww0w091> ;
+        rdfs:label 'Microsoft (India)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017fqk185> ;
+        rdfs:label 'Microsoft (Ireland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03819cc96> ;
+        rdfs:label 'Microsoft (Israel)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01x21tj82> ;
+        rdfs:label 'Microsoft (Netherlands)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jtz4s80> ;
+        rdfs:label 'Microsoft (Norway)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00eqfbw40> ;
+        rdfs:label 'Microsoft (Portugal)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03zryq964> ;
+        rdfs:label 'Microsoft (Switzerland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rw27z95> ;
+        rdfs:label 'Microsoft (United Kingdom)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02w7f3w92> ;
+        rdfs:label 'Microsoft Research (India)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k87vq12> ;
+        rdfs:label 'Microsoft Research (United Kingdom)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0300m5276> ;
+        rdfs:label 'Microsoft Research Asia (China)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xrsn650> ;
+        rdfs:label 'Ninja Theory (United Kingdom)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010wkqn50> ;
+        rdfs:label 'Microsoft Research New England (United States)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056zprp28> ;
+        rdfs:label 'Microsoft Research New York City (United States)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05xdft911> ;
+        rdfs:label 'Microsoft Research Montréal (Canada)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032q61545> ;
+        rdfs:label 'Microsoft (Singapore)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.12151 47.67399)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Redmond" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Washington" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5808079/> ;
+    ] ; 
+    .
