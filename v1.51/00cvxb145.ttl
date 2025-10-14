@@ -1,0 +1,169 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00cvxb145> a org:Organization ;
+    rdfs:label 'University of Washington'^^xsd:string ;
+    schema:name 'University of Washington'^^xsd:string ;
+    schema:foundingDate "1861"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-08-21"^^xsd:date ;
+    org:abbreviation 'UW'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.washington.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Washington> ; 
+    schema:sameAs <https://api.crossref.org/funders/100007812> ;
+    schema:sameAs <https://grid.ac/institutions/grid.34477.33> ;
+    schema:sameAs <http://isni.org/isni/0000000122986657> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03djjyk45> ;
+        rdfs:label 'Center for Effective Global Action'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0394z0v14> ;
+        rdfs:label 'Harborview Injury Prevention and Research Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022c13n15> ;
+        rdfs:label 'Health Alliance International'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0155sw530> ;
+        rdfs:label 'Seattle Epidemiologic Information and Research Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03d17d270> ;
+        rdfs:label 'University of Washington Applied Physics Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047fr0y29> ;
+        rdfs:label 'Washington Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bfczx74> ;
+        rdfs:label 'Washington Space Grant Consortium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052w21a87> ;
+        rdfs:label 'Friday Harbor Laboratories'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/059jq5127> ;
+        rdfs:label 'Harborview Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0513nfd47> ;
+        rdfs:label 'Kootenai Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02eypkr92> ;
+        rdfs:label 'Northwest Hospital and Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01njes783> ;
+        rdfs:label 'Seattle Children\'s Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00wbzw723> ;
+        rdfs:label 'University of Washington Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00ky3az31> ;
+        rdfs:label 'VA Puget Sound Health Care System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01vjngb81> ;
+        rdfs:label 'Valley Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00hasdx88> ;
+        rdfs:label 'Washington Research Foundation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00vnfmn19> ;
+        rdfs:label 'Ocean Observatories Initiative'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/018da3y22> ;
+        rdfs:label 'Fred Hutchinson/University of Washington/Seattle Children’s Cancer Consortium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00p2ftz29> ;
+        rdfs:label 'Atlas of Variant Effects Alliance'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02ygzhr13> ;
+        rdfs:label 'University of Washington Bothell'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05n8t2628> ;
+        rdfs:label 'University of Washington Tacoma'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.33207 47.60621)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seattle" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5809844/> ;
+    ] ; 
+    .

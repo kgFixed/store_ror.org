@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01brjce02> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-08-19"^^xsd:date ;
+    dct:modified "2024-08-21"^^xsd:date ;
+    org:alternativeName 'ITS Atlixco'^^xsd:string@es ; 
+    org:abbreviation 'ITSA'^^xsd:string@es ; 
+    org:alternativeName 'TecNM Atlixco'^^xsd:string@es ; 
+    org:alternativeName 'TecNM Campus Atlixco'^^xsd:string@es ; 
+    org:alternativeName 'Tecnológico Nacional de México Campus Atlixco'^^xsd:string@es ; 
+    schema:mainEntityOfPage <https://www.atlixco.tecnm.mx> ;
+    owl:sameAs <https://es.wikipedia.org/wiki/Tecnol%25C3%25B3gico_Nacional_de_M%25C3%25A9xico> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00davry38> ;
+        rdfs:label 'Tecnológico Nacional de México'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.43613 18.90815)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Atlixco" ;
+            schema:addressCountry "MX" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Mexico" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3532592/> ;
+    ] ; 
+    .
