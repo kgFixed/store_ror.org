@@ -1,0 +1,100 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01qz5mb56> a org:Organization ;
+    rdfs:label 'Oak Ridge National Laboratory'^^xsd:string ;
+    schema:name 'Oak Ridge National Laboratory'^^xsd:string ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'ORNL'^^xsd:string@None ; 
+    org:alternativeName 'Office of Science Oak Ridge National Laboratory'^^xsd:string@en ; 
+    org:alternativeName 'United States Department of Energy Office of Science Oak Ridge National Laboratory'^^xsd:string@en ; 
+    schema:url <http://ornl.gov> ; 
+    schema:mainEntityOfPage <https://www.ornl.gov> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Oak_Ridge_National_Laboratory> ; 
+    schema:sameAs <https://api.crossref.org/funders/100006228> ;
+    schema:sameAs <https://grid.ac/institutions/grid.135519.a> ;
+    schema:sameAs <http://isni.org/isni/0000000404462659> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05277x335> ;
+        rdfs:label 'Joint Institute for Computational Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01dvj3d25> ;
+        rdfs:label 'Atmospheric Radiation Measurement User Facility'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wass480> ;
+        rdfs:label 'Center for Nanophase Materials Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xn1ny06> ;
+        rdfs:label 'High Flux Isotope Reactor'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05p915b28> ;
+        rdfs:label 'Oak Ridge Leadership Computing Facility'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00q6v6102> ;
+        rdfs:label 'Spallation Neutron Source'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label 'Office of Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04nza6677> ;
+        rdfs:label 'UT-Battelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05cwx3318> ;
+        rdfs:label 'National Microbiome Data Collaborative'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.26964 36.01036)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Oak Ridge" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4646571/> ;
+    ] ; 
+    .

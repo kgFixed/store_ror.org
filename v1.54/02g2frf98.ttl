@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02g2frf98> a org:Organization ;
+    rdfs:label 'Great Plains Network'^^xsd:string ;
+    schema:name 'Great Plains Network'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2023-12-07"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'GPN'^^xsd:string@None ; 
+    schema:url <http://greatplains.net> ; 
+    schema:mainEntityOfPage <https://www.greatplains.net> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-94.57857 39.09973)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kansas City" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4393217/> ;
+    ] ; 
+    .

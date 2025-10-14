@@ -1,0 +1,117 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0130frc33> a org:Organization ;
+    rdfs:label 'University of North Carolina at Chapel Hill'^^xsd:string ;
+    schema:name 'University of North Carolina at Chapel Hill'^^xsd:string ;
+    schema:foundingDate "1789"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'UNC'^^xsd:string@None ; 
+    org:alternativeName 'UNC-Chapel Hill'^^xsd:string@en ; 
+    schema:url <http://unc.edu> ; 
+    schema:mainEntityOfPage <https://www.unc.edu> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_North_Carolina_at_Chapel_Hill> ; 
+    schema:sameAs <https://api.crossref.org/funders/100007890> ;
+    schema:sameAs <https://grid.ac/institutions/grid.10698.36> ;
+    schema:sameAs <http://isni.org/isni/0000000122483208> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04q5n7269> ;
+        rdfs:label 'Carolina Institute for NanoMedicine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hakdk41> ;
+        rdfs:label 'UNC/NCSU Joint Department of Biomedical Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yjqwr70> ;
+        rdfs:label 'Triangle Center for Evolutionary Medicine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043ehm030> ;
+        rdfs:label 'UNC Lineberger Comprehensive Cancer Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0566a8c54> ;
+        rdfs:label 'University of North Carolina System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0483mr804> ;
+        rdfs:label 'Carolinas Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/034adnw64> ;
+        rdfs:label 'Durham VA Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01s91ey96> ;
+        rdfs:label 'Renaissance Computing Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03teaad16> ;
+        rdfs:label 'Rex Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00qz24g20> ;
+        rdfs:label 'University of North Carolina Health Care'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0355zfr67> ;
+        rdfs:label 'University of North Carolina Hospitals'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/013zder45> ;
+        rdfs:label 'Virginia Coast Reserve Long Term Ecological Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.05584 35.9132)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Chapel Hill" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4460162/> ;
+    ] ; 
+    .

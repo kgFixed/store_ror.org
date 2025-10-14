@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00sfg6g55> a org:Organization ;
+    rdfs:label 'Afyonkarahisar Sağlık Bilimleri Üniversitesi'^^xsd:string ;
+    schema:name 'Afyonkarahisar Sağlık Bilimleri Üniversitesi'^^xsd:string ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2023-05-11"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:alternativeName 'Afyonkarahisar Saglik Bilimleri Universitesi'^^xsd:string@tr ; 
+    org:alternativeName 'Afyonkarahisar University of Health Sciences'^^xsd:string@en ; 
+    org:alternativeName 'University of Health Sciences, Afyonkarahisar'^^xsd:string@en ; 
+    schema:url <http://afsu.edu.tr> ; 
+    schema:mainEntityOfPage <http://afsu.edu.tr> ;
+    owl:sameAs <https://tr.wikipedia.org/wiki/Afyonkarahisar_Sa%25C4%259Fl%25C4%25B1k_Bilimleri_%25C3%259Cniversitesi> ; 
+    schema:sameAs <http://isni.org/isni/000000047536444X> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.54333 38.75667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Afyonkarahisar" ;
+            schema:addressCountry "TR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Türkiye" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/325303/> ;
+    ] ; 
+    .

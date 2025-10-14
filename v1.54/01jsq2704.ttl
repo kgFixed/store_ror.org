@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01jsq2704> a org:Organization ;
+    rdfs:label 'Eötvös Loránd University'^^xsd:string ;
+    schema:name 'Eötvös Loránd University'^^xsd:string ;
+    schema:foundingDate "1635"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'ELTE'^^xsd:string@None ; 
+    org:alternativeName 'Pázmány Péter University'^^xsd:string@en ; 
+    org:alternativeName 'Royal University of Pest'^^xsd:string@en ; 
+    org:alternativeName 'University of Budapest'^^xsd:string@en ; 
+    schema:url <http://elte.hu> ; 
+    schema:mainEntityOfPage <https://www.elte.hu> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/E%25C3%25B6tv%25C3%25B6s_Lor%25C3%25A1nd_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100009934> ;
+    schema:sameAs <https://grid.ac/institutions/grid.5591.8> ;
+    schema:sameAs <http://isni.org/isni/0000000122946276> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(19.04045 47.49835)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Budapest" ;
+            schema:addressCountry "HU" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Hungary" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3054643/> ;
+    ] ; 
+    .

@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/043nxc105> a org:Organization ;
+    rdfs:label 'Universitat de València'^^xsd:string ;
+    schema:name 'Universitat de València'^^xsd:string ;
+    schema:foundingDate "1499"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'UV'^^xsd:string@None ; 
+    schema:url <http://uv.es> ; 
+    schema:mainEntityOfPage <https://www.uv.es> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Valencia> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003508> ;
+    schema:sameAs <https://grid.ac/institutions/grid.5338.d> ;
+    schema:sameAs <http://isni.org/isni/000000012173938X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01a631g06> ;
+        rdfs:label 'Centre d\'Investigacions sobre Desertificació'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017xch102> ;
+        rdfs:label 'Instituto de Física Corpuscular'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05jw4kp39> ;
+        rdfs:label 'Institute for Integrative Systems Biology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03971n288> ;
+        rdfs:label 'Hospital Universitario Doctor Peset'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02x2fbb57> ;
+        rdfs:label 'Red Española de Supercomputación'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.37966 39.47391)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Valencia" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2509954/> ;
+    ] ; 
+    .

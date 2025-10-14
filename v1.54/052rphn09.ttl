@@ -1,0 +1,111 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/052rphn09> a org:Organization ;
+    rdfs:label 'Foundation for Research and Technology Hellas'^^xsd:string ;
+    schema:name 'Foundation for Research and Technology Hellas'^^xsd:string ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'FORTH'^^xsd:string@None ; 
+    org:abbreviation 'ΙΤΕ'^^xsd:string@None ; 
+    schema:url <http://forth.gr> ; 
+    schema:mainEntityOfPage <http://www.forth.gr/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Foundation_for_Research_%2526_Technology_%25E2%2580%2593_Hellas> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100012288> ;
+    schema:sameAs <https://grid.ac/institutions/grid.4834.b> ;
+    schema:sameAs <http://isni.org/isni/000000040635685X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02n2yp822> ;
+        rdfs:label 'FORTH Institute of Applied and Computational Mathematics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05298h560> ;
+        rdfs:label 'FORTH Institute of Astrophysics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e5bsk66> ;
+        rdfs:label 'FORTH Institute of Chemical Engineering Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02tf48g55> ;
+        rdfs:label 'FORTH Institute of Computer Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02a3mhk13> ;
+        rdfs:label 'FORTH Institute of Electronic Structure and Laser'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00srf2p02> ;
+        rdfs:label 'FORTH Institute of Mediterranean Studies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gzszr18> ;
+        rdfs:label 'FORTH Institute of Molecular Biology and Biotechnology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ve2vg23> ;
+        rdfs:label 'FORTH Institute of Petroleum Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05fdghr47> ;
+        rdfs:label 'Crete University Press'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sjwtr21> ;
+        rdfs:label 'PRAXI Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02ddqp560> ;
+        rdfs:label 'Science and Technology Park of Crete'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(25.14341 35.32787)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Heraklion" ;
+            schema:addressCountry "GR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Greece" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/261745/> ;
+    ] ; 
+    .

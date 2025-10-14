@@ -1,0 +1,80 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02crff812> a org:Organization ;
+    rdfs:label 'University of Zurich'^^xsd:string ;
+    schema:name 'University of Zurich'^^xsd:string ;
+    schema:foundingDate "1833"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'UZH'^^xsd:string@None ; 
+    schema:url <http://uzh.ch> ; 
+    schema:mainEntityOfPage <https://uzh.ch/de.html> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Zurich> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100006447> ;
+    schema:sameAs <https://grid.ac/institutions/grid.7400.3> ;
+    schema:sameAs <http://isni.org/isni/0000000419370650> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00baskk38> ;
+        rdfs:label 'Institute for Biomedical Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021p56f43> ;
+        rdfs:label 'Laboratory for Social and Neural Systems Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/035vb3h42> ;
+        rdfs:label 'University Children\'s Hospital Zurich'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01462r250> ;
+        rdfs:label 'University Hospital of Zurich'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/008cfmj78> ;
+        rdfs:label 'Wyss Institute for Biologically Inspired Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01jtrvx49> ;
+        rdfs:label 'World Glacier Monitoring Service'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.55 47.36667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Zurich" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2657896/> ;
+    ] ; 
+    .

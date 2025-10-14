@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/000vmwg42> a org:Organization ;
+    rdfs:label 'École nationale supérieure d\'architecture de Marseille'^^xsd:string ;
+    schema:name 'École nationale supérieure d\'architecture de Marseille'^^xsd:string ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2023-07-27"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:alternativeName 'ENSA Marseille'^^xsd:string@fr ; 
+    org:abbreviation 'ENSAM'^^xsd:string@None ; 
+    org:alternativeName 'National Higher School of Architecture of Marseille'^^xsd:string@en ; 
+    schema:url <http://marseille.archi.fr> ; 
+    schema:mainEntityOfPage <https://www.marseille.archi.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/%25C3%2589cole_nationale_sup%25C3%25A9rieure_d%2527architecture_de_Marseille-Luminy> ; 
+    schema:sameAs <http://isni.org/isni/0000000122938970> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001r1xj25> ;
+        rdfs:label 'Investigations sur l’histoire et l’actualité des mutations architecturales et urbaines'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.38107 43.29695)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Marseille" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2995469/> ;
+    ] ; 
+    .

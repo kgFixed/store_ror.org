@@ -1,0 +1,320 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/051kpcy16> a org:Organization ;
+    rdfs:label 'Université de Caen Normandie'^^xsd:string ;
+    schema:name 'Université de Caen Normandie'^^xsd:string ;
+    schema:foundingDate "1432"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'UNICAEN'^^xsd:string@None ; 
+    schema:url <http://unicaen.fr> ; 
+    schema:mainEntityOfPage <https://www.unicaen.fr> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Caen_Lower_Normandy> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100015519> ;
+    schema:sameAs <https://grid.ac/institutions/grid.412043.0> ;
+    schema:sameAs <http://isni.org/isni/0000000121864076> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01tp1c480> ;
+        rdfs:label 'Biologie des Organismes et Écosystèmes Aquatiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05jw85995> ;
+        rdfs:label 'CNRT Matériaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gan4k05> ;
+        rdfs:label 'Laboratoire Catalyse et Spectrochimie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0047rmf80> ;
+        rdfs:label 'Centre de Recherche en Économie et Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02y0gk295> ;
+        rdfs:label 'Centre de Recherche sur les Ions, les Matériaux et la Photonique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043749971> ;
+        rdfs:label 'GREYC'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kcjtk03> ;
+        rdfs:label 'Identités et Différenciation de l\'Environnement des Espaces et des Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03q7p3t30> ;
+        rdfs:label 'Laboratoire de Chimie Moléculaire et Thioorganique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04310tc15> ;
+        rdfs:label 'Laboratoire de Cristallographie et Sciences des Matériaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022txr781> ;
+        rdfs:label 'Laboratoire de Physique Corpusculaire de Caen'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023kqz006> ;
+        rdfs:label 'Laboratoire de Psychologie du Développement et de L’Education de l’enfant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00g7vvf64> ;
+        rdfs:label 'Maison de la Recherche en Sciences Humaines'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03237mt20> ;
+        rdfs:label 'Espaces et Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02evk6c51> ;
+        rdfs:label 'Ethologie animale et humaine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040qadc12> ;
+        rdfs:label 'Normandie Innovation Marché Entreprise Consommation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k1a6w82> ;
+        rdfs:label 'Laboratoire Morphodynamique Continentale et Côtière'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01s4cye48> ;
+        rdfs:label 'Laboratoire d\'Ecophysiologie Végétale, Agronomie & nutritions N.C.S'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jm2hc44> ;
+        rdfs:label 'Laboratoire de Mathématiques Nicolas Oresme'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03rnz7p05> ;
+        rdfs:label 'Centre Michel de Boüard'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04w7xqn11> ;
+        rdfs:label 'Aliments Bioprocédés Toxicologie Environnements'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vsvph51> ;
+        rdfs:label 'Physiopathologie et imagerie des troubles neurologiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f6tkx67> ;
+        rdfs:label 'Neuropsychologie et Imagerie de la Mémoire Humaine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/028rasm92> ;
+        rdfs:label 'Mobilités: Vieillissement, Pathologie, Santé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02sjzjp24> ;
+        rdfs:label 'Vertige Extrême'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hfcy355> ;
+        rdfs:label 'Physiopathologie et Stratégies d\'Imagerie du Remodelage cardiovasculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0564q8x20> ;
+        rdfs:label 'Equipe de recherche interdisciplinaire sur la Grande Bretagne, l’Irlande et l’Amérique du Nord'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01a6c6c20> ;
+        rdfs:label 'Dynamique Microbienne associée aux Infections Urinaires et Respiratoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01yc7td35> ;
+        rdfs:label 'Centre de recherche Inter-langues sur la Signification en contexte'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0328tc677> ;
+        rdfs:label 'Centre Interdisciplinaire de Recherche Normand en Education et Formation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mtckd63> ;
+        rdfs:label 'Centre de Recherche Risques et Vulnérabilités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012jsqx30> ;
+        rdfs:label 'Centre d\'Etudes et de Recherche sur le Médicament de Normandie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03sny2w29> ;
+        rdfs:label 'Communication Bactérienne et Stratégie Anti-infectieuses'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mz39b41> ;
+        rdfs:label 'Biologie, Génétique et Thérapies ostéoArticulaires et Respiratoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04v106c48> ;
+        rdfs:label 'Biologie du cartilage, biotechnologie et télémédecine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04b8tg719> ;
+        rdfs:label 'Unité de recherche interdisciplinaire pour la prévention et le traitement des cancers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bcp0f55> ;
+        rdfs:label 'Equipe de recherche sur les littératures, les imaginaires et les sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05tjbhz35> ;
+        rdfs:label 'Histoire, Territoires & Mémoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034p80033> ;
+        rdfs:label 'Institut Caennais de Recherche Juridique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04mbmkb12> ;
+        rdfs:label 'Identité et subjectivité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04b9vs620> ;
+        rdfs:label 'Imagerie et Stratégies Thérapeutiques pour les Cancers et Tissus cérébraux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/024v1wz08> ;
+        rdfs:label 'Lettres, arts du spectacle, langues romanes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005ba5y61> ;
+        rdfs:label 'Laboratoire d\'Ingénierie des Systèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00kk8cj26> ;
+        rdfs:label 'Laboratoire de psychologie Caen Normandie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01r96cc35> ;
+        rdfs:label 'Laboratoire Universitaire des Sciences Appliquées de Cherbourg'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01k40cz91> ;
+        rdfs:label 'Normandie Université'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/027arzy69> ;
+        rdfs:label 'Centre Hospitalier Universitaire de Caen'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.35912 49.18585)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Caen" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3029241/> ;
+    ] ; 
+    .

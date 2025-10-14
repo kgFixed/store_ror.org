@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05xxfer42> a org:Organization ;
+    rdfs:label 'Universidade Lusófona'^^xsd:string ;
+    schema:name 'Universidade Lusófona'^^xsd:string ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    schema:url <http://ulusofona.pt> ; 
+    schema:mainEntityOfPage <http://www.ulusofona.pt/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Universidade_Lus%25C3%25B3fona> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100021538> ;
+    schema:sameAs <https://grid.ac/institutions/grid.164242.7> ;
+    schema:sameAs <http://isni.org/isni/0000000084846281> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01jbxwn06> ;
+        rdfs:label 'Instituto de Ciência e Inovação em Engenharia Mecânica e Engenharia Industrial'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/052kcks88> ;
+        rdfs:label 'Universidade Lusófona do Porto'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lisbon" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2267057/> ;
+    ] ; 
+    .

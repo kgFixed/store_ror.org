@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00k1qja49> a org:Organization ;
+    rdfs:label 'Institut Català de Nanociència i Nanotecnologia'^^xsd:string ;
+    schema:name 'Institut Català de Nanociència i Nanotecnologia'^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:abbreviation 'ICN2'^^xsd:string@None ; 
+    org:abbreviation 'ICN2-CERCA'^^xsd:string@None ; 
+    schema:url <http://icn2.cat> ; 
+    schema:mainEntityOfPage <https://icn2.cat> ;
+    schema:sameAs <https://api.crossref.org/funders/100017171> ;
+    schema:sameAs <https://grid.ac/institutions/grid.424584.b> ;
+    schema:sameAs <http://isni.org/isni/0000000464757328> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01bkbaq61> ;
+        rdfs:label 'CERCA Institution'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/052g8jq94> ;
+        rdfs:label 'Universitat Autònoma de Barcelona'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02gfc7t72> ;
+        rdfs:label 'Consejo Superior de Investigaciones Científicas'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.15899 41.38879)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Barcelona" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3128760/> ;
+    ] ; 
+    .

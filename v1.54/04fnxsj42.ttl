@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04fnxsj42> a org:Organization ;
+    rdfs:label 'University of North Carolina at Greensboro'^^xsd:string ;
+    schema:name 'University of North Carolina at Greensboro'^^xsd:string ;
+    schema:foundingDate "1891"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-21"^^xsd:date ;
+    org:alternativeName 'UNC Greensboro'^^xsd:string@en ; 
+    org:abbreviation 'UNCG'^^xsd:string@None ; 
+    schema:url <http://uncg.edu> ; 
+    schema:mainEntityOfPage <https://www.uncg.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_North_Carolina_at_Greensboro> ; 
+    schema:sameAs <https://api.crossref.org/funders/100011862> ;
+    schema:sameAs <https://grid.ac/institutions/grid.266860.c> ;
+    schema:sameAs <http://isni.org/isni/000000010671255X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0566a8c54> ;
+        rdfs:label 'University of North Carolina System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02wavzm11> ;
+        rdfs:label 'Konza Prairie Long Term Ecological Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-79.79198 36.07264)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Greensboro" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4469146/> ;
+    ] ; 
+    .
