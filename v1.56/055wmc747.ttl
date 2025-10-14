@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/055wmc747> a org:Organization ;
+    rdfs:label 'Centro Científico Tecnológico - Mendoza'^^xsd:string ;
+    schema:name 'Centro Científico Tecnológico - Mendoza'^^xsd:string ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2019-11-07"^^xsd:date ;
+    dct:modified "2024-11-19"^^xsd:date ;
+    org:abbreviation 'CONICET-MENDOZA'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.mendoza.conicet.gov.ar/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.507426.2> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f5aam04> ;
+        rdfs:label 'Instituto de Biología Agrícola de Mendoza'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05q52xn14> ;
+        rdfs:label 'Instituto de Medicina y Biología Experimental de Cuyo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label 'Consejo Nacional de Investigaciones Científicas y Técnicas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05sn8wf81> ;
+        rdfs:label 'Universidad Nacional de Cuyo'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-68.82717 -32.89084)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Mendoza" ;
+            schema:addressCountry "AR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Argentina" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3844421/> ;
+    ] ; 
+    .

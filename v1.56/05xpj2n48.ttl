@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05xpj2n48> a org:Organization ;
+    rdfs:label 'HUTECH University'^^xsd:string ;
+    schema:name 'HUTECH University'^^xsd:string ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2023-02-28"^^xsd:date ;
+    dct:modified "2024-11-19"^^xsd:date ;
+    org:abbreviation 'HUTECH'^^xsd:string@None ; 
+    org:alternativeName 'HUTECH University of Technology'^^xsd:string@en ; 
+    org:alternativeName 'Ho Chi Minh City University of Technology (HUTECH)'^^xsd:string@en ; 
+    schema:url <http://hutech.edu.vn> ; 
+    schema:mainEntityOfPage <https://www.hutech.edu.vn> ;
+    owl:sameAs <https://vi.wikipedia.org/wiki/Tr%25C6%25B0%25E1%25BB%259Dng_%25C4%2590%25E1%25BA%25A1i_h%25E1%25BB%258Dc_C%25C3%25B4ng_ngh%25E1%25BB%2587_Th%25C3%25A0nh_ph%25E1%25BB%2591_H%25E1%25BB%2593_Ch%25C3%25AD_Minh> ; 
+    schema:sameAs <http://isni.org/isni/0000000508567201> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.62965 10.82302)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ho Chi Minh City" ;
+            schema:addressCountry "VN" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Vietnam" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1566083/> ;
+    ] ; 
+    .

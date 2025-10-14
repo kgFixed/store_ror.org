@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05tqmmk50> a org:Organization ;
+    rdfs:label 'Universitas Sains dan Teknologi Komputer'^^xsd:string ;
+    schema:name 'Universitas Sains dan Teknologi Komputer'^^xsd:string ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2023-08-17"^^xsd:date ;
+    dct:modified "2024-11-19"^^xsd:date ;
+    org:abbreviation 'STEKOM'^^xsd:string@None ; 
+    org:alternativeName 'STEKOM University'^^xsd:string@en ; 
+    org:alternativeName 'Universitas STEKOM'^^xsd:string@id ; 
+    org:alternativeName 'University of Computer Science and Technology'^^xsd:string@en ; 
+    schema:url <http://stekom.ac.id> ; 
+    schema:mainEntityOfPage <https://www.stekom.ac.id> ;
+    owl:sameAs <https://id.wikipedia.org/wiki/Universitas_STEKOM> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.42083 -6.99306)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Semarang" ;
+            schema:addressCountry "ID" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Indonesia" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1627896/> ;
+    ] ; 
+    .

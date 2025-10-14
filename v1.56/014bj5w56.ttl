@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/014bj5w56> a org:Organization ;
+    rdfs:label 'Directorate for STEM Education (EDU)'^^xsd:string ;
+    schema:name 'Directorate for STEM Education (EDU)'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-11-19"^^xsd:date ;
+    org:alternativeName 'Directorate for Education & Human Resources'^^xsd:string@en ; 
+    org:alternativeName 'Directorate for STEM Education'^^xsd:string@en ; 
+    org:abbreviation 'EDU'^^xsd:string@None ; 
+    org:abbreviation 'EHR'^^xsd:string@None ; 
+    org:abbreviation 'NSF EDU'^^xsd:string@None ; 
+    org:abbreviation 'NSF EHR'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://new.nsf.gov/edu> ;
+    schema:sameAs <https://api.crossref.org/funders/100000081> ;
+    schema:sameAs <https://grid.ac/institutions/grid.457799.1> ;
+    schema:sameAs <http://isni.org/isni/000000040501353X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054ydxh33> ;
+        rdfs:label 'Division of Elementary, Secondary, and Informal Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00whkrf32> ;
+        rdfs:label 'Division of Graduate Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03mamvh39> ;
+        rdfs:label 'Division of Equity for Excellence in STEM (EES)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05s7cqk18> ;
+        rdfs:label 'Division of Research on Learning in Formal and Informal Settings'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kd4km72> ;
+        rdfs:label 'Division of Undergraduate Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/021nxhr62> ;
+        rdfs:label 'U.S. National Science Foundation'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.10428 38.88101)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Arlington" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4744709/> ;
+    ] ; 
+    .
