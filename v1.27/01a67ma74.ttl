@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/01a67ma74> a org:Organization ;
+    rdfs:label 'The Federal State Budget Scientific Institution "Institute of Special Education"'^^xsd:string ;
+    schema:name 'The Federal State Budget Scientific Institution "Institute of Special Education"'^^xsd:string ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'ISE'^^xsd:string ;
+    org:alternativeName 'Institute of Special Education'^^xsd:string ;
+    schema:url <https://ikp-rao.ru> ; 
+    owl:sameAs <https://ru.wikipedia.org/wiki/%25D0%2598%25D0%25BD%25D1%2581%25D1%2582%25D0%25B8%25D1%2582%25D1%2583%25D1%2582_%25D0%25BA%25D0%25BE%25D1%2580%25D1%2580%25D0%25B5%25D0%25BA%25D1%2586%25D0%25B8%25D0%25BE%25D0%25BD%25D0%25BD%25D0%25BE%25D0%25B9_%25D0%25BF%25D0%25B5%25D0%25B4%25D0%25B0%25D0%25B3%25D0%25BE%25D0%25B3%25D0%25B8%25D0%25BA%25D0%25B8_%25D0%25A0%25D0%2590%25D0%259E> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+            schema:addressLocality 'Moscow'^^xsd:string ;
+            schema:addressCountry "RU" ;
+            owl:sameAs <http://sws.geonames.org/524901/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    .
