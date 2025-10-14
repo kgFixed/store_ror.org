@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04k8k6n84> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-29"^^xsd:date ;
+    org:abbreviation 'UHA'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.serfa.fr/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Upper_Alsace> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.9156.b> ;
+    schema:sameAs <http://isni.org/isni/0000000404735039> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007xqmx73> ;
+        rdfs:label 'Archéologie et Histoire Ancienne : Méditerranée – Europe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012wxdw12> ;
+        rdfs:label 'Institut de Sciences des Matériaux de Mulhouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02t1cke57> ;
+        rdfs:label 'Laboratoire de Photochimie et d\'Ingénierie Macromoléculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jm89840> ;
+        rdfs:label 'Maison Interuniversitaire des Sciences de l\'Homme'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04n2vwk08> ;
+        rdfs:label 'Laboratoire Interuniversitaire des Sciences de l\'Education et de la Communication'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0292fgv83> ;
+        rdfs:label 'Centre de REcherche En Gestion des Organisations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030d6wr93> ;
+        rdfs:label 'Laboratoire d\'innovation moléculaire et applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01x6z5t49> ;
+        rdfs:label 'Fédération de Recherche Spectroscopies de Photoémission'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sgwka45> ;
+        rdfs:label 'Microscopie Fonctionnelle du Vivant'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.32866 47.75205)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Mulhouse" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2991214/> ;
+    ] ; 
+    .

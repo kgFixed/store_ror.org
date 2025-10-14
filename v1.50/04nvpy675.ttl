@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04nvpy675> a org:Organization ;
+    rdfs:label 'Gaziantep İslam Bilim ve Teknoloji Üniversitesi'^^xsd:string ;
+    schema:name 'Gaziantep İslam Bilim ve Teknoloji Üniversitesi'^^xsd:string ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2023-05-11"^^xsd:date ;
+    dct:modified "2024-07-29"^^xsd:date ;
+    org:abbreviation 'GISTU'^^xsd:string@en ; 
+    org:alternativeName 'Gaziantep Islam Bilim ve Teknoloji Universitesi'^^xsd:string@tr ; 
+    org:alternativeName 'Gaziantep University of Science and Technology'^^xsd:string@en ; 
+    org:abbreviation 'GİBTU'^^xsd:string@None ; 
+    org:abbreviation 'GİBTÜ'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.gibtu.edu.tr> ;
+    owl:sameAs <https://tr.wikipedia.org/wiki/Gaziantep_%25C4%25B0slam_Bilim_ve_Teknoloji_%25C3%259Cniversitesi> ; 
+    schema:sameAs <http://isni.org/isni/0000000480045654> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.3825 37.05944)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Gaziantep" ;
+            schema:addressCountry "TR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Türkiye" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/314830/> ;
+    ] ; 
+    .

@@ -1,0 +1,208 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04yznqr36> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-29"^^xsd:date ;
+    schema:mainEntityOfPage <http://portail.univ-st-etienne.fr/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Jean_Monnet_University> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.6279.a> ;
+    schema:sameAs <http://isni.org/isni/0000000121581682> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037b3he73> ;
+        rdfs:label 'Biologie, Ingénierie et Imagerie de la Greffe de Cornée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026tf7535> ;
+        rdfs:label 'Centre Max Weber'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rzzcx32> ;
+        rdfs:label 'Centre de Recherches Critiques sur le Droit'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0476zq753> ;
+        rdfs:label 'Conception de l\'Action en Situation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037xc1874> ;
+        rdfs:label 'Education, Cultures, Politiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0256r1e04> ;
+        rdfs:label 'Environnement, ville, société'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/042fmc481> ;
+        rdfs:label 'Groupe d\'Analyse et de Théorie Economique Lyon St Etienne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01yx7av22> ;
+        rdfs:label 'Histoire et Sources des Mondes Antiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wmc6m46> ;
+        rdfs:label 'Institut d\'Histoire des Représentations et des Idées dans les Modernités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0028p8r67> ;
+        rdfs:label 'Laboratoire Hubert Curien'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vnq7240> ;
+        rdfs:label 'Laboratoire Magmas et Volcans'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02m0hy518> ;
+        rdfs:label 'Laboratoire d\'études sur les monothéismes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bj4fd12> ;
+        rdfs:label 'Laboratoire de Biologie Moléculaire de la Cellule'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01j6cta96> ;
+        rdfs:label 'Laboratoire de Biotechnologies Végétales Appliquées aux Plantes Aromatiques et Médicinales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dxeze48> ;
+        rdfs:label 'Laboratoire de Mécanique des Fluides et d\'Acoustique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qz4qy85> ;
+        rdfs:label 'Laboratoire de Recherche Historique Rhône-Alpes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02160my55> ;
+        rdfs:label 'Ingenierie des Materiaux polymeres'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rkh0096> ;
+        rdfs:label 'Littérature, Idéologies, Représentations aux XVIIIe et XIXe Siècles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00pdd0432> ;
+        rdfs:label 'Centre de Recherche en Neurosciences de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rawf147> ;
+        rdfs:label 'Maison des Sciences de l\'Homme Lyon St-Étienne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x9a0q46> ;
+        rdfs:label 'Triangle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044dp1584> ;
+        rdfs:label 'Centre d\'Investigation Clinique - Epidémiologie Clinique Saint-Etienne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02ncy5p18> ;
+        rdfs:label 'Research on healthcare performance'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05de6h762> ;
+        rdfs:label 'Maison de l\'Orient et de la Méditerranée Jean Pouilloux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04t89f389> ;
+        rdfs:label 'Laboratoire de Géologie de Lyon : Terre, Planètes et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01rk35k63> ;
+        rdfs:label 'Université de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03sc1p174> ;
+        rdfs:label 'Laboratoire Interuniversitaire de Biologie de la Motricité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sgwka45> ;
+        rdfs:label 'Microscopie Fonctionnelle du Vivant'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.39 45.43389)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Saint-Etienne" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2980291/> ;
+    ] ; 
+    .

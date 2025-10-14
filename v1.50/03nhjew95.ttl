@@ -1,0 +1,303 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03nhjew95> a org:Organization ;
+    rdfs:label 'Université de Rouen Normandie'^^xsd:string ;
+    schema:name 'Université de Rouen Normandie'^^xsd:string ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-29"^^xsd:date ;
+    org:abbreviation 'URN'^^xsd:string@None ; 
+    org:alternativeName 'University of Rouen Normandy'^^xsd:string@en ; 
+    org:alternativeName 'Université de Rouen'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www.univ-rouen.fr> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Rouen> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100007527> ;
+    schema:sameAs <https://grid.ac/institutions/grid.10400.35> ;
+    schema:sameAs <http://isni.org/isni/0000000121083034> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053p8kg34> ;
+        rdfs:label 'Laboratoire de Didactique André Revuz'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03467xv55> ;
+        rdfs:label 'Centre de Recherches sur les Fonctionnements et Dysfonctionnements Psychologiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01k1ngp50> ;
+        rdfs:label 'Complexe de Recherche Interprofessionnel en Aérothermochimie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017ed2k28> ;
+        rdfs:label 'Endothélium, valvulopathies et insuffisance cardiaque'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03c2k2909> ;
+        rdfs:label 'Groupe de Physique des Matériaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kcjtk03> ;
+        rdfs:label 'Identités et Différenciation de l\'Environnement des Espaces et des Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01k1v7590> ;
+        rdfs:label 'Laboratoire de Mathématiques Raphaël Salem'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04e8pda19> ;
+        rdfs:label 'Laboratoire COBRA'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04hd6wf14> ;
+        rdfs:label 'Polymères, Biopolymères, Surfaces'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040qadc12> ;
+        rdfs:label 'Normandie Innovation Marché Entreprise Consommation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k1a6w82> ;
+        rdfs:label 'Laboratoire Morphodynamique Continentale et Côtière'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034feyf26> ;
+        rdfs:label 'Physiopathologie, autoimmunité, maladies neuromusculaire et thérapie régénératrice'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04w7xqn11> ;
+        rdfs:label 'Aliments Bioprocédés Toxicologie Environnements'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040d87505> ;
+        rdfs:label 'Nutrition, Inflammation et axe Microbiote-Intestin-Cerveau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wdpp052> ;
+        rdfs:label 'Laboratoire de Sécurité des Procédés Chimiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04m69ya83> ;
+        rdfs:label 'Théâtre antique : textes, histoire et réception'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01f1vfy95> ;
+        rdfs:label 'Laboratoire d\'Informatique, du Traitement de l\'Information et des Systèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cq0jg45> ;
+        rdfs:label 'Laboratoire Sciences et Méthodes Séparatives'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ex43f61> ;
+        rdfs:label 'Equipe de recherche interdisciplinaire sur les aires culturelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/042w6m452> ;
+        rdfs:label 'Etude et Compréhension de la biodiversité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026jccz16> ;
+        rdfs:label 'Laboratoire des dynamiques sociales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01a6c6c20> ;
+        rdfs:label 'Dynamique Microbienne associée aux Infections Urinaires et Respiratoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xvkz230> ;
+        rdfs:label 'Dynamique du langage in situ'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017wkmv97> ;
+        rdfs:label 'Centre universitaire rouennais d’études juridiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0328tc677> ;
+        rdfs:label 'Centre Interdisciplinaire de Recherche Normand en Education et Formation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055eghv78> ;
+        rdfs:label 'Centre d’études des transformations des activités physiques et sportives'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03zpdb397> ;
+        rdfs:label 'Centre d’Etude et de recherche Editer/Interpréter'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k71g406> ;
+        rdfs:label 'Génomique du cancer et du cerveau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03sny2w29> ;
+        rdfs:label 'Communication Bactérienne et Stratégie Anti-infectieuses'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01dthb180> ;
+        rdfs:label 'Epidémiosurveillance et circulation des parasites dans les environnements'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m6gtd76> ;
+        rdfs:label 'Laboratoire de Glycobiologie et Matrice Extracellulaire Végétale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pjn5n51> ;
+        rdfs:label 'Groupe de recherche d’histoire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/000n9zg48> ;
+        rdfs:label 'Groupe de Recherche sur le Handicap Ventilatoire et Neurologique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029qa8t82> ;
+        rdfs:label 'Groupe de recherche Rouennais en Informatique Fondamentale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00y3jmn59> ;
+        rdfs:label 'Institut de Recherche en Systèmes Electroniques Embarqués'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05b4p0g26> ;
+        rdfs:label 'Laboratoire d\'Analyse des Sociétés, Transformations et Adaptations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007hv9f69> ;
+        rdfs:label 'Laboratoire d\'économie Rouen Normandie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yvdat18> ;
+        rdfs:label 'Neuroendocrine, Endocrine and Germinal Differentiation Communication'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01k40cz91> ;
+        rdfs:label 'Normandie Université'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04cdk4t75> ;
+        rdfs:label 'Centre Hospitalier Universitaire de Rouen'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00cxy0s05> ;
+        rdfs:label 'Hôpital Charles-Nicolle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04yem5s35> ;
+        rdfs:label 'INFRANALYTICS'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sgwka45> ;
+        rdfs:label 'Microscopie Fonctionnelle du Vivant'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.09932 49.44313)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rouen" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2982652/> ;
+    ] ; 
+    .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00xc87681> a org:Organization ;
+    rdfs:label 'Shota Rustaveli National Science Foundation'^^xsd:string ;
+    schema:name 'Shota Rustaveli National Science Foundation'^^xsd:string ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-29"^^xsd:date ;
+    schema:url <http://rustaveli.org.ge> ; 
+    schema:mainEntityOfPage <https://www.rustaveli.org.ge> ;
+    owl:sameAs <https://ka.wikipedia.org/wiki/%25E1%2583%25A8%25E1%2583%259D%25E1%2583%2597%25E1%2583%2590_%25E1%2583%25A0%25E1%2583%25A3%25E1%2583%25A1%25E1%2583%2597%25E1%2583%2590%25E1%2583%2595%25E1%2583%2594%25E1%2583%259A%25E1%2583%2598%25E1%2583%25A1_%25E1%2583%25A1%25E1%2583%2590%25E1%2583%25A5%25E1%2583%2590%25E1%2583%25A0%25E1%2583%2597%25E1%2583%2595%25E1%2583%2594%25E1%2583%259A%25E1%2583%259D%25E1%2583%25A1_%25E1%2583%2594%25E1%2583%25A0%25E1%2583%259D%25E1%2583%2595%25E1%2583%259C%25E1%2583%25A3%25E1%2583%259A%25E1%2583%2598_%25E1%2583%25A1%25E1%2583%2590%25E1%2583%259B%25E1%2583%2594%25E1%2583%25AA%25E1%2583%259C%25E1%2583%2598%25E1%2583%2594%25E1%2583%25A0%25E1%2583%259D_%25E1%2583%25A4%25E1%2583%259D%25E1%2583%259C%25E1%2583%2593%25E1%2583%2598> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004801> ;
+    schema:sameAs <https://grid.ac/institutions/grid.437712.4> ;
+    schema:sameAs <http://isni.org/isni/0000000449078888> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.83368 41.69411)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tbilisi" ;
+            schema:addressCountry "GE" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Georgia" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/611717/> ;
+    ] ; 
+    .

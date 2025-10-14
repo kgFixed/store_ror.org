@@ -1,0 +1,221 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/046b3cj80> a org:Organization ;
+    rdfs:label 'École Pratique des Hautes Études'^^xsd:string ;
+    schema:name 'École Pratique des Hautes Études'^^xsd:string ;
+    schema:foundingDate "1868"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-29"^^xsd:date ;
+    org:abbreviation 'EPHE'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.ephe.fr/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/%25C3%2589cole_pratique_des_hautes_%25C3%25A9tudes> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.424469.9> ;
+    schema:sameAs <http://isni.org/isni/0000000121955365> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04yavcg77> ;
+        rdfs:label 'Anthropologie et Histoire des Mondes Antiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nsvn336> ;
+        rdfs:label 'Archéologie et Philologie d’Orient et d’Occident'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04mzqjs78> ;
+        rdfs:label 'Biogéosciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qhwn476> ;
+        rdfs:label 'Centre Georg Simmel'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008rywf59> ;
+        rdfs:label 'Centre d\'Écologie Fonctionnelle et Évolutive'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02tp7mm44> ;
+        rdfs:label 'Centre de Recherches Insulaires et Observatoire de l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wk35t67> ;
+        rdfs:label 'Groupe Sociétés, Religions, Laïcités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01dadvw90> ;
+        rdfs:label 'Institut de Systématique, Évolution, Biodiversité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02qprbz18> ;
+        rdfs:label 'Institut des Mondes Africains'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01cah1n37> ;
+        rdfs:label 'Institut des Sciences de l\'Evolution de Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04az3m568> ;
+        rdfs:label 'Integrated Genetic Approaches in Therapeutic Discovery for Rare Diseases'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029cj5595> ;
+        rdfs:label 'Laboratoire Cognition, Langues, Langage, Ergonomie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02k8f5n40> ;
+        rdfs:label 'Laboratoire Cognitions Humaine et Artificielle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05pm8ec76> ;
+        rdfs:label 'Laboratoire d\'Anthropologie Sociale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02m0hy518> ;
+        rdfs:label 'Laboratoire d\'études sur les monothéismes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03nknpw16> ;
+        rdfs:label 'Laboratoire de Chimie Physique et Microbiologie pour l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0366b1491> ;
+        rdfs:label 'Metabolism and Renal Physiology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0229z0679> ;
+        rdfs:label 'Milieux environnementaux, transferts et interactions dans les hydrosystèmes et les sols'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/051gvfp41> ;
+        rdfs:label 'Orient & Méditerranée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030jm0n16> ;
+        rdfs:label 'Proche-Orient, Caucase : Langues, Archéologie, Cultures'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002v3cy83> ;
+        rdfs:label 'Pôle de Recherche pour l\'Organisation et la Diffusion de l\'Information Géographique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015a85k79> ;
+        rdfs:label 'Infections Virales et Pathologie Comparée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/006gzge74> ;
+        rdfs:label 'Centre de recherche sur les civilisations de l\'Asie orientale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008qs6838> ;
+        rdfs:label 'Mécanismes moléculaires dans les démences neurodégénératives'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f6tkx67> ;
+        rdfs:label 'Neuropsychologie et Imagerie de la Mémoire Humaine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qgfy688> ;
+        rdfs:label 'Fédération Ile de France de recherche sur l\'environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gapzp55> ;
+        rdfs:label 'Centre Roland Mousnier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/013cjyk83> ;
+        rdfs:label 'Université Paris Sciences et Lettres'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00cd48p72> ;
+        rdfs:label 'Campus Condorcet'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sgwka45> ;
+        rdfs:label 'Microscopie Fonctionnelle du Vivant'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

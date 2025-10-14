@@ -1,0 +1,170 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/050jn9y42> a org:Organization ;
+    rdfs:label 'Institut National des Sciences Appliquées de Lyon'^^xsd:string ;
+    schema:name 'Institut National des Sciences Appliquées de Lyon'^^xsd:string ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-29"^^xsd:date ;
+    org:abbreviation 'INSA'^^xsd:string@None ; 
+    org:alternativeName 'INSA Lyon'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www.insa-lyon.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Institut_national_des_sciences_appliqu%25C3%25A9es_de_Lyon> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100009081> ;
+    schema:sameAs <https://grid.ac/institutions/grid.15399.37> ;
+    schema:sameAs <http://isni.org/isni/0000000417655089> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03d1jma17> ;
+        rdfs:label 'Biologie Fonctionnelle Insectes et Interactions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03smk3872> ;
+        rdfs:label 'Centre de Recherche en Acquisition et Traitement de l\'Image pour la Santé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01k383v05> ;
+        rdfs:label 'Centre d\'Énergétique et de Thermique de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05s608j53> ;
+        rdfs:label 'Laboratoire de Mécanique des Contacts et des Structures'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02stf8w13> ;
+        rdfs:label 'Decision & Information Sciences for Production Systems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0256r1e04> ;
+        rdfs:label 'Environnement, ville, société'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v3w8223> ;
+        rdfs:label 'Field Observatory in Urban Hydrology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054f5fc35> ;
+        rdfs:label 'Fédération Informatique de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gj33s30> ;
+        rdfs:label 'Institut de Chimie et Biochimie Moléculaires et Supramoléculaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jsk0b74> ;
+        rdfs:label 'Institut des Nanotechnologies de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xbczw40> ;
+        rdfs:label 'Laboratoire Ampère'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bbjky47> ;
+        rdfs:label 'Laboratoire CarMeN'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dv4he91> ;
+        rdfs:label 'Laboratoire d\'Informatique en Images et Systèmes d\'Information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dxeze48> ;
+        rdfs:label 'Laboratoire de Mécanique des Fluides et d\'Acoustique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02160my55> ;
+        rdfs:label 'Ingenierie des Materiaux polymeres'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rnfhz46> ;
+        rdfs:label 'Matériaux Ingénierie et Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03p3f6k20> ;
+        rdfs:label 'Laboratoire de Microbiologie, Adaptation et Pathogénie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026m44z54> ;
+        rdfs:label 'Laboratoire Nanotechnologies et Nanosystèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01x6z5t49> ;
+        rdfs:label 'Fédération de Recherche Spectroscopies de Photoémission'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01rk35k63> ;
+        rdfs:label 'Université de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label 'Fédération de Recherche sur l\'Energie Solaire'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.84671 45.74846)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lyon" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2996944/> ;
+    ] ; 
+    .
