@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/02aqt9c37> a org:Organization ;
+    rdfs:label 'University of Marne la Vallée'^^xsd:string ;
+    schema:name 'University of Marne la Vallée'^^xsd:string ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'UPEMLV'^^xsd:string ;
+    schema:url <http://www.u-pem.fr/> ; 
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Marne-la-Vall%25C3%25A9e> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+            schema:addressLocality 'Paris'^^xsd:string ;
+            schema:addressCountry "FR" ;
+            owl:sameAs <http://sws.geonames.org/2988507/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000115124813> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q501207> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .
