@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01fpqqe90> a org:Organization ;
+    rdfs:label 'École Nationale Supérieure d\'Ingénieurs de Caen'^^xsd:string ;
+    schema:name 'École Nationale Supérieure d\'Ingénieurs de Caen'^^xsd:string ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-06-20"^^xsd:date ;
+    org:abbreviation 'ENSICAEN'^^xsd:string@None ; 
+    org:alternativeName 'École Nationale Supérieure d\'ingénieurs de Caen & Centre de Recherche'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www.ensicaen.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/%25C3%2589cole_nationale_sup%25C3%25A9rieure_d%2527ing%25C3%25A9nieurs_de_Caen> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.424453.0> ;
+    schema:sameAs <http://isni.org/isni/000000008694431X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05jw85995> ;
+        rdfs:label 'CNRT Matériaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gan4k05> ;
+        rdfs:label 'Laboratoire Catalyse et Spectrochimie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02y0gk295> ;
+        rdfs:label 'Centre de Recherche sur les Ions, les Matériaux et la Photonique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043749971> ;
+        rdfs:label 'GREYC'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03q7p3t30> ;
+        rdfs:label 'Laboratoire de Chimie Moléculaire et Thioorganique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04310tc15> ;
+        rdfs:label 'Laboratoire de Cristallographie et Sciences des Matériaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022txr781> ;
+        rdfs:label 'Laboratoire de Physique Corpusculaire de Caen'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005ba5y61> ;
+        rdfs:label 'Laboratoire d\'Ingénierie des Systèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01k40cz91> ;
+        rdfs:label 'Normandie Université'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.35912 49.18585)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Caen" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3029241/> ;
+    ] ; 
+    .

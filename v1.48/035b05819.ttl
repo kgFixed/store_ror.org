@@ -1,0 +1,187 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/035b05819> a org:Organization ;
+    rdfs:label 'University of Copenhagen'^^xsd:string ;
+    schema:name 'University of Copenhagen'^^xsd:string ;
+    schema:foundingDate "1479"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-06-20"^^xsd:date ;
+    org:abbreviation 'UCPH'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.ku.dk/english/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Copenhagen> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100001734> ;
+    schema:sameAs <https://grid.ac/institutions/grid.5254.6> ;
+    schema:sameAs <http://isni.org/isni/000000010674042X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04anq5q02> ;
+        rdfs:label 'Danish Multiple Sclerosis Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04cz2sw33> ;
+        rdfs:label 'Geocenter Denmark'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05f5sjj19> ;
+        rdfs:label 'Nordic Institute of Asian Studies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040ck2b86> ;
+        rdfs:label 'Natural History Museum of Denmark'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015wtqn87> ;
+        rdfs:label 'CRC183 - Entangled States of Matter'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02s32fb62> ;
+        rdfs:label 'Novo Nordisk Foundation Center for Basic Metabolic Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02g2pz956> ;
+        rdfs:label 'Amager Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00td68a17> ;
+        rdfs:label 'Bispebjerg Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05p017741> ;
+        rdfs:label 'Centre of Excellence for Health, Immunity and Infections'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05bpbnx46> ;
+        rdfs:label 'Copenhagen University Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00d264c35> ;
+        rdfs:label 'Frederiksberg Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/051dzw862> ;
+        rdfs:label 'Gentofte Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05p1frt18> ;
+        rdfs:label 'Glostrup Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00wys9y90> ;
+        rdfs:label 'Herlev Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04cf4ba49> ;
+        rdfs:label 'Holbæk Sygehus'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00edrn755> ;
+        rdfs:label 'Hvidovre Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/047m0fb88> ;
+        rdfs:label 'Mental Health Services'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/016nge880> ;
+        rdfs:label 'Nordsjællands Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04c3dhk56> ;
+        rdfs:label 'Sjællands Universitetshospital, Nykøbing F.'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/011dagb24> ;
+        rdfs:label 'Næstved Sygehus'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00ey0ed83> ;
+        rdfs:label 'Odense University Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03mchdq19> ;
+        rdfs:label 'Rigshospitalet'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00t2n7611> ;
+        rdfs:label 'Roskilde Sygehus'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03vvy0v27> ;
+        rdfs:label 'Royal Danish Library'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.56553 55.67594)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Copenhagen" ;
+            schema:addressCountry "DK" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Denmark" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2618425/> ;
+    ] ; 
+    .

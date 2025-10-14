@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05x9zmx47> a org:Organization ;
+    rdfs:label 'CANTHER - Hétérogénéité, Plasticité et Résistance aux Thérapies des Cancers'^^xsd:string ;
+    schema:name 'CANTHER - Hétérogénéité, Plasticité et Résistance aux Thérapies des Cancers'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2023-02-28"^^xsd:date ;
+    dct:modified "2024-06-20"^^xsd:date ;
+    org:abbreviation 'CANTHER'^^xsd:string@None ; 
+    org:alternativeName 'CANTHER Laboratory'^^xsd:string@en ; 
+    org:alternativeName 'Cancer, Heterogeneity, Plasticity and Resistance to Therapies'^^xsd:string@en ; 
+    org:alternativeName 'Hétérogénéité, Plasticité et Résistance aux Thérapies des Cancers'^^xsd:string@fr ; 
+    org:alternativeName 'Laboratoire CANTHER'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <http://www.canther.fr> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02kzqn938> ;
+        rdfs:label 'University of Lille'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label 'Centre National de la Recherche Scientifique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label 'Inserm'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02ppyfa04> ;
+        rdfs:label 'Centre Hospitalier Universitaire de Lille'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03xfq7a50> ;
+        rdfs:label 'Centre Oscar Lambret'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05k9skc85> ;
+        rdfs:label 'Institut Pasteur de Lille'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.05858 50.63297)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lille" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2998324/> ;
+    ] ; 
+    .

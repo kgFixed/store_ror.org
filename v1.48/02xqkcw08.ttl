@@ -1,0 +1,261 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02xqkcw08> a org:Organization ;
+    rdfs:label 'National Institute of Technology'^^xsd:string ;
+    schema:name 'National Institute of Technology'^^xsd:string ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-06-20"^^xsd:date ;
+    org:alternativeName 'KOSEN'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.kosen-k.go.jp/english/info-idx.html> ;
+    schema:sameAs <https://grid.ac/institutions/grid.482504.f> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00znz6a90> ;
+        rdfs:label 'National Institute of Technology Akita College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02q9dpj81> ;
+        rdfs:label 'National Institute of Technology Okinawa College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029kvcs29> ;
+        rdfs:label 'National Institute of Technology, Akashi College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/004np3m61> ;
+        rdfs:label 'National Institute of Technology, Ariake College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/009rhnd12> ;
+        rdfs:label 'National Institute of Technology, Asahikawa College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025b2hx26> ;
+        rdfs:label 'National Institute of Technology, Gifu College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kp2z675> ;
+        rdfs:label 'National Institute of Technology, Gunma College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/000gm9x69> ;
+        rdfs:label 'National Institute of Technology, Hakodate College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04aa84x73> ;
+        rdfs:label 'National Institute of Technology, Hiroshima College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00kf4vm79> ;
+        rdfs:label 'National Institute of Technology, Ichinoseki College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xfwhf17> ;
+        rdfs:label 'National Institute of Technology, Kagawa College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xm6sp43> ;
+        rdfs:label 'National Institute of Technology, Kagoshima College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01c697313> ;
+        rdfs:label 'National Institute of Technology, Kumamoto College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cndcd59> ;
+        rdfs:label 'National Institute of Technology, Kure College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xefvv79> ;
+        rdfs:label 'National Institute of Technology, Kurume College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03twzfb97> ;
+        rdfs:label 'National Institute of Technology, Kushiro College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00b2e6559> ;
+        rdfs:label 'National Institute of Technology, Maizuru College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qhht705> ;
+        rdfs:label 'National Institute of Technology, Matsue College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04d9y9m22> ;
+        rdfs:label 'National Institute of Technology, Miyakonojo College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04b1np478> ;
+        rdfs:label 'National Institute of Technology, Niihama College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02gn4kd94> ;
+        rdfs:label 'National Institute of Technology, Numazu College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037kbz526> ;
+        rdfs:label 'National Institute of Technology, Oshima College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040mta007> ;
+        rdfs:label 'National Institute of Technology, Oyama College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vvp2k82> ;
+        rdfs:label 'National Institute of Technology, Sasebo College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03pngf508> ;
+        rdfs:label 'National Institute of Technology, Suzuka College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01h7g8502> ;
+        rdfs:label 'National Institute of Technology, Toba College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046jx2h22> ;
+        rdfs:label 'National Institute of Technology, Tokuyama College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002k06d85> ;
+        rdfs:label 'National Institute of Technology, Tokyo College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0415ygs14> ;
+        rdfs:label 'National Institute of Technology, Tomakomai College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jvka613> ;
+        rdfs:label 'National Institute of Technology, Toyama College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ms51d52> ;
+        rdfs:label 'National Institute of Technology, Tsuruoka College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0485q2d74> ;
+        rdfs:label 'National Institute of Technology, Tsuyama College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00pjwdc92> ;
+        rdfs:label 'National Institute of Technology, Ube College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02031rv53> ;
+        rdfs:label 'National Institute of Technology, Yonago College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008mems69> ;
+        rdfs:label 'National Institute of Technology, Yuge College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bjsge15> ;
+        rdfs:label 'National Institute of Technology, Kochi College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034jd0m14> ;
+        rdfs:label 'National Institute of Technology, Nara College'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.32389 35.65583)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hachiōji" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1863440/> ;
+    ] ; 
+    .

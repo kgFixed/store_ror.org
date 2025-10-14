@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/048t33b90> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2024-06-19"^^xsd:date ;
+    dct:modified "2024-06-20"^^xsd:date ;
+    org:alternativeName 'Allegro ML Research'^^xsd:string@en ; 
+    org:alternativeName 'Allegro MLR'^^xsd:string@en ; 
+    schema:url <http://allegro.com> ; 
+    schema:mainEntityOfPage <https://allegro.com> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Allegro_%2528website%2529> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.92993 52.40692)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Poznan" ;
+            schema:addressCountry "PL" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Poland" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3088171/> ;
+    ] ; 
+    .

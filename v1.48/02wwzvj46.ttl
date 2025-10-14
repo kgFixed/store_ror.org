@@ -1,0 +1,164 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02wwzvj46> a org:Organization ;
+    rdfs:label 'Université de Tours'^^xsd:string ;
+    schema:name 'Université de Tours'^^xsd:string ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-06-20"^^xsd:date ;
+    org:alternativeName 'François Rabelais University'^^xsd:string@en ; 
+    org:alternativeName 'François Rabelais University of Tours'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.univ-tours.fr> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Fran%25C3%25A7ois_Rabelais_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100007526> ;
+    schema:sameAs <https://grid.ac/institutions/grid.12366.30> ;
+    schema:sameAs <http://isni.org/isni/0000000121826141> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02y3mfk39> ;
+        rdfs:label 'Biologie des Oiseaux et Aviculture'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ahza989> ;
+        rdfs:label 'CItés, Territoires, Environnement et Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cv31q28> ;
+        rdfs:label 'Centre d\'Etudes Supérieures de la Renaissance'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zs48f23> ;
+        rdfs:label 'Conditions Extrêmes et Matériaux Haute Température et Irradiation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01eem7c55> ;
+        rdfs:label 'Imagerie et Cerveau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0454zjr22> ;
+        rdfs:label 'Infectiologie Animale et Santé Publique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hp7bq97> ;
+        rdfs:label 'Laboratoire d’Économie d’Orléans'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02c6p9834> ;
+        rdfs:label 'Physiologie de la Reproduction et des Comportements'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01sdp1y98> ;
+        rdfs:label 'Centre de Recherches sur la Cognition et l\'Apprentissage'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008p7mq56> ;
+        rdfs:label 'Équipe Monde Arabe Méditerranée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vxptj17> ;
+        rdfs:label 'Centre d\'Étude des Pathologies Respiratoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rp2mn26> ;
+        rdfs:label 'Institut de Recherche sur la Biologie de l\'Insecte UMR 7261'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04s6f1186> ;
+        rdfs:label 'Laboratoire Ligérien de Linguistique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04wgee362> ;
+        rdfs:label 'Val de Loire Recherche en Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03v4gsj38> ;
+        rdfs:label 'Maison des Sciences de l\'Homme Val de Loire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f9thq51> ;
+        rdfs:label 'Laboratoire de Mécanique Gabriel Lamé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05djhd259> ;
+        rdfs:label 'Institut Denis Poisson'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cvwf620> ;
+        rdfs:label 'Niche leucémique et métabolisme oxydatif'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04m69ya83> ;
+        rdfs:label 'Théâtre antique : textes, histoire et réception'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013m8h627> ;
+        rdfs:label 'methodS in Patient-centered outcomes and HEalth ResEarch'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.70398 47.39484)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tours" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2972191/> ;
+    ] ; 
+    .

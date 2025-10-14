@@ -1,0 +1,242 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02aj0kh94> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-06-20"^^xsd:date ;
+    org:abbreviation 'UJF'^^xsd:string@None ; 
+    org:alternativeName 'Université Grenoble I'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www.ujf-grenoble.fr/?language=en> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Joseph_Fourier_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100008086> ;
+    schema:sameAs <https://grid.ac/institutions/grid.9621.c> ;
+    schema:sameAs <http://isni.org/isni/0000000109442786> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030p0rb34> ;
+        rdfs:label 'Andrology Gerontechnology Inflammation Modelisation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010rs2a38> ;
+        rdfs:label 'Département de Chimie Moléculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045ktmd28> ;
+        rdfs:label 'Laboratoire National des Champs Magnétiques Intenses'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01c8rcg82> ;
+        rdfs:label 'Laboratoire d\'Informatique de Grenoble'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wrme198> ;
+        rdfs:label 'Grenoble Images Parole Signal Automatique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04as3rk94> ;
+        rdfs:label 'Grenoble Institute of Neurosciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05kwbf598> ;
+        rdfs:label 'Institut pour l\'avancée des biosciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05rwrfh97> ;
+        rdfs:label 'Institut Fourier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04szabx38> ;
+        rdfs:label 'Institut de Biologie Structurale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04g26vc28> ;
+        rdfs:label 'Institut de Chimie Moléculaire de Grenoble'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03taa9n66> ;
+        rdfs:label 'Institut de Microélectronique, Electromagnétisme et Photonique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05514hp74> ;
+        rdfs:label 'Laboratoire Bioénergétique Fondamentale et Appliquée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ett5b41> ;
+        rdfs:label 'Laboratoire Jean Kuntzmann'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jxe7243> ;
+        rdfs:label 'Laboratoire Physiologie Cellulaire & Végétale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026j45x50> ;
+        rdfs:label 'Laboratoire Politiques Publiques, Action Politique, Territoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044ggyg50> ;
+        rdfs:label 'Laboratoire Rhéologie et Procédés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03x1z2w73> ;
+        rdfs:label 'Laboratoire d\'Écologie Alpine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02dd25k08> ;
+        rdfs:label 'Laboratoire de Chimie et Biologie des Métaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hyx5a17> ;
+        rdfs:label 'Laboratoire de Génie Électrique de Grenoble'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mc6qk71> ;
+        rdfs:label 'Laboratoire de Physique et Modélisation des Milieux Condensés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01273vs09> ;
+        rdfs:label 'Laboratoire de Radiopharmaceutiques Biocliniques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rv5x925> ;
+        rdfs:label 'Laboratoire des Sciences pour la Conception, l\'Optimisation et la Production'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/036zswm25> ;
+        rdfs:label 'Laboratoire des Technologies de la Microélectronique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043pfpy19> ;
+        rdfs:label 'Laboratoire des Écoulements Géophysiques et Industriels'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04axb9j69> ;
+        rdfs:label 'Laboratoire d’Electrochimie et de Physico-chimie des Matériaux et des Interfaces'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03f0apy98> ;
+        rdfs:label 'Laboratoire de Physique Subatomique et de Cosmologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m7zca23> ;
+        rdfs:label 'Science et Ingénierie des Matériaux et Procédés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bcdsr62> ;
+        rdfs:label 'Sols, Solides, Structures, Risques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00x5jmr79> ;
+        rdfs:label 'Structure et Propriétés d\'Architectures Moléculaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03985kf35> ;
+        rdfs:label 'Translational Innovation in Medicine and Complexity'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/000063q30> ;
+        rdfs:label 'Techniques of Informatics and Microelectronics for Integrated Systems Architecture'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05afmzm11> ;
+        rdfs:label 'Verimag'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/02rx3b187> ;
+        rdfs:label 'Université Grenoble Alpes'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.71479 45.17869)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Grenoble" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3014728/> ;
+    ] ; 
+    .
