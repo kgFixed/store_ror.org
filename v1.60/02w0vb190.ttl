@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02w0vb190> a org:Organization ;
+    rdfs:label 'Observatoire des Sciences de l\'Univers Nantes Atlantique'^^xsd:string ;
+    schema:name 'Observatoire des Sciences de l\'Univers Nantes Atlantique'^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2022-12-15"^^xsd:date ;
+    dct:modified "2025-02-26"^^xsd:date ;
+    org:abbreviation 'OSU OSUNA'^^xsd:string@fr ; 
+    org:abbreviation 'OSUNA'^^xsd:string@fr ; 
+    org:alternativeName 'Universe Sciences Observatory of Nantes Atlantique'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://osuna.univ-nantes.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000446490236> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fm0sh33> ;
+        rdfs:label 'Laboratoire de Planétologie et Géosciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04kdfz702> ;
+        rdfs:label 'Institut National des Sciences de l\'Univers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03gnr7b55> ;
+        rdfs:label 'Nantes Université'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0175hh227> ;
+        rdfs:label 'Conservatoire National des Arts et Métiers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04yrqp957> ;
+        rdfs:label 'Université d\'Angers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03x42jk29> ;
+        rdfs:label 'Université Gustave Eiffel'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/030hj3061> ;
+        rdfs:label 'IMT Atlantique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01kxesq83> ;
+        rdfs:label 'Laboratoire de Physique Subatomique et des Technologies Associées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04fm0sh33> ;
+        rdfs:label 'Laboratoire de Planétologie et Géosciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03x42jk29> ;
+        rdfs:label 'Université Gustave Eiffel'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0175hh227> ;
+        rdfs:label 'Conservatoire National des Arts et Métiers'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.55336 47.21725)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Nantes" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Pays de la Loire" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2990969/> ;
+    ] ; 
+    .

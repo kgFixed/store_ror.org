@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03dwsxr17> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1925"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-02-26"^^xsd:date ;
+    dct:modified "2025-02-26"^^xsd:date ;
+    org:alternativeName 'Department of Forestry in Yangon University'^^xsd:string@en ; 
+    org:alternativeName 'Faculty of Forestry in the University of Yangon'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Forestry, Yezin'^^xsd:string@en ; 
+    org:abbreviation 'UFES'^^xsd:string@en ; 
+    org:alternativeName 'University of Forestry and Environmental Science, Yezin'^^xsd:string@en ; 
+    org:alternativeName 'University of Forestry, Yezin'^^xsd:string@en ; 
+    schema:url <http://ufes.nugmyanmar.org> ; 
+    schema:mainEntityOfPage <https://ufes.nugmyanmar.org> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Forestry_%2528Yezin%2529> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(96.26333 19.84089)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Yezin" ;
+            schema:addressCountry "MM" ;
+            schema:addressRegion "Nay Pyi Taw" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Myanmar" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1284953/> ;
+    ] ; 
+    .

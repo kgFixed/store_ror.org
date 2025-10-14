@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/032vkvz43> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2024-07-08"^^xsd:date ;
+    dct:modified "2025-02-26"^^xsd:date ;
+    org:abbreviation 'IMEER NASU'^^xsd:string@en ; 
+    org:alternativeName 'Інститут проблем ринку та економіко-екологічних досліджень НАН України'^^xsd:string@uk ; 
+    org:alternativeName 'Одеське відділення Інституту економіки АН України'^^xsd:string@uk ; 
+    schema:url <http://impeer.org.ua> ; 
+    schema:mainEntityOfPage <https://impeer.org.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%D0%9E%D0%B1%2527%D1%94%D0%B4%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82_%D0%B5%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D1%96%D0%BA%D0%B8_%D0%9D%D0%90%D0%9D_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00je4t102> ;
+        rdfs:label 'National Academy of Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.74383 46.48572)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Odesa" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Odessa" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/698740/> ;
+    ] ; 
+    .

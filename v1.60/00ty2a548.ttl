@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00ty2a548> a org:Organization ;
+    rdfs:label 'Idaho National Laboratory'^^xsd:string ;
+    schema:name 'Idaho National Laboratory'^^xsd:string ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-02-26"^^xsd:date ;
+    org:abbreviation 'INL'^^xsd:string@None ; 
+    org:alternativeName 'Office of Nuclear Energy Idaho National Laboratory'^^xsd:string@en ; 
+    org:alternativeName 'United States Department of Energy Office of Nuclear Energy Idaho National Laboratory'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.inl.gov/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Idaho_National_Laboratory> ; 
+    schema:sameAs <https://api.crossref.org/funders/100011660> ;
+    schema:sameAs <https://grid.ac/institutions/grid.417824.c> ;
+    schema:sameAs <http://isni.org/isni/0000000100207392> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01h5tnr73> ;
+        rdfs:label 'Battelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05tj7dm33> ;
+        rdfs:label 'Office of Nuclear Energy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/019q0z051> ;
+        rdfs:label 'Rocky Mountain Advanced Computing Consortium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03c7p2r39> ;
+        rdfs:label 'Nuclear Science User Facilities'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-112.03414 43.46658)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Idaho Falls" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Idaho" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5596475/> ;
+    ] ; 
+    .

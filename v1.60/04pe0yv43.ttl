@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04pe0yv43> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1966"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-02-26"^^xsd:date ;
+    dct:modified "2025-02-26"^^xsd:date ;
+    org:abbreviation 'DSUIA'^^xsd:string@en ; 
+    schema:url <http://dduvs.edu.ua> ; 
+    schema:mainEntityOfPage <https://dduvs.edu.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2594%25D0%25BD%25D1%2596%25D0%25BF%25D1%2580%25D0%25BE%25D0%25B2%25D1%2581%25D1%258C%25D0%25BA%25D0%25B8%25D0%25B9_%25D0%25B4%25D0%25B5%25D1%2580%25D0%25B6%25D0%25B0%25D0%25B2%25D0%25BD%25D0%25B8%25D0%25B9_%25D1%2583%25D0%25BD%25D1%2596%25D0%25B2%25D0%25B5%25D1%2580%25D1%2581%25D0%25B8%25D1%2582%25D0%25B5%25D1%2582_%25D0%25B2%25D0%25BD%25D1%2583%25D1%2582%25D1%2580%25D1%2596%25D1%2588%25D0%25BD%25D1%2596%25D1%2585_%25D1%2581%25D0%25BF%25D1%2580%25D0%25B0%25D0%25B2> ; 
+    schema:sameAs <http://isni.org/isni/0000000517891783> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.04066 48.46664)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Dnipro" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Dnipropetrovsk" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/709930/> ;
+    ] ; 
+    .

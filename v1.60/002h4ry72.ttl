@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/002h4ry72> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-02-26"^^xsd:date ;
+    dct:modified "2025-02-26"^^xsd:date ;
+    org:abbreviation 'C2QA'^^xsd:string@en ; 
+    org:alternativeName 'DOE Co-design Center for Quantum Advantage'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.bnl.gov/quantumcenter/> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02ex6cf31> ;
+        rdfs:label 'Brookhaven National Laboratory'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-72.88677 40.86954)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Upton" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "New York" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5142042/> ;
+    ] ; 
+    .
