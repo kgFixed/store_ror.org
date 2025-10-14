@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/0192qrt53> a org:Organization ;
+    rdfs:label 'Pushchino Scientific Center for Biological Research'^^xsd:string ;
+    schema:name 'Pushchino Scientific Center for Biological Research'^^xsd:string ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Facility'^^xsd:string ; 
+    org:abbreviation 'ФИЦ ПНЦБИ РАН'^^xsd:string ;
+    org:alternativeName 'Пущинский научный центр биологических исследований Российской Академии наук'^^xsd:string ;
+    schema:url <https://www.pbcras.ru> ; 
+    owl:sameAs <https://ru.wikipedia.org/wiki/%25D0%259F%25D1%2583%25D1%2589%25D0%25B8%25D0%25BD%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9_%25D0%25BD%25D0%25B0%25D1%2583%25D1%2587%25D0%25BD%25D1%258B%25D0%25B9_%25D1%2586%25D0%25B5%25D0%25BD%25D1%2582%25D1%2580_%25D0%25A0%25D0%2590%25D0%259D> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+            schema:addressLocality 'Moscow'^^xsd:string ;
+            schema:addressCountry "RU" ;
+            owl:sameAs <http://sws.geonames.org/524901/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q4384897> ;
+    .
