@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/05f6mer85> a org:Organization ;
+    rdfs:label 'Innovation Academy for Microsatellites of Chinese Academy of Sciences'^^xsd:string ;
+    schema:name 'Innovation Academy for Microsatellites of Chinese Academy of Sciences'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Facility'^^xsd:string ; 
+    org:abbreviation 'IAMCAS'^^xsd:string ;
+    org:alternativeName 'Chinese Academy of Sciences Innovation Academy for Microsatellites'^^xsd:string ;
+    schema:url <http://www.microsate.com> ; 
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E4%25B8%25AD%25E5%259B%25BD%25E7%25A7%2591%25E5%25AD%25A6%25E9%2599%25A2%25E5%25BE%25AE%25E5%25B0%258F%25E5%258D%25AB%25E6%2598%259F%25E5%2588%259B%25E6%2596%25B0%25E7%25A0%2594%25E7%25A9%25B6%25E9%2599%25A2> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(121.45806 31.22222)"^^geo:wktLiteral ;
+            schema:addressLocality 'Shanghai'^^xsd:string ;
+            schema:addressCountry "CN" ;
+            owl:sameAs <http://sws.geonames.org/1796236/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q55697625> ;
+    .
