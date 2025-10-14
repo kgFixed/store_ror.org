@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/04hewx527> a org:Organization ;
+    rdfs:label 'U.S. Army Cold Regions Test Center'^^xsd:string ;
+    schema:name 'U.S. Army Cold Regions Test Center'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Government'^^xsd:string ; 
+    org:classification 'Facility'^^xsd:string ; 
+    org:abbreviation 'CRTC'^^xsd:string ;
+    org:alternativeName 'Cold Regions Test Activity'^^xsd:string ;
+    schema:url <https://www.atec.army.mil/crtc/> ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-145.57398 63.9412)"^^geo:wktLiteral ;
+            schema:addressLocality 'Fort Greely'^^xsd:string ;
+            schema:addressCountry "US" ;
+            owl:sameAs <http://sws.geonames.org/7262863/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    .
