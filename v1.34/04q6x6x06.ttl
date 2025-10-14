@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/04q6x6x06> a org:Organization ;
+    rdfs:label 'Kutaisi University'^^xsd:string ;
+    schema:name 'Kutaisi University'^^xsd:string ;
+    schema:foundingDate "1991"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'UNIK'^^xsd:string ;
+    schema:url <https://www.unik.edu.ge> ; 
+    owl:sameAs <https://ka.wikipedia.org/wiki/%25E1%2583%25A5%25E1%2583%25A3%25E1%2583%2597%25E1%2583%2590%25E1%2583%2598%25E1%2583%25A1%25E1%2583%2598%25E1%2583%25A1_%25E1%2583%25A3%25E1%2583%259C%25E1%2583%2598%25E1%2583%2595%25E1%2583%2594%25E1%2583%25A0%25E1%2583%25A1%25E1%2583%2598%25E1%2583%25A2%25E1%2583%2594%25E1%2583%25A2%25E1%2583%2598> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(42.69459 42.26791)"^^geo:wktLiteral ;
+            schema:addressLocality 'Kutaisi'^^xsd:string ;
+            schema:addressCountry "GE" ;
+            owl:sameAs <http://sws.geonames.org/613607/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000089152713> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q28220884> ;
+    .

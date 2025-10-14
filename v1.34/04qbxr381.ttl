@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/04qbxr381> a org:Organization ;
+    rdfs:label 'International Research and Training Center'^^xsd:string ;
+    schema:name 'International Research and Training Center'^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Government'^^xsd:string ; 
+    org:abbreviation 'IRTC'^^xsd:string ;
+    org:alternativeName 'International Center for Information Technologies and Systems of the National Academy of Sciences of Ukraine and the Ministry of Education and Science of Ukraine'^^xsd:string ;
+    schema:url <https://irtc.org.ua> ; 
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%259C%25D1%2596%25D0%25B6%25D0%25BD%25D0%25B0%25D1%2580%25D0%25BE%25D0%25B4%25D0%25BD%25D0%25B8%25D0%25B9_%25D0%25BD%25D0%25B0%25D1%2583%25D0%25BA%25D0%25BE%25D0%25B2%25D0%25BE-%25D0%25BD%25D0%25B0%25D0%25B2%25D1%2587%25D0%25B0%25D0%25BB%25D1%258C%25D0%25BD%25D0%25B8%25D0%25B9_%25D1%2586%25D0%25B5%25D0%25BD%25D1%2582%25D1%2580_%25D1%2596%25D0%25BD%25D1%2584%25D0%25BE%25D1%2580%25D0%25BC%25D0%25B0%25D1%2586%25D1%2596%25D0%25B9%25D0%25BD%25D0%25B8%25D1%2585_%25D1%2582%25D0%25B5%25D1%2585%25D0%25BD%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D1%2596%25D0%25B9_%25D1%2596_%25D1%2581%25D0%25B8%25D1%2581%25D1%2582%25D0%25B5%25D0%25BC_%25D0%259D%25D0%2590%25D0%259D_%25D0%25A3%25D0%25BA%25D1%2580%25D0%25B0%25D1%2597%25D0%25BD%25D0%25B8_%25D1%2582%25D0%25B0_%25D0%259C%25D0%259E%25D0%259D_%25D0%25A3%25D0%25BA%25D1%2580%25D0%25B0%25D1%2597%25D0%25BD%25D0%25B8> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+            schema:addressLocality 'Kyiv'^^xsd:string ;
+            schema:addressCountry "UA" ;
+            owl:sameAs <http://sws.geonames.org/703448/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q12131111> ;
+    .
