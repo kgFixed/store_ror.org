@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/05463eb69> a org:Organization ;
+    rdfs:label 'Hunan Railway Professional Technology College'^^xsd:string ;
+    schema:name 'Hunan Railway Professional Technology College'^^xsd:string ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'HNRPC'^^xsd:string ;
+    schema:url <http://www.hnrpc.com> ; 
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E6%25B9%2596%25E5%258D%2597%25E9%2593%2581%25E9%2581%2593%25E8%2581%258C%25E4%25B8%259A%25E6%258A%2580%25E6%259C%25AF%25E5%25AD%25A6%25E9%2599%25A2> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(113.15 27.83333)"^^geo:wktLiteral ;
+            schema:addressLocality 'Zhuzhou'^^xsd:string ;
+            schema:addressCountry "CN" ;
+            owl:sameAs <http://sws.geonames.org/1783763/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000483435578> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15918210> ;
+    .
