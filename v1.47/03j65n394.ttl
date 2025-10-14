@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03j65n394> a org:Organization ;
+    rdfs:label 'Laboratoire d\'Excellence TULIP'^^xsd:string ;
+    schema:name 'Laboratoire d\'Excellence TULIP'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2023-09-14"^^xsd:date ;
+    dct:modified "2024-05-30"^^xsd:date ;
+    org:alternativeName 'Labex TULIP'^^xsd:string@fr ; 
+    org:alternativeName 'Laboratory of Excellence TULIP'^^xsd:string@en ; 
+    org:abbreviation 'TULIP'^^xsd:string@None ; 
+    org:alternativeName 'TULIP LabEx'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.labex-tulip.fr> ;
+    schema:sameAs <https://api.crossref.org/funders/100018956> ;
+    schema:sameAs <http://isni.org/isni/0000000503899194> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/003vg9w96> ;
+        rdfs:label 'National Research Institute for Agriculture, Food and Environment'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03d5w9863> ;
+        rdfs:label 'École Nationale Supérieure Agronomique de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02v6kpv12> ;
+        rdfs:label 'Université Toulouse III - Paul Sabatier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03am2jy38> ;
+        rdfs:label 'University of Perpignan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/004raaa70> ;
+        rdfs:label 'Université de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label 'French National Centre for Scientific Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.4986 43.5159)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Castanet-Tolosan" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3028409/> ;
+    ] ; 
+    .

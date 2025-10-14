@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0111a5077> a org:Organization ;
+    rdfs:label 'Toxalim Research Centre in Food Toxicology'^^xsd:string ;
+    schema:name 'Toxalim Research Centre in Food Toxicology'^^xsd:string ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-05-30"^^xsd:date ;
+    org:alternativeName 'TOXALIM'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www6.toulouse.inra.fr/toxalim_eng> ;
+    schema:sameAs <https://grid.ac/institutions/grid.420267.5> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02sxjwh33> ;
+        rdfs:label 'Centre Occitanie-Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/033p9g875> ;
+        rdfs:label 'National Polytechnic Institute of Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02v6kpv12> ;
+        rdfs:label 'Université Toulouse III - Paul Sabatier'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Toulouse" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2972315/> ;
+    ] ; 
+    .

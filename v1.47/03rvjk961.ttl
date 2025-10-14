@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03rvjk961> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2024-05-27"^^xsd:date ;
+    dct:modified "2024-05-30"^^xsd:date ;
+    org:abbreviation 'UGH'^^xsd:string@en ; 
+    org:alternativeName 'Urasoe Sougou Byouin'^^xsd:string@ja ; 
+    org:alternativeName 'Urasoe Sōgō Byōin'^^xsd:string@ja ; 
+    org:alternativeName 'うらそえそうごうびょういん'^^xsd:string@ja ; 
+    org:alternativeName 'ウラソエソウゴウビョウイン'^^xsd:string@ja ; 
+    org:alternativeName '浦添総合病院'^^xsd:string@ja ; 
+    schema:mainEntityOfPage <https://jin-aikai.com/urasoe/> ;
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E6%25B5%25A6%25E6%25B7%25BB%25E7%25B7%258F%25E5%2590%2588%25E7%2597%2585%25E9%2599%25A2> ; 
+    schema:sameAs <http://isni.org/isni/0000000406425624> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.71512 26.25106)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Urasoe Shi" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1849184/> ;
+    ] ; 
+    .
