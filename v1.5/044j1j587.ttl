@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/044j1j587> a org:Organization ;
+    rdfs:label 'Institut za povrstarstvo'^^xsd:string ;
+    schema:name 'Institut za povrstarstvo'^^xsd:string ;
+    schema:foundingDate "1946"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Government'^^xsd:string ; 
+    org:abbreviation 'IVC'^^xsd:string ;
+    schema:url <https://institut-palanka.rs> ; 
+    owl:sameAs <https://sr.wikipedia.org/sr-el/%25D0%2598%25D0%25BD%25D1%2581%25D1%2582%25D0%25B8%25D1%2582%25D1%2583%25D1%2582_%25D0%25B7%25D0%25B0_%25D0%25BF%25D0%25BE%25D0%25B2%25D1%2580%25D1%2582%25D0%25B0%25D1%2580%25D1%2581%25D1%2582%25D0%25B2%25D0%25BE> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(20.95885 44.36548)"^^geo:wktLiteral ;
+            schema:addressLocality 'Smederevska Palanka'^^xsd:string ;
+            schema:addressCountry "RS" ;
+            owl:sameAs <http://sws.geonames.org/785753/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000404752592> ;
+    .
