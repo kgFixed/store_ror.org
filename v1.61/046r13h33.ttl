@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/046r13h33> a org:Organization ;
+    rdfs:label 'Ministry of Health and Social Services'^^xsd:string ;
+    schema:name 'Ministry of Health and Social Services'^^xsd:string ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-03-17"^^xsd:date ;
+    org:abbreviation 'MSSS'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.msss.gouv.qc.ca/en/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Health_and_Social_Services_(Quebec)> ; 
+    schema:sameAs <https://api.crossref.org/funders/100013392> ;
+    schema:sameAs <https://grid.ac/institutions/grid.498851.9> ;
+    schema:sameAs <http://isni.org/isni/000000040636485X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008jvv944> ;
+        rdfs:label 'Héma-Québec'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04e3xe586> ;
+        rdfs:label 'Institut National d\'Excellence en Santé et en Services Sociaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00kv63439> ;
+        rdfs:label 'Institut National de Santé Publique du Québec'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e0kkv22> ;
+        rdfs:label 'Office des Personnes Handicapées du Québec'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05waa5295> ;
+        rdfs:label 'Government of Quebec'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qbtqz88> ;
+        rdfs:label 'CIUSSS du Centre-Ouest-de-l\'Île-de-Montréal'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.21454 46.81228)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Québec" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "Quebec" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6325494/> ;
+    ] ; 
+    .

@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04z8jg394> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-03-17"^^xsd:date ;
+    org:abbreviation 'GFZ'^^xsd:string@None ; 
+    org:alternativeName 'Helmholtz Centre Potsdam - GFZ German Research Centre for Geosciences'^^xsd:string@en ; 
+    org:alternativeName 'Helmholtz-Zentrum Potsdam - Deutsches GeoForschungsZentrum GFZ'^^xsd:string@de ; 
+    schema:url <http://gfz-potsdam.de> ; 
+    schema:url <http://gfz.de> ; 
+    schema:mainEntityOfPage <https://www.gfz.de> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/GFZ_Helmholtz_Centre_for_Geosciences> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100010956> ;
+    schema:sameAs <https://grid.ac/institutions/grid.23731.34> ;
+    schema:sameAs <http://isni.org/isni/0000000091952461> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vvnmw35> ;
+        rdfs:label 'Research Institute For Sustainability – Helmholtz Centre Potsdam'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0281dp749> ;
+        rdfs:label 'Helmholtz Association of German Research Centres'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.06566 52.39886)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Potsdam" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Brandenburg" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2852458/> ;
+    ] ; 
+    .

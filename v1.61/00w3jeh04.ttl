@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00w3jeh04> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2025-03-17"^^xsd:date ;
+    dct:modified "2025-03-17"^^xsd:date ;
+    org:abbreviation 'ISGP'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Agriculture of Polissya NAAS'^^xsd:string@en ; 
+    org:alternativeName 'Інститут сільського господарства Полісся'^^xsd:string@uk ; 
+    org:alternativeName 'Інститут сільського господарства Полісся НААН'^^xsd:string@uk ; 
+    schema:url <http://isgpnaan.org> ; 
+    schema:mainEntityOfPage <https://isgpnaan.org> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2586%25D0%25BD%25D1%2581%25D1%2582%25D0%25B8%25D1%2582%25D1%2583%25D1%2582_%25D1%2581%25D1%2596%25D0%25BB%25D1%258C%25D1%2581%25D1%258C%25D0%25BA%25D0%25BE%25D0%25B3%25D0%25BE_%25D0%25B3%25D0%25BE%25D1%2581%25D0%25BF%25D0%25BE%25D0%25B4%25D0%25B0%25D1%2580%25D1%2581%25D1%2582%25D0%25B2%25D0%25B0_%25D0%259F%25D0%25BE%25D0%25BB%25D1%2596%25D1%2581%25D1%2581%25D1%258F> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/001040111> ;
+        rdfs:label 'National Academy of Agrarian Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.67669 50.26487)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Zhytomyr" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Zhytomyr" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/686967/> ;
+    ] ; 
+    .
