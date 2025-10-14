@@ -1,0 +1,101 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/045sza929> a org:Organization ;
+    rdfs:label 'China Earthquake Administration'^^xsd:string ;
+    schema:name 'China Earthquake Administration'^^xsd:string ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:abbreviation 'CEA'^^xsd:string@None ; 
+    org:abbreviation 'NEB'^^xsd:string@None ; 
+    org:alternativeName 'National Earthquake Bureau'^^xsd:string@en ; 
+    org:alternativeName 'Zhōngguó dìzhèn jú'^^xsd:string@None ; 
+    org:alternativeName '中国地震台网中心'^^xsd:string@zh ; 
+    schema:mainEntityOfPage <https://www.cea.gov.cn> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/China_Earthquake_Administration> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100010662> ;
+    schema:sameAs <https://grid.ac/institutions/grid.450296.c> ;
+    schema:sameAs <http://isni.org/isni/0000000095582971> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00pyv1r78> ;
+        rdfs:label 'Institute of Disaster Prevention'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03z8dnf91> ;
+        rdfs:label 'Institute of Geology, China Earthquake Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03a2d0d33> ;
+        rdfs:label 'Institute of Earthquake Forecasting, China Earthquake Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01z6w7773> ;
+        rdfs:label 'Institute of Engineering Mechanics, China Earthquake Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029w34q36> ;
+        rdfs:label 'Ningxia Seismological Bureau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ww2n633> ;
+        rdfs:label 'Fushun Seismological Bureau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0146tv827> ;
+        rdfs:label 'Heilongjiang Earthquake Agency'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011y3sy88> ;
+        rdfs:label 'Zhangjiakou City Science and Technology and Seismological Bureau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jb7qa21> ;
+        rdfs:label 'Hebei Seismological Bureau'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Beijing" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Beijing" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1816670/> ;
+    ] ; 
+    .

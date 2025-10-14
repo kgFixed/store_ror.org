@@ -1,0 +1,169 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00vtgdb53> a org:Organization ;
+    rdfs:label 'University of Glasgow'^^xsd:string ;
+    schema:name 'University of Glasgow'^^xsd:string ;
+    schema:foundingDate "1451"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:alternativeName 'Glasgow University'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.gla.ac.uk/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Glasgow> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100000853> ;
+    schema:sameAs <https://grid.ac/institutions/grid.8756.c> ;
+    schema:sameAs <http://isni.org/isni/000000012193314X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vaer060> ;
+        rdfs:label 'MRC University of Glasgow Centre for Virus Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02v3sdn51> ;
+        rdfs:label 'MRC/CSO Social and Public Health Sciences Unit'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045z18t19> ;
+        rdfs:label 'Malawi Epidemiology and Intervention Research Unit'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03fr3nn32> ;
+        rdfs:label 'National Centre for Resilience'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05jfq2w07> ;
+        rdfs:label 'Scottish Universities Environmental Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04s5hmf73> ;
+        rdfs:label 'The Hunterian'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m7w8s72> ;
+        rdfs:label 'Wellcome Centre for Molecular Parasitology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qdwq068> ;
+        rdfs:label 'QuantIC'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00tkrd758> ;
+        rdfs:label 'Gartnavel General Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00bjck208> ;
+        rdfs:label 'Glasgow Royal Infirmary'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03cjp2c87> ;
+        rdfs:label 'Glasgow Victoria Infirmary'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0103jbm17> ;
+        rdfs:label 'Golden Jubilee National Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0488ndr53> ;
+        rdfs:label 'Hairmyres Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01s0phq15> ;
+        rdfs:label 'Inverclyde Royal Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/053eyjs84> ;
+        rdfs:label 'Princess Royal Maternity Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01nj8sa76> ;
+        rdfs:label 'Royal Alexandra Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01cb0kd74> ;
+        rdfs:label 'Royal Hospital for Children'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04wvkky61> ;
+        rdfs:label 'Southern General Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04pc31859> ;
+        rdfs:label 'Stobhill Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02e22bh87> ;
+        rdfs:label 'Western Infirmary'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03hkzcg46> ;
+        rdfs:label 'Scottish Confederation of University and Research Libraries'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.25763 55.86515)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Glasgow" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "Scotland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2648579/> ;
+    ] ; 
+    .

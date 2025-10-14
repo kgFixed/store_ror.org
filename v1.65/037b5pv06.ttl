@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/037b5pv06> a org:Organization ;
+    rdfs:label 'University of Pecs'^^xsd:string ;
+    schema:name 'University of Pecs'^^xsd:string ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:abbreviation 'PTE'^^xsd:string@None ; 
+    schema:url <http://pte.hu> ; 
+    schema:mainEntityOfPage <https://pte.hu> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_P%25C3%25A9cs> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100009594> ;
+    schema:sameAs <https://grid.ac/institutions/grid.9679.1> ;
+    schema:sameAs <http://isni.org/isni/0000000106639479> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03n8qgc13> ;
+        rdfs:label 'Bács-Kiskun Megyei Csillagvizsgáló Intézet'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.23083 46.0725)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Pécs" ;
+            schema:addressCountry "HU" ;
+            schema:addressRegion "Baranya" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Hungary" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3046526/> ;
+    ] ; 
+    .

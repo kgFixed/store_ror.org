@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04he1c034> a org:Organization ;
+    rdfs:label 'Office of Carbon Management'^^xsd:string ;
+    schema:name 'Office of Carbon Management'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2023-12-07"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:alternativeName 'Office of Fossil Energy and Carbon Management Office of Carbon Management'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Department of Energy Office of Fossil Energy and Carbon Management Office of Carbon Management'^^xsd:string@en ; 
+    org:alternativeName 'United States Department of Energy Office of Fossil Energy and Carbon Management Office of Carbon Management'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.energy.gov/fecm/office-carbon-management> ;
+    schema:sameAs <https://api.crossref.org/funders/100020315> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vt80e72> ;
+        rdfs:label 'Office of Resource Sustainability'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/037897814> ;
+        rdfs:label 'Office of Fossil Energy and Carbon Management'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Washington" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "District of Columbia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4140963/> ;
+    ] ; 
+    .

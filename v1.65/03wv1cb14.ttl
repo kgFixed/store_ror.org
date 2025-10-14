@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03wv1cb14> a org:Organization ;
+    rdfs:label 'Ministry of Education and Research'^^xsd:string ;
+    schema:name 'Ministry of Education and Research'^^xsd:string ;
+    schema:foundingDate "1814"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:alternativeName 'Royal Norwegian Ministry of Education and Research'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.regjeringen.no/en/dep/kd/id586/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Education_and_Research_(Norway)> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100010701> ;
+    schema:sameAs <https://grid.ac/institutions/grid.425872.e> ;
+    schema:sameAs <http://isni.org/isni/0000000404478239> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05b5whm83> ;
+        rdfs:label 'Norwegian Agency for Quality Assurance in Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01pznaa94> ;
+        rdfs:label 'Norwegian Institute of International Affairs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00epmv149> ;
+        rdfs:label 'The Research Council of Norway'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05a4cm665> ;
+        rdfs:label 'Government of Norway'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.74609 59.91273)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Oslo" ;
+            schema:addressCountry "NO" ;
+            schema:addressRegion "Oslo" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Norway" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3143244/> ;
+    ] ; 
+    .

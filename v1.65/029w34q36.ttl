@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/029w34q36> a org:Organization ;
+    rdfs:label 'Ningxia Seismological Bureau'^^xsd:string ;
+    schema:name 'Ningxia Seismological Bureau'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:alternativeName '宁夏地震局'^^xsd:string@zh ; 
+    schema:url <http://nxdzj.gov.cn> ; 
+    schema:mainEntityOfPage <https://www.nxdzj.gov.cn> ;
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E5%25AE%2581%25E5%25A4%258F%25E5%259B%259E%25E6%2597%258F%25E8%2587%25AA%25E6%25B2%25BB%25E5%258C%25BA%25E5%259C%25B0%25E9%259C%2587%25E5%25B1%2580> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.488166.5> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/045sza929> ;
+        rdfs:label 'China Earthquake Administration'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.27306 38.46806)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Yinchuan" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Ningxia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1786657/> ;
+    ] ; 
+    .

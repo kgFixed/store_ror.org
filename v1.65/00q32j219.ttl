@@ -1,0 +1,204 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00q32j219> a org:Organization ;
+    rdfs:label 'Boehringer Ingelheim (Germany)'^^xsd:string ;
+    schema:name 'Boehringer Ingelheim (Germany)'^^xsd:string ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.boehringer-ingelheim.de/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Boehringer_Ingelheim> ; 
+    schema:sameAs <https://api.crossref.org/funders/100008349> ;
+    schema:sameAs <https://grid.ac/institutions/grid.420061.1> ;
+    schema:sameAs <http://isni.org/isni/0000000121717500> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05sdkg034> ;
+        rdfs:label 'Boehringer Ingelheim (Argentina)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ww0qy02> ;
+        rdfs:label 'Boehringer Ingelheim (Australia)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026vtvm28> ;
+        rdfs:label 'Boehringer Ingelheim (Austria)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0324red69> ;
+        rdfs:label 'Boehringer Ingelheim (Belgium)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01hr74d22> ;
+        rdfs:label 'Boehringer Ingelheim (Brazil)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/031sxg258> ;
+        rdfs:label 'Boehringer Ingelheim (Canada)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hczvf86> ;
+        rdfs:label 'Boehringer Ingelheim (China)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03y9g2t13> ;
+        rdfs:label 'Boehringer Ingelheim (Denmark)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/035hns865> ;
+        rdfs:label 'Boehringer Ingelheim (Egypt)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015k6vv14> ;
+        rdfs:label 'Boehringer Ingelheim (Finland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03gdpyq31> ;
+        rdfs:label 'Boehringer Ingelheim (France)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xyf9430> ;
+        rdfs:label 'Boehringer Ingelheim (India)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00px03f62> ;
+        rdfs:label 'Boehringer Ingelheim (Italy)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02r1d7x68> ;
+        rdfs:label 'Boehringer Ingelheim (Japan)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01m3ea752> ;
+        rdfs:label 'Boehringer Ingelheim (Latvia)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0198yrw13> ;
+        rdfs:label 'Boehringer Ingelheim (Mexico)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fh1gw55> ;
+        rdfs:label 'Boehringer Ingelheim (Netherlands)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00emmzb12> ;
+        rdfs:label 'Boehringer Ingelheim (Norway)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03skc1w23> ;
+        rdfs:label 'Boehringer Ingelheim (Philippines)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04h30bj32> ;
+        rdfs:label 'Boehringer Ingelheim (Portugal)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e9p3c51> ;
+        rdfs:label 'Boehringer Ingelheim (South Korea)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05s0s0h39> ;
+        rdfs:label 'Boehringer Ingelheim (Spain)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03pnxfz55> ;
+        rdfs:label 'Boehringer Ingelheim (Sweden)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rtpt551> ;
+        rdfs:label 'Boehringer Ingelheim (Switzerland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fsz9s67> ;
+        rdfs:label 'Boehringer Ingelheim (Taiwan)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01jnnpe14> ;
+        rdfs:label 'Boehringer Ingelheim (United Kingdom)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05kffp613> ;
+        rdfs:label 'Boehringer Ingelheim (United States)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.05883 49.97078)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ingelheim" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Rheinland-Pfalz" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2896020/> ;
+    ] ; 
+    .

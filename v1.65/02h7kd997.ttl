@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02h7kd997> a org:Organization ;
+    rdfs:label 'U.S. Army Command, Control, Communications, Computers, Cyber, Intelligence, Surveillance and Reconnaissance Center'^^xsd:string ;
+    schema:name 'U.S. Army Command, Control, Communications, Computers, Cyber, Intelligence, Surveillance and Reconnaissance Center'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2023-11-08"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:alternativeName 'C5ISR Center'^^xsd:string@en ; 
+    org:alternativeName 'Communications-Electronics RD&E Center'^^xsd:string@en ; 
+    org:alternativeName 'DEVCOM C5ISR Center'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Army Combat Capabilities Development Command - Command, Control, Communications, Computers, Cyber, Intelligence, Surveillance and Reconnaissance Center'^^xsd:string@en ; 
+    org:alternativeName 'United States Army Command, Control, Communications, Computers, Cyber, Intelligence, Surveillance'^^xsd:string@en ; 
+    org:alternativeName 'United States Army Communications-Electronics Research, Development and Engineering Center'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://c5isrcenter.devcom.army.mil/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/United_States_Army_Command%252C_Control%252C_Communication%252C_Computers%252C_Cyber%252C_Intelligence%252C_Surveillance_and_Reconnaissance_Center> ; 
+    schema:sameAs <https://api.crossref.org/funders/100010188> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02rdkx920> ;
+        rdfs:label 'United States Army Combat Capabilities Development Command'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.13066 39.46686)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Aberdeen Proving Ground" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Maryland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/7257914/> ;
+    ] ; 
+    .

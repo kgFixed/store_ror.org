@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/041m6k425> a org:Organization ;
+    rdfs:label 'OCP Group (Morocco)'^^xsd:string ;
+    schema:name 'OCP Group (Morocco)'^^xsd:string ;
+    schema:foundingDate "1920"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:abbreviation 'OCP'^^xsd:string@None ; 
+    org:alternativeName 'Office Chérifien des Phosphates'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.ocpgroup.ma/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Office_Ch%25C3%25A9rifien_des_Phosphates> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100022668> ;
+    schema:sameAs <https://grid.ac/institutions/grid.460966.b> ;
+    schema:sameAs <http://isni.org/isni/0000000121553948> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011s40y19> ;
+        rdfs:label 'Fondation OCP'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-7.61138 33.58831)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Casablanca" ;
+            schema:addressCountry "MA" ;
+            schema:addressRegion "Casablanca-Settat" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Morocco" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2553604/> ;
+    ] ; 
+    .

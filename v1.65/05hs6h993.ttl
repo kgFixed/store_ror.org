@@ -1,0 +1,146 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05hs6h993> a org:Organization ;
+    rdfs:label 'Michigan State University'^^xsd:string ;
+    schema:name 'Michigan State University'^^xsd:string ;
+    schema:foundingDate "1855"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:abbreviation 'MSU'^^xsd:string@None ; 
+    schema:url <http://msu.edu> ; 
+    schema:mainEntityOfPage <https://msu.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Michigan_State_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/100007709> ;
+    schema:sameAs <https://grid.ac/institutions/grid.17088.36> ;
+    schema:sameAs <http://isni.org/isni/0000000121956501> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01cpcy908> ;
+        rdfs:label 'McLaren Regional Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015tnsz82> ;
+        rdfs:label 'Michigan Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00qerpb33> ;
+        rdfs:label 'National Superconducting Cyclotron Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vkce854> ;
+        rdfs:label 'Kellogg Biological Station Long Term Ecological Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03r4g9w46> ;
+        rdfs:label 'Facility for Rare Isotope Beams'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0599cab37> ;
+        rdfs:label 'Henry Ford Health + Michigan State University Health Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03964hc96> ;
+        rdfs:label 'Borgess Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/050qpjf10> ;
+        rdfs:label 'Botsford Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/032zc6m47> ;
+        rdfs:label 'Bronson Methodist Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05x643e19> ;
+        rdfs:label 'Corewell Health Butterworth Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03snrmr61> ;
+        rdfs:label 'Genesys Regional Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/034npj057> ;
+        rdfs:label 'Hurley Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01aj5dy09> ;
+        rdfs:label 'Marquette General Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/045zcth28> ;
+        rdfs:label 'McLaren Greater Lansing'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/005qzv038> ;
+        rdfs:label 'Munson Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/018dx8725> ;
+        rdfs:label 'Sparrow Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00qy68j92> ;
+        rdfs:label 'Corewell Health Blodgett Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.48387 42.73698)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "East Lansing" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Michigan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4991640/> ;
+    ] ; 
+    .

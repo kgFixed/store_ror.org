@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05a0ya142> a org:Organization ;
+    rdfs:label 'Broad Institute'^^xsd:string ;
+    schema:name 'Broad Institute'^^xsd:string ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-05"^^xsd:date ;
+    org:alternativeName 'Broad Institute of MIT and Harvard'^^xsd:string@en ; 
+    org:alternativeName 'Eli and Edythe L. Broad Institute of MIT and Harvard'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.broadinstitute.org/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Broad_Institute> ; 
+    schema:sameAs <https://api.crossref.org/funders/100013114> ;
+    schema:sameAs <https://grid.ac/institutions/grid.66859.34> ;
+    schema:sameAs <http://isni.org/isni/0000000405461623> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01tm9b530> ;
+        rdfs:label 'Stanley Center for Psychiatric Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04drvxt59> ;
+        rdfs:label 'Beth Israel Deaconess Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00dvg7y05> ;
+        rdfs:label 'Boston Children\'s Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04b6nzv94> ;
+        rdfs:label 'Brigham and Women\'s Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03vek6s52> ;
+        rdfs:label 'Harvard University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/002pd6e78> ;
+        rdfs:label 'Massachusetts General Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/042nb2s44> ;
+        rdfs:label 'Massachusetts Institute of Technology'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.10561 42.3751)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cambridge" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Massachusetts" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4931972/> ;
+    ] ; 
+    .
