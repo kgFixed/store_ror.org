@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/002wyas44> a org:Organization ;
+    rdfs:label 'National Cyber and Information Security Agency'^^xsd:string ;
+    schema:name 'National Cyber and Information Security Agency'^^xsd:string ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Government'^^xsd:string ; 
+    org:abbreviation 'NÚKIB'^^xsd:string ;
+    org:alternativeName 'National Cyber and Information Security Agency of the Czech Republic'^^xsd:string ;
+    schema:url <https://www.nukib.cz> ; 
+    owl:sameAs <https://cs.wikipedia.org/wiki/N%25C3%25A1rodn%25C3%25AD_%25C3%25BA%25C5%2599ad_pro_kybernetickou_a_informa%25C4%258Dn%25C3%25AD_bezpe%25C4%258Dnost> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(16.60796 49.19522)"^^geo:wktLiteral ;
+            schema:addressLocality 'Brno'^^xsd:string ;
+            schema:addressCountry "CZ" ;
+            owl:sameAs <http://sws.geonames.org/3078610/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000468043891> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q34440567> ;
+    .

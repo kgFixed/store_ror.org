@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/00p9rpe63> a org:Organization ;
+    rdfs:label 'Showa University Northern Yokohama Hospital'^^xsd:string ;
+    schema:name 'Showa University Northern Yokohama Hospital'^^xsd:string ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Healthcare'^^xsd:string ; 
+    org:alternativeName 'しょうわだいがくよこはましほくぶびょういん'^^xsd:string ;
+    schema:url <https://www.showa-u.ac.jp/SUHY/> ; 
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E6%2598%25AD%25E5%2592%258C%25E5%25A4%25A7%25E5%25AD%25A6%25E6%25A8%25AA%25E6%25B5%259C%25E5%25B8%2582%25E5%258C%2597%25E9%2583%25A8%25E7%2597%2585%25E9%2599%25A2> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(139.65 35.43333)"^^geo:wktLiteral ;
+            schema:addressLocality 'Yokohama'^^xsd:string ;
+            schema:addressCountry "JP" ;
+            owl:sameAs <http://sws.geonames.org/1848354/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/000000041768957X> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11514047> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .
