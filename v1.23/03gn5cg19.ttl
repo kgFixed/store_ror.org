@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/03gn5cg19> a org:Organization ;
+    rdfs:label 'Kahramanmaraş Sütçü İmam University'^^xsd:string ;
+    schema:name 'Kahramanmaraş Sütçü İmam University'^^xsd:string ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'KSU'^^xsd:string ;
+    schema:url <http://www.ksu.edu.tr/> ; 
+    owl:sameAs <http://en.wikipedia.org/wiki/Kahramanmara%25C5%259F_S%25C3%25BCt%25C3%25A7%25C3%25BCimam_University_(KSU)> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(36.92641 37.5847)"^^geo:wktLiteral ;
+            schema:addressLocality 'Kahramanmaraş'^^xsd:string ;
+            schema:addressCountry "TR" ;
+            owl:sameAs <http://sws.geonames.org/310859/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000405742441> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q3674402> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .

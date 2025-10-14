@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/01kknrc90> a org:Organization ;
+    rdfs:label 'University of North Sumatra'^^xsd:string ;
+    schema:name 'University of North Sumatra'^^xsd:string ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'USU'^^xsd:string ;
+    schema:url <http://usu.ac.id/id/> ; 
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_North_Sumatra> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(98.66667 3.58333)"^^geo:wktLiteral ;
+            schema:addressLocality 'Medan'^^xsd:string ;
+            schema:addressCountry "ID" ;
+            owl:sameAs <http://sws.geonames.org/1214520/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000106574011> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q4200341> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .

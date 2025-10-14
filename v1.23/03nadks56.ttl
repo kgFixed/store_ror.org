@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/03nadks56> a org:Organization ;
+    rdfs:label 'Riga Stradiņš University'^^xsd:string ;
+    schema:name 'Riga Stradiņš University'^^xsd:string ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'RSU'^^xsd:string ;
+    schema:url <http://www.rsu.lv/eng/> ; 
+    owl:sameAs <http://en.wikipedia.org/wiki/Riga_Stradi%25C5%2586%25C5%25A1_University> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(24.10589 56.946)"^^geo:wktLiteral ;
+            schema:addressLocality 'Riga'^^xsd:string ;
+            schema:addressCountry "LV" ;
+            owl:sameAs <http://sws.geonames.org/456172/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000121739398> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2007643> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .
