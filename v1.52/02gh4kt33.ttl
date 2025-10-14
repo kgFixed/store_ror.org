@@ -1,0 +1,151 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02gh4kt33> a org:Organization ;
+    rdfs:label 'National Institute for Astrophysics'^^xsd:string ;
+    schema:name 'National Institute for Astrophysics'^^xsd:string ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-09-16"^^xsd:date ;
+    org:abbreviation 'INAF'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.inaf.it/en> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/INAF> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005184> ;
+    schema:sameAs <https://grid.ac/institutions/grid.4293.c> ;
+    schema:sameAs <http://isni.org/isni/0000000417928585> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fbze943> ;
+        rdfs:label 'Arcetri Astrophysical Observatory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02fwden70> ;
+        rdfs:label 'Astronomical Observatory of Capodimonte'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02hnp4676> ;
+        rdfs:label 'Astronomical Observatory of Rome'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kx1hs47> ;
+        rdfs:label 'Brera Astronomical Observatory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02ttb5s67> ;
+        rdfs:label 'Collurania Teramo Observatory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0141xw169> ;
+        rdfs:label 'Institute for Space Astrophysics and Planetology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01jgp6d54> ;
+        rdfs:label 'Istituto di Astrofisica Spaziale e Fisica Cosmica di Milano'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qafph14> ;
+        rdfs:label 'Istituto di Astrofisica Spaziale e Fisica cosmica di Palermo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029st3z03> ;
+        rdfs:label 'Istituto di Radioastronomia di Bologna'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02my7ff12> ;
+        rdfs:label 'Osservatorio Astrofisico di Catania'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00yrf4e35> ;
+        rdfs:label 'Osservatorio Astrofisico di Torino'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045dz8764> ;
+        rdfs:label 'Osservatorio Astronomico di Cagliari'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04z3y3f62> ;
+        rdfs:label 'Osservatorio Astronomico di Padova'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02txwfx92> ;
+        rdfs:label 'Osservatorio Astronomico di Palermo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054y9c036> ;
+        rdfs:label 'Telescopio Nazionale Galileo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00c9gth79> ;
+        rdfs:label 'Trieste Astronomical Observatory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gqsp710> ;
+        rdfs:label 'Osservatorio di Astrofisica e Scienza dello Spazio'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02w0r2764> ;
+        rdfs:label 'MAGIC Telescopes'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.51133 41.89193)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rome" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3169070/> ;
+    ] ; 
+    .

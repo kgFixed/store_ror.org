@@ -1,0 +1,313 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02w0r2764> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2024-06-19"^^xsd:date ;
+    dct:modified "2024-09-16"^^xsd:date ;
+    org:abbreviation 'MAGIC'^^xsd:string@en ; 
+    org:alternativeName 'MAGIC Collaboration'^^xsd:string@en ; 
+    org:alternativeName 'MAGIC Telescope'^^xsd:string@en ; 
+    org:alternativeName 'MAGIC Telescopes Collaboration'^^xsd:string@en ; 
+    org:alternativeName 'MAGIC Teleskope'^^xsd:string@de ; 
+    schema:mainEntityOfPage <https://magic.mpp.mpg.de> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/MAGIC_%2528telescope%2529> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0079jjr10> ;
+        rdfs:label 'Max Planck Institute for Physics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sdrjx85> ;
+        rdfs:label 'Institute for High Energy Physics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03zga2b32> ;
+        rdfs:label 'University of Bergen'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02wnmk332> ;
+        rdfs:label 'Centro Brasileiro de Pesquisas Físicas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05xx77y52> ;
+        rdfs:label 'Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04e90ca47> ;
+        rdfs:label 'Faculty of Electrical Engineering and Computing in Zagreb'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02mw21745> ;
+        rdfs:label 'Rudjer Boskovic Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05sw4wc49> ;
+        rdfs:label 'University of Osijek'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05r8dqr10> ;
+        rdfs:label 'University of Rijeka'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00m31ft63> ;
+        rdfs:label 'University of Split'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01js2sh04> ;
+        rdfs:label 'Deutsches Elektronen-Synchrotron DESY'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01k97gp34> ;
+        rdfs:label 'TU Dortmund University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05a28rw58> ;
+        rdfs:label 'ETH Zurich'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03yj89h83> ;
+        rdfs:label 'University of Oulu'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05vghhr25> ;
+        rdfs:label 'University of Turku'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01swzsf04> ;
+        rdfs:label 'University of Geneva'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04ka0vh05> ;
+        rdfs:label 'Instituto de Astrofísica de Andalucía'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03cmntr54> ;
+        rdfs:label 'Instituto de Astrofísica de Canarias'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02gh4kt33> ;
+        rdfs:label 'National Institute for Astrophysics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/022hq6c49> ;
+        rdfs:label 'INFN Sezione di Bari'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02pq29p90> ;
+        rdfs:label 'INFN Sezione di Catania'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/015kcdd40> ;
+        rdfs:label 'INFN Sezione di Napoli'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05478fx36> ;
+        rdfs:label 'INFN Sezione di Perugia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/025rrx658> ;
+        rdfs:label 'INFN Sezione di Roma II'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01vj6ck58> ;
+        rdfs:label 'INFN Sezione di Torino'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01hjzeq58> ;
+        rdfs:label 'Chiba University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03t78wx29> ;
+        rdfs:label 'Hiroshima University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/008td3p62> ;
+        rdfs:label 'Institute for Cosmic Ray Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/059b5pb30> ;
+        rdfs:label 'Konan University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04chrp450> ;
+        rdfs:label 'Nagoya University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sjwvz98> ;
+        rdfs:label 'RIKEN'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01p7qe739> ;
+        rdfs:label 'Tokai University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00xy44n04> ;
+        rdfs:label 'Yamagata University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05cq64r17> ;
+        rdfs:label 'University of Łódź'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02p0gd045> ;
+        rdfs:label 'Universidad Complutense de Madrid'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00z34yn88> ;
+        rdfs:label 'INFN Sezione di Padova'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05symbg58> ;
+        rdfs:label 'INFN Sezione di Pisa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0491yz035> ;
+        rdfs:label 'Saha Institute of Nuclear Physics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0276rjc88> ;
+        rdfs:label 'Institute for Nuclear Research and Nuclear Energy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/052g8jq94> ;
+        rdfs:label 'Universitat Autònoma de Barcelona'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/021018s57> ;
+        rdfs:label 'Universitat de Barcelona'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05j3snm48> ;
+        rdfs:label 'INFN Sezione di Trieste'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00fbnyb24> ;
+        rdfs:label 'University of Würzburg'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03r97y618> ;
+        rdfs:label 'International Center for Relativistic Astrophysics Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00ad27c73> ;
+        rdfs:label 'A. Alikhanyan National Laboratory'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-17.93333 28.81667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Garafía" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2517346/> ;
+    ] ; 
+    .

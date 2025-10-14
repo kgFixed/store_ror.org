@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/040jq3y94> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2024-09-14"^^xsd:date ;
+    dct:modified "2024-09-16"^^xsd:date ;
+    org:abbreviation 'SRI SB&LG'^^xsd:string@en ; 
+    org:alternativeName 'Scientific Research Institute of State Building and Local Government of the National Academy of Law Sciences of Ukraine'^^xsd:string@en ; 
+    org:alternativeName 'НДІ ДБМС НАПрНУ'^^xsd:string@uk ; 
+    org:alternativeName 'Науково-дослідний інститут державного будівництва та місцевого самоврядування НАПрН України'^^xsd:string@uk ; 
+    schema:url <http://dbms.institute> ; 
+    schema:mainEntityOfPage <https://dbms.institute> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%259D%25D0%25B0%25D1%2583%25D0%25BA%25D0%25BE%25D0%25B2%25D0%25BE-%25D0%25B4%25D0%25BE%25D1%2581%25D0%25BB%25D1%2596%25D0%25B4%25D0%25BD%25D0%25B8%25D0%25B9_%25D1%2596%25D0%25BD%25D1%2581%25D1%2582%25D0%25B8%25D1%2582%25D1%2583%25D1%2582_%25D0%25B4%25D0%25B5%25D1%2580%25D0%25B6%25D0%25B0%25D0%25B2%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE_%25D0%25B1%25D1%2583%25D0%25B4%25D1%2596%25D0%25B2%25D0%25BD%25D0%25B8%25D1%2586%25D1%2582%25D0%25B2%25D0%25B0_%25D1%2582%25D0%25B0_%25D0%25BC%25D1%2596%25D1%2581%25D1%2586%25D0%25B5%25D0%25B2%25D0%25BE%25D0%25B3%25D0%25BE_%25D1%2581%25D0%25B0%25D0%25BC%25D0%25BE%25D0%25B2%25D1%2580%25D1%258F%25D0%25B4%25D1%2583%25D0%25B2%25D0%25B0%25D0%25BD%25D0%25BD%25D1%258F> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02wnejx52> ;
+        rdfs:label 'National Academy of Legal Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.25272 49.98081)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kharkiv" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/706483/> ;
+    ] ; 
+    .

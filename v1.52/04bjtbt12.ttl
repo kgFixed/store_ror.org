@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04bjtbt12> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-09-14"^^xsd:date ;
+    dct:modified "2024-09-16"^^xsd:date ;
+    org:abbreviation 'ITSL'^^xsd:string@es ; 
+    org:alternativeName 'ITSLerdo'^^xsd:string@es ; 
+    org:abbreviation 'TECNM ITSL'^^xsd:string@es ; 
+    org:alternativeName 'Tec Lerdo'^^xsd:string@es ; 
+    org:alternativeName 'TecNM - Campus Lerdo'^^xsd:string@es ; 
+    schema:url <http://lerdo.tecnm.mx> ; 
+    schema:mainEntityOfPage <https://www.lerdo.tecnm.mx> ;
+    schema:sameAs <http://isni.org/isni/0000000403690107> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00davry38> ;
+        rdfs:label 'Tecnológico Nacional de México'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-103.52456 25.53718)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lerdo" ;
+            schema:addressCountry "MX" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Mexico" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4013706/> ;
+    ] ; 
+    .

@@ -1,0 +1,153 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04wez5e68> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-09-16"^^xsd:date ;
+    org:alternativeName 'University of Paris VIII'^^xsd:string@en ; 
+    org:alternativeName 'Université Paris 8 Vincennes - Saint-Denis'^^xsd:string@fr ; 
+    org:alternativeName 'Université Paris-VIII-Vincennes-Saint-Denis'^^xsd:string@fr ; 
+    org:alternativeName 'Université de Paris-VIII'^^xsd:string@fr ; 
+    schema:url <http://univ-paris8.fr> ; 
+    schema:mainEntityOfPage <https://www.univ-paris8.fr> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Paris_8_University> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.15878.33> ;
+    schema:sameAs <http://isni.org/isni/0000000121107200> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jb47e97> ;
+        rdfs:label 'Centre de recherches sociologiques et politiques de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03p76m698> ;
+        rdfs:label 'Institutions et Dynamiques Historiques de l\'Économie et de la Société'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/018nzqy79> ;
+        rdfs:label 'Laboratoire Analyse, Géométrie et Applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02k8f5n40> ;
+        rdfs:label 'Laboratoire Cognitions Humaine et Artificielle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045r56524> ;
+        rdfs:label 'Laboratoire Dynamiques Sociales et Recomposition des Espaces'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01dqmj897> ;
+        rdfs:label 'Laboratoire Architecture Ville Urbanisme Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00nrven85> ;
+        rdfs:label 'Structures Formelles du Langage'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ej53908> ;
+        rdfs:label 'Typologie et Universaux Linguistiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0014xh077> ;
+        rdfs:label 'Centre d’histoire des sociétés Médiévales et Modernes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00mgd1d10> ;
+        rdfs:label 'Laboratoire Paragraphe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05xrx2377> ;
+        rdfs:label 'Laboratoire Parisien de Psychologie Sociale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/051n2s460> ;
+        rdfs:label 'Fonctionnement et dysfonctionnement cognitifs: les âges de la vie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005w2mm89> ;
+        rdfs:label 'Laboratoire d\'études de genre et de sexualité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0127n6542> ;
+        rdfs:label 'Laboratoire Interuniversitaire Expérience, Ressources culturelles, Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0389fzc60> ;
+        rdfs:label 'Centre interdisciplinaire de recherche "Culture, éducation, formation, travail"'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05079x435> ;
+        rdfs:label 'Maison des Sciences de l\'Homme Paris Nord'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04m69ya83> ;
+        rdfs:label 'Théâtre antique : textes, histoire et réception'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00cd48p72> ;
+        rdfs:label 'Campus Condorcet'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

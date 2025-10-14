@@ -1,0 +1,705 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01kzn7k21> a org:Organization ;
+    rdfs:label 'Islamic Azad University, Tehran'^^xsd:string ;
+    schema:name 'Islamic Azad University, Tehran'^^xsd:string ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-09-16"^^xsd:date ;
+    org:alternativeName 'Azad University'^^xsd:string@en ; 
+    org:alternativeName 'Dāneshgāh-e Āzād-e Eslāmi'^^xsd:string@None ; 
+    org:abbreviation 'IAU'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.iau.ac.ir/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Islamic_Azad_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002660> ;
+    schema:sameAs <https://grid.ac/institutions/grid.411463.5> ;
+    schema:sameAs <http://isni.org/isni/0000000107062472> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/058np3c43> ;
+        rdfs:label 'Islamic Azad University Ardabil'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01q7qty61> ;
+        rdfs:label 'Islamic Azad University Bandar Abbas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0265k0q35> ;
+        rdfs:label 'Islamic Azad University Boroujerd Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/051t3nd40> ;
+        rdfs:label 'Islamic Azad University Bostanabad'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03a11m818> ;
+        rdfs:label 'Islamic Azad University Central Tehran Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bzz5b22> ;
+        rdfs:label 'Islamic Azad University Dehaghan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05m5wey82> ;
+        rdfs:label 'Islamic Azad University Dental Branch of Tehran'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/049g0t365> ;
+        rdfs:label 'Islamic Azad University Dolatabad'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xbtjm93> ;
+        rdfs:label 'Islamic Azad University Fasa Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05r6qy592> ;
+        rdfs:label 'Islamic Azad University Ilam Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04zdgqb89> ;
+        rdfs:label 'Islamic Azad University Islamshahr Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/057f4mk30> ;
+        rdfs:label 'Islamic Azad University Janah'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0095a7z52> ;
+        rdfs:label 'Islamic Azad University Kashmar Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02ytn4d59> ;
+        rdfs:label 'Islamic Azad University Kazeron'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ywz9252> ;
+        rdfs:label 'Islamic Azad University Kerman'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01y361889> ;
+        rdfs:label 'Islamic Azad University Mahshahr'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04q7e9e16> ;
+        rdfs:label 'Islamic Azad University Maybod'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00eaebe27> ;
+        rdfs:label 'Islamic Azad University Medical Branch of Tehran'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00z0c0y28> ;
+        rdfs:label 'Islamic Azad University Mehriz'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01a3xr262> ;
+        rdfs:label 'Islamic Azad University Mobarakeh'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00sb1nr29> ;
+        rdfs:label 'Islamic Azad University North Tehran Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04sssnv16> ;
+        rdfs:label 'Islamic Azad University Pharmaceutical Sciences Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04tc04306> ;
+        rdfs:label 'Islamic Azad University Quchan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0151gh112> ;
+        rdfs:label 'Islamic Azad University Rasht Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00dzmf738> ;
+        rdfs:label 'Islamic Azad University Roudehen Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048vche49> ;
+        rdfs:label 'Islamic Azad University Sanandaj Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0032wgp28> ;
+        rdfs:label 'Islamic Azad University Sari Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053s4kp50> ;
+        rdfs:label 'Islamic Azad University Saveh'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01abrxp85> ;
+        rdfs:label 'Islamic Azad University Semnan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03b49d241> ;
+        rdfs:label 'Islamic Azad University Shabestar'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04yrwqa21> ;
+        rdfs:label 'Islamic Azad University Shahr-e-Rey'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wenm763> ;
+        rdfs:label 'Islamic Azad University Shirvan Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xc21a77> ;
+        rdfs:label 'Islamic Azad University South Tehran Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/042heys49> ;
+        rdfs:label 'Islamic Azad University Tonekabon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/041hvc055> ;
+        rdfs:label 'Islamic Azad University Yasuj'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022sv5w75> ;
+        rdfs:label 'Islamic Azad University of Ahar'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fbv2v73> ;
+        rdfs:label 'Islamic Azad University of Arsanjan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02arrmv90> ;
+        rdfs:label 'Islamic Azad University of Ayatollah Amoli'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02p42am41> ;
+        rdfs:label 'Islamic Azad University of Birjand'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cytaa95> ;
+        rdfs:label 'Islamic Azad University of Chalous'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0516eyx49> ;
+        rdfs:label 'Islamic Azad University of Damavand'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01e0hb698> ;
+        rdfs:label 'Islamic Azad University of Falavarjan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jywn868> ;
+        rdfs:label 'Islamic Azad University of Farahan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00nt0xf41> ;
+        rdfs:label 'Islamic Azad University of Gachsaran'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025p0rk11> ;
+        rdfs:label 'Islamic Azad University of Garmsar'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02865ms07> ;
+        rdfs:label 'Islamic Azad University of Gorgan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007zpd132> ;
+        rdfs:label 'Islamic Azad University of Hamedan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04q36bj19> ;
+        rdfs:label 'Islamic Azad University of Kashan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05sehyt57> ;
+        rdfs:label 'Islamic Azad University of Kermanshah'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qskrs45> ;
+        rdfs:label 'Islamic Azad University of Khomeynishahr'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015sncd69> ;
+        rdfs:label 'Islamic Azad University of Mahabad'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jd71216> ;
+        rdfs:label 'Islamic Azad University of Majlesi'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044jx8018> ;
+        rdfs:label 'Islamic Azad University of Malard'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rfmre55> ;
+        rdfs:label 'Islamic Azad University of Marand'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015j7c446> ;
+        rdfs:label 'Islamic Azad University of Najafabad'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029rt7q74> ;
+        rdfs:label 'Islamic Azad University of Nishapur'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mgtjj52> ;
+        rdfs:label 'Islamic Azad University of Parand'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043zh9f19> ;
+        rdfs:label 'Islamic Azad University of Sabzevar'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02tbw3b35> ;
+        rdfs:label 'Islamic Azad University of Shahrekord'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/006hvpn82> ;
+        rdfs:label 'Islamic Azad University of Shahreza'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03xbchh53> ;
+        rdfs:label 'Islamic Azad University of Shiraz'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04hnf9a51> ;
+        rdfs:label 'Islamic Azad University of Tabriz'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bcg1976> ;
+        rdfs:label 'Islamic Azad University of Tafresh'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05km8ys10> ;
+        rdfs:label 'Islamic Azad University of Urmia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01px8ca57> ;
+        rdfs:label 'Islamic Azad University of Varamin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bq60y92> ;
+        rdfs:label 'Islamic Azad University of Zanjan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01kfq1x58> ;
+        rdfs:label 'Islamic Azad University, Abhar Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04vcs0j60> ;
+        rdfs:label 'Islamic Azad University, Ahvaz Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02558wk32> ;
+        rdfs:label 'Islamic Azad University, Arak'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00y16bh55> ;
+        rdfs:label 'Islamic Azad University, Ashtian Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05343ec73> ;
+        rdfs:label 'Islamic Azad University, Azadshahr Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bnp9h65> ;
+        rdfs:label 'Islamic Azad University, Bandar Anzali Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wapyh41> ;
+        rdfs:label 'Islamic Azad University, Bojnourd Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056v0a906> ;
+        rdfs:label 'Islamic Azad University, Bonab Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ejh1102> ;
+        rdfs:label 'Islamic Azad University, Boukan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hhrzm12> ;
+        rdfs:label 'Islamic Azad University, Bushehr Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05a2cfm07> ;
+        rdfs:label 'Islamic Azad University, Damghan Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05d1wpf45> ;
+        rdfs:label 'Islamic Azad University, Dezful Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00crw9046> ;
+        rdfs:label 'Islamic Azad University, Estahban Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025eayv75> ;
+        rdfs:label 'Islamic Azad University, Firoozkooh Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00veca956> ;
+        rdfs:label 'Islamic Azad University, Firuzabad Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/039zhhm92> ;
+        rdfs:label 'Islamic Azad University, Isfahan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01v0kyj08> ;
+        rdfs:label 'Islamic Azad University, Jahrom Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02k34sh32> ;
+        rdfs:label 'Islamic Azad University, Jiroft Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01y4xm534> ;
+        rdfs:label 'Islamic Azad University, Karaj'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03aa31r16> ;
+        rdfs:label 'Islamic Azad University, Khorramabad Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038bemd25> ;
+        rdfs:label 'Islamic Azad University, Khoy Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01hdcfr51> ;
+        rdfs:label 'Islamic Azad University, Komijan Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03dhqyc75> ;
+        rdfs:label 'Islamic Azad University, Lahijan Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047hrmf08> ;
+        rdfs:label 'Islamic Azad University, Larestan Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03f84d710> ;
+        rdfs:label 'Islamic Azad University, Malayer Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00bvysh61> ;
+        rdfs:label 'Islamic Azad University, Mashhad'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05m905s87> ;
+        rdfs:label 'Islamic Azad University, Masjed Soleyman'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034xs3n22> ;
+        rdfs:label 'Islamic Azad University, Naragh Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032syc365> ;
+        rdfs:label 'Islamic Azad University, Omidieh Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03187yj51> ;
+        rdfs:label 'Islamic Azad University, Science and Research Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04t50yw64> ;
+        rdfs:label 'Islamic Azad University, Shahinshahr Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022ca9x91> ;
+        rdfs:label 'Islamic Azad University, Shahr-e-Qods Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00j1sp553> ;
+        rdfs:label 'Islamic Azad University, Shahrood'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04w2yhr49> ;
+        rdfs:label 'Islamic Azad University, Shoushtar Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03nsj9897> ;
+        rdfs:label 'Islamic Azad University, Sirjan Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rxa1r38> ;
+        rdfs:label 'Islamic Azad University, UAE Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04mwvcn50> ;
+        rdfs:label 'Islamic Azad University, Yazd'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01am3pw68> ;
+        rdfs:label 'Islamic Azad University, Zahedan Branch'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048gqac97> ;
+        rdfs:label 'Izeh Islamic Azad University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03y0dv989> ;
+        rdfs:label 'Qaemshahr Islamic Azad University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023kjn321> ;
+        rdfs:label 'Qazvin Islamic Azad University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0283g3v77> ;
+        rdfs:label 'Qom Islamic Azad University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05mtgrz63> ;
+        rdfs:label 'Takestan Islamic Azad University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02c1xev33> ;
+        rdfs:label 'Islamic Azad University, Abadan'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(51.42151 35.69439)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tehran" ;
+            schema:addressCountry "IR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Iran" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/112931/> ;
+    ] ; 
+    .
