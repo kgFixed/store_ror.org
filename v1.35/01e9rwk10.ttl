@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/01e9rwk10> a org:Organization ;
+    rdfs:label 'Penitentiary Academy of Ukraine'^^xsd:string ;
+    schema:name 'Penitentiary Academy of Ukraine'^^xsd:string ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'PAU'^^xsd:string ;
+    org:alternativeName 'Academy of the State Penitentiary Service'^^xsd:string ;
+    schema:url <https://academysps.edu.ua> ; 
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2590%25D0%25BA%25D0%25B0%25D0%25B4%25D0%25B5%25D0%25BC%25D1%2596%25D1%258F_%25D0%2594%25D0%25B5%25D1%2580%25D0%25B6%25D0%25B0%25D0%25B2%25D0%25BD%25D0%25BE%25D1%2597_%25D0%25BF%25D0%25B5%25D0%25BD%25D1%2596%25D1%2582%25D0%25B5%25D0%25BD%25D1%2586%25D1%2596%25D0%25B0%25D1%2580%25D0%25BD%25D0%25BE%25D1%2597_%25D1%2581%25D0%25BB%25D1%2583%25D0%25B6%25D0%25B1%25D0%25B8_%25D0%25A3%25D0%25BA%25D1%2580%25D0%25B0%25D1%2597%25D0%25BD%25D0%25B8> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(31.28487 51.50551)"^^geo:wktLiteral ;
+            schema:addressLocality 'Chernihiv'^^xsd:string ;
+            schema:addressCountry "UA" ;
+            owl:sameAs <http://sws.geonames.org/710735/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q12170081> ;
+    .
