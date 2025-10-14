@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01s3fs709> a org:Organization ;
+    rdfs:label 'Institut Agro Rennes-Angers'^^xsd:string ;
+    schema:name 'Institut Agro Rennes-Angers'^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-05-02"^^xsd:date ;
+    org:alternativeName 'Agrocampus Ouest'^^xsd:string@None ; 
+    org:alternativeName 'Institut supérieur des sciences agronomiques, agroalimentaires, horticoles et du paysage'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.institut-agro-rennes-angers.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Agrocampus_Ouest> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.424765.6> ;
+    schema:sameAs <http://isni.org/isni/0000000121876317> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038kxsm48> ;
+        rdfs:label 'Institut de Génétique, Environnement et Protection des Plantes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05y76vp22> ;
+        rdfs:label 'Institut de recherche mathématique de Rennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00mg8nf58> ;
+        rdfs:label 'Physiology, Environment, and Genetics for the Animal and Livestock Systems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03whgj090> ;
+        rdfs:label 'Science and Technology of Milk and Eggs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k4s1p46> ;
+        rdfs:label 'Soil Agro and Hydrosystems Spatialization'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05deqk823> ;
+        rdfs:label 'Laboratoire d\'Etude des Interactions entre Sol-Agrosystème-Hydrosystème'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ftatp57> ;
+        rdfs:label 'ITAP - Technologies et Méthodes pour les Agricultures de demain'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nfvkq89> ;
+        rdfs:label 'UMR QualiSud'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fa3ke77> ;
+        rdfs:label 'Structures et Marchés Agricoles, Ressources et Territoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04byv8g40> ;
+        rdfs:label 'Biodiversité, Agroécologie et Aménagement du Paysage'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rwjvc96> ;
+        rdfs:label 'Center for Environmental Economics - Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03237mt20> ;
+        rdfs:label 'Espaces et Sociétés'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.67429 48.11198)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rennes" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2983990/> ;
+    ] ; 
+    .

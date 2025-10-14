@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01e4byj08> a org:Organization ;
+    rdfs:label 'University of Wisconsin Carbone Cancer Center'^^xsd:string ;
+    schema:name 'University of Wisconsin Carbone Cancer Center'^^xsd:string ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-05-02"^^xsd:date ;
+    org:alternativeName 'Carbone Cancer Center'^^xsd:string@None ; 
+    org:alternativeName 'UW Carbone'^^xsd:string@None ; 
+    org:alternativeName 'UW Carbone Cancer Center'^^xsd:string@None ; 
+    org:alternativeName 'UW Carbone Comprehensive Cancer Center'^^xsd:string@None ; 
+    org:abbreviation 'UWCCC'^^xsd:string@None ; 
+    org:alternativeName 'UWCCC Madison'^^xsd:string@None ; 
+    org:alternativeName 'University of Wisconsin Cancer Center'^^xsd:string@None ; 
+    org:alternativeName 'University of Wisconsin Carbone Comprehensive Cancer Center'^^xsd:string@None ; 
+    org:alternativeName 'University of Wisconsin Comprehensive Cancer Center'^^xsd:string@None ; 
+    org:alternativeName 'University of Wisconsin-Madison Carbone Cancer Center'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://cancer.wisc.edu> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Wisconsin_Carbone_Cancer_Center> ; 
+    schema:sameAs <https://api.crossref.org/funders/100007923> ;
+    schema:sameAs <https://grid.ac/institutions/grid.412639.b> ;
+    schema:sameAs <http://isni.org/isni/0000000121911477> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02mqqhj42> ;
+        rdfs:label 'UW Health University Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-89.40123 43.07305)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Madison" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5261457/> ;
+    ] ; 
+    .

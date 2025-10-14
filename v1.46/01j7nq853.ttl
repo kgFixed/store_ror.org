@@ -1,0 +1,97 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01j7nq853> a org:Organization ;
+    rdfs:label 'University of Alaska Fairbanks'^^xsd:string ;
+    schema:name 'University of Alaska Fairbanks'^^xsd:string ;
+    schema:foundingDate "1917"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-05-02"^^xsd:date ;
+    org:abbreviation 'UAF'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.uaf.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Alaska_Fairbanks> ; 
+    schema:sameAs <https://api.crossref.org/funders/100006024> ;
+    schema:sameAs <https://grid.ac/institutions/grid.70738.3b> ;
+    schema:sameAs <http://isni.org/isni/000000041936981X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04j23ff69> ;
+        rdfs:label 'Alaska Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022nyme12> ;
+        rdfs:label 'Alaska Space Grant Program'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nysf027> ;
+        rdfs:label 'Bonanza Creek Long Term Ecological Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01csn4944> ;
+        rdfs:label 'Northern Gulf of Alaska Long Term Ecological Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yryhg49> ;
+        rdfs:label 'Geophysical Detection of Nuclear Proliferation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00y4zmh56> ;
+        rdfs:label 'Alaska Climate Adaptation Science Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01mtkd993> ;
+        rdfs:label 'University of Alaska System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/055a54548> ;
+        rdfs:label 'Beaufort Lagoon Ecosystems Long Term Ecological Research Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012prxm53> ;
+        rdfs:label 'International Arctic Research Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-147.71639 64.83778)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Fairbanks" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5861897/> ;
+    ] ; 
+    .

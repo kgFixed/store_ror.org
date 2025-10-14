@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03c7zyj82> a org:Organization ;
+    rdfs:label 'Sciences Po Grenoble'^^xsd:string ;
+    schema:name 'Sciences Po Grenoble'^^xsd:string ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2023-07-27"^^xsd:date ;
+    dct:modified "2024-05-02"^^xsd:date ;
+    org:abbreviation 'IEPG'^^xsd:string@None ; 
+    org:alternativeName 'Institut d\'études politiques de Grenoble'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.sciencespo-grenoble.fr> ;
+    owl:sameAs <https://fr.wikipedia.org/wiki/Institut_d%2527%25C3%25A9tudes_politiques_de_Grenoble> ; 
+    schema:sameAs <http://isni.org/isni/0000000121902626> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ndt7n58> ;
+        rdfs:label 'Centre d\'Etudes et de Recherche sur la diplomatie, l’Administration Publique et le Politique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label 'Fédération de Recherche sur l\'Energie Solaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026j45x50> ;
+        rdfs:label 'Laboratoire Pacte'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.76472 45.16639)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Saint-Martin-d'Hères" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6433367/> ;
+    ] ; 
+    .

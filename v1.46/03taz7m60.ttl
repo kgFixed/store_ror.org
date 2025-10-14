@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03taz7m60> a org:Organization ;
+    rdfs:label 'University of Southern California'^^xsd:string ;
+    schema:name 'University of Southern California'^^xsd:string ;
+    schema:foundingDate "1880"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-05-02"^^xsd:date ;
+    org:abbreviation 'USC'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.usc.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Southern_California> ; 
+    schema:sameAs <https://api.crossref.org/funders/100006034> ;
+    schema:sameAs <https://grid.ac/institutions/grid.42505.36> ;
+    schema:sameAs <http://isni.org/isni/0000000121566853> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0230s3k26> ;
+        rdfs:label 'METRANS Transportation Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0444fnd49> ;
+        rdfs:label 'University of Southern California Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hjhvn29> ;
+        rdfs:label 'USC Institute for Creative Technologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02pammg90> ;
+        rdfs:label 'Cedars-Sinai Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00412ts95> ;
+        rdfs:label 'Children\'s Hospital of Los Angeles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05hm6ny55> ;
+        rdfs:label 'Good Samaritan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02e271b61> ;
+        rdfs:label 'Huntington Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01rq8ck58> ;
+        rdfs:label 'Keck Hospital of USC'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04xzj3x20> ;
+        rdfs:label 'LAC+USC Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03t3q6164> ;
+        rdfs:label 'Rancho Los Amigos National Rehabilitation Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01ncqna34> ;
+        rdfs:label 'Southern California Clinical and Translational Science Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01xfgtq85> ;
+        rdfs:label 'VA West Los Angeles Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/030wr4654> ;
+        rdfs:label 'Graduate Fellowships for STEM Diversity'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001zwgm84> ;
+        rdfs:label 'CI Compass'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.24368 34.05223)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Los Angeles" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5368361/> ;
+    ] ; 
+    .
