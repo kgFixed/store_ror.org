@@ -1,0 +1,2623 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02feahw73> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-04-03"^^xsd:date ;
+    org:abbreviation 'CNRS'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.cnrs.fr> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Centre_national_de_la_recherche_scientifique> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004794> ;
+    schema:sameAs <https://grid.ac/institutions/grid.4444.0> ;
+    schema:sameAs <http://isni.org/isni/0000000122597504> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/003412r28> ;
+        rdfs:label 'Centre de Recherche en Cancérologie de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026tf7535> ;
+        rdfs:label 'Centre Max Weber'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/027defw95> ;
+        rdfs:label 'Centre de Compétences NanoSciences Ile-de-France'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rzzcx32> ;
+        rdfs:label 'Centre de Recherches Critiques sur le Droit'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03yz3tz18> ;
+        rdfs:label 'Direction Générale Déléguée aux Ressources'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043nepn57> ;
+        rdfs:label 'Direction Générale Déléguée à la Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02t220m45> ;
+        rdfs:label 'Délégation Bretagne et Pays de la Loire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jsv7j98> ;
+        rdfs:label 'Electrophysiology and Heart Modeling Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054f5fc35> ;
+        rdfs:label 'Fédération Informatique de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00avmbz91> ;
+        rdfs:label 'Georgia Tech-CNRS Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m3mb357> ;
+        rdfs:label 'Image and Pervasive Access Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040smqw14> ;
+        rdfs:label 'Institut Clément Ader'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0331qyx19> ;
+        rdfs:label 'Institut Français d\'Études Anatoliennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03fd77x13> ;
+        rdfs:label 'Institut National de Physique Nucléaire et de Physique des Particules'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/050jcm728> ;
+        rdfs:label 'Institut National des Sciences Mathématiques et de leurs Interactions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kdfz702> ;
+        rdfs:label 'Institut National des Sciences de l\'Univers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ap27310> ;
+        rdfs:label 'Institut supérieur d\'étude des religions et de la laïcité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wmc6m46> ;
+        rdfs:label 'Institut d\'Histoire des Représentations et des Idées dans les Modernités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cte4b68> ;
+        rdfs:label 'Institut de Chimie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00z54nq84> ;
+        rdfs:label 'Institut de Physique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03r0cdk24> ;
+        rdfs:label 'Institut de Recherche sur l\'Architecture Antique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rydyx93> ;
+        rdfs:label 'Institut des Sciences Biologiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04b0z7q78> ;
+        rdfs:label 'Institut des Sciences Humaines et Sociales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04z22qz54> ;
+        rdfs:label 'Institut des Sciences de l\'Information et de leurs Interactions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00s19x989> ;
+        rdfs:label 'CNRS Ingénierie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01q76b368> ;
+        rdfs:label 'Institut Écologie et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wrnm709> ;
+        rdfs:label 'Institut de Mécanique et d\'Ingénierie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01yw97595> ;
+        rdfs:label 'Laboratoire Aménagement Économie Transports'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010hz2d37> ;
+        rdfs:label 'Laboratoire d\'Annecy-le-Vieux de Physique Théorique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dv4he91> ;
+        rdfs:label 'Laboratoire d\'Informatique en Images et Systèmes d\'Information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02w8awt17> ;
+        rdfs:label 'Laboratoire de Mécanique des Fluides de Lille - Kampé de Fériet'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qz4qy85> ;
+        rdfs:label 'Laboratoire de Recherche Historique Rhône-Alpes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05gscwg02> ;
+        rdfs:label 'Laboratoire Souterrain à Bas Bruit'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rawf147> ;
+        rdfs:label 'Maison des Sciences de l\'Homme Lyon St-Étienne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00190j002> ;
+        rdfs:label 'Réseau sur le Stockage Electrochimique de l\'énergie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02125p091> ;
+        rdfs:label 'Sciences et Technologies des Cultures et Sociétés Numériques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ydb3330> ;
+        rdfs:label 'Synchrotron soleil'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x9a0q46> ;
+        rdfs:label 'Triangle : Action, Discours, Pensée politique et économique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ej53908> ;
+        rdfs:label 'Typologie et Universaux Linguistiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rmwrd87> ;
+        rdfs:label 'Laboratoire Environnements, Dynamiques et Territoires de Montagne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05x9zmx47> ;
+        rdfs:label 'CANTHER - Hétérogénéité, Plasticité et Résistance aux Thérapies des Cancers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00g32ep81> ;
+        rdfs:label 'Centre d\'Histoire Judiciaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05vrs3189> ;
+        rdfs:label 'Centre de Recherche en Informatique, Signal et Automatique de Lille'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04k5h2q42> ;
+        rdfs:label '(Epi)génomique fonctionnelle métabolique et des dysfonctions dans le diabète de type 2 et des maladies associées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ja5aj48> ;
+        rdfs:label 'Histoire, Archéologie et Littérature des Mondes Anciens'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013z99a51> ;
+        rdfs:label 'AERIS/ICARE Data and Services Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010nk4c68> ;
+        rdfs:label 'Institut de Recherche sur les Composants logiciels et matériels pour l\'Information et la Communication Avancée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f5rw142> ;
+        rdfs:label 'Laboratoire de Mécanique, Multiphysique, Multiéchelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056hav897> ;
+        rdfs:label 'Plateformes Lilloises en Biologie et Santé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m4rxj18> ;
+        rdfs:label 'Arènes: politique, santé publique, environnement, médias'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03237mt20> ;
+        rdfs:label 'Espaces et Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/036xhtv26> ;
+        rdfs:label 'Institut de génétique et de développement de Rennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01f1amm71> ;
+        rdfs:label 'Laboratoire Traitement du Signal et de l\'Image'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05y76vp22> ;
+        rdfs:label 'Institut de recherche mathématique de Rennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03yn94905> ;
+        rdfs:label 'Fonctions Optiques pour les Technologies de l’information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02evk6c51> ;
+        rdfs:label 'Ethologie animale et humaine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005w2mm89> ;
+        rdfs:label 'Laboratoire d\'études de genre et de sexualité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013q33h79> ;
+        rdfs:label 'Institut d\'Électronique et des Technologies du numéRique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030ewzw66> ;
+        rdfs:label 'Institut de l\'Ouest : Droit et Europe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wx1mx58> ;
+        rdfs:label 'Maison des Sciences de l\'Homme Mondes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vte9x46> ;
+        rdfs:label 'Observatoire des Sciences de l\'Univers de Grenoble'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01k7w0p97> ;
+        rdfs:label 'Centre Émile Durkheim'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04nrhwg12> ;
+        rdfs:label 'Laboratoire de Mathématiques de Besançon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05wy2cj05> ;
+        rdfs:label 'Laboratoire architecture anthropologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02af93v77> ;
+        rdfs:label 'Biologie du Développement et Cellules Souches'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02a4c5q78> ;
+        rdfs:label 'Centre de recherche sur les Inégalités Sociales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04e3d6y73> ;
+        rdfs:label 'Centre International de Rencontres Mathématiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00tf8ca96> ;
+        rdfs:label 'Musée Curie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048289s82> ;
+        rdfs:label 'Architecture, Milieu, Paysage'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01p4g5p84> ;
+        rdfs:label 'Géographie de l\'environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007dbrz84> ;
+        rdfs:label 'Geo-Ocean'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01hg13988> ;
+        rdfs:label 'Centre d\'Études et de Recherches sur le Développement International'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001aevc89> ;
+        rdfs:label 'Laboratoire d\'Acoustique de l\'Université du Mans'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0546jt497> ;
+        rdfs:label 'Histoire des Théories Linguistiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vtagt31> ;
+        rdfs:label 'Paris Jourdan Sciences Economiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01t05f005> ;
+        rdfs:label 'Laboratoire Structures, Propriétés et Modélisation des Solides'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00z0af360> ;
+        rdfs:label 'Laboratoire de Médiévistique Occidentale de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01m83bk32> ;
+        rdfs:label 'Laboratoire d\'électronique, systèmes de communication et microsystèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05pny1q12> ;
+        rdfs:label 'Laboratoire d\'Ecologie des Hydrosystèmes Naturels et Anthropisés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fhvpc68> ;
+        rdfs:label 'Département de Pharmacochimie Moléculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/041ctrc20> ;
+        rdfs:label 'Centre de droit comparé du travail et de la sécurité sociale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001tmq304> ;
+        rdfs:label 'Enzyme and Cell Engineering - Molecular Recognition and Biocatalysis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016nwev19> ;
+        rdfs:label 'Sciences pour l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k1a6w82> ;
+        rdfs:label 'Laboratoire Morphodynamique Continentale et Côtière'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04k5jw363> ;
+        rdfs:label 'Laboratoire de Mathématiques de Versailles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025esck76> ;
+        rdfs:label 'Langues et Civilisations à Tradition Orale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jm2hc44> ;
+        rdfs:label 'Laboratoire de Mathématiques Nicolas Oresme'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04aq4ab28> ;
+        rdfs:label 'Centre d\'études sociologiques et politiques Raymond-Aron'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00srrcb42> ;
+        rdfs:label 'Laboratoire Caribéen de Sciences Sociales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nhcdk38> ;
+        rdfs:label 'Laboratoire de Physique Théorique et Modélisation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0041am420> ;
+        rdfs:label 'Institut des sciences juridique et philosophique de la Sorbonne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/036w0tz95> ;
+        rdfs:label 'RIATE - Centre pour l\'analyse spatiale et la géovisualisation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04daj8721> ;
+        rdfs:label 'France, Amériques, Espagne, Sociétés, Pouvoirs, Acteurs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03dg47v24> ;
+        rdfs:label 'Laboratoire des Fluides Complexes et leurs Réservoirs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01cgac405> ;
+        rdfs:label 'Chimie de la Matière Complexe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02ygac863> ;
+        rdfs:label 'Maison des Sciences de l\'Homme et de la Société Sud-Est'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e2syc87> ;
+        rdfs:label 'Maison Asie Pacifique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04yrrdj53> ;
+        rdfs:label 'Mathématiques Appliquées à Paris 5'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wz2vk41> ;
+        rdfs:label 'Center for Mathematical Modeling'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02qdgbw61> ;
+        rdfs:label 'Service des Avions Français Instrumentés pour la Recherche en Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02hp31992> ;
+        rdfs:label 'Empenn'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04g0ktq11> ;
+        rdfs:label 'Bibliothèque Jacques Hadamard'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/006gzge74> ;
+        rdfs:label 'Centre de recherche sur les civilisations de l\'Asie orientale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04n9eyw42> ;
+        rdfs:label 'Archéologie des Sociétés Méditerranéennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e4tg734> ;
+        rdfs:label 'Laboratoire de Microbiologie Fondamentale et Pathogénicité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zn13224> ;
+        rdfs:label 'Interactions Hôtes-Pathogènes-Environnements'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ym2w748> ;
+        rdfs:label 'Praxiling'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0057kwj95> ;
+        rdfs:label 'Laboratoire de Recherche sur les Cultures Anglophones'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0458hw939> ;
+        rdfs:label 'Territoires, Environnement, Télédétection et Information Spatiale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zmdjj30> ;
+        rdfs:label 'Centre d\'études franco-russe de Moscou'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008bf9746> ;
+        rdfs:label 'Centre d\'Études et de Documentation Économiques, Juridiques et sociales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022psxk94> ;
+        rdfs:label 'Maison Française d\'Oxford'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ahb2147> ;
+        rdfs:label 'Centre de recherche français à Jérusalem'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02km70587> ;
+        rdfs:label 'Centre d\'études Alexandrines'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02t9nm044> ;
+        rdfs:label 'Institut français du Proche-Orient'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026t9b832> ;
+        rdfs:label 'Institut français d\'études sur l\'Asie centrale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00nbhg292> ;
+        rdfs:label 'Lieux, Identités, eSpaces, Activités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021zcv334> ;
+        rdfs:label 'Ecology and Conservation Science for Sustainable Seas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ss0a232> ;
+        rdfs:label 'AMURE - Centre de droit et d\'économie de la mer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ejp3f31> ;
+        rdfs:label 'Maison méditerranéenne des sciences de l\'Homme'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0502mw613> ;
+        rdfs:label 'Centre Franco-Égyptien d’Étude des Temples de Karnak'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05q3pap39> ;
+        rdfs:label 'Centre de Recherche sur la Conservation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04j9ztm78> ;
+        rdfs:label 'Institut d\'Histoire du Droit Jean Gaudemet'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ax2x637> ;
+        rdfs:label 'Centre de recherche en paléontologie - Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02844qe97> ;
+        rdfs:label 'Unite de recherche migrations et sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vrz7264> ;
+        rdfs:label 'Génétique et biologie du développement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00cesps27> ;
+        rdfs:label 'Observatoire de Recherche Montpelliérain de l\'Environnement OREME'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05079x435> ;
+        rdfs:label 'Maison des Sciences de l\'Homme Paris Nord'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04gxn9h90> ;
+        rdfs:label 'Savoirs et Mondes Indiens'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xkfnd03> ;
+        rdfs:label 'Laboratoire de Mathématiques de Reims'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03rnz7p05> ;
+        rdfs:label 'Centre Michel de Boüard'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ved1v49> ;
+        rdfs:label 'Relais d\'information sur les sciences de la cognition'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05akjb009> ;
+        rdfs:label 'Biologie des interactions hôte-parasite'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04k8wt746> ;
+        rdfs:label 'Sommeil, Addiction et Neuropsychiatrie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05r25mc45> ;
+        rdfs:label 'Plateforme d\'Imagerie Biomédicale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00qe5nz43> ;
+        rdfs:label 'TBM-Core'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026ddbz68> ;
+        rdfs:label 'Génomique évolutive, modélisation et santé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bzgtz06> ;
+        rdfs:label 'Takuvik Joint International Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03t9s7t87> ;
+        rdfs:label 'Pathogénèse Bactérienne et Réponses Cellulaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dyeh227> ;
+        rdfs:label 'Bordeaux Imaging Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034bena10> ;
+        rdfs:label 'Centre d\'Immunophénomique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k32n603> ;
+        rdfs:label 'CEPN - Centre d\'Economie de l\'Université Paris Nord'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0343fpq57> ;
+        rdfs:label 'Chimie, Structures et Propriétés de Biomatériaux et d\'Agents Thérapeutiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0467x8h16> ;
+        rdfs:label 'Maison des Sciences de l\'Homme-Alpes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gj7r351> ;
+        rdfs:label 'Laboratoire écologie, évolution, interactions des systèmes amazoniens'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040r8ry56> ;
+        rdfs:label 'STELLA MARE'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cmt9z73> ;
+        rdfs:label 'Agence pour les Mathématiques en Interaction avec l\'Entreprise et la Société'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034gk7456> ;
+        rdfs:label 'Bases de données sur la Biodiversité, Ecologie, Environnement et Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0213f8g15> ;
+        rdfs:label 'DMEX Centre for X-ray Imaging'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ef4v550> ;
+        rdfs:label 'Unité en Sciences Biologiques et Biotechnologies de Nantes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017p6sq53> ;
+        rdfs:label 'Matrice Extracellulaire et Dynamique Cellulaire MEDyC'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rp2mn26> ;
+        rdfs:label 'Institut de Recherche sur la Biologie de l\'Insecte UMR 7261'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052cnt662> ;
+        rdfs:label 'Étude des Structures, des Processus d’Adaptation et des Changements de l’Espace'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04s6f1186> ;
+        rdfs:label 'Laboratoire Ligérien de Linguistique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pwzyv45> ;
+        rdfs:label 'Droit International Comparé et Européen'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qfjp710> ;
+        rdfs:label 'Lasers, Plasmas et Procédés Photoniques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rxdng69> ;
+        rdfs:label 'Centre universitaire de recherches sur l\'Action Publique et le Politique Épistémologie & Sciences Sociales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00axatv03> ;
+        rdfs:label 'Centre Gilles-Gaston Granger'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bcyhr16> ;
+        rdfs:label 'Irasia Recherche'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037f3ga09> ;
+        rdfs:label 'Institut de Recherches et d\'Etudes sur les Mondes Arabes et Musulmans'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05tb4mb78> ;
+        rdfs:label 'Laboratoire d\'Archéologie Médiévale et Moderne en Méditerranée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/050gdsq06> ;
+        rdfs:label 'Institut d\'ethnologie méditerranéenne européenne et comparative'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010bhn875> ;
+        rdfs:label 'Temps, espaces, langages, Europe méridionale, Méditerranée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m587853> ;
+        rdfs:label 'Matériaux Divisés, Interfaces, Réactivité, Electrochimie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02hwc1z56> ;
+        rdfs:label 'Laboratoire d\'Ingénierie des Systèmes Macromoléculaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005hw9085> ;
+        rdfs:label 'Centre d\'études supérieures de civilisation médiévale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02p2rk609> ;
+        rdfs:label 'Laboratoire de Mathématiques et Applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rb31945> ;
+        rdfs:label 'Laboratoire Interdisciplinaire de Recherches "Sociétés, Sensibilités, Soin"'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01kysxr05> ;
+        rdfs:label 'Centre d’études en sciences sociales du religieux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03wdx6c48> ;
+        rdfs:label 'Trajectoires. De la sédentarisation à l’État'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019df2r84> ;
+        rdfs:label 'Structure et Dynamique des Langues'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00nbx9b54> ;
+        rdfs:label 'Institut des Sciences de la Mécanique et Applications Industrielles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v0fms67> ;
+        rdfs:label 'Laboratoire Information Génomique et Structurale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026m44z54> ;
+        rdfs:label 'Laboratoire Nanotechnologies et Nanosystèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007xn7v02> ;
+        rdfs:label 'Japanese-French Laboratory for Informatics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cjyj977> ;
+        rdfs:label 'Chimie Biologique pour le Vivant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/009b91528> ;
+        rdfs:label 'Biologie Moléculaire Structurale et Processus Infectieux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cxnrt47> ;
+        rdfs:label 'Centre de Recherche d\'Albi en génie des Procédés, des SOlides Divisés, de l\'Énergie et de l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qhnf349> ;
+        rdfs:label 'Acquisition et Analyse de Données pour l\'Histoire naturelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00t7axd27> ;
+        rdfs:label 'UCSD-CNRS Joint Research Chemistry Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026fpwg41> ;
+        rdfs:label 'Chronobiotron'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04wbg2z51> ;
+        rdfs:label 'Observatoire pour la Conservation de la Mégafaune Marine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05j8sgr10> ;
+        rdfs:label 'Architecture Histoire Technique Territoire Patrimoine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026p10446> ;
+        rdfs:label 'Droit, religion, entreprise et société'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03v4gsj38> ;
+        rdfs:label 'Maison des Sciences de l\'Homme Val de Loire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04mq2px33> ;
+        rdfs:label 'GeoRessources'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03949e763> ;
+        rdfs:label 'Integrated Structural Biology Grenoble'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ces3204> ;
+        rdfs:label 'Huma-Num'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01mbkbh33> ;
+        rdfs:label 'Organisation de Micro-Electronique Générale Avancée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jca6281> ;
+        rdfs:label 'Laboratoire de Mathématiques et Modélisation d\'Évry'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k37h274> ;
+        rdfs:label 'Chimie et Biologie de la Cellule'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bgzse17> ;
+        rdfs:label 'Chimie Biologie Innovation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ygj8248> ;
+        rdfs:label 'Europe orientale, balkanique et médiane'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04gf9wd48> ;
+        rdfs:label 'Institut de Recherche en Musicologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j7mz841> ;
+        rdfs:label 'Centre d’Archives en Philosophie, Histoire et Édition des Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03tvs6n06> ;
+        rdfs:label 'Centre de microcaractérisation Raimond Castaing'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k267t15> ;
+        rdfs:label 'France Génomique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02k7ask46> ;
+        rdfs:label 'CALMIP'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052pqt102> ;
+        rdfs:label 'Plateforme de chimie biologique intégrative de Strasbourg'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qt6f440> ;
+        rdfs:label 'LINK - Laboratory for Innovative Key Materials and Structures'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02aja8v82> ;
+        rdfs:label 'OpenEdition Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030vwjb30> ;
+        rdfs:label 'Genopolys'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02nfq1309> ;
+        rdfs:label 'Chimie et Modélisation pour la Biologie du Cancer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00az7j379> ;
+        rdfs:label 'Le Laboratoire des Maladies Neurodégénératives'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0371yc337> ;
+        rdfs:label 'Laboratoire de Chimie-Physique Macromoléculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yvha224> ;
+        rdfs:label 'Centre pour les humanités numériques et l\'histoire de la justice'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05481me13> ;
+        rdfs:label 'AlgoSolis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01f5c5978> ;
+        rdfs:label 'Centre d\'Etudes des Maladies Infectieuses et Pharmacologie Anti-Infectieuse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00s40r567> ;
+        rdfs:label 'Passages'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01cbgsf04> ;
+        rdfs:label 'ARNA - Acides nucléiques: Régulations naturelles et artificielles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04v668f18> ;
+        rdfs:label 'Institut des Matériaux Poreux de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05t8ct211> ;
+        rdfs:label 'Climat, Environnement, Couplages et Incertitudes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0009eec40> ;
+        rdfs:label 'Laboratoire de Linguistique de Nantes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044cfnj78> ;
+        rdfs:label 'GRICAD - Grenoble Alpes Recherche-Infrastructure de Calcul intensif et de Données'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05d362832> ;
+        rdfs:label 'Laboratoire de Chimie Bio-inspirée et d’Innovations Ecologiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hqv2x85> ;
+        rdfs:label 'Mitochondrial and Cardiovascular Physiopathology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055nbmz93> ;
+        rdfs:label 'Micro et Nanomédecines translationnelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007yrhe07> ;
+        rdfs:label 'Laboratoire Interdisciplinaire Sciences, Innovations, Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fsxy317> ;
+        rdfs:label 'ScanMAT'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037eda396> ;
+        rdfs:label 'PatriNat'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030d6wr93> ;
+        rdfs:label 'Laboratoire d\'innovation moléculaire et applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05djhd259> ;
+        rdfs:label 'Institut Denis Poisson'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nhp3z94> ;
+        rdfs:label 'Temps, Mondes, Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/020azc393> ;
+        rdfs:label 'Laboratoire Lorrain de Chimie Moléculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02atkd403> ;
+        rdfs:label 'Laboratoire de Physique et Chimie Théoriques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rwjvc96> ;
+        rdfs:label 'Center for Environmental Economics - Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02v6phz91> ;
+        rdfs:label 'Vision pour la Robotique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vnd0e65> ;
+        rdfs:label 'Laboratoire de Probabilités, Statistique et Modélisation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rg8bd79> ;
+        rdfs:label 'Epigenetics, Data, Politics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03y7m8990> ;
+        rdfs:label 'Physique pour la médecine Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02fgakj19> ;
+        rdfs:label 'Centre Neurosciences intégratives et Cognition'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/004wefe19> ;
+        rdfs:label 'Centre de RMN à Très Hauts Champs de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01a4enz31> ;
+        rdfs:label 'SPPIN - Saints-Pères Paris Institute for Neurosciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046dap961> ;
+        rdfs:label 'Laboratoire interdisciplinaire d’études sur les réflexivités - Fonds Yan Thomas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kbqb151> ;
+        rdfs:label 'BISCEm - Biologie Intégrative Santé Chimie Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01waxag60> ;
+        rdfs:label 'Light, nanomaterials, nanotechnologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048d5xq24> ;
+        rdfs:label 'Laboratoire Lumière, Matière et Interfaces'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0302qeq32> ;
+        rdfs:label 'Centre de recherche sur le monde iranien'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00qhm9960> ;
+        rdfs:label 'RESTORE'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00n90tt57> ;
+        rdfs:label 'Institut Toulousain des Maladies Infectieuses et Inflammatoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rd81916> ;
+        rdfs:label 'Laboratoire Interdisciplinaire des Sciences du Numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gdtta79> ;
+        rdfs:label 'Laboratoire Méthodes Formelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04cms1b08> ;
+        rdfs:label 'Transitions Energétiques et Environnementales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013nhg483> ;
+        rdfs:label 'Laboratoire Physiopathologie et Génétique du Neurone et du Muscle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01jv2ft75> ;
+        rdfs:label 'Laboratoire de Mécanique Paris-Saclay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/014vz2d20> ;
+        rdfs:label 'Bordeaux Sciences Économiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/050x42563> ;
+        rdfs:label 'Microscopies, imageries et ressources analytiques en région Centre-Val de Loire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0257sgk90> ;
+        rdfs:label 'Laboratoire d’Informatique et Systèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05de6h762> ;
+        rdfs:label 'Maison de l\'Orient et de la Méditerranée Jean Pouilloux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05gz4kr37> ;
+        rdfs:label 'Observatoire Océanologique de Banyuls-sur-Mer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02f6tst70> ;
+        rdfs:label 'Catalyse, Polymérisation, Procédés et Matériaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wq1s711> ;
+        rdfs:label 'Fédération de recherche Matière et Interactions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ezpxa16> ;
+        rdfs:label 'Biologie du Chloroplaste et Perception de la Lumière chez les Microalgues'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025xvn046> ;
+        rdfs:label 'Sciences et Technologies de la Musique et du Son'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02sps6z09> ;
+        rdfs:label 'Neurosciences Paris-Seine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w1erp60> ;
+        rdfs:label 'Couplage Multi-physiques et Multi-échelles en mécanique géo-environnemental'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0557mft23> ;
+        rdfs:label 'Formation, Innovation, Recherche, Services et Transfert en Temps-Fréquence'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gapzp55> ;
+        rdfs:label 'Centre Roland Mousnier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02y2c2646> ;
+        rdfs:label 'Adaptation Biologique et Vieillissement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fgntk96> ;
+        rdfs:label 'Tara Oceans Systems Ecology & Evolution'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01zprwd36> ;
+        rdfs:label 'Centre d\'Acquisition et de Traitement des Images'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033eqsk67> ;
+        rdfs:label 'Sciences, Normes, Démocratie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04m69ya83> ;
+        rdfs:label 'Théâtre antique : textes, histoire et réception'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xwwwr97> ;
+        rdfs:label 'Institut Parisien de Chimie Physique et Théorique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01r19bq53> ;
+        rdfs:label 'Replication des chromosomes eucaryotes et ses points de contrôle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02r1kz177> ;
+        rdfs:label 'Bioinformatique Moléculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01365h357> ;
+        rdfs:label 'Observatoire des sciences de l\'Univers Paris-Centre Ecce Terra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w108f05> ;
+        rdfs:label 'Building Blocks for Future Electronics Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05jpad840> ;
+        rdfs:label 'Institut de la Mer de Villefranche'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zgjrf98> ;
+        rdfs:label 'Fondation Sciences mathématiques de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ef65y11> ;
+        rdfs:label 'Institut de Chimie Moléculaire de Paris : organique, inorganique et biologique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02ffzdx16> ;
+        rdfs:label 'Paris Network for Advanced Microscopy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00adasd53> ;
+        rdfs:label 'Paris Centre for Quantum Technologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bt3e159> ;
+        rdfs:label 'Cultures, Environnements, Arctique, Représentations, Climat'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04k0drf78> ;
+        rdfs:label 'Institut photonique d\'analyse non-destructive européen des matériaux anciens'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011hdpx94> ;
+        rdfs:label 'Archéologie, Terre, Histoire, Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011ygpb73> ;
+        rdfs:label 'Institut de Chimie Moléculaire de l\'Université de Bourgogne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048k52v18> ;
+        rdfs:label 'Institut Chevreul'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qtp1053> ;
+        rdfs:label 'Paris School of Economics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046hjmc37> ;
+        rdfs:label 'Laboratoire Charles Fabry'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/018dfmm35> ;
+        rdfs:label 'Immunologie et Nouveaux Concepts en Immunothérapie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02sb3b652> ;
+        rdfs:label 'Laboratoire Ondes et Milieux Complexes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zay3w86> ;
+        rdfs:label 'Centre de Nanosciences et de Nanotechnologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k9z2963> ;
+        rdfs:label 'Département de mathématiques et applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ab0zs98> ;
+        rdfs:label 'Laboratoire de Mathématiques d\'Orsay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02byv2846> ;
+        rdfs:label 'Fluides, Automatique et Systèmes Thermiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01b5rtm37> ;
+        rdfs:label 'Intégrité du génome, ARN et cancer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012fqzm33> ;
+        rdfs:label 'Génétique Quantitative et Évolution Le Moulon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mnw9q71> ;
+        rdfs:label 'Institut Galien Paris-Saclay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/014p8mr66> ;
+        rdfs:label 'Institut d\'Astrophysique Spatiale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05wzh1m37> ;
+        rdfs:label 'Institut de Chimie Moléculaire et des Matériaux d\'Orsay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02st4q439> ;
+        rdfs:label 'Institut de Chimie des Substances Naturelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002zc3t08> ;
+        rdfs:label 'Institut de Mécanique Céleste et de Calcul des Éphémérides'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0211r2z47> ;
+        rdfs:label 'Institut des Sciences Moléculaires d\'Orsay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ajjta07> ;
+        rdfs:label 'Institut des Sciences des Plantes de Paris Saclay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01fftxe08> ;
+        rdfs:label 'Institut de Biologie Intégrative de la Cellule'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021xexe56> ;
+        rdfs:label 'Laboratoire Aimé Cotton'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016r2hq43> ;
+        rdfs:label 'Laboratoire de Chimie Physique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xnnng09> ;
+        rdfs:label 'Laboratoire de Génie Électrique et Électronique de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bgjpg77> ;
+        rdfs:label 'Laboratoire de Physique des Gaz et des Plasmas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00skw9v43> ;
+        rdfs:label 'Laboratoire des signaux et systèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002ty1h48> ;
+        rdfs:label 'Laboratoire pour l\'utilisation des lasers intenses'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02dyaew97> ;
+        rdfs:label 'Laboratoire de physique des Solides'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00w67e447> ;
+        rdfs:label 'Laboratoire de Physique Théorique et Modèles Statistiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002v40q27> ;
+        rdfs:label 'Institut des Neurosciences Paris-Saclay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03sypqe31> ;
+        rdfs:label 'Systèmes Membranaires, Photobiologie, Stress et Détoxication'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vam5b06> ;
+        rdfs:label 'Laboratoire des systèmes et applications des technologies de l\'information et de l\'énergie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02erddr56> ;
+        rdfs:label 'Laboratoire Albert Fert'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00kk89y84> ;
+        rdfs:label 'Écologie, Systématique et Évolution'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011abem59> ;
+        rdfs:label 'Évolution, Génomes, Comportement, Écologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030przz70> ;
+        rdfs:label 'Modèles Insectes de l\'Immunité Innée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01225hq90> ;
+        rdfs:label 'Centre d\'Études Spatiales de la Biosphère'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02chvqy57> ;
+        rdfs:label 'Laboratoire d’Études en Géophysique et Océanographie Spatiales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/058t6p923> ;
+        rdfs:label 'Laboratoire Leprince-Ringuet'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/041dsyz88> ;
+        rdfs:label 'Laboratoire de Recherche sur la Croissance Cellulaire, la Réparation et la Régénération Tissulaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0189yvq06> ;
+        rdfs:label 'Centre de Biologie Structurale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03820wq39> ;
+        rdfs:label 'Laboratoire interdisciplinaire en études culturelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02qprbz18> ;
+        rdfs:label 'Institut des Mondes Africains'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00adwkx90> ;
+        rdfs:label 'Institut des Sciences Chimiques de Rennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0047rmf80> ;
+        rdfs:label 'Centre de Recherche en Économie et Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022b0h879> ;
+        rdfs:label 'Institut de Physique de Rennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wrme198> ;
+        rdfs:label 'Grenoble Images Parole Signal Automatique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ett5b41> ;
+        rdfs:label 'Laboratoire Jean Kuntzmann'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026j45x50> ;
+        rdfs:label 'Laboratoire Pacte'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/014p6mg26> ;
+        rdfs:label 'Laboratoire de Psychologie et NeuroCognition'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047p7mf25> ;
+        rdfs:label 'Institut Carnot PolyNat'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jj62164> ;
+        rdfs:label 'Centre de Recherche et de Documentation sur l\'Océanie (CREDO)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005yfhm28> ;
+        rdfs:label 'Institut de Biosciences et biotechnologies d\'Aix-Marseille'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xc55v17> ;
+        rdfs:label 'Génomique Métabolique du Genoscope'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j65n394> ;
+        rdfs:label 'Laboratoire d\'Excellence TULIP'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023n9q531> ;
+        rdfs:label 'Laboratoire Interdisciplinaire de Physique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/039bex249> ;
+        rdfs:label 'Centre d\'études sud-asiatiques et himalayennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wp2jz98> ;
+        rdfs:label 'European X-Ray Free-Electron Laser'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01b436806> ;
+        rdfs:label 'Centre international de recherche sur l’environnement et le développement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fc1hn07> ;
+        rdfs:label 'Laboratoire Techniques, Territoires et Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029hkd614> ;
+        rdfs:label 'Laboratoire Navier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04b9vs620> ;
+        rdfs:label 'Imagerie et Stratégies Thérapeutiques pour les Cancers et Tissus cérébraux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055q9jt53> ;
+        rdfs:label 'Laboratoire Arts et pratiques du texte, de l’image, de l’écran et de la scène'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rt27171> ;
+        rdfs:label 'Laboratory of Pathogens and Host Immunity'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hz99a17> ;
+        rdfs:label 'AAU - Ambiances, Architectures, Urbanités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01petg633> ;
+        rdfs:label 'Maison des Sciences sociales et des Humanités Lorraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qpmg879> ;
+        rdfs:label 'Institut de Biologie Moléculaire et Cellulaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045p8nc06> ;
+        rdfs:label 'Centre d\'Anthropobiologie et de Génomique de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vyv3y87> ;
+        rdfs:label 'Haute Technologie Animale Grenobloise'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0535cbn94> ;
+        rdfs:label 'Systèmes Moléculaires et nanoMatériaux pour l\'Énergie et la Santé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05rnj8444> ;
+        rdfs:label 'Indo-French Centre for Applied Mathematics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044mrv955> ;
+        rdfs:label 'Institut d\'Études Scientifiques de Cargèse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023cs7p87> ;
+        rdfs:label 'Groupe de Recherche en Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/050rs7291> ;
+        rdfs:label 'Centre de Radiofréquences, Optique et Micro-nanoélectronique des Alpes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/050a1gn71> ;
+        rdfs:label 'Modèles et simulations pour l\'Architecture et le Patrimoine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03v2c3v44> ;
+        rdfs:label 'Centre de Recherche sur la Biodiversité et l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05dh21g53> ;
+        rdfs:label 'Structure Fédérative de Recherche Santé Lyon Est'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05r332y60> ;
+        rdfs:label 'Institut des Sciences des Plantes de Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05s6hm275> ;
+        rdfs:label 'Maison des Sciences de l\'Homme SUD'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04mn0nr69> ;
+        rdfs:label 'Interactions, Corpus, Apprentissages, Représentations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01fvx3s14> ;
+        rdfs:label 'Laboratoire Dynamique du Langage'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05mqwtr17> ;
+        rdfs:label 'Histoire, Archéologie, Littératures des Mondes Chrétiens et Musulmans Médiévaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x7ec535> ;
+        rdfs:label 'BioCampus Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bq56641> ;
+        rdfs:label 'Archéologie et Archéométrie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/059xs3104> ;
+        rdfs:label 'Archéorient'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053p5te48> ;
+        rdfs:label 'Structure fédérative de recherche Necker'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ngq1v76> ;
+        rdfs:label 'Institut Français de Recherche sur l\'Asie de l\'Est'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04q1vy171> ;
+        rdfs:label 'Marqueurs cardiovasculaires en situation de stress'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02nmctw71> ;
+        rdfs:label 'Pharmacologie et thérapie des addictions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rrvyp50> ;
+        rdfs:label 'Outils de Résolution Algébriques pour la Géométrie et ses Applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04k1akk19> ;
+        rdfs:label 'Institut des Systèmes Complexes Paris Île-de-France'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ye64x65> ;
+        rdfs:label 'Imagerie X en ostéo-articulaire pour la recherche'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ddxrm33> ;
+        rdfs:label 'Fédération de Chimie de l\'Université Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05cbrk226> ;
+        rdfs:label 'Cibles Thérapeutiques et conception de médicaments'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001br4864> ;
+        rdfs:label 'Biomedtech Facilities'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015cqax60> ;
+        rdfs:label 'Biologie, Anthropologie, Biométrie, Epigénétique, Lignées : De la diversité des populations à l\'individu, de l\'identification à l\'identité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bzdp563> ;
+        rdfs:label 'Enveloppes fluides : de la ville à l\'exobiologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03n3yg876> ;
+        rdfs:label 'Laboratoire de physique des lasers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bkw1m29> ;
+        rdfs:label 'International Laboratory on Learning Systems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03dsd0g48> ;
+        rdfs:label 'Laboratoire des Sciences du Climat et de l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04q9vef57> ;
+        rdfs:label 'Ecologie des Forêts de Guyane'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05em8ne27> ;
+        rdfs:label 'Bureau d\'Economie Théorique et Appliquée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002v3cy83> ;
+        rdfs:label 'Pôle de Recherche pour l\'Organisation et la Diffusion de l\'Information Géographique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00w5ay796> ;
+        rdfs:label 'Laboratoire de Physique de l\'ENS de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yv0b554> ;
+        rdfs:label 'Centre d’Economie Industrielle - CERNA'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02my5hx05> ;
+        rdfs:label 'Technologie et Ethnologie des Mondes PréhistoriqueS'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021f0sa24> ;
+        rdfs:label 'Institut de Mathématiques de Bourgogne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053t9n429> ;
+        rdfs:label 'Biomolécules : Conception, Isolement, Synthèse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00t3njy04> ;
+        rdfs:label 'Culture/s, Patrimoine/s, Création/s - Héritages'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03s92mv58> ;
+        rdfs:label 'Geosciences Paris-Saclay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qma7a12> ;
+        rdfs:label 'Observatoire Aquitain des Sciences de l\'Univers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ppf7q77> ;
+        rdfs:label 'Laboratoire atmosphères, milieux, observations spatiales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02b6c1039> ;
+        rdfs:label 'Laboratoire Interdisciplinaire Carnot de Bourgogne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00f945z63> ;
+        rdfs:label 'Institut Pytheas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05h929866> ;
+        rdfs:label 'Laboratoire des Sciences de l\'Environnement Marin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00aytnh12> ;
+        rdfs:label 'Laboratoire de Biotechnologie et Chimie Marines'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05sat2s07> ;
+        rdfs:label 'Littoral, Environnement, Télédétection, Géomatique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00r4taj88> ;
+        rdfs:label 'IRL HealthDEEP'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00r8amq78> ;
+        rdfs:label 'LIttoral ENvironnement et Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0518tra10> ;
+        rdfs:label 'UAR Data Terra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00680hx61> ;
+        rdfs:label 'Centre pour la Communication Scientifique Directe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bj4fd12> ;
+        rdfs:label 'Laboratoire de Biologie et Modélisation de la Cellule'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cyw3861> ;
+        rdfs:label 'Observatoire Terre et environnement de Lorraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/059g0vd42> ;
+        rdfs:label 'Laboratoire de bioimagerie et pathologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008e8k888> ;
+        rdfs:label 'Structure Fédérative de Recherche Biosciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038fcbc74> ;
+        rdfs:label 'Institut de Génomique Fonctionnelle de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04msnz457> ;
+        rdfs:label 'Laboratoire de l\'Informatique du Parallélisme'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007dy3y92> ;
+        rdfs:label 'Institut d\'Asie Orientale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05n21n105> ;
+        rdfs:label 'Unité de Mathématiques Pures et Appliquées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0256r1e04> ;
+        rdfs:label 'Environnement, ville, société'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/059sz6q14> ;
+        rdfs:label 'Centre International de Recherche en Infectiologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00prvqp73> ;
+        rdfs:label 'Institut Rhônalpin des Systèmes Complexes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0200cc312> ;
+        rdfs:label 'Persée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007wafy80> ;
+        rdfs:label 'Maison des Sciences de l\'Homme du Pacifique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05yqfzf35> ;
+        rdfs:label 'UMR Géographie-cités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00cd48p72> ;
+        rdfs:label 'Campus Condorcet'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05v727m31> ;
+        rdfs:label 'Communauté Université Grenoble Alpes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/044kxby82> ;
+        rdfs:label 'Institut Montpelliérain Alexander Grothendieck'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04yem5s35> ;
+        rdfs:label 'INFRANALYTICS'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label 'Fédération de Recherche sur l\'Energie Solaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01nrtdp55> ;
+        rdfs:label 'GDR NBODY : Problème quantique à N corps en chimie et physique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05hb8m595> ;
+        rdfs:label 'PHOTOSYNTHESE'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05be9p317> ;
+        rdfs:label 'Micropesanteur Fondamentale et Appliquée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00hgbrg14> ;
+        rdfs:label 'Fédération française Matériaux sous hautes vitesses de déformation. Application aux matériaux en conditions extrêmes, Procédés et structures'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01bbf9m56> ;
+        rdfs:label 'Fédération Francilienne de Mécanique - Matériaux, Structures, Procédés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03qgfy688> ;
+        rdfs:label 'Fédération Ile de France de recherche sur l\'environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03hkqjb05> ;
+        rdfs:label 'Fédération de Recherche Interactions Fondamentales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01x6z5t49> ;
+        rdfs:label 'Fédération de Recherche Spectroscopies de Photoémission'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02rmk5x23> ;
+        rdfs:label 'Fédération de recherche PLAS@PAR'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05edayg07> ;
+        rdfs:label 'Fédération de Physico-Chimie Analytique et Biologique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00mqc8k54> ;
+        rdfs:label 'Fédération de Chimie et Matériaux de Paris-Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/033zfn006> ;
+        rdfs:label 'In-Service Aircraft for a Global Observing System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0084x3h80> ;
+        rdfs:label 'Centre de Recherche Astrophysique de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04t89f389> ;
+        rdfs:label 'Laboratoire de Géologie de Lyon : Terre, Planètes et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007e33924> ;
+        rdfs:label 'Laboratoire de l\'Éducation'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .
