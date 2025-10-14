@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/009n8zh45> a org:Organization ;
+    rdfs:label 'The University of Dodoma'^^xsd:string ;
+    schema:name 'The University of Dodoma'^^xsd:string ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'UDOM'^^xsd:string ;
+    org:alternativeName 'University of Dodoma'^^xsd:string ;
+    schema:url <https://www.udom.ac.tz> ; 
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Dodoma> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(35.73947 -6.17221)"^^geo:wktLiteral ;
+            schema:addressLocality 'Dodoma'^^xsd:string ;
+            schema:addressCountry "TZ" ;
+            owl:sameAs <http://sws.geonames.org/160196/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000119982954> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q693769> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .

@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/01m0pag22> a org:Organization ;
+    rdfs:label 'Real Sociedad Española de Física'^^xsd:string ;
+    schema:name 'Real Sociedad Española de Física'^^xsd:string ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Other'^^xsd:string ; 
+    org:abbreviation 'RSEF'^^xsd:string ;
+    org:alternativeName 'Spanish Royal Physics Society'^^xsd:string ;
+    schema:url <https://www.rsef.es> ; 
+    owl:sameAs <https://es.wikipedia.org/wiki/Real_Sociedad_Espa%25C3%25B1ola_de_F%25C3%25ADsica> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+            schema:addressLocality 'Madrid'^^xsd:string ;
+            schema:addressCountry "ES" ;
+            owl:sameAs <http://sws.geonames.org/3117735/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/000000012155449X> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q6102141> ;
+    .
