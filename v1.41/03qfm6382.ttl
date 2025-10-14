@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/03qfm6382> a org:Organization ;
+    rdfs:label 'China Railway First Survey and Design Institute Group Co. Ltd.'^^xsd:string ;
+    schema:name 'China Railway First Survey and Design Institute Group Co. Ltd.'^^xsd:string ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Facility'^^xsd:string ; 
+    org:alternativeName 'China Railway First Survey and Design Institute Group Co.'^^xsd:string ;
+    schema:url <http://www.fsdi.com.cn> ; 
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E4%25B8%25AD%25E9%2593%2581%25E7%25AC%25AC%25E4%25B8%2580%25E5%258B%2598%25E5%25AF%259F%25E8%25AE%25BE%25E8%25AE%25A1%25E9%2599%25A2> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(108.92861 34.25833)"^^geo:wktLiteral ;
+            schema:addressLocality 'Xi\'an'^^xsd:string ;
+            schema:addressCountry "CN" ;
+            owl:sameAs <http://sws.geonames.org/1790630/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q10876766> ;
+    .

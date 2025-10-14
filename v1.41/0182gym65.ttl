@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/0182gym65> a org:Organization ;
+    rdfs:label 'Centro de Estudios Políticos y Constitucionales'^^xsd:string ;
+    schema:name 'Centro de Estudios Políticos y Constitucionales'^^xsd:string ;
+    schema:foundingDate "1807"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'CEPC'^^xsd:string ;
+    org:alternativeName 'Instituto de Estudios Políticos'^^xsd:string ;
+    schema:url <https://www.cepc.gob.es> ; 
+    owl:sameAs <https://en.wikipedia.org/wiki/Centro_de_Estudios_Pol%25C3%25ADticos_y_Constitucionales> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+            schema:addressLocality 'Madrid'^^xsd:string ;
+            schema:addressCountry "ES" ;
+            owl:sameAs <http://sws.geonames.org/3117735/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000119415175> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5062908> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .

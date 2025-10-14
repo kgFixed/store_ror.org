@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/05859w570> a org:Organization ;
+    rdfs:label 'Escola Politècnica Superior d\'Alcoi'^^xsd:string ;
+    schema:name 'Escola Politècnica Superior d\'Alcoi'^^xsd:string ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'EPSA'^^xsd:string ;
+    org:alternativeName 'Campus d\'Alcoi'^^xsd:string ;
+    schema:url <https://www.upv.es/entidades/epsa/> ; 
+    owl:sameAs <https://ca.wikipedia.org/wiki/Escola_Polit%25C3%25A8cnica_Superior_d%2527Alcoi> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-0.47432 38.70545)"^^geo:wktLiteral ;
+            schema:addressLocality 'Alcoy'^^xsd:string ;
+            schema:addressCountry "ES" ;
+            owl:sameAs <http://sws.geonames.org/2522098/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q8778179> ;
+    .

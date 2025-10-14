@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/0031x3y66> a org:Organization ;
+    rdfs:label 'Dai Nam University'^^xsd:string ;
+    schema:name 'Dai Nam University'^^xsd:string ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'DNU'^^xsd:string ;
+    org:alternativeName 'Trường Đại học Đại Nam'^^xsd:string ;
+    schema:url <https://dainam.edu.vn> ; 
+    owl:sameAs <https://vi.wikipedia.org/wiki/Tr%25C6%25B0%25E1%25BB%259Dng_%25C4%2590%25E1%25BA%25A1i_h%25E1%25BB%258Dc_%25C4%2590%25E1%25BA%25A1i_Nam> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+            schema:addressLocality 'Hanoi'^^xsd:string ;
+            schema:addressCountry "VN" ;
+            owl:sameAs <http://sws.geonames.org/1581130/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000505900208> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q10829182> ;
+    .

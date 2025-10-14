@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/009gcq722> a org:Organization ;
+    rdfs:label 'Kensei Hospital, Tokushima'^^xsd:string ;
+    schema:name 'Kensei Hospital, Tokushima'^^xsd:string ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Healthcare'^^xsd:string ; 
+    org:alternativeName 'Tokushima Kensei Hospital'^^xsd:string ;
+    schema:url <https://kenkou-seikyou.com> ; 
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E5%25BE%25B3%25E5%25B3%25B6%25E5%2581%25A5%25E7%2594%259F%25E7%2597%2585%25E9%2599%25A2> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(134.56667 34.06667)"^^geo:wktLiteral ;
+            schema:addressLocality 'Tokushima'^^xsd:string ;
+            schema:addressCountry "JP" ;
+            owl:sameAs <http://sws.geonames.org/1850158/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q11489675> ;
+    .

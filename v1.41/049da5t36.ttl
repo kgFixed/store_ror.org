@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/049da5t36> a org:Organization ;
+    rdfs:label 'Universidad de Burgos'^^xsd:string ;
+    schema:name 'Universidad de Burgos'^^xsd:string ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'UBU'^^xsd:string ;
+    schema:url <https://www.ubu.es> ; 
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Burgos> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-3.70184 42.34106)"^^geo:wktLiteral ;
+            schema:addressLocality 'Burgos'^^xsd:string ;
+            schema:addressCountry "ES" ;
+            owl:sameAs <http://sws.geonames.org/3127461/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000085691592> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1510657> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .
