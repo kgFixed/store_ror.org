@@ -1,0 +1,978 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/003vg9w96> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2020-03-15"^^xsd:date ;
+    dct:modified "2025-04-28"^^xsd:date ;
+    org:abbreviation 'INRAE'^^xsd:string@None ; 
+    schema:url <http://inrae.fr> ; 
+    schema:mainEntityOfPage <https://www.inrae.fr/> ;
+    schema:sameAs <https://api.crossref.org/funders/501100022077> ;
+    schema:sameAs <https://grid.ac/institutions/grid.507621.7> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wzg9f04> ;
+        rdfs:label 'AgroResonance Platform'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00mkad321> ;
+        rdfs:label 'Agroécologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jm8zw14> ;
+        rdfs:label 'Architecture et Fonction des Macromolécules Biologiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05r332y60> ;
+        rdfs:label 'Institut des Sciences des Plantes de Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03d1jma17> ;
+        rdfs:label 'Biologie Fonctionnelle Insectes et Interactions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02y3mfk39> ;
+        rdfs:label 'Biologie des Oiseaux et Aviculture'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032k75171> ;
+        rdfs:label 'Carnot Institute Qualiment'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002jby155> ;
+        rdfs:label 'Centre Bourgogne-Franche-Comté'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01v6wmk25> ;
+        rdfs:label 'Centre Bretagne-Normandie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04aqtsh50> ;
+        rdfs:label 'Centre Clermont-Auvergne-Rhône-Alpes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zg31r41> ;
+        rdfs:label 'Centre INRAE Grand-Est - Colmar'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00tebkv94> ;
+        rdfs:label 'Centre Nouvelle Aquitaine-Bordeaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03fkrcm40> ;
+        rdfs:label 'Centre Occitanie-Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02sxjwh33> ;
+        rdfs:label 'Centre Occitanie-Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/020jynt45> ;
+        rdfs:label 'Centre Pays de la Loire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qbdej90> ;
+        rdfs:label 'Centre Provence-Alpes-Côte d\'Azur'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016crzw98> ;
+        rdfs:label 'Centre Régional d’Innovation et de Transferts Technologiques des Industries du Bois'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ntmtb29> ;
+        rdfs:label 'Centre Val de Loire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008rywf59> ;
+        rdfs:label 'Centre d\'Écologie Fonctionnelle et Évolutive'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05h7ddb14> ;
+        rdfs:label 'Centre de Biologie et de Gestion des Populations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04hrbdg71> ;
+        rdfs:label 'Centre de Corse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03rzyjb72> ;
+        rdfs:label 'Centre de Recherche en Nutrition Humaine d\'Auvergne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05s1rff82> ;
+        rdfs:label 'Centre des Sciences du Goût et de l\'Alimentation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gtg0p11> ;
+        rdfs:label 'Centre Île-de-France - Jouy-en-Josas - Antony'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cbapb21> ;
+        rdfs:label 'Centre Île-de-France - Versailles-Grignon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gbppd30> ;
+        rdfs:label 'Dynamique des Génomes et Adaptation Microbienne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00pgyqh43> ;
+        rdfs:label 'Département Alimentation Humaine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05r63mf91> ;
+        rdfs:label 'Département Biologie et Amélioration des Plantes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01e7wth34> ;
+        rdfs:label 'Département Environnement et Agronomie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011emb038> ;
+        rdfs:label 'Département Mathématiques et Informatique Appliquées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03n4vkw74> ;
+        rdfs:label 'Département Microbiologie et Chaîne Alimentaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03tpcfk14> ;
+        rdfs:label 'Département Physiologie Animale et Systèmes d’Élevage'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/024409k12> ;
+        rdfs:label 'Département Santé Animale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0455v8x20> ;
+        rdfs:label 'Département Santé des Plantes et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vxmn596> ;
+        rdfs:label 'Département Sciences pour l’Action et le Développement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012221e05> ;
+        rdfs:label 'Département Sciences sociales, agriculture et alimentation, espace et environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029xmsm82> ;
+        rdfs:label 'Département Génétique Animale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00yv4p972> ;
+        rdfs:label 'Département Écologie des Forêts, Prairies et Milieux Aquatiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04q9vef57> ;
+        rdfs:label 'Ecologie des Forêts de Guyane'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v3w8223> ;
+        rdfs:label 'Field Observatory in Urban Hydrology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xtaw673> ;
+        rdfs:label 'Fish Physiology and Genomics Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00136g547> ;
+        rdfs:label 'Fractionnation of AgroResources and Environment'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01z0xsq42> ;
+        rdfs:label 'Genomics and Biotechnology of the Fruits Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/020g0rw41> ;
+        rdfs:label 'Gestion de l\'Eau, Acteurs, Usages'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0291jbz11> ;
+        rdfs:label 'Grapevine Health and Wine Quality'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fwjkb59> ;
+        rdfs:label 'Laboratoire d\'Economie Appliquée de Grenoble'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rfccx09> ;
+        rdfs:label 'Groupe de Recherche en Droit, Économie, Gestion'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03rkgeb39> ;
+        rdfs:label 'Génétique Animale et Biologie Intégrative'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012fqzm33> ;
+        rdfs:label 'Génétique Quantitative et Évolution Le Moulon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/003qhrc72> ;
+        rdfs:label 'Unité de Nutrition Humaine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0454zjr22> ;
+        rdfs:label 'Infectiologie Animale et Santé Publique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0262br971> ;
+        rdfs:label 'Innovation and Development in Agriculture and Food'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wqd6v19> ;
+        rdfs:label 'Institut Jean-Pierre Bourgin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04vj6zn89> ;
+        rdfs:label 'Institut Sophia Agrobiotech'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038fcbc74> ;
+        rdfs:label 'Institut de Génomique Fonctionnelle de Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ajjta07> ;
+        rdfs:label 'Institut des Sciences des Plantes de Paris Saclay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038kxsm48> ;
+        rdfs:label 'Institut de Génétique, Environnement et Protection des Plantes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02s56xp85> ;
+        rdfs:label 'Institut d\'écologie et des sciences de l\'environnement de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wrnm709> ;
+        rdfs:label 'Institut de Mécanique et d\'Ingénierie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bbjky47> ;
+        rdfs:label 'Laboratoire CarMeN'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jxe7243> ;
+        rdfs:label 'Laboratoire Physiologie Cellulaire & Végétale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01yypjb30> ;
+        rdfs:label 'Laboratoire d\'Ingénierie des Systèmes Biologiques et des Procédés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022m8c549> ;
+        rdfs:label 'Laboratoire de Biotechnologie de l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k317v03> ;
+        rdfs:label 'Laboratoire de Génétique Cellulaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04w61vh47> ;
+        rdfs:label 'Laboratoire Reproduction et Développement des Plantes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02gwt2810> ;
+        rdfs:label 'Laboratoire des Interactions Plantes Micro-Organismes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/027rbaq21> ;
+        rdfs:label 'Laboratoire Écologie Fonctionnelle et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011xg1225> ;
+        rdfs:label 'Montpellier Interdisciplinary center on Sustainable Agri-food systems: social and nutritional sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053vv7851> ;
+        rdfs:label 'Ecologie Microbienne Lyon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hqfh882> ;
+        rdfs:label 'Nutrition, Obésité et Risque Thrombotique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qma7a12> ;
+        rdfs:label 'Observatoire Aquitain des Sciences de l\'Univers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05vb5nm66> ;
+        rdfs:label 'PhysioPathologie des Adaptations Nutritionnelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02c6p9834> ;
+        rdfs:label 'Physiologie de la Reproduction et des Comportements'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k4s1p46> ;
+        rdfs:label 'Soil Agro and Hydrosystems Spatialization'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03m0zs870> ;
+        rdfs:label 'Institut Cellule Souche et Cerveau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03wzth680> ;
+        rdfs:label 'Stress Abiotiques et Différenciation des Végétaux Cultivés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00sxj6k90> ;
+        rdfs:label 'TRANSFORM'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033ebya06> ;
+        rdfs:label 'UMR BIOdiversity, GEnes & Communities'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026tc4g97> ;
+        rdfs:label 'Territoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03q99v794> ;
+        rdfs:label 'Unité Matériaux et Transformations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03yvemy54> ;
+        rdfs:label 'Unité Mixte de Recherche sur les Herbivores'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02g6y2720> ;
+        rdfs:label 'Unité de Glycobiologie Structurale et Fonctionnelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04247y265> ;
+        rdfs:label 'Unité de Recherche Pluridisciplinaire Prairies et Plantes Fourragères'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016vxbe23> ;
+        rdfs:label 'Zone Atelier Moselle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032v67m28> ;
+        rdfs:label 'UMR Transfrontalière BioEcoAgro'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03zb6nw87> ;
+        rdfs:label 'Nutrition, métabolismes et cancer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xbd2h58> ;
+        rdfs:label 'Unité Mixte de Recherche sur les Fromages'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vte9x46> ;
+        rdfs:label 'Observatoire des Sciences de l\'Univers de Grenoble'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04db8q179> ;
+        rdfs:label 'Agri Obtentions (France)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cptmd52> ;
+        rdfs:label 'Agronomie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037vdeb02> ;
+        rdfs:label 'Centre Alpin sur les Réseaux Trophiques et Ecosystèmes Lacustre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05deqk823> ;
+        rdfs:label 'Laboratoire d\'Etude des Interactions entre Sol-Agrosystème-Hydrosystème'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0050cbz19> ;
+        rdfs:label 'Modélisation Systémique Appliquée aux Ruminants'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05vex5m10> ;
+        rdfs:label 'PAnTher - Physiopathologie Animale et bioThérapie du muscle et du système nerveux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001rmv394> ;
+        rdfs:label 'Biomécanique et Pathologie Locomotrice du Cheval'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015a85k79> ;
+        rdfs:label 'Infections Virales et Pathologie Comparée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vtagt31> ;
+        rdfs:label 'Paris Jourdan Sciences Economiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xffm983> ;
+        rdfs:label 'Dynamique Musculaire et Métabolisme'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048bnmc64> ;
+        rdfs:label 'EMMAH - Environnement Méditerranéen et Modélisation des Agro-Hydrosystèmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00pz29t13> ;
+        rdfs:label 'GESTE - Gestion Territoriale de l\'Eau et de l\'Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01s4cye48> ;
+        rdfs:label 'Laboratoire d\'Ecophysiologie Végétale, Agronomie & nutritions N.C.S'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01dg9a450> ;
+        rdfs:label 'Laboratoire Agronomie et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0318tzh81> ;
+        rdfs:label 'Virologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ftatp57> ;
+        rdfs:label 'ITAP - Technologies et Méthodes pour les Agricultures de demain'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02brsbg31> ;
+        rdfs:label 'Ecologie Comportementale et Biologie des Populations de Poissons'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04wa4se75> ;
+        rdfs:label 'Dynamiques et écologie des paysages agriforestiers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0458hw939> ;
+        rdfs:label 'Territoires, Environnement, Télédétection et Information Spatiale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/059h64789> ;
+        rdfs:label 'Biologie Epidémiologie et Analyse de Risque en santé animale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fa3ke77> ;
+        rdfs:label 'Structures et Marchés Agricoles, Ressources et Territoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00cesps27> ;
+        rdfs:label 'Observatoire de Recherche Montpelliérain de l\'Environnement OREME'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00780az30> ;
+        rdfs:label 'Mathématiques et Informatique Appliquées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00t9egj41> ;
+        rdfs:label 'Centre de Recherche Épidémiologie et Statistique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k267t15> ;
+        rdfs:label 'France Génomique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007yrhe07> ;
+        rdfs:label 'Laboratoire Interdisciplinaire Sciences, Innovations, Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e04sg66> ;
+        rdfs:label 'Épidémiologie des maladies Animales et zoonotiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02c3c9255> ;
+        rdfs:label 'Unité Mixte de Recherche sur l\'Ecosystème Prairial'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04byv8g40> ;
+        rdfs:label 'Biodiversité, Agroécologie et Aménagement du Paysage'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f6qd925> ;
+        rdfs:label 'Biologie intégrée pour la valorisation de la diversité des arbres et de la forêt'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rwjvc96> ;
+        rdfs:label 'Center for Environmental Economics - Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01shz5j60> ;
+        rdfs:label 'Innovations thérapeutiques et résistances'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03gmkya61> ;
+        rdfs:label 'SayFood - Food and Bioproduct Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j65n394> ;
+        rdfs:label 'Laboratoire d\'Excellence TULIP'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01jvz7e61> ;
+        rdfs:label 'Virologie et Immunologie Moléculaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vxck708> ;
+        rdfs:label 'Unité de Recherche Agrosystèmes tropicaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w1erp60> ;
+        rdfs:label 'Couplage Multi-physiques et Multi-échelles en mécanique géo-environnemental'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02r1kz177> ;
+        rdfs:label 'Bioinformatique Moléculaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01365h357> ;
+        rdfs:label 'Observatoire des sciences de l\'Univers Paris-Centre Ecce Terra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qtp1053> ;
+        rdfs:label 'Paris School of Economics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/042w6m452> ;
+        rdfs:label 'Etude et Compréhension de la biodiversité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01225hq90> ;
+        rdfs:label 'Centre d\'Études Spatiales de la Biosphère'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05y5s3h28> ;
+        rdfs:label 'Plant Health Institute de Montpellier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00n2c0309> ;
+        rdfs:label 'ABSys'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05pwkex33> ;
+        rdfs:label 'Observatoire des Sciences de l\'Environnement de Rennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01a0ez112> ;
+        rdfs:label 'Laboratoire EcoSystèmes et Sociétés En Montagne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023cs7p87> ;
+        rdfs:label 'Groupe de Recherche en Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02w4exq36> ;
+        rdfs:label 'Genetic Improvement and Adaptation of Mediterranean and Tropical Plants'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/049q30t56> ;
+        rdfs:label 'Biologie et Gestion des Risques en Agriculture'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05em8ne27> ;
+        rdfs:label 'Bureau d\'Economie Théorique et Appliquée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043f5vc59> ;
+        rdfs:label 'Physiologie de la Nutrition et du Comportement Alimentaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01p9mtd45> ;
+        rdfs:label 'Paris-Saclay Applied Economics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/035emn182> ;
+        rdfs:label 'Laboratoire de Chimie Agro-Industrielle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0334tmt82> ;
+        rdfs:label 'Centre d\'Economie et de Sociologie Appliquées à l\'Agriculture et aux Espaces Ruraux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zgas264> ;
+        rdfs:label 'Procédés Alimentaires et Microbiologiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01cmdgj85> ;
+        rdfs:label 'Sciences pour l’action et le développement - Activités, produits, territoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00f945z63> ;
+        rdfs:label 'Institut Pytheas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01pa4h393> ;
+        rdfs:label 'Centre de Recherche et d’Enseignement de Géosciences de l’Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0518tra10> ;
+        rdfs:label 'UAR Data Terra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00680hx61> ;
+        rdfs:label 'Centre pour la Communication Scientifique Directe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ssf8c19> ;
+        rdfs:label 'Unité sous contrat Caractérisation et suivi des phénomènes d\'évolution des résistances'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05hb8m595> ;
+        rdfs:label 'PHOTOSYNTHESE'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sgwka45> ;
+        rdfs:label 'Microscopie Fonctionnelle du Vivant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03qgfy688> ;
+        rdfs:label 'Fédération Ile de France de recherche sur l\'environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03q1qx424> ;
+        rdfs:label 'Diversité, génomes et interactions micro-organismes-insectes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0000n5x09> ;
+        rdfs:label 'Ingénierie des Agropolymères et Technologies Emergentes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/049dk3691> ;
+        rdfs:label 'Marine Biodiversity Exploitation and Conservation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00357kh21> ;
+        rdfs:label 'Maladies Infectieuses et Vecteurs: Écologie, Génétique, Évolution et Contrôle'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

@@ -1,0 +1,168 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04hmn8g73> a org:Organization ;
+    rdfs:label 'Bayer (Germany)'^^xsd:string ;
+    schema:name 'Bayer (Germany)'^^xsd:string ;
+    schema:foundingDate "1863"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-04-28"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.gesundheit.bayer.de/de/index.php> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Bayer> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100000801> ;
+    schema:sameAs <https://grid.ac/institutions/grid.420044.6> ;
+    schema:sameAs <http://isni.org/isni/0000000403744101> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01441w502> ;
+        rdfs:label 'Bayer (Australia)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00n6v1c97> ;
+        rdfs:label 'Bayer (Belgium)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vnxev61> ;
+        rdfs:label 'Bayer (Canada)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05d5yxq17> ;
+        rdfs:label 'Bayer (China)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00be7h315> ;
+        rdfs:label 'Bayer (Czechia)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cmx5943> ;
+        rdfs:label 'Bayer (Finland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05cm0es58> ;
+        rdfs:label 'Bayer (France)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f2fqx85> ;
+        rdfs:label 'Bayer (Greece)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05kks4d25> ;
+        rdfs:label 'Bayer (India)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vpbac71> ;
+        rdfs:label 'Bayer (Italy)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05arv2073> ;
+        rdfs:label 'Bayer (Japan)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0404kfe46> ;
+        rdfs:label 'Bayer (Mexico)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01442sk86> ;
+        rdfs:label 'Bayer (Netherlands)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ezy0w74> ;
+        rdfs:label 'Bayer (New Zealand)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02attg727> ;
+        rdfs:label 'Bayer (Norway)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03dpx8939> ;
+        rdfs:label 'Bayer (South Korea)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qwdc951> ;
+        rdfs:label 'Bayer (Switzerland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05emrqw14> ;
+        rdfs:label 'Bayer (United Kingdom)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034ffbg36> ;
+        rdfs:label 'Bayer (United States)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02hkzs489> ;
+        rdfs:label 'Bayer Foundation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zec5297> ;
+        rdfs:label 'Bayer (Portugal)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.98432 51.0303)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Leverkusen" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "North Rhine-Westphalia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2878234/> ;
+    ] ; 
+    .

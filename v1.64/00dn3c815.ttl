@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00dn3c815> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-04-25"^^xsd:date ;
+    dct:modified "2025-04-28"^^xsd:date ;
+    org:abbreviation 'HPCC'^^xsd:string@en ; 
+    org:alternativeName 'Kishiwada Eishinkai Hospital'^^xsd:string@en ; 
+    org:alternativeName 'きしわだリハビリテーションびょういん'^^xsd:string@ja ; 
+    org:alternativeName '岸和田盈進会病院'^^xsd:string@ja ; 
+    schema:url <http://eishinkai.hospital> ; 
+    schema:mainEntityOfPage <https://www.eishinkai.hospital> ;
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E5%25B2%25B8%25E5%2592%258C%25E7%2594%25B0%25E3%2583%25AA%25E3%2583%258F%25E3%2583%2593%25E3%2583%25AA%25E3%2583%2586%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E7%2597%2585%25E9%2599%25A2> ; 
+    schema:sameAs <http://isni.org/isni/0000000481560877> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.36667 34.46667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kishiwada" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Osaka" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1859383/> ;
+    ] ; 
+    .

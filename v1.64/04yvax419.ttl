@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04yvax419> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1844"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-04-28"^^xsd:date ;
+    org:alternativeName 'CHR d\'Orléans'^^xsd:string@fr ; 
+    org:abbreviation 'CHRO'^^xsd:string@None ; 
+    org:alternativeName 'CHU d’Orléans'^^xsd:string@fr ; 
+    org:abbreviation 'CHUO'^^xsd:string@fr ; 
+    org:alternativeName 'Centre hospitalier régional d\'Orléans'^^xsd:string@fr ; 
+    schema:url <http://chu-orleans.fr> ; 
+    schema:mainEntityOfPage <https://www.chu-orleans.fr> ;
+    schema:sameAs <https://grid.ac/institutions/grid.413932.e> ;
+    schema:sameAs <http://isni.org/isni/000000041792201X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01mhd9b84> ;
+        rdfs:label 'Immunologie et Neurogénétique Expérimentales et Moléculaires'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.90389 47.90289)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Orléans" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Centre-Val de Loire" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2989317/> ;
+    ] ; 
+    .

@@ -1,0 +1,94 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04gwbew76> a org:Organization ;
+    rdfs:label 'Ministry of Ecology and Environment'^^xsd:string ;
+    schema:name 'Ministry of Ecology and Environment'^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-04-28"^^xsd:date ;
+    org:abbreviation 'MEP'^^xsd:string@None ; 
+    org:alternativeName 'Ministry of Environmental Protection'^^xsd:string@en ; 
+    org:abbreviation 'SEPA'^^xsd:string@None ; 
+    org:alternativeName 'State Environmental Protection Administration'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://english.mep.gov.cn/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Environmental_Protection_of_the_People%2527s_Republic_of_China> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004171> ;
+    schema:sameAs <https://grid.ac/institutions/grid.419900.5> ;
+    schema:sameAs <http://isni.org/isni/0000000121531597> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026drga03> ;
+        rdfs:label 'China National Environmental Monitoring Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/049wwwm08> ;
+        rdfs:label 'Environmental Development Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ycd7562> ;
+        rdfs:label 'Nanjing Institute of Environmental Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03mxyqx84> ;
+        rdfs:label 'National Center for Climate Change Strategy and International Cooperation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034wjng68> ;
+        rdfs:label 'Nuclear and Radiation Safety Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05xv2zk35> ;
+        rdfs:label 'Policy Research Center for Environment and Economy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x9p9g72> ;
+        rdfs:label 'Satellite Application Center for Ecology and Environment'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jgb8w65> ;
+        rdfs:label 'Sino-Japan Friendship Center for Environmental Protection'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Beijing" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Beijing" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1816670/> ;
+    ] ; 
+    .
