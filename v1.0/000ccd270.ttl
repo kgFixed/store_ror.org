@@ -8,16 +8,16 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://ror.org/000ccd270> a org:Organization ;
-    rdfs:label "Scoular (United States)" ;
+    rdfs:label 'Scoular (United States)'^^xsd:string ;
     schema:name "Scoular (United States)" ;
     schema:foundingDate "1892"^^xsd:gYear ;
-    org:status "active" ;
-    org:classification "Company" ; 
+    org:status 'active'^^xsd:string ;
+    org:classification 'Company'^^xsd:string ; 
     schema:url <https://www.scoular.com> ; 
     schema:location [
             a schema:Place ;
             geo:asWKT "POINT(-95.94043 41.25626)"^^geo:wktLiteral ;
-            schema:addressLocality "Omaha" ;
+            schema:addressLocality 'Omaha'^^xsd:string ;
             schema:addressCountry "US" ;
             owl:sameAs <http://sws.geonames.org/5074472/> ;
                 dct:license <http://creativecommons.org/licenses/by/3.0/> ;

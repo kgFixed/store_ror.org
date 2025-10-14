@@ -8,18 +8,18 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://ror.org/0006s4z66> a org:Organization ;
-    rdfs:label "Bureau of Justice Statistics" ;
+    rdfs:label 'Bureau of Justice Statistics'^^xsd:string ;
     schema:name "Bureau of Justice Statistics" ;
     schema:foundingDate "1979"^^xsd:gYear ;
-    org:status "active" ;
-    org:classification "Government" ; 
-    org:abbreviation "BJS" ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Government'^^xsd:string ; 
+    org:abbreviation 'BJS'^^xsd:string ;
     schema:url <https://www.bjs.gov/> ; 
     owl:sameAs <https://en.wikipedia.org/wiki/Bureau_of_Justice_Statistics> ;
     schema:location [
             a schema:Place ;
             geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
-            schema:addressLocality "Washington" ;
+            schema:addressLocality 'Washington'^^xsd:string ;
             schema:addressCountry "US" ;
             owl:sameAs <http://sws.geonames.org/4140963/> ;
                 dct:license <http://creativecommons.org/licenses/by/3.0/> ;

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/044r01e44> a org:Organization ;
+    rdfs:label 'Japan Geoscience Union'^^xsd:string ;
+    schema:name "Japan Geoscience Union" ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Nonprofit'^^xsd:string ; 
+    org:abbreviation 'JpGU'^^xsd:string ;
+    schema:url <https://www.jpgu.org/> ; 
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E6%2597%25A5%25E6%259C%25AC%25E5%259C%25B0%25E7%2590%2583%25E6%2583%2591%25E6%2598%259F%25E7%25A7%2591%25E5%25AD%25A6%25E9%2580%25A3%25E5%2590%2588> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+            schema:addressLocality 'Tokyo'^^xsd:string ;
+            schema:addressCountry "JP" ;
+            owl:sameAs <http://sws.geonames.org/1850147/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q11507752> ;
+    .

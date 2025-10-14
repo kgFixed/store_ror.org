@@ -8,17 +8,17 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://ror.org/0018wmh19> a org:Organization ;
-    rdfs:label "Molecular Devices" ;
+    rdfs:label 'Molecular Devices'^^xsd:string ;
     schema:name "Molecular Devices" ;
     schema:foundingDate "1983"^^xsd:gYear ;
-    org:status "active" ;
-    org:classification "Company" ; 
+    org:status 'active'^^xsd:string ;
+    org:classification 'Company'^^xsd:string ; 
     schema:url <http://www.moleculardevices.com/> ; 
     owl:sameAs <https://en.wikipedia.org/wiki/Molecular_Devices> ;
     schema:location [
             a schema:Place ;
             geo:asWKT "POINT(-121.89496 37.33939)"^^geo:wktLiteral ;
-            schema:addressLocality "San Jose" ;
+            schema:addressLocality 'San Jose'^^xsd:string ;
             schema:addressCountry "US" ;
             owl:sameAs <http://sws.geonames.org/5392171/> ;
                 dct:license <http://creativecommons.org/licenses/by/3.0/> ;

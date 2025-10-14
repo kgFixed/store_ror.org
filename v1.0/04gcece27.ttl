@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/04gcece27> a org:Organization ;
+    rdfs:label 'Natural History Museum of the Lesvos Petrified Forest'^^xsd:string ;
+    schema:name "Natural History Museum of the Lesvos Petrified Forest" ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Facility'^^xsd:string ; 
+    org:abbreviation 'NHMLPF'^^xsd:string ;
+    schema:url <https://www.lesvosmuseum.gr/> ; 
+    owl:sameAs <https://el.wikipedia.org/wiki/%25CE%259C%25CE%25BF%25CF%2585%25CF%2583%25CE%25B5%25CE%25AF%25CE%25BF_%25CE%25A6%25CF%2585%25CF%2583%25CE%25B9%25CE%25BA%25CE%25AE%25CF%2582_%25CE%2599%25CF%2583%25CF%2584%25CE%25BF%25CF%2581%25CE%25AF%25CE%25B1%25CF%2582_%25CE%2591%25CF%2580%25CE%25BF%25CE%25BB%25CE%25B9%25CE%25B8%25CF%2589%25CE%25BC%25CE%25AD%25CE%25BD%25CE%25BF%25CF%2585_%25CE%2594%25CE%25AC%25CF%2583%25CE%25BF%25CF%2585%25CF%2582_%25CE%259B%25CE%25AD%25CF%2583%25CE%25B2%25CE%25BF%25CF%2585> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(25.85263 39.21161)"^^geo:wktLiteral ;
+            schema:addressLocality 'Sigri'^^xsd:string ;
+            schema:addressCountry "GR" ;
+            owl:sameAs <http://sws.geonames.org/253919/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q6980528> ;
+    .

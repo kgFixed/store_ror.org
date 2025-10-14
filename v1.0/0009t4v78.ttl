@@ -8,19 +8,19 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://ror.org/0009t4v78> a org:Organization ;
-    rdfs:label "Anglia Ruskin University" ;
+    rdfs:label 'Anglia Ruskin University'^^xsd:string ;
     schema:name "Anglia Ruskin University" ;
     schema:foundingDate "1992"^^xsd:gYear ;
-    org:status "active" ;
-    org:classification "Education" ; 
-    org:abbreviation "ARU" ;
-    org:alternativeName "Anglia Polytechnic University" ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'ARU'^^xsd:string ;
+    org:alternativeName 'Anglia Polytechnic University'^^xsd:string ;
     schema:url <https://www.aru.ac.uk/> ; 
     owl:sameAs <http://en.wikipedia.org/wiki/Anglia_Ruskin_University> ;
     schema:location [
             a schema:Place ;
             geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
-            schema:addressLocality "Cambridge" ;
+            schema:addressLocality 'Cambridge'^^xsd:string ;
             schema:addressCountry "GB" ;
             owl:sameAs <http://sws.geonames.org/2653941/> ;
                 dct:license <http://creativecommons.org/licenses/by/3.0/> ;

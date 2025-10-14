@@ -8,16 +8,16 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://ror.org/0029jxk29> a org:Organization ;
-    rdfs:label "Tula Foundation" ;
+    rdfs:label 'Tula Foundation'^^xsd:string ;
     schema:name "Tula Foundation" ;
     schema:foundingDate "2001"^^xsd:gYear ;
-    org:status "active" ;
-    org:classification "Nonprofit" ; 
+    org:status 'active'^^xsd:string ;
+    org:classification 'Nonprofit'^^xsd:string ; 
     schema:url <http://tula.org/> ; 
     schema:location [
             a schema:Place ;
             geo:asWKT "POINT(-123.11934 49.24966)"^^geo:wktLiteral ;
-            schema:addressLocality "Vancouver" ;
+            schema:addressLocality 'Vancouver'^^xsd:string ;
             schema:addressCountry "CA" ;
             owl:sameAs <http://sws.geonames.org/6173331/> ;
                 dct:license <http://creativecommons.org/licenses/by/3.0/> ;
