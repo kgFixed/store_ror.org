@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/01c9agy38> a org:Organization ;
+    rdfs:label 'Environmental Restoration and Conservation Agency'^^xsd:string ;
+    schema:name 'Environmental Restoration and Conservation Agency'^^xsd:string ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Government'^^xsd:string ; 
+    org:abbreviation 'ERCA'^^xsd:string ;
+    org:alternativeName '環境再生保全機構'^^xsd:string ;
+    schema:url <https://www.erca.go.jp> ; 
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E7%2592%25B0%25E5%25A2%2583%25E5%2586%258D%25E7%2594%259F%25E4%25BF%259D%25E5%2585%25A8%25E6%25A9%259F%25E6%25A7%258B> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(139.71722 35.52056)"^^geo:wktLiteral ;
+            schema:addressLocality 'Kawasaki'^^xsd:string ;
+            schema:addressCountry "JP" ;
+            owl:sameAs <http://sws.geonames.org/1859642/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000090999401> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q11574038> ;
+    .

@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/02tzcfr91> a org:Organization ;
+    rdfs:label 'Theoretical Physics and Mathematics Advancement Foundation “BASIS”'^^xsd:string ;
+    schema:name 'Theoretical Physics and Mathematics Advancement Foundation “BASIS”'^^xsd:string ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Nonprofit'^^xsd:string ; 
+    org:alternativeName 'Basis Foundation'^^xsd:string ;
+    schema:url <https://basis-foundation.ru> ; 
+    owl:sameAs <https://ru.wikipedia.org/wiki/%25D0%2591%25D0%25B0%25D0%25B7%25D0%25B8%25D1%2581_(%25D1%2584%25D0%25BE%25D0%25BD%25D0%25B4)> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+            schema:addressLocality 'Moscow'^^xsd:string ;
+            schema:addressCountry "RU" ;
+            owl:sameAs <http://sws.geonames.org/524901/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q65129389> ;
+    .
