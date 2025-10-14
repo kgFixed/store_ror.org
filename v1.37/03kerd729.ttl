@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/03kerd729> a org:Organization ;
+    rdfs:label 'Sekolah Tinggi Teologi Tabgha Batam'^^xsd:string ;
+    schema:name 'Sekolah Tinggi Teologi Tabgha Batam'^^xsd:string ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'ST3B'^^xsd:string ;
+    org:alternativeName 'Tabgha Batam Theological Seminary'^^xsd:string ;
+    schema:url <https://www.st3b.ac.id> ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(104.02491 1.14937)"^^geo:wktLiteral ;
+            schema:addressLocality 'Batam'^^xsd:string ;
+            schema:addressCountry "ID" ;
+            owl:sameAs <http://sws.geonames.org/6295587/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q109911746> ;
+    .
