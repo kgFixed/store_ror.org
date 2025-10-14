@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/033ntwq47> a org:Organization ;
+    rdfs:label 'Khmelnytskyi Humanitarian-Pedagogical Academy'^^xsd:string ;
+    schema:name 'Khmelnytskyi Humanitarian-Pedagogical Academy'^^xsd:string ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    schema:url <http://www.kgpa.km.ua> ; 
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%25A5%25D0%25BC%25D0%25B5%25D0%25BB%25D1%258C%25D0%25BD%25D0%25B8%25D1%2586%25D1%258C%25D0%25BA%25D0%25B0_%25D0%25B3%25D1%2583%25D0%25BC%25D0%25B0%25D0%25BD%25D1%2596%25D1%2582%25D0%25B0%25D1%2580%25D0%25BD%25D0%25BE-%25D0%25BF%25D0%25B5%25D0%25B4%25D0%25B0%25D0%25B3%25D0%25BE%25D0%25B3%25D1%2596%25D1%2587%25D0%25BD%25D0%25B0_%25D0%25B0%25D0%25BA%25D0%25B0%25D0%25B4%25D0%25B5%25D0%25BC%25D1%2596%25D1%258F> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(26.97936 49.41835)"^^geo:wktLiteral ;
+            schema:addressLocality 'Khmelnytskyi'^^xsd:string ;
+            schema:addressCountry "UA" ;
+            owl:sameAs <http://sws.geonames.org/706369/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q74432728> ;
+    .

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/05hg0rk71> a org:Organization ;
+    rdfs:label 'Donetsk State University of Internal Affairs'^^xsd:string ;
+    schema:name 'Donetsk State University of Internal Affairs'^^xsd:string ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:alternativeName 'Donetsk Police College of the Ministry of Internal Affairs of Ukraine'^^xsd:string ;
+    schema:url <https://dnuvs.ukr.education> ; 
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2594%25D0%25BE%25D0%25BD%25D0%25B5%25D1%2586%25D1%258C%25D0%25BA%25D0%25B8%25D0%25B9_%25D0%25B4%25D0%25B5%25D1%2580%25D0%25B6%25D0%25B0%25D0%25B2%25D0%25BD%25D0%25B8%25D0%25B9_%25D1%2583%25D0%25BD%25D1%2596%25D0%25B2%25D0%25B5%25D1%2580%25D1%2581%25D0%25B8%25D1%2582%25D0%25B5%25D1%2582_%25D0%25B2%25D0%25BD%25D1%2583%25D1%2582%25D1%2580%25D1%2596%25D1%2588%25D0%25BD%25D1%2596%25D1%2585_%25D1%2581%25D0%25BF%25D1%2580%25D0%25B0%25D0%25B2> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(33.39404 47.90572)"^^geo:wktLiteral ;
+            schema:addressLocality 'Kryvyi Rih'^^xsd:string ;
+            schema:addressCountry "UA" ;
+            owl:sameAs <http://sws.geonames.org/703845/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q20076457> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .
