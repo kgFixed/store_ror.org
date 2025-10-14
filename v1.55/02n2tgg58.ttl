@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02n2tgg58> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'CUCN'^^xsd:string@en ; 
+    org:alternativeName 'Nanguang College, Communication University of China'^^xsd:string@en ; 
+    org:alternativeName 'Nanjing Communication College'^^xsd:string@en ; 
+    org:alternativeName '中国传媒大学南广学院'^^xsd:string@zh ; 
+    org:abbreviation '南传'^^xsd:string@zh ; 
+    org:alternativeName '南广'^^xsd:string@zh ; 
+    org:alternativeName '南广学院'^^xsd:string@zh ; 
+    schema:url <http://cucn.edu.cn> ; 
+    schema:mainEntityOfPage <https://www.cucn.edu.cn> ;
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E5%258D%2597%25E4%25BA%25AC%25E4%25BC%25A0%25E5%25AA%2592%25E5%25AD%25A6%25E9%2599%25A2> ; 
+    schema:sameAs <http://isni.org/isni/0000000417662553> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(118.77778 32.06167)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Nanjing" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1799962/> ;
+    ] ; 
+    .

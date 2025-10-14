@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/054vayn55> a org:Organization ;
+    rdfs:label 'Consorci Institut D\'Investigacions Biomediques August Pi I Sunyer'^^xsd:string ;
+    schema:name 'Consorci Institut D\'Investigacions Biomediques August Pi I Sunyer'^^xsd:string ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'IDIBAPS'^^xsd:string@None ; 
+    org:abbreviation 'IDIBAPS-CERCA'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.idibaps.org/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.10403.36> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03mw46n78> ;
+        rdfs:label 'Fundació Clínic per a la Recerca Biomèdica'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01bkbaq61> ;
+        rdfs:label 'CERCA Institution'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/041gvmd67> ;
+        rdfs:label 'Fundació de Recerca Clínic Barcelona-Institut d’Investigacions Biomèdiques August Pi i Sunyer'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.15899 41.38879)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Barcelona" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3128760/> ;
+    ] ; 
+    .

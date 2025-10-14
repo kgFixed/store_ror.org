@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04d9kk613> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'IRCHA'^^xsd:string@en ; 
+    org:alternativeName 'مرکز تحقیقات ایدز ایران دانشگاه علوم پزشکی تهران'^^xsd:string@fa ; 
+    schema:url <http://ircha.tums.ac.ir> ; 
+    schema:mainEntityOfPage <https://ircha.tums.ac.ir> ;
+    owl:sameAs <https://fa.wikipedia.org/wiki/%25D9%2585%25D8%25B1%25DA%25A9%25D8%25B2_%25D8%25AA%25D8%25AD%25D9%2582%25DB%258C%25D9%2582%25D8%25A7%25D8%25AA_%25D8%25A7%25DB%258C%25D8%25AF%25D8%25B2_%25D8%25A7%25DB%258C%25D8%25B1%25D8%25A7%25D9%2586> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01c4pz451> ;
+        rdfs:label 'Tehran University of Medical Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(51.42151 35.69439)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tehran" ;
+            schema:addressCountry "IR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Iran" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/112931/> ;
+    ] ; 
+    .

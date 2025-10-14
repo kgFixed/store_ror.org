@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00wadf468> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'PISAS'^^xsd:string@en ; 
+    org:alternativeName 'Polymer Institute'^^xsd:string@en ; 
+    org:alternativeName 'Polymer Institute SAS'^^xsd:string@en ; 
+    org:alternativeName 'Polymer Institute SAV'^^xsd:string@en ; 
+    org:abbreviation 'ÚPo SAV'^^xsd:string@sk ; 
+    org:alternativeName 'Ústav polymérov SAV'^^xsd:string@sk ; 
+    org:alternativeName 'Ústav polymérov SAV, v. v. i.'^^xsd:string@sk ; 
+    org:alternativeName 'Ústav polymérov Slovenská akadémia vied, v. v. i.'^^xsd:string@sk ; 
+    org:alternativeName 'Ústav polymérov Slovenská akadémia vied, verejná výskumná inštitúcia'^^xsd:string@sk ; 
+    schema:url <http://polymer.sav.sk> ; 
+    schema:mainEntityOfPage <https://polymer.sav.sk> ;
+    schema:sameAs <https://grid.ac/institutions/grid.429924.0> ;
+    schema:sameAs <http://isni.org/isni/0000000107240339> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03h7qq074> ;
+        rdfs:label 'Slovak Academy of Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.10674 48.14816)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Bratislava" ;
+            schema:addressCountry "SK" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Slovakia" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3060972/> ;
+    ] ; 
+    .

@@ -1,0 +1,70 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05hnb7x64> a org:Organization ;
+    rdfs:label 'Bureau de Recherches Géologiques et Minières'^^xsd:string ;
+    schema:name 'Bureau de Recherches Géologiques et Minières'^^xsd:string ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'BRGM'^^xsd:string@None ; 
+    org:alternativeName 'Bur Rech Geol & Minieres'^^xsd:string@fr ; 
+    org:alternativeName 'Bur. Rech. Geol. Minieres'^^xsd:string@fr ; 
+    org:alternativeName 'French Geological Survey'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.brgm.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Bureau_de_Recherches_G%25C3%25A9ologiques_et_Mini%25C3%25A8res> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100006273> ;
+    schema:sameAs <https://grid.ac/institutions/grid.16117.30> ;
+    schema:sameAs <http://isni.org/isni/0000000121846484> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v3w8223> ;
+        rdfs:label 'Field Observatory in Urban Hydrology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w1erp60> ;
+        rdfs:label 'Couplage Multi-physiques et Multi-échelles en mécanique géo-environnemental'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02t2hg116> ;
+        rdfs:label 'Institut des Sciences de la Terre d\'Orléans'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/020g0rw41> ;
+        rdfs:label 'Gestion de l\'Eau, Acteurs, Usages'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.90389 47.90289)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Orléans" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2989317/> ;
+    ] ; 
+    .

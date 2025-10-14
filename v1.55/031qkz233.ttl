@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/031qkz233> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2024-10-29"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'SDH'^^xsd:string@en ; 
+    org:alternativeName 'Shiseikai Daini Byouin'^^xsd:string@ja ; 
+    org:alternativeName 'しせいかいだいにびょういん'^^xsd:string@ja ; 
+    org:alternativeName 'シセイカイダイニビョウイン'^^xsd:string@ja ; 
+    schema:url <http://shiseikai-daini-hosp.jp> ; 
+    schema:mainEntityOfPage <https://www.shiseikai-daini-hosp.jp> ;
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E8%2587%25B3%25E8%25AA%25A0%25E4%25BC%259A%25E7%25AC%25AC%25E4%25BA%258C%25E7%2597%2585%25E9%2599%25A2> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tokyo" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1850147/> ;
+    ] ; 
+    .

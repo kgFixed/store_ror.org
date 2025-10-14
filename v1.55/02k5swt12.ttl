@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02k5swt12> a org:Organization ;
+    rdfs:label 'Universidade Federal de São Paulo'^^xsd:string ;
+    schema:name 'Universidade Federal de São Paulo'^^xsd:string ;
+    schema:foundingDate "1933"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'UNIFESP'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.unifesp.br/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Federal_University_of_S%25C3%25A3o_Paulo> ; 
+    schema:sameAs <https://api.crossref.org/funders/100018217> ;
+    schema:sameAs <https://grid.ac/institutions/grid.411249.b> ;
+    schema:sameAs <http://isni.org/isni/0000000105147202> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/050z9fj14> ;
+        rdfs:label 'Hospital São Paulo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00kmde975> ;
+        rdfs:label 'Instituto de Ciências Ambientais, Químicas e Farmacêuticas'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "São Paulo" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3448439/> ;
+    ] ; 
+    .

@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/004pv5w59> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1953"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:alternativeName 'Archeologický ústav SAV'^^xsd:string@sk ; 
+    org:alternativeName 'Archeologický ústav SAV, v. v. i.'^^xsd:string@sk ; 
+    org:alternativeName 'Archeologický ústav Slovenská akadémia vied, v. v. i.'^^xsd:string@sk ; 
+    org:alternativeName 'Archeologický ústav Slovenská akadémia vied, verejná výskumná inštitúcia'^^xsd:string@sk ; 
+    org:alternativeName 'Institute of Archaeology'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Archaeology SAS'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Archaeology SAV'^^xsd:string@en ; 
+    schema:url <http://archeol.sav.sk> ; 
+    schema:mainEntityOfPage <https://archeol.sav.sk> ;
+    schema:sameAs <https://grid.ac/institutions/grid.484920.3> ;
+    schema:sameAs <http://isni.org/isni/0000000119588674> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03h7qq074> ;
+        rdfs:label 'Slovak Academy of Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.08453 48.30763)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Nitra" ;
+            schema:addressCountry "SK" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Slovakia" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3058531/> ;
+    ] ; 
+    .

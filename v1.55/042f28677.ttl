@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/042f28677> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2024-07-24"^^xsd:date ;
+    dct:modified "2024-10-31"^^xsd:date ;
+    org:abbreviation 'THC'^^xsd:string@en ; 
+    org:alternativeName 'Tehran Heart Center Hospital'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://thc.tums.ac.ir> ;
+    owl:sameAs <https://fa.wikipedia.org/wiki/%25D9%2585%25D8%25B1%25DA%25A9%25D8%25B2_%25D9%2582%25D9%2584%25D8%25A8_%25D8%25AA%25D9%2587%25D8%25B1%25D8%25A7%25D9%2586#:~:text=%25D9%2585%25D8%25B1%25DA%25A9%25D8%25B2%2520%25D9%2582%25D9%2584%25D8%25A8%2520%25D8%25AA%25D9%2587%25D8%25B1%25D8%25A7%25D9%2586%2520%25DB%258C%25DA%25A9%2520%25D8%25A8%25DB%258C%25D9%2585%25D8%25A7%25D8%25B1%25D8%25B3%25D8%25AA%25D8%25A7%25D9%2586,%25D8%25AA%25D9%2587%25D8%25B1%25D8%25A7%25D9%2586%2520%25D9%2588%2520%25D8%25A7%25DB%258C%25D8%25B1%25D8%25A7%25D9%2586%2520%25D8%25A8%25D9%2587%25E2%2580%258C%25D8%25B4%25D9%2585%25D8%25A7%25D8%25B1%2520%25D9%2585%25DB%258C%25E2%2580%258C%25D8%25B1%25D9%2588%25D8%25AF> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01c4pz451> ;
+        rdfs:label 'Tehran University of Medical Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ktv1m31> ;
+        rdfs:label 'Cardiovascular Diseases Research Institute'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(51.42151 35.69439)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tehran" ;
+            schema:addressCountry "IR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Iran" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/112931/> ;
+    ] ; 
+    .
