@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/03fsd9z73> a org:Organization ;
+    rdfs:label 'Jio Institute'^^xsd:string ;
+    schema:name 'Jio Institute'^^xsd:string ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    schema:url <https://www.jioinstitute.edu.in> ; 
+    owl:sameAs <https://en.wikipedia.org/wiki/Jio_Institute> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(73.01582 19.03681)"^^geo:wktLiteral ;
+            schema:addressLocality 'Navi Mumbai'^^xsd:string ;
+            schema:addressCountry "IN" ;
+            owl:sameAs <http://sws.geonames.org/6619347/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q116971646> ;
+    .
