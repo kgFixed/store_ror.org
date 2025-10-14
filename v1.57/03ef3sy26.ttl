@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03ef3sy26> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-12-09"^^xsd:date ;
+    dct:modified "2024-12-10"^^xsd:date ;
+    org:abbreviation 'APA'^^xsd:string@en ; 
+    org:abbreviation 'АГУ'^^xsd:string@ru ; 
+    org:alternativeName 'Академия госуправления'^^xsd:string@ru ; 
+    org:alternativeName 'Казахстанская академия государственной службы'^^xsd:string@ru ; 
+    org:alternativeName 'Мемлекеттік Қызмет Академиясы'^^xsd:string@kk ; 
+    schema:url <http://apa.kz> ; 
+    schema:mainEntityOfPage <https://www.apa.kz> ;
+    owl:sameAs <https://ru.wikipedia.org/wiki/%25D0%2590%25D0%25BA%25D0%25B0%25D0%25B4%25D0%25B5%25D0%25BC%25D0%25B8%25D1%258F_%25D0%25B3%25D0%25BE%25D1%2581%25D1%2583%25D0%25B4%25D0%25B0%25D1%2580%25D1%2581%25D1%2582%25D0%25B2%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25BE%25D0%25B3%25D0%25BE_%25D1%2583%25D0%25BF%25D1%2580%25D0%25B0%25D0%25B2%25D0%25BB%25D0%25B5%25D0%25BD%25D0%25B8%25D1%258F_%25D0%25BF%25D1%2580%25D0%25B8_%25D0%259F%25D1%2580%25D0%25B5%25D0%25B7%25D0%25B8%25D0%25B4%25D0%25B5%25D0%25BD%25D1%2582%25D0%25B5_%25D0%25A0%25D0%25B5%25D1%2581%25D0%25BF%25D1%2583%25D0%25B1%25D0%25BB%25D0%25B8%25D0%25BA%25D0%25B8_%25D0%259A%25D0%25B0%25D0%25B7%25D0%25B0%25D1%2585%25D1%2581%25D1%2582%25D0%25B0%25D0%25BD> ; 
+    schema:sameAs <http://isni.org/isni/000000040547503X> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.44598 51.1801)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Astana" ;
+            schema:addressCountry "KZ" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Kazakhstan" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1526273/> ;
+    ] ; 
+    .

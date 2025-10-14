@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/034kc6w18> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-12-09"^^xsd:date ;
+    dct:modified "2024-12-10"^^xsd:date ;
+    org:alternativeName 'Altynsarin Academy'^^xsd:string@en ; 
+    org:alternativeName 'National Academy of Education named after I. Altynsarin'^^xsd:string@en ; 
+    org:alternativeName 'National Academy of Education named after Ybyrai Altynsarin'^^xsd:string@en ; 
+    org:alternativeName 'Ы. Алтынсарин атындағы Ұлттық білім академиясы'^^xsd:string@kk ; 
+    schema:url <http://uba.edu.kz> ; 
+    schema:mainEntityOfPage <https://uba.edu.kz> ;
+    owl:sameAs <https://kk.wikipedia.org/wiki/%25D0%25AB%25D0%25B1%25D1%258B%25D1%2580%25D0%25B0%25D0%25B9_%25D0%2590%25D0%25BB%25D1%2582%25D1%258B%25D0%25BD%25D1%2581%25D0%25B0%25D1%2580%25D0%25B8%25D0%25BD_%25D0%25B0%25D1%2582%25D1%258B%25D0%25BD%25D0%25B4%25D0%25B0%25D2%2593%25D1%258B_%25D2%25B0%25D0%25BB%25D1%2582%25D1%2582%25D1%258B%25D2%259B_%25D0%25B1%25D1%2596%25D0%25BB%25D1%2596%25D0%25BC_%25D0%25B0%25D0%25BA%25D0%25B0%25D0%25B4%25D0%25B5%25D0%25BC%25D0%25B8%25D1%258F%25D1%2581%25D1%258B> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.44598 51.1801)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Astana" ;
+            schema:addressCountry "KZ" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Kazakhstan" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1526273/> ;
+    ] ; 
+    .

@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/036vefa56> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-12-09"^^xsd:date ;
+    dct:modified "2024-12-10"^^xsd:date ;
+    org:alternativeName 'Shijōnawate gakuen tanki daigaku'^^xsd:string@ja ; 
+    org:alternativeName 'しじょうなわてがくえんたんきだいがく'^^xsd:string@ja ; 
+    schema:url <http://shijonawate-gakuen.ac.jp> ; 
+    schema:mainEntityOfPage <https://jc.shijonawate-gakuen.ac.jp> ;
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E5%259B%259B%25E6%25A2%259D%25E7%2595%25B7%25E5%25AD%25A6%25E5%259C%2592%25E7%259F%25AD%25E6%259C%259F%25E5%25A4%25A7%25E5%25AD%25A6> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02rzxtq06> ;
+        rdfs:label 'Shijonawate Gakuen University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Osaka" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1853909/> ;
+    ] ; 
+    .

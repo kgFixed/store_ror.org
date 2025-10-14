@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04f6z5785> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-12-09"^^xsd:date ;
+    dct:modified "2024-12-10"^^xsd:date ;
+    org:abbreviation 'ITESS'^^xsd:string@es ; 
+    org:alternativeName 'ITS Salvatierra'^^xsd:string@es ; 
+    org:alternativeName 'TecNM Campus Salvtierra'^^xsd:string@es ; 
+    org:alternativeName 'TecNM Salvtierra'^^xsd:string@es ; 
+    org:alternativeName 'Tecnológico Nacional de México Campus Salvatierra'^^xsd:string@es ; 
+    schema:url <http://itess.edu.mx> ; 
+    schema:mainEntityOfPage <https://itess.edu.mx> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00davry38> ;
+        rdfs:label 'Tecnológico Nacional de México'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-100.9124 20.21094)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Salvatierra" ;
+            schema:addressCountry "MX" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Mexico" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8581922/> ;
+    ] ; 
+    .

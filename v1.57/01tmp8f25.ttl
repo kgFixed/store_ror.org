@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01tmp8f25> a org:Organization ;
+    rdfs:label 'Universidad Nacional Autónoma de México'^^xsd:string ;
+    schema:name 'Universidad Nacional Autónoma de México'^^xsd:string ;
+    schema:foundingDate "1910"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-12-10"^^xsd:date ;
+    org:abbreviation 'UNAM'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.unam.mx> ;
+    owl:sameAs <https://es.wikipedia.org/wiki/Universidad_Nacional_Aut%25C3%25B3noma_de_M%25C3%25A9xico> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005739> ;
+    schema:sameAs <https://grid.ac/institutions/grid.9486.3> ;
+    schema:sameAs <http://isni.org/isni/0000000121590001> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05afdpg81> ;
+        rdfs:label 'Centro Regional de Investigaciones Multidisciplinarias'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03kkrza17> ;
+        rdfs:label 'Centro de Investigaciones Interdisciplinarias en Ciencias y Humanidades'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01php1d31> ;
+        rdfs:label 'Hospital General de México'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00szdrw29> ;
+        rdfs:label 'Facultad de Estudios Superiores Aragón'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.12766 19.42847)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Mexico City" ;
+            schema:addressCountry "MX" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Mexico" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3530597/> ;
+    ] ; 
+    .

@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02s376052> a org:Organization ;
+    rdfs:label 'École Polytechnique Fédérale de Lausanne'^^xsd:string ;
+    schema:name 'École Polytechnique Fédérale de Lausanne'^^xsd:string ;
+    schema:foundingDate "1853"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-12-10"^^xsd:date ;
+    org:abbreviation 'EPFL'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.epfl.ch> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/%25C3%2589cole_Polytechnique_F%25C3%25A9d%25C3%25A9rale_de_Lausanne> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100001703> ;
+    schema:sameAs <https://grid.ac/institutions/grid.5333.6> ;
+    schema:sameAs <http://isni.org/isni/0000000121839049> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033f9yy33> ;
+        rdfs:label 'NCCR Chemical Biology - Visualisation and Control of Biological Processes Using Chemistry'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02hdt9m26> ;
+        rdfs:label 'Swiss Data Science Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01rvn4p91> ;
+        rdfs:label 'Board of the Swiss Federal Institutes of Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05932h694> ;
+        rdfs:label 'Idiap Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02z9ca723> ;
+        rdfs:label 'Swiss Polar Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03qf6ek79> ;
+        rdfs:label 'NCCR Catalysis'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.63282 46.516)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lausanne" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2659994/> ;
+    ] ; 
+    .
