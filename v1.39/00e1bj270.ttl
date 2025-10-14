@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/00e1bj270> a org:Organization ;
+    rdfs:label 'Instituto Superior de Ciências da Educação da Huíla'^^xsd:string ;
+    schema:name 'Instituto Superior de Ciências da Educação da Huíla'^^xsd:string ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'ISCED-HLA'^^xsd:string ;
+    org:alternativeName 'ISCED-Huíla'^^xsd:string ;
+    schema:url <https://isced-huila.ed.ao> ; 
+    owl:sameAs <https://pt.wikipedia.org/wiki/Instituto_Superior_de_Ci%25C3%25AAncias_da_Educa%25C3%25A7%25C3%25A3o_da_Hu%25C3%25ADla> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(13.4925 -14.91717)"^^geo:wktLiteral ;
+            schema:addressLocality 'Lubango'^^xsd:string ;
+            schema:addressCountry "AO" ;
+            owl:sameAs <http://sws.geonames.org/3347762/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://www.wikidata.org/entity/Q61000134> ;
+    .

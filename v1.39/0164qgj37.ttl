@@ -1,0 +1,30 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/0164qgj37> a org:Organization ;
+    rdfs:label 'Dong A University'^^xsd:string ;
+    schema:name 'Dong A University'^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'DAD'^^xsd:string ;
+    org:alternativeName 'Đông Á University'^^xsd:string ;
+    schema:url <https://donga.edu.vn> ; 
+    owl:sameAs <https://en.wikipedia.org/wiki/%25C4%2590%25C3%25B4ng_%25C3%2581_University> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(108.22083 16.06778)"^^geo:wktLiteral ;
+            schema:addressLocality 'Da Nang'^^xsd:string ;
+            schema:addressCountry "VN" ;
+            owl:sameAs <http://sws.geonames.org/1583992/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000503698202> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q10829180> ;
+    .
