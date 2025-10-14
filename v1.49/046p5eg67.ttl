@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/046p5eg67> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2024-07-08"^^xsd:date ;
+    dct:modified "2024-07-11"^^xsd:date ;
+    org:alternativeName 'Futurum'^^xsd:string@sv ; 
+    org:alternativeName 'Futurum - Akademin för Hälsa och Vård, Region Jönköpings läns'^^xsd:string@sv ; 
+    org:alternativeName 'Futurum Academy for Health and Care'^^xsd:string@en ; 
+    org:alternativeName 'Futurum Academy for Health and Care, Region Jönköping County'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.rjl.se/om-oss/om-organisationen/Forskning-och-utveckling/forskning-och-larande-i-halso--och-sjukvarden> ;
+    schema:sameAs <https://api.crossref.org/funders/501100009752> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01c98q459> ;
+        rdfs:label 'Region Jönköpings län'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.15618 57.78145)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Jönköping" ;
+            schema:addressCountry "SE" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Sweden" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2702979/> ;
+    ] ; 
+    .

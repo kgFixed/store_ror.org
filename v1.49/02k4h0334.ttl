@@ -1,0 +1,116 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02k4h0334> a org:Organization ;
+    rdfs:label 'NOAA National Ocean Service'^^xsd:string ;
+    schema:name 'NOAA National Ocean Service'^^xsd:string ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-11"^^xsd:date ;
+    org:abbreviation 'NOAA NOS'^^xsd:string@None ; 
+    org:alternativeName 'NOAA\'s National Ocean Service'^^xsd:string@en ; 
+    org:alternativeName 'NOAA\'s Ocean Service'^^xsd:string@en ; 
+    org:abbreviation 'NOS'^^xsd:string@None ; 
+    org:alternativeName 'National Ocean Service'^^xsd:string@en ; 
+    org:alternativeName 'National Ocean Survey'^^xsd:string@en ; 
+    org:alternativeName 'National Oceanic and Atmospheric Administration National Ocean Survey'^^xsd:string@en ; 
+    org:alternativeName 'U.S. National Ocean Service'^^xsd:string@en ; 
+    org:alternativeName 'U.S. National Ocean Survey'^^xsd:string@en ; 
+    org:alternativeName 'U.S. National Oceanic and Atmospheric Administration National Ocean Service'^^xsd:string@en ; 
+    org:alternativeName 'USA National Ocean Service'^^xsd:string@en ; 
+    org:alternativeName 'United States National Ocean Service'^^xsd:string@en ; 
+    org:alternativeName 'United States National Ocean Survey'^^xsd:string@en ; 
+    org:alternativeName 'United States National Oceanic and Atmospheric Administration National Ocean Service'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://oceanservice.noaa.gov/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/National_Ocean_Service> ; 
+    schema:sameAs <https://api.crossref.org/funders/100014522> ;
+    schema:sameAs <https://grid.ac/institutions/grid.423022.5> ;
+    schema:sameAs <http://isni.org/isni/0000000406256154> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02f762h70> ;
+        rdfs:label 'NOAA National Geodetic Survey'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v14bq57> ;
+        rdfs:label 'NOAA Office for Coastal Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bgwn153> ;
+        rdfs:label 'NOAA Office of National Marine Sanctuaries'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03g5tqa50> ;
+        rdfs:label 'NOAA Office of Response and Restoration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05evek152> ;
+        rdfs:label 'NOAA Office of Coast Survey'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05vcng590> ;
+        rdfs:label 'NOAA Center for Operational Oceanographic Products & Services'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01yvark48> ;
+        rdfs:label 'NOAA Integrated Ocean Observing System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label 'National Oceanic and Atmospheric Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ba43f71> ;
+        rdfs:label 'NOAA National Centers for Coastal Ocean Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0042xzm63> ;
+        rdfs:label 'NOAA RESTORE Science Program'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.02609 38.99067)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Silver Spring" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4369596/> ;
+    ] ; 
+    .

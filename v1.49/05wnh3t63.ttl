@@ -1,0 +1,170 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05wnh3t63> a org:Organization ;
+    rdfs:label 'Government of the United Kingdom'^^xsd:string ;
+    schema:name 'Government of the United Kingdom'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-11"^^xsd:date ;
+    org:alternativeName 'British Government'^^xsd:string@en ; 
+    org:abbreviation 'HMG'^^xsd:string@None ; 
+    org:alternativeName 'Her Majesty\'s Government'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.gov.uk/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Government_of_the_United_Kingdom> ; 
+    schema:sameAs <https://api.crossref.org/funders/100013986> ;
+    schema:sameAs <https://grid.ac/institutions/grid.421947.d> ;
+    schema:sameAs <http://isni.org/isni/0000000417826335> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ex4j806> ;
+        rdfs:label 'Civil Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x8c0q56> ;
+        rdfs:label 'Committee on Radioactive Waste Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019ya6433> ;
+        rdfs:label 'Department for Business, Energy and Industrial Strategy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zqy3981> ;
+        rdfs:label 'Department for Digital, Culture, Media & Sport'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0320bge18> ;
+        rdfs:label 'Department for Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00tnppw48> ;
+        rdfs:label 'Department for Environment Food and Rural Affairs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jws7929> ;
+        rdfs:label 'Department for Exiting the European Union'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bgmsb44> ;
+        rdfs:label 'Department for International Trade'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010mf0m52> ;
+        rdfs:label 'Department for Transport'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0499kfe57> ;
+        rdfs:label 'Department for Work and Pensions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0161w0r98> ;
+        rdfs:label 'Department for the Economy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052mq0r90> ;
+        rdfs:label 'Government Communications Headquarters'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00hkb6y19> ;
+        rdfs:label 'Her Majesty\'s Revenue and Customs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k33gq76> ;
+        rdfs:label 'His Majesty\'s Treasury'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00y81cg83> ;
+        rdfs:label 'Home Office'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bvxzn29> ;
+        rdfs:label 'Ministry of Defence'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w88hp45> ;
+        rdfs:label 'Department for Levelling Up, Housing & Communities'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xdnwc75> ;
+        rdfs:label 'Ministry of Justice'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xgj3b22> ;
+        rdfs:label 'Northern Ireland Office'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fjx8e69> ;
+        rdfs:label 'The Deputy Prime Minister\'s Office'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037wke960> ;
+        rdfs:label 'Foreign, Commonwealth & Development Office'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.12574 51.50853)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "London" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2643743/> ;
+    ] ; 
+    .

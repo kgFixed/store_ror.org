@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05yeqc316> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-07-08"^^xsd:date ;
+    dct:modified "2024-07-11"^^xsd:date ;
+    schema:url <http://zjc.edu.cn> ; 
+    schema:mainEntityOfPage <https://www.zjc.edu.cn> ;
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E9%2595%2587%25E6%25B1%259F%25E5%25B8%2582%25E9%25AB%2598%25E7%25AD%2589%25E4%25B8%2593%25E7%25A7%2591%25E5%25AD%25A6%25E6%25A0%25A1> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(119.45508 32.21086)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Zhenjiang" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1784642/> ;
+    ] ; 
+    .

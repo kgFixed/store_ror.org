@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01k97gp34> a org:Organization ;
+    rdfs:label 'TU Dortmund University'^^xsd:string ;
+    schema:name 'TU Dortmund University'^^xsd:string ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-07-11"^^xsd:date ;
+    org:alternativeName 'TU Dortmund'^^xsd:string@en ; 
+    org:alternativeName 'Technical University Dortmund'^^xsd:string@en ; 
+    org:alternativeName 'Technical University of Dortmund'^^xsd:string@en ; 
+    org:alternativeName 'Universitaet Dortmund'^^xsd:string@de ; 
+    org:alternativeName 'Universitat Dortmund'^^xsd:string@de ; 
+    org:alternativeName 'University of Dortmund'^^xsd:string@en ; 
+    org:alternativeName 'Universität Dortmund'^^xsd:string@de ; 
+    schema:mainEntityOfPage <https://www.tu-dortmund.de/en/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Technical_University_of_Dortmund> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100016378> ;
+    schema:sameAs <https://grid.ac/institutions/grid.5675.1> ;
+    schema:sameAs <http://isni.org/isni/0000000104169637> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01z1qnm06> ;
+        rdfs:label 'Institute for Advanced Study in the Humanities Essen'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.466 51.51494)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Dortmund" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2935517/> ;
+    ] ; 
+    .

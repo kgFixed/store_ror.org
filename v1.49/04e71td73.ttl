@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04e71td73> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-07-08"^^xsd:date ;
+    dct:modified "2024-07-11"^^xsd:date ;
+    schema:url <http://esgt.cnam.fr> ; 
+    schema:mainEntityOfPage <https://www.esgt.cnam.fr> ;
+    owl:sameAs <https://fr.wikipedia.org/wiki/%25C3%2589cole_sup%25C3%25A9rieure_des_g%25C3%25A9om%25C3%25A8tres_et_topographes> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.20251 48.0021)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Le Mans" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3003603/> ;
+    ] ; 
+    .

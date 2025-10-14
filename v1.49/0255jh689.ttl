@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0255jh689> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-07-08"^^xsd:date ;
+    dct:modified "2024-07-11"^^xsd:date ;
+    org:abbreviation 'KDU'^^xsd:string@en ; 
+    org:abbreviation 'UKD'^^xsd:string@uk ; 
+    org:alternativeName 'Університет Короля Данила'^^xsd:string@uk ; 
+    schema:url <http://ukd.edu.ua> ; 
+    schema:mainEntityOfPage <http://ukd.edu.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%25A3%25D0%25BD%25D1%2596%25D0%25B2%25D0%25B5%25D1%2580%25D1%2581%25D0%25B8%25D1%2582%25D0%25B5%25D1%2582_%25D0%259A%25D0%25BE%25D1%2580%25D0%25BE%25D0%25BB%25D1%258F_%25D0%2594%25D0%25B0%25D0%25BD%25D0%25B8%25D0%25BB%25D0%25B0> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.71248 48.92312)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ivano-Frankivsk" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/707471/> ;
+    ] ; 
+    .
