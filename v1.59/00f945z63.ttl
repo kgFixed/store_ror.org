@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00f945z63> a org:Organization ;
+    rdfs:label 'Institut Pythéas Observatoire des Sciences de l’Univers'^^xsd:string ;
+    schema:name 'Institut Pythéas Observatoire des Sciences de l’Univers'^^xsd:string ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-01-22"^^xsd:date ;
+    org:abbreviation 'OSU'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.osupytheas.fr> ;
+    schema:sameAs <https://grid.ac/institutions/grid.470941.f> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gtjxz83> ;
+        rdfs:label 'Observatoire de Haute-Provence'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/035xkbk20> ;
+        rdfs:label 'Aix-Marseille Université'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/049qgqg40> ;
+        rdfs:label 'Délégation Provence et Corse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05q3vnk25> ;
+        rdfs:label 'Institut de Recherche pour le Développement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05258q350> ;
+        rdfs:label 'Institut Méditerranéen d’Océanologie'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.44973 43.5283)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Aix-en-Provence" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Provence-Alpes-Côte d'Azur" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3038354/> ;
+    ] ; 
+    .

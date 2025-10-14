@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00jcmeh55> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-01-21"^^xsd:date ;
+    dct:modified "2025-01-22"^^xsd:date ;
+    org:alternativeName 'Private Higher Educational Establishment University of Emerging Technologies'^^xsd:string@en ; 
+    org:abbreviation 'UNT'^^xsd:string@en ; 
+    org:abbreviation 'ПВНЗ УНТ'^^xsd:string@uk ; 
+    org:alternativeName 'Приватний вищий навчальний заклад Університет новітніх технологій'^^xsd:string@uk ; 
+    org:abbreviation 'УНТ'^^xsd:string@uk ; 
+    schema:url <http://unt.edu.ua> ; 
+    schema:mainEntityOfPage <https://unt.edu.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%25A3%25D0%25BD%25D1%2596%25D0%25B2%25D0%25B5%25D1%2580%25D1%2581%25D0%25B8%25D1%2582%25D0%25B5%25D1%2582_%25D0%25BD%25D0%25BE%25D0%25B2%25D1%2596%25D1%2582%25D0%25BD%25D1%2596%25D1%2585_%25D1%2582%25D0%25B5%25D1%2585%25D0%25BD%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D1%2596%25D0%25B9> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kyiv" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Kyiv City" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/703448/> ;
+    ] ; 
+    .

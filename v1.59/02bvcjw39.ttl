@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02bvcjw39> a org:Organization ;
+    rdfs:label 'Czech Academy of Sciences, Institute of Archaeology, Brno'^^xsd:string ;
+    schema:name 'Czech Academy of Sciences, Institute of Archaeology, Brno'^^xsd:string ;
+    schema:foundingDate "1942"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2020-03-15"^^xsd:date ;
+    dct:modified "2025-01-22"^^xsd:date ;
+    org:abbreviation 'ARÚB AV ČR'^^xsd:string@None ; 
+    org:alternativeName 'Archeologický ústav AV ČR, Brno'^^xsd:string@cs ; 
+    org:alternativeName 'Archeologický ústav AV ČR, Brno, veřejná výzkumná instituce'^^xsd:string@cs ; 
+    org:alternativeName 'Czech Acad Sci, Inst Archaeol, Brno'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Archaeology CAS, Brno'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Archaeology of the Czech Academy of Sciences, Brno'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Archaeology, Czech Acad Sci, Brno'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.arub.cz> ;
+    schema:sameAs <https://grid.ac/institutions/grid.507728.f> ;
+    schema:sameAs <http://isni.org/isni/000000010792540X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/053avzc18> ;
+        rdfs:label 'Czech Academy of Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01a7rqj69> ;
+        rdfs:label 'Archaeological Information System of the Czech Republic'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.60796 49.19522)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Brno" ;
+            schema:addressCountry "CZ" ;
+            schema:addressRegion "South Moravian" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Czechia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3078610/> ;
+    ] ; 
+    .
