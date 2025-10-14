@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04dkp1p98> a org:Organization ;
+    rdfs:label 'Bureau of Meteorology'^^xsd:string ;
+    schema:name 'Bureau of Meteorology'^^xsd:string ;
+    schema:foundingDate "1906"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2023-10-26"^^xsd:date ;
+    org:alternativeName 'Australia Bureau of Meteorology'^^xsd:string@None ; 
+    org:alternativeName 'Australian Bureau of Meteorology'^^xsd:string@None ; 
+    org:abbreviation 'BOM'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.bom.gov.au/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Bureau_of_Meteorology> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.1527.1> ;
+    schema:sameAs <http://isni.org/isni/000000011086859X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ew37b76> ;
+        rdfs:label 'Collaboration for Australian Weather and Climate Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00qq77n27> ;
+        rdfs:label 'Consortium for Ocean-Sea Ice Modelling in Australia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/010x3gp67> ;
+        rdfs:label 'Integrated Marine Observing System'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.96332 -37.814)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Melbourne" ;
+            schema:addressCountry "AU" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Australia" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2158177/> ;
+    ] ; 
+    .

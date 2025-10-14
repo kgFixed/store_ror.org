@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02vvmw586> a org:Organization ;
+    rdfs:label 'State University of Economics and Technology'^^xsd:string ;
+    schema:name 'State University of Economics and Technology'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2020-12-21"^^xsd:date ;
+    dct:modified "2024-04-05"^^xsd:date ;
+    org:alternativeName 'Kryvyi Rih State University of Economics and Technology'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.duet.edu.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2594%25D0%25B5%25D1%2580%25D0%25B6%25D0%25B0%25D0%25B2%25D0%25BD%25D0%25B8%25D0%25B9_%25D1%2583%25D0%25BD%25D1%2596%25D0%25B2%25D0%25B5%25D1%2580%25D1%2581%25D0%25B8%25D1%2582%25D0%25B5%25D1%2582_%25D0%25B5%25D0%25BA%25D0%25BE%25D0%25BD%25D0%25BE%25D0%25BC%25D1%2596%25D0%25BA%25D0%25B8_%25D1%2596_%25D1%2582%25D0%25B5%25D1%2585%25D0%25BD%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D1%2596%25D0%25B9> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.509920.7> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(33.39404 47.90572)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kryvyi Rih" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/703845/> ;
+    ] ; 
+    .

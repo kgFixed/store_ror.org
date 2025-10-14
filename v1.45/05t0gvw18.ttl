@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05t0gvw18> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-04-06"^^xsd:date ;
+    dct:modified "2024-04-06"^^xsd:date ;
+    org:abbreviation 'CESB'^^xsd:string@pt ; 
+    org:alternativeName 'Centro Universitário IESB'^^xsd:string@pt ; 
+    org:alternativeName 'Higher Education Institute of Brasilia'^^xsd:string@en ; 
+    org:abbreviation 'IESB'^^xsd:string@pt ; 
+    org:alternativeName 'IESB University Center'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.iesb.br> ;
+    owl:sameAs <https://pt.wikipedia.org/wiki/Instituto_de_Educa%25C3%25A7%25C3%25A3o_Superior_de_Bras%25C3%25ADlia> ; 
+    schema:sameAs <http://isni.org/isni/0000000406148583> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.92972 -15.77972)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Brasília" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3469058/> ;
+    ] ; 
+    .
