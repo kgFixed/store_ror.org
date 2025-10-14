@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00p5kn310> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-10-13"^^xsd:date ;
+    dct:modified "2024-10-14"^^xsd:date ;
+    org:abbreviation 'BAV'^^xsd:string@en ; 
+    org:abbreviation 'HVNH'^^xsd:string@vi ; 
+    org:alternativeName 'Trường Cao cấp Nghiệp vụ Ngân hàng'^^xsd:string@vi ; 
+    org:alternativeName 'Vocational College of Banking'^^xsd:string@en ; 
+    schema:url <http://hvnh.edu.vn> ; 
+    schema:mainEntityOfPage <https://hvnh.edu.vn> ;
+    owl:sameAs <https://vi.wikipedia.org/wiki/H%25E1%25BB%258Dc_vi%25E1%25BB%2587n_Ng%25C3%25A2n_h%25C3%25A0ng_%2528Vi%25E1%25BB%2587t_Nam%2529> ; 
+    schema:sameAs <http://isni.org/isni/0000000101145779> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hanoi" ;
+            schema:addressCountry "VN" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Vietnam" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1581130/> ;
+    ] ; 
+    .

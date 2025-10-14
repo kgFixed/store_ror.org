@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/025rrx658> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-14"^^xsd:date ;
+    org:alternativeName 'INFN Roma II'^^xsd:string@it ; 
+    org:alternativeName 'INFN Roma Tor Vergata'^^xsd:string@it ; 
+    org:alternativeName 'INFN Rome 2 Division'^^xsd:string@en ; 
+    org:alternativeName 'INFN Rome II'^^xsd:string@en ; 
+    org:alternativeName 'INFN Rome II Division'^^xsd:string@en ; 
+    org:alternativeName 'INFN Rome Tor Vergata'^^xsd:string@en ; 
+    org:alternativeName 'INFN Sezione di Roma 2'^^xsd:string@it ; 
+    org:alternativeName 'INFN Sezione di Roma II'^^xsd:string@it ; 
+    org:abbreviation 'INFN-RM2'^^xsd:string@it ; 
+    org:alternativeName 'Istituto Nazionale di Fisica Nucleare, Sezione di Roma II'^^xsd:string@it ; 
+    org:alternativeName 'National Institute for Nuclear Physics, Rome II Division'^^xsd:string@en ; 
+    schema:url <http://roma2.infn.it> ; 
+    schema:mainEntityOfPage <https://www.roma2.infn.it> ;
+    schema:sameAs <https://grid.ac/institutions/grid.470219.9> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/005ta0471> ;
+        rdfs:label 'Istituto Nazionale di Fisica Nucleare'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02p77k626> ;
+        rdfs:label 'University of Rome Tor Vergata'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02w0r2764> ;
+        rdfs:label 'MAGIC Telescopes'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.51133 41.89193)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rome" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3169070/> ;
+    ] ; 
+    .

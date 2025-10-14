@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00fdzcx89> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-10-13"^^xsd:date ;
+    dct:modified "2024-10-14"^^xsd:date ;
+    org:abbreviation 'QCU'^^xsd:string@en ; 
+    org:alternativeName 'Qingdao University of Technology Qindao College'^^xsd:string@en ; 
+    org:alternativeName '青岛理工大学琴岛学院'^^xsd:string@zh ; 
+    schema:url <http://qdc.edu.cn> ; 
+    schema:mainEntityOfPage <https://www.qdc.edu.cn> ;
+    owl:sameAs <https://zh.wikipedia.org/zh-hans/%25E9%259D%2592%25E5%25B2%259B%25E5%259F%258E%25E5%25B8%2582%25E5%25AD%25A6%25E9%2599%25A2> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.38042 36.06488)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Qingdao" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1797929/> ;
+    ] ; 
+    .

@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01sgfhb12> a org:Organization ;
+    rdfs:label 'National Enterprise for NanoScience and NanoTechnology'^^xsd:string ;
+    schema:name 'National Enterprise for NanoScience and NanoTechnology'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2020-12-21"^^xsd:date ;
+    dct:modified "2024-10-14"^^xsd:date ;
+    org:alternativeName 'Laboratorio NEST'^^xsd:string@it ; 
+    org:abbreviation 'NEST'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.laboratorionest.it/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.509494.5> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0042e5975> ;
+        rdfs:label 'Istituto Nanoscienze'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/042t93s57> ;
+        rdfs:label 'Italian Institute of Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/025602r80> ;
+        rdfs:label 'Scuola Superiore Sant\'Anna'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03aydme10> ;
+        rdfs:label 'Scuola Normale Superiore'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(10.4036 43.70853)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Pisa" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3170647/> ;
+    ] ; 
+    .

@@ -1,0 +1,87 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01n3s4692> a org:Organization ;
+    rdfs:label 'Shiraz University of Medical Sciences'^^xsd:string ;
+    schema:name 'Shiraz University of Medical Sciences'^^xsd:string ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-14"^^xsd:date ;
+    org:alternativeName 'Dāneshgāh-e Olum Pezeshki-e Shirāz'^^xsd:string@None ; 
+    org:abbreviation 'SUMS'^^xsd:string@None ; 
+    org:alternativeName 'Shiraz Medical University'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://sums.ac.ir> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Shiraz_University_of_Medical_Sciences> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004320> ;
+    schema:sameAs <https://grid.ac/institutions/grid.412571.4> ;
+    schema:sameAs <http://isni.org/isni/0000000088194698> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034akh239> ;
+        rdfs:label 'Stem Cell Technology Research Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04yd76m66> ;
+        rdfs:label 'Faghihi Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02x1txb82> ;
+        rdfs:label 'Hafez Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04h687w28> ;
+        rdfs:label 'Khalili Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01ngt5263> ;
+        rdfs:label 'Amir Oncology Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03zcqw776> ;
+        rdfs:label 'Amir-Al-Momenin Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/043xbcd19> ;
+        rdfs:label 'Namazi Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(52.53113 29.61031)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Shiraz" ;
+            schema:addressCountry "IR" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Iran" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/115019/> ;
+    ] ; 
+    .

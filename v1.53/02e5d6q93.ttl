@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02e5d6q93> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1960"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2024-10-13"^^xsd:date ;
+    dct:modified "2024-10-14"^^xsd:date ;
+    org:abbreviation 'DDC'^^xsd:string@fr ; 
+    org:abbreviation 'DEZA'^^xsd:string@de ; 
+    org:abbreviation 'DSC'^^xsd:string@it ; 
+    org:abbreviation 'SDC'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.deza.eda.admin.ch> ;
+    owl:sameAs <https://de.wikipedia.org/wiki/Direktion_f%25C3%25BCr_Entwicklung_und_Zusammenarbeit> ; 
+    schema:sameAs <https://api.crossref.org/funders/100009131> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.44744 46.94809)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Bern" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2661552/> ;
+    ] ; 
+    .

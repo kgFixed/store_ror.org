@@ -1,0 +1,135 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02e2egq70> a org:Organization ;
+    rdfs:label 'United States Air Force Research Laboratory'^^xsd:string ;
+    schema:name 'United States Air Force Research Laboratory'^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2024-10-14"^^xsd:date ;
+    org:abbreviation 'AFRL'^^xsd:string@None ; 
+    org:alternativeName 'Air Force Research Laboratory'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Air Force Research Laboratory'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.afrl.af.mil> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Air_Force_Research_Laboratory> ; 
+    schema:sameAs <https://api.crossref.org/funders/100006602> ;
+    schema:sameAs <https://grid.ac/institutions/grid.417730.6> ;
+    schema:sameAs <http://isni.org/isni/0000000405434035> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011e9bt93> ;
+        rdfs:label 'United States Air Force Office of Scientific Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00z65zs77> ;
+        rdfs:label 'Air Force Research Laboratory Information Directorate'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05mrd5h76> ;
+        rdfs:label 'Air Force Research Laboratory Aerospace Systems Directorate'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0584m4844> ;
+        rdfs:label 'Air Force Research Laboratory Materials and Manufacturing Directorate'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054yf8v46> ;
+        rdfs:label 'Air Force Research Laboratory Sensors Directorate'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00bag6861> ;
+        rdfs:label 'Air Force Research Laboratory Munitions Directorate'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fq48551> ;
+        rdfs:label 'Air Force Research Laboratory Directed Energy Directorate'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04d0hsa39> ;
+        rdfs:label '711th Human Performance Wing'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02m4c1x70> ;
+        rdfs:label 'Air Force Materiel Command'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/03jvtcb24> ;
+        rdfs:label 'Wright Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/046ygx235> ;
+        rdfs:label 'Armstrong Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/02q9pw720> ;
+        rdfs:label 'Rome Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/04gy6rq49> ;
+        rdfs:label 'Phillips Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/03eeh5j48> ;
+        rdfs:label 'Wright Research and Development Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/017madv49> ;
+        rdfs:label 'Air Force Space Technology Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-84.05731 39.81113)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Wright-Patterson AFB" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "" ;
+                    schema:identifier ""
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/7259649/> ;
+    ] ; 
+    .
