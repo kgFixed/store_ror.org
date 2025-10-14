@@ -1,0 +1,27 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/057c1ry34> a org:Organization ;
+    rdfs:label 'Centre intégré de santé et de services sociaux de la Montérégie-Est'^^xsd:string ;
+    schema:name 'Centre intégré de santé et de services sociaux de la Montérégie-Est'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Healthcare'^^xsd:string ; 
+    org:alternativeName 'CISSS de la Montérégie-Est'^^xsd:string ;
+    schema:url <https://www.santemonteregie.qc.ca/est> ; 
+    owl:sameAs <https://fr.wikipedia.org/wiki/Centre_int%25C3%25A9gr%25C3%25A9_de_sant%25C3%25A9_et_de_services_sociaux> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-72.95699 45.63076)"^^geo:wktLiteral ;
+            schema:addressLocality 'Saint-Hyacinthe'^^xsd:string ;
+            schema:addressCountry "CA" ;
+            owl:sameAs <http://sws.geonames.org/6138374/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/0000000449105137> ;
+    .

@@ -1,0 +1,31 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://ror.org/02495e989> a org:Organization ;
+    rdfs:label 'UCLouvain'^^xsd:string ;
+    schema:name 'UCLouvain'^^xsd:string ;
+    schema:foundingDate "1425"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'Education'^^xsd:string ; 
+    org:abbreviation 'UCL'^^xsd:string ;
+    org:alternativeName 'Université catholique de Belgique'^^xsd:string ;
+    schema:url <https://uclouvain.be> ; 
+    owl:sameAs <http://en.wikipedia.org/wiki/Universit%25C3%25A9_catholique_de_Louvain> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(4.61443 50.66829)"^^geo:wktLiteral ;
+            schema:addressLocality 'Louvain-la-Neuve'^^xsd:string ;
+            schema:addressCountry "BE" ;
+            owl:sameAs <http://sws.geonames.org/2792073/> ;
+                dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+            ] ; 
+    schema:sameAs <http://isni.org/isni/000000012294713X> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q378134> ;
+    schema:sameAs <https://grid.ac/institutions/g> ;
+    .
