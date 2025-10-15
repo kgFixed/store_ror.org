@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/041baww89> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'PNUDH'^^xsd:string@en ; 
+    org:alternativeName '부산 대학교 치과 병원'^^xsd:string@ko ; 
+    schema:url <http://pnudh.co.kr> ; 
+    schema:mainEntityOfPage <https://www.pnudh.co.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EB%25B6%2580%25EC%2582%25B0%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590%25EC%25B9%2598%25EA%25B3%25BC%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.484589.c> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01an57a31> ;
+        rdfs:label 'Pusan National University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.03358 35.34199)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Yangsan" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeongsangnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1832828/> ;
+    ] ; 
+    .

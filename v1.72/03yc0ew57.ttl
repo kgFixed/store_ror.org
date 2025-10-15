@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03yc0ew57> a org:Organization ;
+    rdfs:label 'Génomique Fonctionnelle des Tumeurs Solides'^^xsd:string ;
+    schema:name 'Génomique Fonctionnelle des Tumeurs Solides'^^xsd:string ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'U 1162'^^xsd:string@None ; 
+    org:alternativeName 'U1162'^^xsd:string@None ; 
+    org:alternativeName 'UMRS 1162'^^xsd:string@None ; 
+    org:alternativeName 'UMRS1162'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://recherche.univ-paris-diderot.fr/laboratoires/genomique-fonctionnelle-des-tumeurs-solides> ;
+    schema:sameAs <https://grid.ac/institutions/grid.497628.6> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00bw5n526> ;
+        rdfs:label 'Délégation Paris 7'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02en5vm52> ;
+        rdfs:label 'Sorbonne University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label 'Université Paris Cité'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/008e1sp22> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2023-08-17"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Human Immunology, Pathophysiology and Immunotherapy'^^xsd:string@en ; 
+    org:abbreviation 'IDO'^^xsd:string@None ; 
+    org:alternativeName 'Immunologie humaine, physiopathologie & immunothérapie'^^xsd:string@fr ; 
+    org:alternativeName 'Immunologie humaine, physiopathologie et immunithérapie'^^xsd:string@fr ; 
+    org:alternativeName 'Immunologie, Dermatologie, Oncologie'^^xsd:string@fr ; 
+    org:alternativeName 'Onco-dermatologie, immunologie et cellules souches cutanees'^^xsd:string@fr ; 
+    org:alternativeName 'U 976'^^xsd:string@None ; 
+    org:alternativeName 'U976'^^xsd:string@None ; 
+    org:alternativeName 'UMRS 976'^^xsd:string@None ; 
+    org:alternativeName 'UMRS976'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://hipi-lab-saint-louis.fr> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00d82rk36> ;
+        rdfs:label 'HLA-G immune checkpoint in Oncology and Transplantation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label 'Inserm'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label 'Université Paris Cité'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

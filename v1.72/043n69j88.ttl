@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/043n69j88> a org:Organization ;
+    rdfs:label 'UBC Properties Trust'^^xsd:string ;
+    schema:name 'UBC Properties Trust'^^xsd:string ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    schema:url <http://ubcproperties.com> ; 
+    schema:mainEntityOfPage <https://ubcproperties.com> ;
+    schema:sameAs <https://grid.ac/institutions/grid.451384.f> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03rmrcq20> ;
+        rdfs:label 'University of British Columbia'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.11934 49.24966)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Vancouver" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "British Columbia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6173331/> ;
+    ] ; 
+    .

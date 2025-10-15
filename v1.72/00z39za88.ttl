@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00z39za88> a org:Organization ;
+    rdfs:label 'American Federation of Labor and Congress of Industrial Organizations'^^xsd:string ;
+    schema:name 'American Federation of Labor and Congress of Industrial Organizations'^^xsd:string ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'AFL–CIO'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.aflcio.org/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/AFL%25E2%2580%2593CIO> ; 
+    schema:sameAs <https://api.crossref.org/funders/100005365> ;
+    schema:sameAs <https://grid.ac/institutions/grid.420304.1> ;
+    schema:sameAs <http://isni.org/isni/0000000121719688> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03ftsw720> ;
+        rdfs:label 'National Football League Players Association'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03f44aj49> ;
+        rdfs:label 'Service Employees International Union'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/020ck2w23> ;
+        rdfs:label 'UNITE HERE'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01zfn7550> ;
+        rdfs:label 'Amalgamated Transit Union'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/047t8t227> ;
+        rdfs:label 'United Mine Workers of America'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04e41qn78> ;
+        rdfs:label 'Air Line Pilots Association'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03sscge16> ;
+        rdfs:label 'American Federation of School Administrators'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05dnc1a25> ;
+        rdfs:label 'Actors\' Equity Association'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04yyr1g80> ;
+        rdfs:label 'Communications Workers of America'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fmqg429> ;
+        rdfs:label 'American Federation of State, County and Municipal Employees'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05fmqg429> ;
+        rdfs:label 'American Federation of State, County and Municipal Employees'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Washington" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "District of Columbia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4140963/> ;
+    ] ; 
+    .

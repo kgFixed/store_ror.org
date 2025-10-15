@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04114az09> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1859"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Asociația Muzeului Ardelean'^^xsd:string@ro ; 
+    org:abbreviation 'EME'^^xsd:string@hu ; 
+    org:alternativeName 'Transylvanian Museum Society'^^xsd:string@en ; 
+    schema:url <http://eme.ro> ; 
+    schema:mainEntityOfPage <https://eme.ro> ;
+    owl:sameAs <https://hu.wikipedia.org/wiki/Erd%25C3%25A9lyi_M%25C3%25BAzeum-Egyes%25C3%25BClet> ; 
+    schema:sameAs <http://isni.org/isni/0000000460049957> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.6 46.76667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cluj-Napoca" ;
+            schema:addressCountry "RO" ;
+            schema:addressRegion "Cluj County" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Romania" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/681290/> ;
+    ] ; 
+    .

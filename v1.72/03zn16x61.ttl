@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03zn16x61> a org:Organization ;
+    rdfs:label 'Myongji Hospital'^^xsd:string ;
+    schema:name 'Myongji Hospital'^^xsd:string ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'MJH'^^xsd:string@en ; 
+    org:alternativeName '명지병원'^^xsd:string@ko ; 
+    schema:url <http://mjh.or.kr> ; 
+    schema:mainEntityOfPage <https://mjh.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EB%25AA%2585%25EC%25A7%2580%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.416355.0> ;
+    schema:sameAs <http://isni.org/isni/0000000404750976> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05n486907> ;
+        rdfs:label 'Catholic Kwandong University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04302qt77> ;
+        rdfs:label 'Jecheon Myongji Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.835 37.65639)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Goyang-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeonggi-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1842485/> ;
+    ] ; 
+    .

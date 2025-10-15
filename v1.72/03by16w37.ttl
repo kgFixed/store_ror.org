@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03by16w37> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1909"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Chonbuk National University Hospital'^^xsd:string@en ; 
+    org:abbreviation 'JBUH'^^xsd:string@en ; 
+    schema:url <http://jbuh.co.kr> ; 
+    schema:mainEntityOfPage <https://www.jbuh.co.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%25A0%2584%25EB%25B6%2581%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002864> ;
+    schema:sameAs <https://grid.ac/institutions/grid.411551.5> ;
+    schema:sameAs <http://isni.org/isni/0000000406471516> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034bxst58> ;
+        rdfs:label 'Jeonbuk National University Dental Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05q92br09> ;
+        rdfs:label 'Jeonbuk National University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.14889 35.82194)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Jeonju" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Jeollabuk-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1845457/> ;
+    ] ; 
+    .

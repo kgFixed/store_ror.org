@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/050zdnc69> a org:Organization ;
+    rdfs:label 'Ministry of Science, Technology and Innovation'^^xsd:string ;
+    schema:name 'Ministry of Science, Technology and Innovation'^^xsd:string ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'MCTI'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.mct.gov.br/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Science,_Technology_and_Innovation_(Brazil)> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100007396> ;
+    schema:sameAs <https://grid.ac/institutions/grid.436069.e> ;
+    schema:sameAs <http://isni.org/isni/0000000087791351> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05m235j20> ;
+        rdfs:label 'Brazilian Center for Research in Energy and Materials'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wnmk332> ;
+        rdfs:label 'Centro Brasileiro de Pesquisas Físicas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005e8tf31> ;
+        rdfs:label 'Centro de Desenvolvimento da Tecnologia Nuclear'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00n4vrp79> ;
+        rdfs:label 'Centro de Tecnologia Mineral'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044nfga98> ;
+        rdfs:label 'Centro de Tecnologia da Informação Renato Archer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002a3ss66> ;
+        rdfs:label 'Centro de Tecnologias Estratégicas do Nordeste'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/030w99567> ;
+        rdfs:label 'Financiadora de Estudos e Projetos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/028caqe42> ;
+        rdfs:label 'Instituto Nacional de Matemática Pura e Aplicada'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012ang229> ;
+        rdfs:label 'Instituto Nacional de Tecnologia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055v9fh02> ;
+        rdfs:label 'Laboratório Nacional de Astrofísica'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03swz6y49> ;
+        rdfs:label 'National Council for Scientific and Technological Development'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xbn6x09> ;
+        rdfs:label 'Instituto Nacional de Pesquisas Espaciais'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ycms792> ;
+        rdfs:label 'National Nuclear Energy Commission'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e51yr27> ;
+        rdfs:label 'Laboratório Nacional de Nanotecnologia'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-47.92972 -15.77972)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Brasília" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "Federal District" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3469058/> ;
+    ] ; 
+    .

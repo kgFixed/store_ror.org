@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04a2rz655> a org:Organization ;
+    rdfs:label 'Rajamangala University of Technology Isan'^^xsd:string ;
+    schema:name 'Rajamangala University of Technology Isan'^^xsd:string ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'RMUTi'^^xsd:string@None ; 
+    org:alternativeName 'Rajamangala Institute of Technology'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.rmuti.ac.th> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Rajamangala_University_of_Technology> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.443999.a> ;
+    schema:sameAs <http://isni.org/isni/0000000405042111> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(102.10196 14.97066)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Nakhon Ratchasima" ;
+            schema:addressCountry "TH" ;
+            schema:addressRegion "Nakhon Ratchasima" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Thailand" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1608529/> ;
+    ] ; 
+    .
