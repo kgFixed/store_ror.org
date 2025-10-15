@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/058tw4f12> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Gemini North'^^xsd:string@en ; 
+    org:alternativeName 'Gemini North Observatory'^^xsd:string@en ; 
+    org:alternativeName 'Gemini Observatory'^^xsd:string@en ; 
+    org:alternativeName 'Gemini South'^^xsd:string@en ; 
+    org:alternativeName 'Gemini South Observatory'^^xsd:string@en ; 
+    schema:url <http://gemini.edu> ; 
+    schema:mainEntityOfPage <https://www.gemini.edu> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03zmsge54> ;
+        rdfs:label 'NSF NOIRLab'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/0141j1w94> ;
+        rdfs:label 'Gemini North Observatory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/02wtj7z45> ;
+        rdfs:label 'Gemini South Observatory'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-110.92648 32.22174)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tucson" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Arizona" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5318313/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-155.09073 19.72991)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hilo" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Hawaii" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5855927/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-70.71274 -30.03541)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Vicuña" ;
+            schema:addressCountry "CL" ;
+            schema:addressRegion "Coquimbo Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Chile" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3868308/> ;
+    ] ; 
+    .

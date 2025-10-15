@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/013r0qk51> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'OBB'^^xsd:string@tr ; 
+    org:alternativeName 'Ordu Metropolitan Municipality'^^xsd:string@en ; 
+    schema:url <http://ordu.bel.tr> ; 
+    schema:mainEntityOfPage <https://www.ordu.bel.tr> ;
+    owl:sameAs <https://tr.wikipedia.org/wiki/Ordu_B%25C3%25BCy%25C3%25BCk%25C5%259Fehir_Belediyesi> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.89047 40.97782)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ordu" ;
+            schema:addressCountry "TR" ;
+            schema:addressRegion "Ordu" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Türkiye" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/741100/> ;
+    ] ; 
+    .

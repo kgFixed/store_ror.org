@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/029sr0q57> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'IRIAF'^^xsd:string@es ; 
+    org:alternativeName 'Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal'^^xsd:string@es ; 
+    org:alternativeName 'Instituto Regional de Investigación y Desarrollo Agroalimentario y Forestal (IRIAF)'^^xsd:string@es ; 
+    org:alternativeName 'Regional Institute for Agri-Food and Forestry Research and Development'^^xsd:string@en ; 
+    org:alternativeName 'Regional Institute for Agri-Food and Forestry Research and Development of Castilla-La Mancha'^^xsd:string@en ; 
+    schema:url <http://iriaf.castillalamancha.es> ; 
+    schema:mainEntityOfPage <https://iriaf.castillalamancha.es> ;
+    schema:sameAs <http://isni.org/isni/0000000510891377> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.02156 39.15759)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tomelloso" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Castille-La Mancha" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2510392/> ;
+    ] ; 
+    .

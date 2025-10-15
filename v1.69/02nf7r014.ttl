@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02nf7r014> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Abu Dhabi Department of Culture and Tourism'^^xsd:string@en ; 
+    org:abbreviation 'DCT'^^xsd:string@en ; 
+    org:alternativeName 'DCT Abu Dhabi'^^xsd:string@en ; 
+    org:alternativeName 'Department of Culture and Tourism'^^xsd:string@en ; 
+    org:alternativeName 'Département de la Culture et du Tourisme d\'Abu Dhabi'^^xsd:string@fr ; 
+    org:alternativeName 'دائرة الثقافة والسياحة'^^xsd:string@ar ; 
+    schema:url <http://dct.gov.ae> ; 
+    schema:url <http://dctabudhabi.ae> ; 
+    schema:mainEntityOfPage <https://dct.gov.ae/en/default.aspx> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Abu_Dhabi_Department_of_Culture_and_Tourism> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(54.39696 24.45118)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Abu Dhabi" ;
+            schema:addressCountry "AE" ;
+            schema:addressRegion "Abu Dhabi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Arab Emirates" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/292968/> ;
+    ] ; 
+    .

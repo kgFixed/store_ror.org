@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/012rxev91> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'JPV'^^xsd:string@None ; 
+    org:alternativeName 'Jai Prakash University, Chapra'^^xsd:string@en ; 
+    org:alternativeName 'Jai Prakash Vishwavidyalaya'^^xsd:string@hi ; 
+    schema:url <http://jpv.ac.in> ; 
+    schema:mainEntityOfPage <https://www.jpv.ac.in> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Jai_Prakash_University> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.444345.6> ;
+    schema:sameAs <http://isni.org/isni/0000000417743468> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(84.74709 25.78031)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Chāpra" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Bihar" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1274353/> ;
+    ] ; 
+    .

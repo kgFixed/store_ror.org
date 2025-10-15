@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02dnn6q67> a org:Organization ;
+    rdfs:label 'Linkou Chang Gung Memorial Hospital'^^xsd:string ;
+    schema:name 'Linkou Chang Gung Memorial Hospital'^^xsd:string ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'CGMH'^^xsd:string@None ; 
+    org:alternativeName 'CGMH Linkou'^^xsd:string@en ; 
+    org:alternativeName 'Chang Gung Hospital'^^xsd:string@en ; 
+    org:alternativeName 'Chang Gung Memorial Hospital'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.cgmh.org.tw/eng/about/system/4> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Linkou_Chang_Gung_Memorial_Hospital> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005795> ;
+    schema:sameAs <https://grid.ac/institutions/grid.454211.7> ;
+    schema:sameAs <http://isni.org/isni/000000041756999X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02verss31> ;
+        rdfs:label 'Chang Gung Memorial Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.29696 24.99368)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Taoyuan" ;
+            schema:addressCountry "TW" ;
+            schema:addressRegion "Taiwan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Taiwan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6696918/> ;
+    ] ; 
+    .

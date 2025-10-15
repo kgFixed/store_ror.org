@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/033tx3651> a org:Organization ;
+    rdfs:label 'KAGRA'^^xsd:string ;
+    schema:name 'KAGRA'^^xsd:string ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2022-06-16"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Kamioka Gravitational Wave Detector'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://gwcenter.icrr.u-tokyo.ac.jp> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/KAGRA> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04djymq25> ;
+        rdfs:label 'Kamioka Observatory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/008td3p62> ;
+        rdfs:label 'Institute for Cosmic Ray Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00h761y79> ;
+        rdfs:label 'Gravitational Wave Open Science Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.17323 36.24483)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hida" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Gifu" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/11611937/> ;
+    ] ; 
+    .

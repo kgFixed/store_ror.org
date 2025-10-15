@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05gzmn429> a org:Organization ;
+    rdfs:label 'SLAC National Accelerator Laboratory'^^xsd:string ;
+    schema:name 'SLAC National Accelerator Laboratory'^^xsd:string ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Office of Science SLAC National Accelerator Laboratory'^^xsd:string@en ; 
+    org:abbreviation 'SLAC'^^xsd:string@None ; 
+    org:alternativeName 'Stanford Linear Accelerator Center'^^xsd:string@en ; 
+    org:alternativeName 'United States Department of Energy Office of Science SLAC National Accelerator Laboratory'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www6.slac.stanford.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/SLAC_National_Accelerator_Laboratory> ; 
+    schema:sameAs <https://api.crossref.org/funders/100011664> ;
+    schema:sameAs <https://grid.ac/institutions/grid.445003.6> ;
+    schema:sameAs <http://isni.org/isni/0000000107257771> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00pwqz914> ;
+        rdfs:label 'Kavli Institute for Particle Astrophysics and Cosmology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vkaa689> ;
+        rdfs:label 'Linac Coherent Light Source'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vzbm991> ;
+        rdfs:label 'Stanford Synchrotron Radiation Lightsource'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023py8175> ;
+        rdfs:label 'Facility for Advanced Accelerator Experimental Tests-II'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00mmn6b08> ;
+        rdfs:label 'Office of Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00f54p054> ;
+        rdfs:label 'Stanford University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048g3cy84> ;
+        rdfs:label 'NSF-DOE Vera C. Rubin Observatory'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.18219 37.45383)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Menlo Park" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "California" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5372223/> ;
+    ] ; 
+    .

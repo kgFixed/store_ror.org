@@ -1,0 +1,274 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02vymnc26> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    schema:url <http://sanitas.es> ; 
+    schema:mainEntityOfPage <https://corporativo.sanitas.es> ;
+    owl:sameAs <https://es.wikipedia.org/wiki/Sanitas> ; 
+    schema:sameAs <http://isni.org/isni/0000000406227580> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02v9xd857> ;
+        rdfs:label 'Hospital Universitario Sanitas La Zarzuela'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045xgsj44> ;
+        rdfs:label 'Hospital Universitario Sanitas La Moraleja'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mcpvv78> ;
+        rdfs:label 'Hospital Universitario Sanitas Virgen del Mar'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045wa9418> ;
+        rdfs:label 'Hospital Sanitas CIMA'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01m2qwb98> ;
+        rdfs:label 'Centro Médico Sanitas Alcorcón'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wy8nb15> ;
+        rdfs:label 'Centro Médico Sanitas Conde Duque'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0423q9896> ;
+        rdfs:label 'Centro Médico Sanitas Las Rozas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02q8ctk93> ;
+        rdfs:label 'Centro Médico Sanitas Reina Victoria'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01pmcea89> ;
+        rdfs:label 'Centro Médico Sanitas BS Boadilla'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05yeagb65> ;
+        rdfs:label 'Centro Médico Sanitas Alcobendas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kwf6b96> ;
+        rdfs:label 'Centro Médico Sanitas Costa Rica'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0120w0n28> ;
+        rdfs:label 'Centro Médico Sanitas Montecarmelo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nehnf32> ;
+        rdfs:label 'Centro Médico Sanitas Valdebebas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rzvwr38> ;
+        rdfs:label 'Centro Médico Sanitas Nicasio Gallego'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00pw5c804> ;
+        rdfs:label 'Centro Médico Sanitas Núñez de Balboa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/024t2fn03> ;
+        rdfs:label 'Centro Médico Sanitas Balmes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0192b6408> ;
+        rdfs:label 'Centro Médico Sanitas Boreal'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02250mf28> ;
+        rdfs:label 'Centro Médico Sanitas Imperial Tarraco'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kedcz83> ;
+        rdfs:label 'Centro Médico Sanitas Robresa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0170yz872> ;
+        rdfs:label 'Centro Médico Sanitas Córdoba'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03da7zw11> ;
+        rdfs:label 'Centro Médico Sanitas Málaga'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gnh5n78> ;
+        rdfs:label 'Centro Médico Sanitas Sevilla Los Remedios'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02n89n861> ;
+        rdfs:label 'Centro Médico Sanitas Sevilla La Buhaira'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01twche52> ;
+        rdfs:label 'Centro Médico Sanitas Valencia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00my5c754> ;
+        rdfs:label 'Centro Médico Sanitas A Coruña'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fta5x15> ;
+        rdfs:label 'Centro Médico Sanitas Artaza'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qer7k24> ;
+        rdfs:label 'Centro Médico Sanitas Zaragoza'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05r6d4v68> ;
+        rdfs:label 'Centro Médico Sanitas Murcia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ahbtp08> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Acacias'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01y6zzq66> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Barcelona'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03mfap132> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Castellana'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01awp1783> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Dr. Esquerdo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00sz8gn76> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Fortuny'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/020m7gh21> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Hortaleza'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x5g0k34> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Isaac Peral'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xvsjf67> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Las Tablas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qvznj82> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Pozuelo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01x3dve48> ;
+        rdfs:label 'Centro de Rehabilitación Avanzada Sanitas Serrano'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00erq5j83> ;
+        rdfs:label 'Laboratorio Central de Sanitas'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Madrid" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Madrid" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3117735/> ;
+    ] ; 
+    .

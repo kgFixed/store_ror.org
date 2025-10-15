@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0161xgx34> a org:Organization ;
+    rdfs:label 'Université de Montréal'^^xsd:string ;
+    schema:name 'Université de Montréal'^^xsd:string ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'UdeM'^^xsd:string@None ; 
+    schema:url <http://umontreal.ca> ; 
+    schema:mainEntityOfPage <https://www.umontreal.ca> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Universit%25C3%25A9_de_Montr%25C3%25A9al> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005242> ;
+    schema:sameAs <https://grid.ac/institutions/grid.14848.31> ;
+    schema:sameAs <http://isni.org/isni/0000000121042136> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/003sgap07> ;
+        rdfs:label 'Canadian Institute for International Peace and Security'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05yfz9t60> ;
+        rdfs:label 'International Laboratory for Brain, Music and Sound Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05m8pzq90> ;
+        rdfs:label 'Montreal Clinical Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02w5vxx03> ;
+        rdfs:label 'Centre de recherche en santé publique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ty8cs18> ;
+        rdfs:label 'Millénium Québecor'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03wx0vn75> ;
+        rdfs:label 'CentrEau - Quebec Water Management Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01gv74p78> ;
+        rdfs:label 'Centre Hospitalier Universitaire Sainte-Justine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0410a8y51> ;
+        rdfs:label 'Centre Hospitalier de l’Université de Montréal'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/031wtp233> ;
+        rdfs:label 'Centre de Santé et de Services Sociaux de Chicoutimi'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05ww3wq27> ;
+        rdfs:label 'HEC Montréal'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03rdc4968> ;
+        rdfs:label 'Hôpital Maisonneuve-Rosemont'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01w7qz648> ;
+        rdfs:label 'Hôpital Notre-Dame'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0524asq02> ;
+        rdfs:label 'Hôpital Rivière-des-Prairies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04xk8j027> ;
+        rdfs:label 'Hôpital Saint-Luc'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03ey0g045> ;
+        rdfs:label 'Hôpital du Sacré-Cœur de Montréal'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0468gx405> ;
+        rdfs:label 'Hôtel-Dieu de Montréal'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03hahj039> ;
+        rdfs:label 'Institut de Readaptation Gingras Lindsay de Montreal'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00wj6x496> ;
+        rdfs:label 'Institute for Research in Immunology and Cancer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/053wt0478> ;
+        rdfs:label 'Lachine Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03vs03g62> ;
+        rdfs:label 'Montreal Heart Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05f8d4e86> ;
+        rdfs:label 'Polytechnique Montréal'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05xay3m79> ;
+        rdfs:label 'Érudit'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0155edt85> ;
+        rdfs:label 'fabriqueREL'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05fdt6816> ;
+        rdfs:label 'Obvia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/012gdv017> ;
+        rdfs:label 'Centre de recherche interuniversitaire sur la littérature et la culture québécoises'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02ddgd424> ;
+        rdfs:label 'Institut universitaire sur les dépendances'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.58781 45.50884)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Montreal" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "Quebec" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6077243/> ;
+    ] ; 
+    .

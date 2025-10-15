@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03sqj6c96> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'CODEMGE'^^xsd:string@pt ; 
+    schema:url <http://codemge.com.br> ; 
+    schema:mainEntityOfPage <https://www.codemge.com.br> ;
+    owl:sameAs <https://pt.wikipedia.org/wiki/Companhia_de_Desenvolvimento_Econ%25C3%25B4mico_de_Minas_Gerais> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-43.93778 -19.92083)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Belo Horizonte" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "Minas Gerais" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3470127/> ;
+    ] ; 
+    .

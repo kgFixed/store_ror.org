@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02gkgrd84> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1932"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Abastumani Astrophysical Observatory'^^xsd:string@en ; 
+    org:alternativeName 'Evgeni Kharadze Georgian National Astrophysical Observatory'^^xsd:string@en ; 
+    org:abbreviation 'GENAO'^^xsd:string@None ; 
+    org:alternativeName 'Georgian National Astrophysical Observatory'^^xsd:string@en ; 
+    org:alternativeName 'აბასთუმნის ასტროფიზიკური ობსერვატორია'^^xsd:string@ka ; 
+    schema:url <http://abao.ge> ; 
+    schema:mainEntityOfPage <https://www.abao.ge> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Georgian_National_Astrophysical_Observatory> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.431981.6> ;
+    schema:sameAs <http://isni.org/isni/0000000110113816> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(44.83368 41.69411)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tbilisi" ;
+            schema:addressCountry "GE" ;
+            schema:addressRegion "Tbilisi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Georgia" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/611717/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(42.81951 41.75377)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Abastumani Astrophysical Observatorium" ;
+            schema:addressCountry "GE" ;
+            schema:addressRegion "None" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Georgia" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/9972745/> ;
+    ] ; 
+    .

@@ -1,0 +1,64 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/049xh5y45> a org:Organization ;
+    rdfs:label 'Laboratoire d\'Ecogéochimie des Environnements Benthiques'^^xsd:string ;
+    schema:name 'Laboratoire d\'Ecogéochimie des Environnements Benthiques'^^xsd:string ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'LECOB'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://lecob.obs-banyuls.fr/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.462905.c> ;
+    schema:sameAs <http://isni.org/isni/0000000405972562> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01q76b368> ;
+        rdfs:label 'Institut Écologie et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02en5vm52> ;
+        rdfs:label 'Sorbonne Université'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05gz4kr37> ;
+        rdfs:label 'Observatoire Océanologique de Banyuls-sur-Mer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label 'Centre National de la Recherche Scientifique'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.12897 42.48375)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Banyuls de la Marenda" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Occitanie" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3035092/> ;
+    ] ; 
+    .

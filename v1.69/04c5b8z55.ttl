@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04c5b8z55> a org:Organization ;
+    rdfs:label 'Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society'^^xsd:string ;
+    schema:name 'Biomedicine Research Institute of Buenos Aires - CONICET - Partner Institute of the Max Planck Society'^^xsd:string ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2019-11-07"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'IBIOBA-MPSP'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://ibioba-mpsp-conicet.gov.ar> ;
+    schema:sameAs <https://grid.ac/institutions/grid.507417.0> ;
+    schema:sameAs <http://isni.org/isni/0000000405909563> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label 'Consejo Nacional de Investigaciones Científicas y Técnicas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03w11wq45> ;
+        rdfs:label 'El Hospital General de Agudos Carlos G. Durand'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0145s0423> ;
+        rdfs:label 'Fundación para la Lucha contra las Enfermedades Neurológicas de la Infancia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00tdzhd41> ;
+        rdfs:label 'Hospital Fernández'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00bq4rw46> ;
+        rdfs:label 'Hospital Italiano de Buenos Aires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01hhn8329> ;
+        rdfs:label 'Max Planck Society'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0081fs513> ;
+        rdfs:label 'Universidad de Buenos Aires'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-58.37723 -34.61315)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Buenos Aires" ;
+            schema:addressCountry "AR" ;
+            schema:addressRegion "Buenos Aires F.D." ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Argentina" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3435910/> ;
+    ] ; 
+    .

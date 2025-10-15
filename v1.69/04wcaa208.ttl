@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04wcaa208> a org:Organization ;
+    rdfs:label 'BirdLife international'^^xsd:string ;
+    schema:name 'BirdLife international'^^xsd:string ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.birdlife.org/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/BirdLife_International> ; 
+    schema:sameAs <https://api.crossref.org/funders/100016310> ;
+    schema:sameAs <https://grid.ac/institutions/grid.432210.6> ;
+    schema:sameAs <http://isni.org/isni/0000000403836292> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025ejqq45> ;
+        rdfs:label 'BirdLife International'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02fek9t68> ;
+        rdfs:label 'Macedonian Ecological Society'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.11667 52.2)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cambridge" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "England" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2653941/> ;
+    ] ; 
+    .

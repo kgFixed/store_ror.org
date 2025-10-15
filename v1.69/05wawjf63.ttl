@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05wawjf63> a org:Organization ;
+    rdfs:label 'Baku Engineering University'^^xsd:string ;
+    schema:name 'Baku Engineering University'^^xsd:string ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2021-04-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    schema:url <http://beu.edu.az> ; 
+    schema:mainEntityOfPage <https://beu.edu.az> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Baku_Engineering_University> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.510428.a> ;
+    schema:sameAs <http://isni.org/isni/0000000464781854> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.33333 40.41667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Absheron Rayon" ;
+            schema:addressCountry "AZ" ;
+            schema:addressRegion "Abşeron" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Azerbaijan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/587245/> ;
+    ] ; 
+    .

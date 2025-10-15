@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04qjkhc08> a org:Organization ;
+    rdfs:label 'Mirpur University of Science and Technology'^^xsd:string ;
+    schema:name 'Mirpur University of Science and Technology'^^xsd:string ;
+    schema:foundingDate "1980"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'MUST'^^xsd:string@None ; 
+    org:alternativeName 'UCET Mirpur'^^xsd:string@en ; 
+    org:alternativeName 'University College of Engineering & Technology Mirpur'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://must.edu.pk/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Mirpur_University_of_Science_and_Technology> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.449138.3> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.75187 33.14782)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "New Mirpur City" ;
+            schema:addressCountry "PK" ;
+            schema:addressRegion "Azad Kashmir" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Pakistan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1169027/> ;
+    ] ; 
+    .

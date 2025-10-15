@@ -1,0 +1,91 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02gfys938> a org:Organization ;
+    rdfs:label 'University of Manitoba'^^xsd:string ;
+    schema:name 'University of Manitoba'^^xsd:string ;
+    schema:foundingDate "1877"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    schema:url <http://umanitoba.ca> ; 
+    schema:mainEntityOfPage <https://umanitoba.ca> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Manitoba> ; 
+    schema:sameAs <https://api.crossref.org/funders/100010318> ;
+    schema:sameAs <https://grid.ac/institutions/grid.21613.37> ;
+    schema:sameAs <http://isni.org/isni/0000000419369609> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0117s0n37> ;
+        rdfs:label 'George & Fay Yee Centre for Healthcare Innovation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qer3y84> ;
+        rdfs:label 'Research Institute in Oncology and Hematology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010tw2j24> ;
+        rdfs:label 'Winnipeg Institute for Theoretical Physics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02jzt8c33> ;
+        rdfs:label 'Children\'s Hospital of Winnipeg'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0363ync48> ;
+        rdfs:label 'Deer Lodge Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02xerpt86> ;
+        rdfs:label 'St. Boniface Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00jstgs54> ;
+        rdfs:label 'Université de Saint-Boniface'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05pcf2t08> ;
+        rdfs:label 'Centre for Earth Observation Science'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14704 49.8844)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Winnipeg" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "Manitoba" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6183235/> ;
+    ] ; 
+    .

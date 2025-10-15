@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04bmqy315> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'CHU Mohammed VI Oujda'^^xsd:string@fr ; 
+    org:alternativeName 'CHU Oujda'^^xsd:string@fr ; 
+    org:alternativeName 'Centre Hospitalier Universitaire d’Oujda'^^xsd:string@fr ; 
+    org:alternativeName 'Mohammed VI University Hospital, Oujda'^^xsd:string@en ; 
+    schema:url <http://chuoujda.ma> ; 
+    schema:mainEntityOfPage <http://www.chuoujda.ma> ;
+    owl:sameAs <https://fr.wikipedia.org/wiki/CHU_Mohammed-VI_%2528Oujda%2529> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.459435.a> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.90858 34.68139)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Oujda" ;
+            schema:addressCountry "MA" ;
+            schema:addressRegion "Oriental" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Morocco" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2540483/> ;
+    ] ; 
+    .

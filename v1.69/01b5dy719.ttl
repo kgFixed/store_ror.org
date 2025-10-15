@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01b5dy719> a org:Organization ;
+    rdfs:label 'Institute of Mathematics and Informatics'^^xsd:string ;
+    schema:name 'Institute of Mathematics and Informatics'^^xsd:string ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'IMI'^^xsd:string@None ; 
+    org:abbreviation 'IMI-BAS'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Mathematics'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Mathematics and Informatics at the Bulgarian Academy of Sciences'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Mathematics and Informatics of the BAS'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Mathematics and Informatics of the Bulgarian Academy of Sciences'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Mathematics with Computing Centre'^^xsd:string@en ; 
+    org:abbreviation 'ИМИ-БАН'^^xsd:string@bg ; 
+    org:alternativeName 'Институт По Математика И Информатика'^^xsd:string@bg ; 
+    schema:mainEntityOfPage <https://math.bas.bg/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Institute_of_Mathematics_and_Informatics_(Bulgarian_Academy_of_Sciences)> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.425011.3> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01x8hew03> ;
+        rdfs:label 'Bulgarian Academy of Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.32415 42.69751)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sofia" ;
+            schema:addressCountry "BG" ;
+            schema:addressRegion "Sofia-Capital" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bulgaria" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/727011/> ;
+    ] ; 
+    .

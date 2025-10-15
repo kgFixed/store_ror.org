@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/049b67h23> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Stanisław Staszic High School in Rzepin'^^xsd:string@en ; 
+    org:alternativeName 'Zespół Szkół Ogólnokształcących w Rzepinie'^^xsd:string@pl ; 
+    schema:url <http://zs.rzepin.org> ; 
+    schema:url <http://zsrzepin.pl> ; 
+    schema:mainEntityOfPage <https://zs.rzepin.org> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.8363 52.3437)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Gmina Rzepin" ;
+            schema:addressCountry "PL" ;
+            schema:addressRegion "Lubusz" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Poland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/7533426/> ;
+    ] ; 
+    .

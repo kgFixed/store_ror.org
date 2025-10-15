@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/032hdk172> a org:Organization ;
+    rdfs:label 'University of Mumbai'^^xsd:string ;
+    schema:name 'University of Mumbai'^^xsd:string ;
+    schema:foundingDate "1857"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'MU'^^xsd:string@None ; 
+    org:alternativeName 'Mumbai University'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.mu.ac.in/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Mumbai> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100008795> ;
+    schema:sameAs <https://grid.ac/institutions/grid.44871.3e> ;
+    schema:sameAs <http://isni.org/isni/0000000106680201> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/057wkj006> ;
+        rdfs:label 'Center for Excellence in Basic Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/017je7s69> ;
+        rdfs:label 'National Institute for Research in Reproductive Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04gt8an83> ;
+        rdfs:label 'Thakur College of Engineering and Technology'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.88261 19.07283)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Mumbai" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Maharashtra" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1275339/> ;
+    ] ; 
+    .

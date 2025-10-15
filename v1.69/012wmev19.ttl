@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/012wmev19> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2019-02-17"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'AIES'^^xsd:string@None ; 
+    org:alternativeName 'Arava Institute'^^xsd:string@en ; 
+    org:alternativeName 'מכון הערבה'^^xsd:string@he ; 
+    org:alternativeName 'معهد العرفة'^^xsd:string@ar ; 
+    schema:url <http://arava.org> ; 
+    schema:mainEntityOfPage <https://arava.org> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Arava_Institute_for_Environmental_Studies> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.501397.9> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(34.94821 29.55805)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Eilat" ;
+            schema:addressCountry "IL" ;
+            schema:addressRegion "Southern District" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Israel" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/295277/> ;
+    ] ; 
+    .

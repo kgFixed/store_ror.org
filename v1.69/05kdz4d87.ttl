@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05kdz4d87> a org:Organization ;
+    rdfs:label 'NHS Greater Glasgow and Clyde'^^xsd:string ;
+    schema:name 'NHS Greater Glasgow and Clyde'^^xsd:string ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'NHSGGC'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.nhsggc.org.uk/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/NHS_Greater_Glasgow_and_Clyde> ; 
+    schema:sameAs <https://api.crossref.org/funders/100010526> ;
+    schema:sameAs <https://grid.ac/institutions/grid.413301.4> ;
+    schema:sameAs <http://isni.org/isni/0000000105239342> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00tkrd758> ;
+        rdfs:label 'Gartnavel General Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00bjck208> ;
+        rdfs:label 'Glasgow Royal Infirmary'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cjp2c87> ;
+        rdfs:label 'Glasgow Victoria Infirmary'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01s0phq15> ;
+        rdfs:label 'Inverclyde Royal Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053eyjs84> ;
+        rdfs:label 'Princess Royal Maternity Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04y0x0x35> ;
+        rdfs:label 'Queen Elizabeth University Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nj8sa76> ;
+        rdfs:label 'Royal Alexandra Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01cb0kd74> ;
+        rdfs:label 'Royal Hospital for Children'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pc31859> ;
+        rdfs:label 'Stobhill Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015er2861> ;
+        rdfs:label 'Vale of Leven District General Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02e22bh87> ;
+        rdfs:label 'Western Infirmary'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-4.25763 55.86515)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Glasgow" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "Scotland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2648579/> ;
+    ] ; 
+    .

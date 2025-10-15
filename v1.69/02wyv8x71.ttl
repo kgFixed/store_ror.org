@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02wyv8x71> a org:Organization ;
+    rdfs:label 'San Francisco Theological Seminary'^^xsd:string ;
+    schema:name 'San Francisco Theological Seminary'^^xsd:string ;
+    schema:foundingDate "1871"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'SFTS'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.redlands.edu/academics/colleges-and-schools/san-francisco-theological-seminary> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/San_Francisco_Theological_Seminary> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.462805.d> ;
+    schema:sameAs <http://isni.org/isni/0000000122056046> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01an7q238> ;
+        rdfs:label 'University of California, Berkeley'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02hfyct53> ;
+        rdfs:label 'University of Redlands'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00xs48965> ;
+        rdfs:label 'Graduate Theological Union'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.56164 37.97465)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "San Anselmo" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "California" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5391615/> ;
+    ] ; 
+    .

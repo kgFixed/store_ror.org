@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05dx9q607> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'ARCST'^^xsd:string@en ; 
+    schema:url <http://www.journalasc.org> ; 
+    schema:mainEntityOfPage <https://onlinemac.wixsite.com/arcs> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.15995 -17.38195)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cochabamba" ;
+            schema:addressCountry "BO" ;
+            schema:addressRegion "Cochabamba" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bolivia" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3919968/> ;
+    ] ; 
+    .

@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/039da4689> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1923"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Museo di Storia Naturale G. Ligabue, Venezia'^^xsd:string@it ; 
+    org:alternativeName 'Museo di Storia Naturale di Venezia'^^xsd:string@it ; 
+    schema:url <http://msn.visitmuve.it> ; 
+    schema:mainEntityOfPage <https://msn.visitmuve.it> ;
+    owl:sameAs <https://it.wikipedia.org/wiki/Museo_di_storia_naturale_di_Venezia_Giancarlo_Ligabue> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.33265 45.43713)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Venice" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "Veneto" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3164603/> ;
+    ] ; 
+    .

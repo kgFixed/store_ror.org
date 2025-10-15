@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00k5kwq11> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2025-08-04"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'NJF (Nordic Association of Agricultural Scientists) Finland'^^xsd:string@en ; 
+    org:alternativeName 'NJF Finland'^^xsd:string@en ; 
+    schema:url <http://njf.nu> ; 
+    schema:mainEntityOfPage <https://www.njf.nu> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.48004 60.80162)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Jokioinen" ;
+            schema:addressCountry "FI" ;
+            schema:addressRegion "Kanta-Häme" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Finland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/655692/> ;
+    ] ; 
+    .

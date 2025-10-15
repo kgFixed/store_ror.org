@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05r5kfz11> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'USIT'^^xsd:string@en ; 
+    schema:url <http://upperskagit.com> ; 
+    schema:url <http://upperskagittribe-nsn.gov> ; 
+    schema:mainEntityOfPage <https://upperskagittribe-nsn.gov> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Upper_Skagit_Indian_Tribe> ; 
+    schema:sameAs <http://isni.org/isni/0000000404883672> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.23611 48.50389)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sedro-Woolley" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Washington" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5809902/> ;
+    ] ; 
+    .

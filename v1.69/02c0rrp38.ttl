@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02c0rrp38> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-07-08"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'EAESP'^^xsd:string@pt ; 
+    org:alternativeName 'Escola de Administração de Empresas de São Paulo'^^xsd:string@pt ; 
+    org:alternativeName 'Escola de Administração de Empresas de São Paulo da Fundação Getulio Vargas'^^xsd:string@pt ; 
+    org:alternativeName 'Escuela de Administración de Empresas de São Paulo de la FGV'^^xsd:string@es ; 
+    org:alternativeName 'Escuela de Administración de Empresas de São Paulo de la Fundación Getulio Vargas'^^xsd:string@es ; 
+    org:abbreviation 'FGV EAESP'^^xsd:string@pt ; 
+    org:abbreviation 'FGV-EAESP'^^xsd:string@pt ; 
+    org:alternativeName 'FGV’s São Paulo School of Business Administration'^^xsd:string@en ; 
+    org:alternativeName 'Fundação Getulio Vargas’s Sao Paulo School of Business Administration'^^xsd:string@en ; 
+    org:alternativeName 'The São Paulo School of Business Administration of Fundação Getulio Vargas'^^xsd:string@en ; 
+    schema:url <http://eaesp.fgv.br> ; 
+    schema:mainEntityOfPage <https://eaesp.fgv.br> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Escola_de_Administra%25C3%25A7%25C3%25A3o_de_Empresas_de_S%25C3%25A3o_Paulo> ; 
+    schema:sameAs <http://isni.org/isni/0000000123014016> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01evzkn27> ;
+        rdfs:label 'Fundação Getulio Vargas'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "São Paulo" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "São Paulo" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3448439/> ;
+    ] ; 
+    .

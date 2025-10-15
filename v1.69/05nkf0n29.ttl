@@ -1,0 +1,172 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05nkf0n29> a org:Organization ;
+    rdfs:label 'University of New Brunswick'^^xsd:string ;
+    schema:name 'University of New Brunswick'^^xsd:string ;
+    schema:foundingDate "1785"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Academy of Liberal Arts and Sciences'^^xsd:string@en ; 
+    org:alternativeName 'College of New Brunswick'^^xsd:string@en ; 
+    org:abbreviation 'UNB'^^xsd:string@None ; 
+    schema:url <http://unb.ca> ; 
+    schema:mainEntityOfPage <https://unb.ca> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_New_Brunswick> ; 
+    schema:sameAs <https://api.crossref.org/funders/100009368> ;
+    schema:sameAs <https://grid.ac/institutions/grid.266820.8> ;
+    schema:sameAs <http://isni.org/isni/0000000404026152> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05k4mr860> ;
+        rdfs:label 'Saint John Regional Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04g3hdh17> ;
+        rdfs:label 'Atlantic Institute for Policy Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00yhsjs55> ;
+        rdfs:label 'Canadian Institute for Cybersecurity'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/031ex4j83> ;
+        rdfs:label 'Canadian Rivers Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bahkp76> ;
+        rdfs:label 'Centre for Nuclear Energy Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04z08gp61> ;
+        rdfs:label 'Institute of Biomedical Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05a68ds78> ;
+        rdfs:label 'New Brunswick Institute for Research, Data and Training'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fqsk919> ;
+        rdfs:label 'Urban and Community Studies Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04nv75k16> ;
+        rdfs:label 'Centre for Criminal Justice Studies and Policing Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ndnx171> ;
+        rdfs:label 'Centre for Research in Integrated Care'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016grk095> ;
+        rdfs:label 'Dr. Jack McKenzie Limerick Pulp & Paper Research & Education Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05xb5eg35> ;
+        rdfs:label 'Emera & NB Power Research Centre for Smart Grid Technologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ry0st69> ;
+        rdfs:label 'Milton F. Gregg Centre for the Study of War and Society'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0444r5845> ;
+        rdfs:label 'Centre for Advanced Studies - Atlantic'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019g2qd78> ;
+        rdfs:label 'Marine Additive Manufacturing Centre of Excellence'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0039r8530> ;
+        rdfs:label 'Muriel McQueen Fergusson Centre for Family Violence Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007m1fk72> ;
+        rdfs:label 'Off-site Construction Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vy2n929> ;
+        rdfs:label 'SPECTRAL Spatial Computing Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00v6y6p60> ;
+        rdfs:label 'Wood Science and Technology Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053hzer83> ;
+        rdfs:label 'Institute of Population Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05jkgzq43> ;
+        rdfs:label 'Research Institute in Data Science and Artificial Intelligence'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.66558 45.94541)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Fredericton" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "New Brunswick" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5957776/> ;
+    ] ; 
+    .

@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05tm1p212> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'IOC NAAS'^^xsd:string@en ; 
+    org:alternativeName 'Інститут олійних культур НААН'^^xsd:string@uk ; 
+    schema:url <http://imk.zp.ua> ; 
+    schema:mainEntityOfPage <https://imk.zp.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2586%25D0%25BD%25D1%2581%25D1%2582%25D0%25B8%25D1%2582%25D1%2583%25D1%2582_%25D0%25BE%25D0%25BB%25D1%2596%25D0%25B9%25D0%25BD%25D0%25B8%25D1%2585_%25D0%25BA%25D1%2583%25D0%25BB%25D1%258C%25D1%2582%25D1%2583%25D1%2580_%25D0%259D%25D0%2590%25D0%2590%25D0%259D_%25D0%25A3%25D0%25BA%25D1%2580%25D0%25B0%25D1%2597%25D0%25BD%25D0%25B8> ; 
+    schema:sameAs <http://isni.org/isni/0000000518023056> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/001040111> ;
+        rdfs:label 'National Academy of Agrarian Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.0165 47.89512)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Soniachne" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Zaporizhzhia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/11151428/> ;
+    ] ; 
+    .

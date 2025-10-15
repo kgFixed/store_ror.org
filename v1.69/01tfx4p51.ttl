@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01tfx4p51> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'A.V. Vishnevsky National Medical Research Center of Surgery'^^xsd:string@en ; 
+    org:alternativeName 'Federal State Budgetary Institution "National Medical Research Center of Surgery Named after A.V. Vishnevsky" of the Ministry Of Health of the Russian Federation'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Surgery named after A. V. Vishnevskogo'^^xsd:string@en ; 
+    org:alternativeName 'НМИЦ хирургии имени А.В. Вишневского'^^xsd:string@ru ; 
+    org:alternativeName 'ФГБУ «НМИЦ хирургии им. А.В. Вишневского» Минздрава России'^^xsd:string@ru ; 
+    org:alternativeName 'Федеральное государственное бюджетное учреждение «Национальный медицинский исследовательский центр хирургии имени А.В. Вишневского» Министерства здравоохранения Российской Федерации'^^xsd:string@ru ; 
+    schema:url <http://vishnevskogo.ru> ; 
+    schema:mainEntityOfPage <https://www.vishnevskogo.ru> ;
+    owl:sameAs <https://ru.wikipedia.org/wiki/%25D0%259D%25D0%25B0%25D1%2586%25D0%25B8%25D0%25BE%25D0%25BD%25D0%25B0%25D0%25BB%25D1%258C%25D0%25BD%25D1%258B%25D0%25B9_%25D0%25BC%25D0%25B5%25D0%25B4%25D0%25B8%25D1%2586%25D0%25B8%25D0%25BD%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9_%25D0%25B8%25D1%2581%25D1%2581%25D0%25BB%25D0%25B5%25D0%25B4%25D0%25BE%25D0%25B2%25D0%25B0%25D1%2582%25D0%25B5%25D0%25BB%25D1%258C%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9_%25D1%2586%25D0%25B5%25D0%25BD%25D1%2582%25D1%2580_%25D1%2585%25D0%25B8%25D1%2580%25D1%2583%25D1%2580%25D0%25B3%25D0%25B8%25D0%25B8_%25D0%25B8%25D0%25BC%25D0%25B5%25D0%25BD%25D0%25B8_%25D0%2590._%25D0%2592._%25D0%2592%25D0%25B8%25D1%2588%25D0%25BD%25D0%25B5%25D0%25B2%25D1%2581%25D0%25BA%25D0%25BE%25D0%25B3%25D0%25BE> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.482926.3> ;
+    schema:sameAs <http://isni.org/isni/0000000403904726> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01p8ehb87> ;
+        rdfs:label 'Ministry of Health of the Russian Federation'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Moscow" ;
+            schema:addressCountry "RU" ;
+            schema:addressRegion "Moscow" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Russia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/524901/> ;
+    ] ; 
+    .

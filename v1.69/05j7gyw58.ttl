@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05j7gyw58> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'USTA'^^xsd:string@en ; 
+    owl:sameAs <https://fr.wikipedia.org/wiki/Universit%25C3%25A9_des_sciences_et_de_technologie_d%2527Ati> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(18.3393 13.2138)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ati" ;
+            schema:addressCountry "TD" ;
+            schema:addressRegion "Batha" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Chad" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2436400/> ;
+    ] ; 
+    .

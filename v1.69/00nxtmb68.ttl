@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00nxtmb68> a org:Organization ;
+    rdfs:label 'Universalmuseum Joanneum'^^xsd:string ;
+    schema:name 'Universalmuseum Joanneum'^^xsd:string ;
+    schema:foundingDate "1811"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Landesmuseum Joanneum'^^xsd:string@de ; 
+    schema:mainEntityOfPage <https://www.museum-joanneum.at/en> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Universalmuseum_Joanneum> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.472881.0> ;
+    schema:sameAs <http://isni.org/isni/0000000113481753> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002ee1685> ;
+        rdfs:label 'Kunsthaus Graz'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.45 47.06667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Graz" ;
+            schema:addressCountry "AT" ;
+            schema:addressRegion "Styria" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Austria" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2778067/> ;
+    ] ; 
+    .

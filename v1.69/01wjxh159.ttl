@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01wjxh159> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'الجمعية السعودية لاضطراب فرط الحركة وتشتت الانتباه'^^xsd:string@ar ; 
+    org:alternativeName 'جمعية إشراق'^^xsd:string@ar ; 
+    schema:url <http://adhd.org.sa> ; 
+    schema:mainEntityOfPage <https://adhd.org.sa> ;
+    schema:sameAs <https://api.crossref.org/funders/100019012> ;
+    schema:sameAs <http://isni.org/isni/0000000504899743> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(46.72185 24.68773)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Riyadh" ;
+            schema:addressCountry "SA" ;
+            schema:addressRegion "Riyadh Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Saudi Arabia" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/108410/> ;
+    ] ; 
+    .

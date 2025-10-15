@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05mz89y65> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1973"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'ANSE'^^xsd:string@es ; 
+    schema:url <http://asociacionanse.org> ; 
+    schema:mainEntityOfPage <https://www.asociacionanse.org> ;
+    owl:sameAs <https://es.wikipedia.org/wiki/Asociaci%25C3%25B3n_de_Naturalistas_del_Sureste> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.13004 37.98704)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Murcia" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Murcia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2513416/> ;
+    ] ; 
+    .

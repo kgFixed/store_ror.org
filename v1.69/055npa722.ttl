@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/055npa722> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'KBSTRRC'^^xsd:string@en ; 
+    org:alternativeName 'Karen Beasley Sea Turtle Center'^^xsd:string@en ; 
+    org:alternativeName 'Karen Beasley Sea Turtle Hospital'^^xsd:string@en ; 
+    org:alternativeName 'Topsail Turtle Hospital'^^xsd:string@en ; 
+    org:alternativeName 'Topsail Turtle Project'^^xsd:string@en ; 
+    schema:url <http://seaturtlehospital.org> ; 
+    schema:mainEntityOfPage <https://www.seaturtlehospital.org> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Karen_Beasley_Sea_Turtle_Center> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.54608 34.42711)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Surf City" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "North Carolina" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4494127/> ;
+    ] ; 
+    .

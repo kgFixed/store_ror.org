@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05v48bz32> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'NOP'^^xsd:string@None ; 
+    org:alternativeName 'Nuovo Ospedale Santo Stefano di Prato'^^xsd:string@it ; 
+    org:alternativeName 'Nuovo Ospedale di Prato'^^xsd:string@it ; 
+    org:alternativeName 'Nuovo Ospedale di Prato S. Stefano'^^xsd:string@it ; 
+    schema:mainEntityOfPage <https://www.uslcentro.toscana.it/index.php/ospedali/ospedale-di-prato-santo-stefano> ;
+    schema:sameAs <https://grid.ac/institutions/grid.417208.8> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05a87zb20> ;
+        rdfs:label 'Azienda Usl Toscana Centro'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.09699 43.8805)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Prato" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "Tuscany" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3169921/> ;
+    ] ; 
+    .

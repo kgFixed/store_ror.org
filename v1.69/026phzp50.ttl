@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/026phzp50> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Stalwart University Institute, Douala'^^xsd:string@en ; 
+    schema:url <http://stalwartuniversityinstitute.com> ; 
+    schema:mainEntityOfPage <https://stalwartuniversityinstitute.com> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.70428 4.04827)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Douala" ;
+            schema:addressCountry "CM" ;
+            schema:addressRegion "Littoral" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Cameroon" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2232593/> ;
+    ] ; 
+    .

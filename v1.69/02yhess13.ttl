@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02yhess13> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Leprosy Mission Nepal'^^xsd:string@en ; 
+    org:abbreviation 'TLMN'^^xsd:string@en ; 
+    schema:url <http://tlmnepal.org> ; 
+    schema:mainEntityOfPage <https://www.tlmnepal.org> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05wav0c22> ;
+        rdfs:label 'The Leprosy Mission International'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03wkrdj07> ;
+        rdfs:label 'Anandaban Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(85.3237 27.54827)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lalitpur" ;
+            schema:addressCountry "NP" ;
+            schema:addressRegion "Bagmati Province" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Nepal" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/12095487/> ;
+    ] ; 
+    .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/014xd9r11> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1950"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Bistriţa-Năsăud Complex'^^xsd:string@en ; 
+    org:abbreviation 'CMBN'^^xsd:string@ro ; 
+    schema:url <http://complexulmuzealbn.ro> ; 
+    schema:mainEntityOfPage <https://complexulmuzealbn.ro> ;
+    owl:sameAs <https://ro.wikipedia.org/wiki/Complexul_Muzeal_Bistri%25C8%259Ba-N%25C4%2583s%25C4%2583ud> ; 
+    schema:sameAs <http://isni.org/isni/0000000106807786> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.50011 47.13316)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Bistriţa" ;
+            schema:addressCountry "RO" ;
+            schema:addressRegion "Bistrița-Năsăud County" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Romania" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/684657/> ;
+    ] ; 
+    .

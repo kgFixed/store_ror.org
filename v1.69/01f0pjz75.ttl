@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01f0pjz75> a org:Organization ;
+    rdfs:label 'Jazeera University'^^xsd:string ;
+    schema:name 'Jazeera University'^^xsd:string ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2020-10-19"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'JU'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.jazeerauniversity.com/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.508528.2> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0055s1s34> ;
+        rdfs:label 'Jazeera University Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(45.34375 2.03711)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Mogadishu" ;
+            schema:addressCountry "SO" ;
+            schema:addressRegion "Banaadir" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Somalia" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/53654/> ;
+    ] ; 
+    .

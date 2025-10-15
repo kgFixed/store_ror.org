@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/058gwcb74> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Kimcheon Science College'^^xsd:string@en ; 
+    schema:url <http://gch.ac.kr> ; 
+    schema:mainEntityOfPage <https://www.gch.ac.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B2%25BD%25EB%25B6%2581%25EB%25B3%25B4%25EA%25B1%25B4%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000403922537> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.11157 36.14481)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Gimcheon-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeongsangbuk-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8604733/> ;
+    ] ; 
+    .

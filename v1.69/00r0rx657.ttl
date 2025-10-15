@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00r0rx657> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Amine Elokkal El Hadj Moussa Egakhamouk University Centre of Tamanrasset'^^xsd:string@en ; 
+    org:alternativeName 'Centre Universitaire de Tamanrasset'^^xsd:string@fr ; 
+    org:alternativeName 'Centre universitaire Amine Elokkal El Hadj Moussa de Tamanrasset'^^xsd:string@fr ; 
+    org:alternativeName 'University of Tamanrasset'^^xsd:string@en ; 
+    org:alternativeName 'المركز الجامعي تمنراست'^^xsd:string@ar ; 
+    schema:url <http://univ-tam.dz> ; 
+    schema:mainEntityOfPage <https://univ-tam.dz> ;
+    owl:sameAs <https://ar.wikipedia.org/wiki/%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9_%25D8%25A3%25D9%2585%25D9%258A%25D9%2586_%25D8%25A7%25D9%2584%25D8%25B9%25D9%2582%25D8%25A7%25D9%2584_%25D8%25A7%25D9%2584%25D8%25AD%25D8%25A7%25D8%25AC_%25D9%2585%25D9%2588%25D8%25B3%25D9%2589_%25D8%25A2%25D9%2582_%25D8%25A3%25D8%25AE%25D8%25A7%25D9%2585%25D9%2588%25D9%2583_%25E2%2580%2593_%25D8%25AA%25D8%25A7%25D9%2585%25D9%2586%25D8%25B1%25D8%25A7%25D8%25B3%25D8%25AA> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.442545.6> ;
+    schema:sameAs <http://isni.org/isni/0000000446551107> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.52278 22.785)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tamanghasset" ;
+            schema:addressCountry "DZ" ;
+            schema:addressRegion "Tamanrasset" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Algeria" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2478216/> ;
+    ] ; 
+    .

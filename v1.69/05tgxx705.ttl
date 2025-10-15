@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05tgxx705> a org:Organization ;
+    rdfs:label 'Department of Science and Technology'^^xsd:string ;
+    schema:name 'Department of Science and Technology'^^xsd:string ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'DOST'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.dost.gov.ph/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Department_of_Science_and_Technology_(Philippines)> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100010892> ;
+    schema:sameAs <https://grid.ac/institutions/grid.484092.3> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/058k8t807> ;
+        rdfs:label 'Industrial Technology Development Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056ezpj87> ;
+        rdfs:label 'Philippine Council for Industry, Energy, and Emerging Technology Research and Development'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rpdbq72> ;
+        rdfs:label 'Philippine Council for Health Research and Development'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/057p7e749> ;
+        rdfs:label 'Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00c746491> ;
+        rdfs:label 'National Research Council of the Philippines'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/028cjvx63> ;
+        rdfs:label 'Philippine Atmospheric, Geophysical, and Astronomical Services Administration'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.0792 14.5243)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Taguig" ;
+            schema:addressCountry "PH" ;
+            schema:addressRegion "National Capital Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Philippines" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1684308/> ;
+    ] ; 
+    .

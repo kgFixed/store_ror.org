@@ -1,0 +1,71 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02fek9t68> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'MES'^^xsd:string@en ; 
+    org:abbreviation 'МЕД'^^xsd:string@mk ; 
+    schema:url <http://mes.org.mk> ; 
+    schema:mainEntityOfPage <https://mes.org.mk> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Macedonian_Ecological_Society> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04wcaa208> ;
+        rdfs:label 'BirdLife international'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04tehfn33> ;
+        rdfs:label 'International Union for Conservation of Nature'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.43141 41.99646)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Skopje" ;
+            schema:addressCountry "MK" ;
+            schema:addressRegion "Grad Skopje" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "North Macedonia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/785842/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(21.01667 41.03333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Resen" ;
+            schema:addressCountry "MK" ;
+            schema:addressRegion "Resen" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "North Macedonia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/786339/> ;
+    ] ; 
+    .

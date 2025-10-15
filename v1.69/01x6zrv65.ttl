@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01x6zrv65> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Taiwan AI Labs & Foundation'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.ailabs.tw> ;
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E5%258F%25B0%25E7%2581%25A3%25E4%25BA%25BA%25E5%25B7%25A5%25E6%2599%25BA%25E6%2585%25A7%25E5%25AF%25A6%25E9%25A9%2597%25E5%25AE%25A4> ; 
+    schema:sameAs <http://isni.org/isni/0000000509598907> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.52639 25.05306)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Taipei" ;
+            schema:addressCountry "TW" ;
+            schema:addressRegion "Taiwan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Taiwan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1668341/> ;
+    ] ; 
+    .

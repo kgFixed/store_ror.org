@@ -1,0 +1,325 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00t60zh31> a org:Organization ;
+    rdfs:label 'Kaiser Permanente'^^xsd:string ;
+    schema:name 'Kaiser Permanente'^^xsd:string ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'KP'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://healthy.kaiserpermanente.org/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Kaiser_Permanente> ; 
+    schema:sameAs <https://api.crossref.org/funders/100005977> ;
+    schema:sameAs <https://grid.ac/institutions/grid.280062.e> ;
+    schema:sameAs <http://isni.org/isni/0000000099577758> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04cpf2p55> ;
+        rdfs:label 'Bess Kaiser Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05dsgrz38> ;
+        rdfs:label 'Hawaii Permanente Medical Group'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j78my65> ;
+        rdfs:label 'Kaiser Foundation Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00yep6g06> ;
+        rdfs:label 'Kaiser Foundation Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/058ydcm32> ;
+        rdfs:label 'Kaiser Foundation Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047hxsy31> ;
+        rdfs:label 'Kaiser Permanente Anaheim Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vyf7w04> ;
+        rdfs:label 'Kaiser Permanente Baldwin Park Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ecr5c85> ;
+        rdfs:label 'Kaiser Permanente Burke Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ek56k41> ;
+        rdfs:label 'Kaiser Permanente Capitol Hill Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vdcfb98> ;
+        rdfs:label 'Kaiser Permanente Castle Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/028gzjv13> ;
+        rdfs:label 'Kaiser Permanente Center for Health Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jw82j47> ;
+        rdfs:label 'Kaiser Permanente Fontana Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05a9k3463> ;
+        rdfs:label 'Kaiser Permanente Franklin Medical Offices'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jng7h30> ;
+        rdfs:label 'Kaiser Permanente Gaithersburg Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017h1mj21> ;
+        rdfs:label 'Kaiser Permanente Hayward Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015sq8750> ;
+        rdfs:label 'Kaiser Permanente Lone Tree Medical Offices'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03xx88d27> ;
+        rdfs:label 'Kaiser Permanente Moanalua Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01mwnbk39> ;
+        rdfs:label 'Kaiser Permanente Modesto Medical Center and Medical Offices'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05rfek682> ;
+        rdfs:label 'Kaiser Permanente Oakland Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05535a176> ;
+        rdfs:label 'Kaiser Permanente Orange County Irvine Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00qjyeh27> ;
+        rdfs:label 'Kaiser Permanente Rancho Cordova Medical Offices'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bz7vk34> ;
+        rdfs:label 'Kaiser Permanente Redwood City Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01q9c7s07> ;
+        rdfs:label 'Kaiser Permanente Richmond Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wgych27> ;
+        rdfs:label 'Kaiser Permanente Riverside Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022wfr829> ;
+        rdfs:label 'Kaiser Permanente Rock Creek Medical Offices'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0280q1024> ;
+        rdfs:label 'Kaiser Permanente Roseville Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02q404g62> ;
+        rdfs:label 'Kaiser Permanente Sacramento Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fg98b82> ;
+        rdfs:label 'Kaiser Permanente San Diego Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02fxsj090> ;
+        rdfs:label 'Kaiser Permanente San Francisco Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05vbevg81> ;
+        rdfs:label 'Kaiser Permanente San Jose Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04btmx930> ;
+        rdfs:label 'Kaiser Permanente San Leandro Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/018d0rc68> ;
+        rdfs:label 'Kaiser Permanente San Marcos Medical Offices'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0299ptp31> ;
+        rdfs:label 'Kaiser Permanente San Rafael Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038yw9848> ;
+        rdfs:label 'Kaiser Permanente Santa Clara Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kjpp702> ;
+        rdfs:label 'Kaiser Permanente Santa Rosa Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00nrk9x91> ;
+        rdfs:label 'Kaiser Permanente South Sacramento Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032qfz281> ;
+        rdfs:label 'Kaiser Permanente South San Francisco Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jrz2221> ;
+        rdfs:label 'Kaiser Permanente Stockton Medical Offices'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05xenh663> ;
+        rdfs:label 'Kaiser Permanente Tysons Corner Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05w1qwk94> ;
+        rdfs:label 'Kaiser Permanente Vacaville Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02r3xg590> ;
+        rdfs:label 'Kaiser Permanente Vallejo Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011mkef94> ;
+        rdfs:label 'Kaiser Permanente Walnut Creek Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/031caxb92> ;
+        rdfs:label 'Kaiser Permanente West Los Angeles Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03t30gb84> ;
+        rdfs:label 'Kaiser Permanente Woodlawn Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/042y18291> ;
+        rdfs:label 'Kaiser Permanente Zion Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00spys463> ;
+        rdfs:label 'Los Angeles Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0445kkj20> ;
+        rdfs:label 'Kaiser Permanente Bernard J. Tyson School of Medicine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.2708 37.80437)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Oakland" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "California" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5378538/> ;
+    ] ; 
+    .

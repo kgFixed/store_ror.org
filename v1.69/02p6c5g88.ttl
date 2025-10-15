@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02p6c5g88> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Federal Ministry of Science & Technology'^^xsd:string@en ; 
+    org:alternativeName 'Federal Ministry of Science and Technology'^^xsd:string@en ; 
+    org:alternativeName 'Federal Ministry of Science, Technology and Innovation'^^xsd:string@en ; 
+    schema:url <http://scienceandtech.gov.ng> ; 
+    schema:mainEntityOfPage <https://www.scienceandtech.gov.ng> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Federal_Ministry_of_Science_and_Technology> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.463295.f> ;
+    schema:sameAs <http://isni.org/isni/0000000417645948> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005epk420> ;
+        rdfs:label 'National Space Research and Development Agency'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/041q21635> ;
+        rdfs:label 'Nigerian Institute for Trypanosomiasis Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02zteat75> ;
+        rdfs:label 'Federal Government of Nigeria'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qpwsp84> ;
+        rdfs:label 'Nigeria Natural Medicine Development Agency'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.49508 9.05785)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Abuja" ;
+            schema:addressCountry "NG" ;
+            schema:addressRegion "FCT" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Nigeria" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2352778/> ;
+    ] ; 
+    .

@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02tqp2911> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    schema:url <http://di.mod.bg> ; 
+    schema:mainEntityOfPage <https://di.mod.bg> ;
+    owl:sameAs <https://bg.wikipedia.org/wiki/%25D0%2598%25D0%25BD%25D1%2581%25D1%2582%25D0%25B8%25D1%2582%25D1%2583%25D1%2582_%25D0%25BF%25D0%25BE_%25D0%25BE%25D1%2582%25D0%25B1%25D1%2580%25D0%25B0%25D0%25BD%25D0%25B0_%25E2%2580%259E%25D0%259F%25D1%2580%25D0%25BE%25D1%2584%25D0%25B5%25D1%2581%25D0%25BE%25D1%2580_%25D0%25A6%25D0%25B2%25D0%25B5%25D1%2582%25D0%25B0%25D0%25BD_%25D0%259B%25D0%25B0%25D0%25B7%25D0%25B0%25D1%2580%25D0%25BE%25D0%25B2%25E2%2580%259C> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(23.32415 42.69751)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sofia" ;
+            schema:addressCountry "BG" ;
+            schema:addressRegion "Sofia-Capital" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bulgaria" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/727011/> ;
+    ] ; 
+    .

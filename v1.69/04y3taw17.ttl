@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04y3taw17> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Polytechnic University of Gitega'^^xsd:string@en ; 
+    org:abbreviation 'UPG'^^xsd:string@fr ; 
+    schema:url <http://upg.edu.bi> ; 
+    schema:mainEntityOfPage <http://upg.edu.bi> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Universit%25C3%25A9_Polytechnique_de_Gitega> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(29.92463 -3.42708)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Gitega" ;
+            schema:addressCountry "BI" ;
+            schema:addressRegion "Gitega" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Burundi" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/426272/> ;
+    ] ; 
+    .

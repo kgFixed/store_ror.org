@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04gsp2c11> a org:Organization ;
+    rdfs:label 'James Cook University'^^xsd:string ;
+    schema:name 'James Cook University'^^xsd:string ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'JCU'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.jcu.edu.au/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/James_Cook_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100008451> ;
+    schema:sameAs <https://grid.ac/institutions/grid.1011.1> ;
+    schema:sameAs <http://isni.org/isni/0000000404741797> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02bjj9p45> ;
+        rdfs:label 'Australian Tropical Herbarium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01y5z8p89> ;
+        rdfs:label 'James Cook University Singapore'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(146.80569 -19.26639)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Townsville" ;
+            schema:addressCountry "AU" ;
+            schema:addressRegion "Queensland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Australia" ;
+                schema:containedInPlace [
+                    schema:name "Oceania" ;
+                    schema:identifier "OC"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2146142/> ;
+    ] ; 
+    .

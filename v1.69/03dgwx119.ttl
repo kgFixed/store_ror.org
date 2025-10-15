@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03dgwx119> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'ANAS - Ganja Division'^^xsd:string@en ; 
+    org:alternativeName 'ANAS-Ganja Branch'^^xsd:string@en ; 
+    org:alternativeName 'Azerbaijan National Academy of Sciences – Ganja Branch'^^xsd:string@en ; 
+    org:alternativeName 'Ganja Branch of ANAS'^^xsd:string@en ; 
+    org:alternativeName 'Ganja Division of ANAS'^^xsd:string@en ; 
+    schema:url <http://ameagb.az> ; 
+    schema:mainEntityOfPage <https://ameagb.az> ;
+    owl:sameAs <https://az.wikipedia.org/wiki/Az%25C9%2599rbaycan_Milli_Elml%25C9%2599r_Akademiyas%25C4%25B1n%25C4%25B1n_G%25C9%2599nc%25C9%2599_B%25C3%25B6lm%25C9%2599si> ; 
+    schema:sameAs <http://isni.org/isni/0000000512332560> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/006m4q736> ;
+        rdfs:label 'Azerbaijan National Academy of Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(46.36056 40.68278)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ganja" ;
+            schema:addressCountry "AZ" ;
+            schema:addressRegion "Gǝncǝ" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Azerbaijan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/586523/> ;
+    ] ; 
+    .

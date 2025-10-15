@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04zdqq152> a org:Organization ;
+    rdfs:label 'Senckenberg German Entomological Institute'^^xsd:string ;
+    schema:name 'Senckenberg German Entomological Institute'^^xsd:string ;
+    schema:foundingDate "1886"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'SDEI'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.senckenberg.de/en/institutes/senckenberg-german-entomological-institute-muencheberg/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/German_Entomological_Institute> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.500071.3> ;
+    schema:sameAs <http://isni.org/isni/0000000091141714> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00xmqmx64> ;
+        rdfs:label 'Senckenberg - Leibniz Institution for Biodiversity and Earth System Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.13716 52.50704)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Müncheberg" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Brandenburg" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2867723/> ;
+    ] ; 
+    .

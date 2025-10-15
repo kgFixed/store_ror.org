@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03kk0na15> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:abbreviation 'BUIB'^^xsd:string@en ; 
+    org:alternativeName 'Biaka University Institute of Buea (BUIB)'^^xsd:string@en ; 
+    schema:url <http://biakahc.org> ; 
+    schema:mainEntityOfPage <https://biakahc.org> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.24231 4.15342)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Buea" ;
+            schema:addressCountry "CM" ;
+            schema:addressRegion "South-West" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Cameroon" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2233410/> ;
+    ] ; 
+    .

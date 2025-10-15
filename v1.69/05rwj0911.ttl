@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05rwj0911> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1112"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-08-07"^^xsd:date ;
+    org:alternativeName 'Benediktinerstift Seitenstetten'^^xsd:string@de ; 
+    org:alternativeName 'Kloster Seitenstetten'^^xsd:string@de ; 
+    org:alternativeName 'Seitenstetten Abbey'^^xsd:string@en ; 
+    schema:url <http://stift-seitenstetten.at> ; 
+    schema:mainEntityOfPage <https://stift-seitenstetten.at> ;
+    owl:sameAs <https://de.wikipedia.org/wiki/Stift_Seitenstetten> ; 
+    schema:sameAs <http://isni.org/isni/0000000106576260> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(14.65 48.03333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seitenstetten Markt" ;
+            schema:addressCountry "AT" ;
+            schema:addressRegion "Lower Austria" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Austria" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2765196/> ;
+    ] ; 
+    .
