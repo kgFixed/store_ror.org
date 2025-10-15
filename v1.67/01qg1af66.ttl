@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01qg1af66> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'AIBA, Sylhet'^^xsd:string@en ; 
+    org:alternativeName 'Army IBA, Sylhet'^^xsd:string@en ; 
+    org:alternativeName 'আর্মি আইবিএ, সিলেট'^^xsd:string@bn ; 
+    schema:url <http://aibasylhet.edu.bd> ; 
+    schema:mainEntityOfPage <https://aibasylhet.edu.bd> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Army_Institute_of_Business_Administration%252C_Sylhet> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01zphyp78> ;
+        rdfs:label 'Bangladesh University of Professionals'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(91.87198 24.89904)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sylhet" ;
+            schema:addressCountry "BD" ;
+            schema:addressRegion "Sylhet Division" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bangladesh" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1185099/> ;
+    ] ; 
+    .

@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0321g0743> a org:Organization ;
+    rdfs:label 'Institut Gustave Roussy'^^xsd:string ;
+    schema:name 'Institut Gustave Roussy'^^xsd:string ;
+    schema:foundingDate "1926"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.gustaveroussy.fr/en> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Institut_Gustave_Roussy> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100008017> ;
+    schema:sameAs <https://grid.ac/institutions/grid.14925.3b> ;
+    schema:sameAs <http://isni.org/isni/0000000122849388> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0266c5p67> ;
+        rdfs:label 'Immunologie intégrative des tumeurs et immunothérapie du cancer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01earvv39> ;
+        rdfs:label 'Prédicteurs moléculaires et nouvelles cibles en oncologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jp5dw81> ;
+        rdfs:label 'Radiothérapie Moléculaire et Innovation Thérapeutique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00p73bw06> ;
+        rdfs:label 'Contrôle transcriptionnel et épigénétique de l’hématopoïèse maligne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045ye0b30> ;
+        rdfs:label 'Aspects métaboliques et systémiques de l\'oncogénèse pour de nouvelles approches thérapeutiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0152wf839> ;
+        rdfs:label 'Dynamique des Cellules Tumorales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ef0j886> ;
+        rdfs:label 'Analyse moléculaire, modélisation et imagerie de la maladie cancéreuse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04wkrkf28> ;
+        rdfs:label 'Cellules souches hématopoïétiques et développement des hémopathies myéloïdes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e75qp68> ;
+        rdfs:label 'Immunologie anti-tumorale et immunothérapie des cancers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05bgatk16> ;
+        rdfs:label 'Intégrité du génome et cancers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04q2bzq33> ;
+        rdfs:label 'Physiologie et pathologie moléculaires des rétrovirus endogènes et infectieux'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.35992 48.7939)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Villejuif" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2968705/> ;
+    ] ; 
+    .

@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0361bwx64> a org:Organization ;
+    rdfs:label 'United Kingdom Atomic Energy Authority'^^xsd:string ;
+    schema:name 'United Kingdom Atomic Energy Authority'^^xsd:string ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'UKAEA'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.gov.uk/government/organisations/uk-atomic-energy-authority> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/United_Kingdom_Atomic_Energy_Authority> ; 
+    schema:sameAs <https://api.crossref.org/funders/100008516> ;
+    schema:sameAs <https://grid.ac/institutions/grid.9689.e> ;
+    schema:sameAs <http://isni.org/isni/0000000106832623> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nmyph15> ;
+        rdfs:label 'Culham Centre for Fusion Energy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/019ya6433> ;
+        rdfs:label 'Department for Business, Energy and Industrial Strategy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03g57ef97> ;
+        rdfs:label 'Joint Evaluated Fission and Fusion'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.28278 51.67109)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Abingdon" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "England" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2657780/> ;
+    ] ; 
+    .

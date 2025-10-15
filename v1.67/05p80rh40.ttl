@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05p80rh40> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1902"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'MAP'^^xsd:string@fr ; 
+    org:alternativeName 'Museum of Prehistoric Anthropology of Monaco'^^xsd:string@en ; 
+    schema:url <http://map.gouv.mc> ; 
+    schema:mainEntityOfPage <https://map.gouv.mc> ;
+    owl:sameAs <https://fr.wikipedia.org/wiki/Mus%25C3%25A9e_d%2527anthropologie_pr%25C3%25A9historique_de_Monaco> ; 
+    schema:sameAs <http://isni.org/isni/0000000121605269> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.42145 43.73718)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Monaco" ;
+            schema:addressCountry "MC" ;
+            schema:addressRegion "None" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Monaco" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2993458/> ;
+    ] ; 
+    .

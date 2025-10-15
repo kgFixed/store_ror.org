@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00praab34> a org:Organization ;
+    rdfs:label 'Energias de Portugal (Portugal)'^^xsd:string ;
+    schema:name 'Energias de Portugal (Portugal)'^^xsd:string ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'EDP'^^xsd:string@None ; 
+    org:alternativeName 'Electricidade de Portugal'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.edp.pt/en/Pages/homepage.aspx> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Energias_de_Portugal> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.6066.6> ;
+    schema:sameAs <http://isni.org/isni/0000000119564832> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013f0wm52> ;
+        rdfs:label 'Fundação Energias de Portugal'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lisbon" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Lisbon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2267057/> ;
+    ] ; 
+    .

@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/040ys9e84> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Federal Institute of Alagoas'^^xsd:string@en ; 
+    org:abbreviation 'IFAL'^^xsd:string@None ; 
+    org:alternativeName 'Instituto Federal de Alagoas'^^xsd:string@pt ; 
+    org:alternativeName 'Instituto Federal de Ciência e Tecnologia de Alagoas'^^xsd:string@pt ; 
+    schema:url <http://ifal.edu.br> ; 
+    schema:mainEntityOfPage <https://www2.ifal.edu.br> ;
+    schema:sameAs <https://grid.ac/institutions/grid.454345.7> ;
+    schema:sameAs <http://isni.org/isni/0000000403705241> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-35.73528 -9.66583)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Maceió" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "Alagoas" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3395981/> ;
+    ] ; 
+    .

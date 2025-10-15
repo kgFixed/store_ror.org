@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0360xra57> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Shanghai Dewu Information Group Co., Ltd.'^^xsd:string@en ; 
+    org:alternativeName '上海得物信息集团有限公司'^^xsd:string@zh ; 
+    schema:url <http://dewu.com> ; 
+    schema:mainEntityOfPage <https://www.dewu.com> ;
+    owl:sameAs <https://zh.wikipedia.org/zh-hans/%25E5%25BE%2597%25E7%2589%25A9> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.45806 31.22222)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Shanghai" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Shanghai" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1796236/> ;
+    ] ; 
+    .

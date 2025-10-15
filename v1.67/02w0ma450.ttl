@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02w0ma450> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2024"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CWA'^^xsd:string@en ; 
+    schema:url <http://cwa-aec.gc.ca> ; 
+    schema:mainEntityOfPage <https://www.canada.ca/en/canada-water-agency.html> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Canada_Water_Agency> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/026ny0e17> ;
+        rdfs:label 'Environment and Climate Change Canada'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-97.14704 49.8844)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Winnipeg" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "Manitoba" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6183235/> ;
+    ] ; 
+    .

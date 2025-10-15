@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/028paz341> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CeNCOOS'^^xsd:string@en ; 
+    schema:url <http://cencoos.org> ; 
+    schema:mainEntityOfPage <https://www.cencoos.org> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01yvark48> ;
+        rdfs:label 'NOAA Integrated Ocean Observing System'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-121.7869 36.8044)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Moss Landing" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "California" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5375042/> ;
+    ] ; 
+    .

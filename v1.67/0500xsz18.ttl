@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0500xsz18> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CoEB'^^xsd:string@en ; 
+    schema:url <http://coebiodiversity.ur.ac.rw> ; 
+    schema:mainEntityOfPage <https://coebiodiversity.ur.ac.rw> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04h4z8k05> ;
+        rdfs:label 'UNESCO'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(29.73944 -2.59667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Butare" ;
+            schema:addressCountry "RW" ;
+            schema:addressRegion "Southern Province" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Rwanda" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/203112/> ;
+    ] ; 
+    .

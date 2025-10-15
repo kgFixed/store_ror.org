@@ -1,0 +1,200 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/020qm1538> a org:Organization ;
+    rdfs:label 'California State University System'^^xsd:string ;
+    schema:name 'California State University System'^^xsd:string ;
+    schema:foundingDate "1857"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CSU'^^xsd:string@None ; 
+    org:alternativeName 'Cal State'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.calstate.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/California_State_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/100008134> ;
+    schema:sameAs <https://grid.ac/institutions/grid.253552.6> ;
+    schema:sameAs <http://isni.org/isni/0000000122194764> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/051rrf637> ;
+        rdfs:label 'California Maritime Academy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001gpfp45> ;
+        rdfs:label 'California Polytechnic State University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05by5hm18> ;
+        rdfs:label 'California State Polytechnic University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0294hxs80> ;
+        rdfs:label 'California State University Los Angeles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019ts0j55> ;
+        rdfs:label 'California State University, Bakersfield'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04v097707> ;
+        rdfs:label 'California State University, Channel Islands'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/027bzz146> ;
+        rdfs:label 'California State University, Chico'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pyvbw03> ;
+        rdfs:label 'California State University, Dominguez Hills'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jaeba88> ;
+        rdfs:label 'California State University, East Bay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03enmdz06> ;
+        rdfs:label 'California State University, Fresno'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02avqqw26> ;
+        rdfs:label 'California State University, Fullerton'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0080fxk18> ;
+        rdfs:label 'California State University, Long Beach'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00mjdtw98> ;
+        rdfs:label 'California State University, Monterey Bay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005f5hv41> ;
+        rdfs:label 'California State University, Northridge'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e26wv14> ;
+        rdfs:label 'California State University, Sacramento'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02n651896> ;
+        rdfs:label 'California State University, San Bernardino'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01j8e0j24> ;
+        rdfs:label 'California State University, San Marcos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ejm2g54> ;
+        rdfs:label 'California State University, Stanislaus'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02qt0xs84> ;
+        rdfs:label 'Cal Poly Humboldt'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01c8f2y33> ;
+        rdfs:label 'Moss Landing Marine Laboratories'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0264fdx42> ;
+        rdfs:label 'San Diego State University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048bd3118> ;
+        rdfs:label 'San Diego State University, Imperial Valley Campus'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ykr0121> ;
+        rdfs:label 'San Francisco State University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qyvz380> ;
+        rdfs:label 'San Jose State University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04wjxkk25> ;
+        rdfs:label 'Sonoma State University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m98kt33> ;
+        rdfs:label 'Agricultural Research Institute'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.18923 33.76696)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Long Beach" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "California" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5367929/> ;
+    ] ; 
+    .

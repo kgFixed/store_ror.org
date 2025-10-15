@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05mecez53> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'KazISS'^^xsd:string@en ; 
+    org:alternativeName 'Kazakhstan Institute for Strategic Studies'^^xsd:string@en ; 
+    org:alternativeName 'Казахстанский институт стратегических исследований'^^xsd:string@ru ; 
+    org:alternativeName 'Казахстанский институт стратегических исследований при Президенте Республики Казахстан'^^xsd:string@ru ; 
+    org:alternativeName 'Қазақстанның стратегиялық зерттеулер институты'^^xsd:string@kk ; 
+    schema:url <http://kisi.kz> ; 
+    schema:mainEntityOfPage <https://kisi.kz> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Kazakhstan_Institute_for_Strategic_Studies> ; 
+    schema:sameAs <http://isni.org/isni/0000000106822839> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(71.44598 51.1801)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Astana" ;
+            schema:addressCountry "KZ" ;
+            schema:addressRegion "Astana" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Kazakhstan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1526273/> ;
+    ] ; 
+    .

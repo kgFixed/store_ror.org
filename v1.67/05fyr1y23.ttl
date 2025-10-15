@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05fyr1y23> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'LPU Laguna'^^xsd:string@en ; 
+    org:alternativeName 'Lyceum Institute of Technology'^^xsd:string@en ; 
+    schema:url <http://lpulaguna.edu.ph> ; 
+    schema:mainEntityOfPage <https://lpulaguna.edu.ph> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Lyceum_of_the_Philippines_University_%25E2%2580%2593_Laguna> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/027e56k73> ;
+        rdfs:label 'Lyceum of the Philippines University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.11704 14.19504)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "City of Calamba" ;
+            schema:addressCountry "PH" ;
+            schema:addressRegion "Calabarzon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Philippines" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1720685/> ;
+    ] ; 
+    .

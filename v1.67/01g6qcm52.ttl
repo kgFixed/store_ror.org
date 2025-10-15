@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01g6qcm52> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Institute of Earth Sciences, University of Iceland'^^xsd:string@en ; 
+    org:alternativeName 'University of Iceland Institute of Earth Sciences'^^xsd:string@en ; 
+    schema:url <http://hi.is> ; 
+    schema:mainEntityOfPage <https://earthice.hi.is> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-21.89541 64.13548)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Reykjavik" ;
+            schema:addressCountry "IS" ;
+            schema:addressRegion "Capital Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Iceland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3413829/> ;
+    ] ; 
+    .

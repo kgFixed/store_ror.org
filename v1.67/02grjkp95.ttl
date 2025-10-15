@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02grjkp95> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'ICCS'^^xsd:string@en ; 
+    org:alternativeName 'Institute for Climate Change Studies'^^xsd:string@en ; 
+    org:alternativeName 'കാലാവസ്ഥാവ്യതിയാന പഠനകേന്ദ്രം'^^xsd:string@ml ; 
+    schema:url <http://iccs.res.in> ; 
+    schema:mainEntityOfPage <https://iccs.res.in> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/030fy4q75> ;
+        rdfs:label 'Kerala State Council for Science, Technology and Environment'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02gg6pa94> ;
+        rdfs:label 'Kerala Forest Research Institute'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.52132 9.58692)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kottayam" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Kerala" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1265911/> ;
+    ] ; 
+    .

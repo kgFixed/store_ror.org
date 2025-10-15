@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/050xe8986> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Buenavista Vocational School'^^xsd:string@en ; 
+    org:abbreviation 'GSC'^^xsd:string@en ; 
+    org:abbreviation 'GSU'^^xsd:string@en ; 
+    org:alternativeName 'Guimaras Polytechnic College'^^xsd:string@en ; 
+    org:alternativeName 'Guimaras State College'^^xsd:string@en ; 
+    schema:url <http://gsu.edu.ph> ; 
+    schema:mainEntityOfPage <https://www.gsu.edu.ph> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Guimaras_State_University> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.40889 8.97694)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Buenavista" ;
+            schema:addressCountry "PH" ;
+            schema:addressRegion "Caraga" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Philippines" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1723481/> ;
+    ] ; 
+    .

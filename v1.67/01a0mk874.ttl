@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01a0mk874> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'NKU'^^xsd:string@None ; 
+    org:alternativeName 'Namık Kemal University'^^xsd:string@en ; 
+    org:alternativeName 'Namık Kemal Üniversitesi'^^xsd:string@tr ; 
+    org:abbreviation 'TNKÜ'^^xsd:string@tr ; 
+    schema:mainEntityOfPage <http://www.nku.edu.tr/en> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Nam%25C4%25B1k_Kemal_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100019863> ;
+    schema:sameAs <https://grid.ac/institutions/grid.412006.1> ;
+    schema:sameAs <http://isni.org/isni/0000000403698053> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(27.51101 40.9781)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tekirdağ" ;
+            schema:addressCountry "TR" ;
+            schema:addressRegion "Tekirdağ" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Türkiye" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/738927/> ;
+    ] ; 
+    .

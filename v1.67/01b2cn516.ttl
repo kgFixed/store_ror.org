@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01b2cn516> a org:Organization ;
+    rdfs:label 'Hospital Rafael Méndez'^^xsd:string ;
+    schema:name 'Hospital Rafael Méndez'^^xsd:string ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Hospital General Universitario Rafael Méndez'^^xsd:string@es ; 
+    schema:mainEntityOfPage <http://www.murciasalud.es/seccion.php?idsec=142> ;
+    schema:sameAs <https://grid.ac/institutions/grid.490171.a> ;
+    schema:sameAs <http://isni.org/isni/0000000417938687> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.7017 37.67119)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lorca" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Murcia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2514891/> ;
+    ] ; 
+    .

@@ -1,0 +1,144 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04hjbmv12> a org:Organization ;
+    rdfs:label 'Takeda (Japan)'^^xsd:string ;
+    schema:name 'Takeda (Japan)'^^xsd:string ;
+    schema:foundingDate "1781"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.takeda.com> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Takeda_Pharmaceutical_Company> ; 
+    schema:sameAs <https://api.crossref.org/funders/100008373> ;
+    schema:sameAs <https://grid.ac/institutions/grid.419841.1> ;
+    schema:sameAs <http://isni.org/isni/0000000106736017> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jfar564> ;
+        rdfs:label 'Takeda (Australia)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04nm3yk20> ;
+        rdfs:label 'Takeda (Austria)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/049a8xm46> ;
+        rdfs:label 'Takeda (Belgium)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056d2rn68> ;
+        rdfs:label 'Takeda (Canada)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bsswy66> ;
+        rdfs:label 'Takeda (Denmark)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048p4wq89> ;
+        rdfs:label 'Takeda (France)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03xqv3p85> ;
+        rdfs:label 'Takeda (Germany)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/003na7826> ;
+        rdfs:label 'Takeda (Ireland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00f2tsn51> ;
+        rdfs:label 'Takeda (Italy)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ycncb81> ;
+        rdfs:label 'Takeda (Netherlands)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038sjwf38> ;
+        rdfs:label 'Takeda (Norway)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00dzggj72> ;
+        rdfs:label 'Takeda (Singapore)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pfpqx12> ;
+        rdfs:label 'Takeda (Sweden)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002ysmy84> ;
+        rdfs:label 'Takeda (Switzerland)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05c0v3585> ;
+        rdfs:label 'Takeda (United Kingdom)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bygaq51> ;
+        rdfs:label 'Takeda (United States)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01tzqyt58> ;
+        rdfs:label 'Takeda (Portugal)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(135.50107 34.69379)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Osaka" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Osaka" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1853909/> ;
+    ] ; 
+    .

@@ -1,0 +1,193 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02cp04407> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:url <http://unilim.fr> ; 
+    schema:mainEntityOfPage <https://www.unilim.fr> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Limoges> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100022107> ;
+    schema:sameAs <https://grid.ac/institutions/grid.9966.0> ;
+    schema:sameAs <http://isni.org/isni/0000000121654861> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05vjwz959> ;
+        rdfs:label 'Centre de Recherche Interdisciplinaire en Histoire, Histoire de l’art et Musicologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zh2vx86> ;
+        rdfs:label 'Contrôle de la Réponse Immune B et Lymphoproliférations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0529q4s79> ;
+        rdfs:label 'Institut d’Epidémiologie Neurologique et de Neurologie Tropicale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00e4pqm50> ;
+        rdfs:label 'Laboratoire de Géographie Physique et Environnementale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044qpwz88> ;
+        rdfs:label 'Institut de Recherche sur les Céramiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00f7srh09> ;
+        rdfs:label 'XLIM'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01h67hk15> ;
+        rdfs:label 'Groupe de Recherches Sociologiques sur les sociétés Contemporaines'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013dngs07> ;
+        rdfs:label 'Pharmacologie et Transplantation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0458p8g61> ;
+        rdfs:label 'Anti-infectieux : supports moléculaires des résistances et innovations thérapeutiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023h4a821> ;
+        rdfs:label 'Institut d’Epidémiologie et de Neurologie Tropicale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kbqb151> ;
+        rdfs:label 'BISCEm - Biologie Intégrative Santé Chimie Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label 'Fédération de Recherche sur l\'Energie Solaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01x6z5t49> ;
+        rdfs:label 'Fédération de Recherche Spectroscopies de Photoémission'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0327f0k08> ;
+        rdfs:label 'Handicap, Activité, Vieillissement, Autonomie, Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016btc076> ;
+        rdfs:label 'Observatoire des Mutations Institutionnelles et Juridiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vd4n772> ;
+        rdfs:label 'Vieillissement, Fragilité, Prévention, e-Santé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040rsxp47> ;
+        rdfs:label 'Neuropathies Périphériques et Innovations Thérapeutiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e5e7w20> ;
+        rdfs:label 'Contrôle de l’Activation cellulaire, Progression Tumorale et Résistance thérapeutique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0260bjh30> ;
+        rdfs:label 'Laboratoire des Agroressources, Biomolécules et Chimie pour l’Innovation en Santé'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00by9h273> ;
+        rdfs:label 'Eau Environnement Limoges'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ke0xj02> ;
+        rdfs:label 'Espaces Humains et Interactions Culturelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/014tx0036> ;
+        rdfs:label 'Centre de Recherches Sémiotiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v3ej173> ;
+        rdfs:label 'Education et Diversités en espaces Francophones'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0530svb92> ;
+        rdfs:label 'Centre de Recherche sur l’Entreprise, les Organisations et le Patrimoine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05c0n7t28> ;
+        rdfs:label 'Laboratoire d\'Analyse et de Prospective Economiques'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.24759 45.83362)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Limoges" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Nouvelle-Aquitaine" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2998286/> ;
+    ] ; 
+    .

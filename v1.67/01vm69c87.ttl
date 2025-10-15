@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01vm69c87> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'DBVO'^^xsd:string@af ; 
+    org:abbreviation 'DEA'^^xsd:string@None ; 
+    org:abbreviation 'DFFE'^^xsd:string@en ; 
+    org:alternativeName 'Department of Environment, Forestry and Fisheries'^^xsd:string@en ; 
+    org:alternativeName 'Department of Forestry, Fisheries & the Environment'^^xsd:string@en ; 
+    schema:url <http://dffe.gov.za> ; 
+    schema:mainEntityOfPage <https://www.dffe.gov.za> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Department_of_Environment,_Forestry_and_Fisheries> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100006296> ;
+    schema:sameAs <https://grid.ac/institutions/grid.452420.5> ;
+    schema:sameAs <http://isni.org/isni/000000040635597X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01gwm7a05> ;
+        rdfs:label 'Government of South Africa'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(28.18783 -25.74486)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Pretoria" ;
+            schema:addressCountry "ZA" ;
+            schema:addressRegion "Gauteng" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Africa" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/964137/> ;
+    ] ; 
+    .

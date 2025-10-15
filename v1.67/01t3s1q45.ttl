@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01t3s1q45> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CERTS'^^xsd:string@en ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04h4z8k05> ;
+        rdfs:label 'UNESCO'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-56.28215 -34.52381)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Canelones" ;
+            schema:addressCountry "UY" ;
+            schema:addressRegion "Canelones" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Uruguay" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3443413/> ;
+    ] ; 
+    .

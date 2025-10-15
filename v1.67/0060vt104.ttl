@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0060vt104> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'KPU'^^xsd:string@None ; 
+    org:alternativeName 'Korea Polytechnic University'^^xsd:string@en ; 
+    org:alternativeName 'TU Korea'^^xsd:string@en ; 
+    org:alternativeName '한국산업기술대학교'^^xsd:string@ko ; 
+    schema:url <http://tukorea.ac.kr> ; 
+    schema:mainEntityOfPage <https://www.tukorea.ac.kr/tukorea/index.do> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Tech_University_of_Korea> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002518> ;
+    schema:sameAs <https://grid.ac/institutions/grid.440951.d> ;
+    schema:sameAs <http://isni.org/isni/0000000403719862> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.7888 37.39067)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Siheung-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeonggi-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1837364/> ;
+    ] ; 
+    .

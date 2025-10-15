@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/012j9yt19> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-15"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CICF'^^xsd:string@pt ; 
+    org:alternativeName 'Instituto Politécnico do Cávado e do Ave Centro de Investigação em Contabilidade e Fiscalidade'^^xsd:string@pt ; 
+    schema:sameAs <http://isni.org/isni/0000000464439995> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0448qsq10> ;
+        rdfs:label 'Polytechnic Institute of Cávado and Ave'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.61843 41.53174)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Barcelos" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Braga" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2742416/> ;
+    ] ; 
+    .

@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02kxqx159> a org:Organization ;
+    rdfs:label 'Ministry of Natural Resources'^^xsd:string ;
+    schema:name 'Ministry of Natural Resources'^^xsd:string ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.mnr.gov.cn/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Natural_Resources_of_the_People%2527s_Republic_of_China> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004428> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453137.7> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05tdz0n30> ;
+        rdfs:label 'China Institute of Geological Environmental Monitoring'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01y34t753> ;
+        rdfs:label 'First Institute of Oceanography'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qh2mm74> ;
+        rdfs:label 'Land Consolidation and Rehabilitation Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fhteb31> ;
+        rdfs:label 'National Center of Ocean Standards and Metrology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047hznt06> ;
+        rdfs:label 'National Marine Environmental Forecasting Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02fzqav45> ;
+        rdfs:label 'State Council of the People\'s Republic of China'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02khwtc20> ;
+        rdfs:label 'Fourth Institute of Oceanography'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Beijing" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Beijing" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1816670/> ;
+    ] ; 
+    .

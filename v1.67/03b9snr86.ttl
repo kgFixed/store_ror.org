@@ -1,0 +1,127 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03b9snr86> a org:Organization ;
+    rdfs:label 'Universidade Católica Portuguesa'^^xsd:string ;
+    schema:name 'Universidade Católica Portuguesa'^^xsd:string ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Catholic University of Portugal'^^xsd:string@en ; 
+    org:abbreviation 'UCP'^^xsd:string@None ; 
+    schema:url <http://ucp.pt> ; 
+    schema:mainEntityOfPage <https://www.ucp.pt> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Catholic_University_of_Portugal> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.7831.d> ;
+    schema:sameAs <http://isni.org/isni/000000010410653X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05n694h24> ;
+        rdfs:label 'Biblioteca Universitária João Paulo II'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/024nbhd47> ;
+        rdfs:label 'Centro de Documentação Europeia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00j09zy03> ;
+        rdfs:label 'Universidade Católica Portuguesa - Braga'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dg1fw36> ;
+        rdfs:label 'Católica Global School of Law'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wh89t26> ;
+        rdfs:label 'Centro Criatividade Digital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f9q6692> ;
+        rdfs:label 'Centro de Estudos de História Religiosa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02vbb6770> ;
+        rdfs:label 'Centro de Estudos Europeus'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zgs5r70> ;
+        rdfs:label 'Centro de Investigação em Teologia e Estudos da Religião'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05mm0t389> ;
+        rdfs:label 'Escola de Pós-Graduação e Formação Avançada'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03v11jn59> ;
+        rdfs:label 'Instituto Superior de Direito Canónico'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w6gdg13> ;
+        rdfs:label 'Centro de Biotecnologia e Química Fina'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01m8xrn95> ;
+        rdfs:label 'Centro de Estudos de Comunicação e Cultura'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03eyga648> ;
+        rdfs:label 'Centro de Investigação Interdisciplinar em Saúde'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02sxhjt61> ;
+        rdfs:label 'Cátedra Poesia e Transcendência Sophia de Mello Breyner Andresen'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lisbon" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Lisbon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2267057/> ;
+    ] ; 
+    .

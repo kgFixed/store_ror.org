@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04qagr784> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Imo State University of Agriculture and Environmental Sciences'^^xsd:string@en ; 
+    org:abbreviation 'UAES'^^xsd:string@en ; 
+    org:alternativeName 'UAES Umuagwo, Imo State'^^xsd:string@en ; 
+    org:alternativeName 'University of Agriculture and Environmental Sciences'^^xsd:string@en ; 
+    org:alternativeName 'University of Agriculture and Environmental Sciences, Umuagwo Imo State Nigeria'^^xsd:string@en ; 
+    schema:url <http://uaes.edu.ng> ; 
+    schema:mainEntityOfPage <https://uaes.edu.ng> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0257ekp23> ;
+        rdfs:label 'Imo State University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.94368 5.30712)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Umuagwo" ;
+            schema:addressCountry "NG" ;
+            schema:addressRegion "Imo State" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Nigeria" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2320582/> ;
+    ] ; 
+    .

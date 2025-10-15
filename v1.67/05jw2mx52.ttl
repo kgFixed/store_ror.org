@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05jw2mx52> a org:Organization ;
+    rdfs:label 'BG Klinikum Hamburg'^^xsd:string ;
+    schema:name 'BG Klinikum Hamburg'^^xsd:string ;
+    schema:foundingDate "1959"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Berufsgenossenschaftliches Unfallkrankenhaus Hamburg'^^xsd:string@de ; 
+    schema:mainEntityOfPage <https://www.bg-kliniken.de/klinikum-hamburg/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.459396.4> ;
+    schema:sameAs <http://isni.org/isni/0000000099248700> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/054224v54> ;
+        rdfs:label 'BG Kliniken'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.99302 53.55073)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hamburg" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Hamburg" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2911298/> ;
+    ] ; 
+    .

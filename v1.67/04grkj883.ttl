@@ -1,0 +1,193 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04grkj883> a org:Organization ;
+    rdfs:label 'Maharashtra University of Health Sciences'^^xsd:string ;
+    schema:name 'Maharashtra University of Health Sciences'^^xsd:string ;
+    schema:foundingDate "1998"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'MUHS'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.muhs.ac.in/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Maharashtra_University_of_Health_Sciences> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004927> ;
+    schema:sameAs <https://grid.ac/institutions/grid.415552.2> ;
+    schema:sameAs <http://isni.org/isni/0000000405030575> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021c9ha45> ;
+        rdfs:label 'Vasantdada Patil Ayurvedic Medical College & Institute Of Yoga'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00bchtj94> ;
+        rdfs:label 'B. J. Medical College & Sassoon Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0078v1m45> ;
+        rdfs:label 'Government Ayurved College, Nanded'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/026b7da27> ;
+        rdfs:label 'Government Medical College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01nssdz50> ;
+        rdfs:label 'Government Medical College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05kn6fr85> ;
+        rdfs:label 'Government Medical College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04f6gef75> ;
+        rdfs:label 'Government Medical College and Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03dm1pq74> ;
+        rdfs:label 'Grant Medical College and Sir Jamshedjee Jeejeebhoy Group of Hospitals'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05f71q776> ;
+        rdfs:label 'K J Somaiya Medical College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00wcc7f06> ;
+        rdfs:label 'Karmaveer Bhausaheb Hiray Dental College and Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03vcw1x21> ;
+        rdfs:label 'King Edward Memorial Hospital and Seth G.S. Medical College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03szqc633> ;
+        rdfs:label 'Maharashtra Institute of Medical Science and Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04crdae34> ;
+        rdfs:label 'Mahatma Gandhi Institute of Medical Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01rte3169> ;
+        rdfs:label 'Podar Ayurved Medical College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03cm42t62> ;
+        rdfs:label 'Rajarshee Chhatrapati Shahu Maharaj Government Medical College and CPR Hospital Kolhapur'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04kbbd545> ;
+        rdfs:label 'Shri Bhausaheb Hire Government Medical College & Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0522w3m69> ;
+        rdfs:label 'Sinhgad Dental College and Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00ztehj94> ;
+        rdfs:label 'Swami Ramanand Teerth Rural Medical College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0146zsf67> ;
+        rdfs:label 'Tatyasaheb Kore Dental College and Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00vtmxd94> ;
+        rdfs:label 'Terna Dental College and Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00d9qf519> ;
+        rdfs:label 'Topiwala National Medical College & BYL Nair Charitable Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03t8e0d04> ;
+        rdfs:label 'YMT Ayurvedic Medical College & Hospital. P.G.Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/001eqde88> ;
+        rdfs:label 'Z.V.M.Unani Medical College & Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/054hq3y71> ;
+        rdfs:label 'Maharashtra Institute of Medical Education and Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/038f2eq15> ;
+        rdfs:label 'Jawahar Medical Foundation\'s Annasaheb Chudaman Patil Memorial Medical College & Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(73.79096 19.99727)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Nashik" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Maharashtra" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1261731/> ;
+    ] ; 
+    .

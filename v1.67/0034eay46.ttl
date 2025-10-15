@@ -1,0 +1,114 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0034eay46> a org:Organization ;
+    rdfs:label 'Texas A&M University System'^^xsd:string ;
+    schema:name 'Texas A&M University System'^^xsd:string ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.tamus.edu/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Texas_A%2526M_University_System> ; 
+    schema:sameAs <https://api.crossref.org/funders/100004933> ;
+    schema:sameAs <https://grid.ac/institutions/grid.264763.2> ;
+    schema:sameAs <http://isni.org/isni/000000012112019X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0449kf092> ;
+        rdfs:label 'Prairie View A&M University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0263v9e25> ;
+        rdfs:label 'Tarleton State University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/028861t28> ;
+        rdfs:label 'Texas A&M International University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01f5ytq51> ;
+        rdfs:label 'Texas A&M University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00w0k4e67> ;
+        rdfs:label 'Texas A&M University at Galveston'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015hh0z25> ;
+        rdfs:label 'Texas A&M University – Central Texas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01red3556> ;
+        rdfs:label 'East Texas A&M University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01mrfdz82> ;
+        rdfs:label 'Texas A&M University – Corpus Christi'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05abs3w97> ;
+        rdfs:label 'Texas A&M University – Kingsville'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0084njv03> ;
+        rdfs:label 'Texas A&M University – San Antonio'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01x3z9745> ;
+        rdfs:label 'Texas A&M University – Texarkana'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04gnp7x40> ;
+        rdfs:label 'West Texas A&M University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-96.33441 30.62798)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "College Station" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Texas" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4682464/> ;
+    ] ; 
+    .

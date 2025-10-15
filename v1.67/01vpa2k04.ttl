@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01vpa2k04> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Army Medical Department Center and School'^^xsd:string@en ; 
+    org:abbreviation 'MEDCoE'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Army Medical Department Center and School'^^xsd:string@en ; 
+    org:alternativeName 'United States Army Medical Center of Excellence'^^xsd:string@en ; 
+    org:alternativeName 'United States Army Medical Department Center and School'^^xsd:string@en ; 
+    schema:url <http://medcoe.army.mil> ; 
+    schema:mainEntityOfPage <https://medcoe.army.mil> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/United_States_Army_Medical_Department_Center_and_School> ; 
+    schema:sameAs <https://api.crossref.org/funders/100018062> ;
+    schema:sameAs <http://isni.org/isni/0000000122360101> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05xsb5925> ;
+        rdfs:label 'United States Army Combined Arms Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-98.42531 29.48313)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Fort Sam Houston Joint Base San Antonio" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Texas" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/11055091/> ;
+    ] ; 
+    .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05rtg8f23> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'AMEA Arxeologiya və Antropologiya İnstitutu'^^xsd:string@az ; 
+    org:alternativeName 'Ins Arc Anth ANAS'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Archaeology and Anthropology of ANAS'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Archaeology and Anthropology of the Azerbaijan National Academy of Sciences'^^xsd:string@en ; 
+    schema:url <http://arxeologiya.az> ; 
+    schema:mainEntityOfPage <http://arxeologiya.az> ;
+    owl:sameAs <https://az.wikipedia.org/wiki/AMEA_Arxeologiya_v%25C9%2599_Antropologiya_%25C4%25B0nstitutu> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/006m4q736> ;
+        rdfs:label 'Azerbaijan National Academy of Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(49.89201 40.37767)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Baku" ;
+            schema:addressCountry "AZ" ;
+            schema:addressRegion "Baki" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Azerbaijan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/587084/> ;
+    ] ; 
+    .

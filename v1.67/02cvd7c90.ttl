@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02cvd7c90> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1987"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-04-25"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'IMT'^^xsd:string@es ; 
+    org:alternativeName 'Mexican Institute of Transport'^^xsd:string@en ; 
+    org:alternativeName 'Mexican Institute of Transportation'^^xsd:string@en ; 
+    schema:url <http://imt.mx> ; 
+    schema:mainEntityOfPage <https://www.gob.mx/imt> ;
+    schema:sameAs <http://isni.org/isni/0000000406336509> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-100.15461 20.49542)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Pedro Escobedo" ;
+            schema:addressCountry "MX" ;
+            schema:addressRegion "Querétaro" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Mexico" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8583273/> ;
+    ] ; 
+    .

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03c62s410> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'C-PROOF'^^xsd:string@en ; 
+    schema:url <http://cproof.uvic.ca> ; 
+    schema:mainEntityOfPage <https://cproof.uvic.ca> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04s5mat29> ;
+        rdfs:label 'University of Victoria'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03rmrcq20> ;
+        rdfs:label 'University of British Columbia'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-123.35155 48.4359)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Victoria" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "British Columbia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6174041/> ;
+    ] ; 
+    .

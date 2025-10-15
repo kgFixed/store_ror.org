@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04v3p2s41> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2021-04-06"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Defence University College'^^xsd:string@en ; 
+    schema:url <http://etdu.edu.et> ; 
+    schema:mainEntityOfPage <http://www.etdu.edu.et> ;
+    schema:sameAs <https://grid.ac/institutions/grid.510433.0> ;
+    schema:sameAs <http://isni.org/isni/000000040456257X> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.97846 8.75225)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Bishoftu" ;
+            schema:addressCountry "ET" ;
+            schema:addressRegion "Oromiya" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ethiopia" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/339666/> ;
+    ] ; 
+    .

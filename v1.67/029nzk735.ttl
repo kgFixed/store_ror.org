@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/029nzk735> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2005"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'SSSU'^^xsd:string@en ; 
+    org:alternativeName 'श्री सोमनाथ संस्कृत युनिवर्सिटी'^^xsd:string@hi ; 
+    org:alternativeName 'શ્રીસોમનાથ સંસ્કૃત યુનિવર્સિટી'^^xsd:string@gu ; 
+    schema:url <http://sssu.ac.in> ; 
+    schema:mainEntityOfPage <https://www.sssu.ac.in> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Shree_Somnath_Sanskrit_University> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(70.36786 20.9077)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Verāval" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Gujarat" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1253237/> ;
+    ] ; 
+    .

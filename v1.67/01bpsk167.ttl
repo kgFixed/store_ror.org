@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01bpsk167> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CdRV'^^xsd:string@en ; 
+    org:abbreviation 'RCA'^^xsd:string@en ; 
+    schema:url <http://cdrv.ca> ; 
+    schema:mainEntityOfPage <https://www.cdrv.ca> ;
+    schema:sameAs <http://isni.org/isni/0000000511018959> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/020r51985> ;
+        rdfs:label 'Centre Hospitalier Universitaire de Sherbrooke'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00kybxq39> ;
+        rdfs:label 'Université de Sherbrooke'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.89908 45.40008)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sherbrooke" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "Quebec" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6146143/> ;
+    ] ; 
+    .

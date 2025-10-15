@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05v4f3f05> a org:Organization ;
+    rdfs:label 'International House'^^xsd:string ;
+    schema:name 'International House'^^xsd:string ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:mainEntityOfPage <http://ihportugal.com/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.466873.8> ;
+    schema:sameAs <http://isni.org/isni/0000000406315783> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hjeqb56> ;
+        rdfs:label 'International House Braga'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04r3v4q69> ;
+        rdfs:label 'International House Coimbra - Olivais | Santa Clara'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02d9h1y41> ;
+        rdfs:label 'International House Porto Foz'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hdb5q36> ;
+        rdfs:label 'International House Torres Vedras | Lisbon'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04hxjdv47> ;
+        rdfs:label 'International House Viseu'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lisbon" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Lisbon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2267057/> ;
+    ] ; 
+    .

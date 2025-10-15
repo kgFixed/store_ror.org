@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/012rct222> a org:Organization ;
+    rdfs:label 'Changchun Institute of Optics, Fine Mechanics and Physics'^^xsd:string ;
+    schema:name 'Changchun Institute of Optics, Fine Mechanics and Physics'^^xsd:string ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CIOMP'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://english.ciomp.cas.cn/> ;
+    schema:sameAs <https://api.crossref.org/funders/501100011168> ;
+    schema:sameAs <https://grid.ac/institutions/grid.458482.7> ;
+    schema:sameAs <http://isni.org/isni/0000000418001474> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jhgk465> ;
+        rdfs:label 'State Key Laboratory of Laser and Matter Interaction'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ckt9009> ;
+        rdfs:label 'State Key Laboratory of Applied Optics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05apcas97> ;
+        rdfs:label 'State Key Laboratory of Luminescence and Application'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/034t30j35> ;
+        rdfs:label 'Chinese Academy of Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/059btw256> ;
+        rdfs:label 'Chang Guang Satellite Technology Co., Ltd.'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(125.32278 43.88)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Changchun" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Jilin" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2038180/> ;
+    ] ; 
+    .

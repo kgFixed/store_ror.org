@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03n96hw58> a org:Organization ;
+    rdfs:label 'Daniel Alcides Carrión National University'^^xsd:string ;
+    schema:name 'Daniel Alcides Carrión National University'^^xsd:string ;
+    schema:foundingDate "1965"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'UNDAC'^^xsd:string@None ; 
+    schema:url <http://undac.edu.pe> ; 
+    schema:mainEntityOfPage <https://undac.edu.pe> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Daniel_Alcides_Carri%25C3%25B3n_National_University> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.441704.2> ;
+    schema:sameAs <http://isni.org/isni/0000000100878137> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03s9zdv09> ;
+        rdfs:label 'Manipal Centre for Natural Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.25309 -10.66577)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cerro de Pasco" ;
+            schema:addressCountry "PE" ;
+            schema:addressRegion "Pasco" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Peru" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3944797/> ;
+    ] ; 
+    .

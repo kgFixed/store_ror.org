@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03xpvwe80> a org:Organization ;
+    rdfs:label 'Pandit Bhagwat Dayal Sharma University of Health Sciences'^^xsd:string ;
+    schema:name 'Pandit Bhagwat Dayal Sharma University of Health Sciences'^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Pt. B. D. Sharma University of Health Sciences'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.uhsr.ac.in/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.412572.7> ;
+    schema:sameAs <http://isni.org/isni/0000000417711642> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04sadrh19> ;
+        rdfs:label 'Hindu College of Pharmacy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03v5sbh78> ;
+        rdfs:label 'Swami Devi Dyal Hospital and Dental College'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/025qvcy11> ;
+        rdfs:label 'Adesh Medical College & Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.58917 28.89447)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rohtak" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Haryana" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1258076/> ;
+    ] ; 
+    .

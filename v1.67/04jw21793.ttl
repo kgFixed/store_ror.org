@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04jw21793> a org:Organization ;
+    rdfs:label 'Federal Ministry of Food and Agriculture'^^xsd:string ;
+    schema:name 'Federal Ministry of Food and Agriculture'^^xsd:string ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'BMEL'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.bmel.de/EN/Homepage/homepage_node.html> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Federal_Ministry_of_Food_and_Agriculture_(Germany)> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005908> ;
+    schema:sameAs <https://grid.ac/institutions/grid.454821.e> ;
+    schema:sameAs <http://isni.org/isni/0000000110133542> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k3ky186> ;
+        rdfs:label 'Federal Institute for Risk Assessment'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01526pb12> ;
+        rdfs:label 'Federal Office for Food and Agriculture'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wf3sn74> ;
+        rdfs:label 'Federal Office of Consumer Protection and Food Safety'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025fw7a54> ;
+        rdfs:label 'Friedrich-Loeffler-Institut'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00mr84n67> ;
+        rdfs:label 'Johann Heinrich von Thünen-Institut'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022d5qt08> ;
+        rdfs:label 'Julius Kühn-Institut'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045gmmg53> ;
+        rdfs:label 'Max Rubner Institut'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f7aqa58> ;
+        rdfs:label 'Bundessortenamt'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0137dsz97> ;
+        rdfs:label 'Fachagentur Nachwachsende Rohstoffe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fdrg150> ;
+        rdfs:label 'Bundesprogramm Ökologischer Landbau'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.09549 50.73438)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Bonn" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "North Rhine-Westphalia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2946447/> ;
+    ] ; 
+    .

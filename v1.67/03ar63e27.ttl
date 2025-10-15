@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03ar63e27> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'BICM'^^xsd:string@en ; 
+    org:alternativeName 'বাংলাদেশ ইন্সটিটিউট অব ক্যাপিটাল মার্কেট'^^xsd:string@bn ; 
+    org:alternativeName 'বিআইসিএম'^^xsd:string@bn ; 
+    schema:url <http://bicm.ac.bd> ; 
+    schema:mainEntityOfPage <https://www.bicm.ac.bd> ;
+    schema:sameAs <https://api.crossref.org/funders/100019279> ;
+    schema:sameAs <http://isni.org/isni/0000000494142631> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.40744 23.7104)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Dhaka" ;
+            schema:addressCountry "BD" ;
+            schema:addressRegion "Dhaka Division" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bangladesh" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1185241/> ;
+    ] ; 
+    .

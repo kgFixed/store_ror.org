@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02r8brs23> a org:Organization ;
+    rdfs:label 'Instituto Portugues do Sangue e da Transplantacao, IP'^^xsd:string ;
+    schema:name 'Instituto Portugues do Sangue e da Transplantacao, IP'^^xsd:string ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2023-03-16"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'IPST'^^xsd:string@None ; 
+    org:abbreviation 'IPST, IP'^^xsd:string@None ; 
+    org:alternativeName 'Instituto Portugues do Sangue e da Transplantacao'^^xsd:string@pt ; 
+    org:alternativeName 'Portuguese Institute of Blood and Transplantation'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://ipst.pt> ;
+    schema:sameAs <http://isni.org/isni/0000000449099291> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017579j39> ;
+        rdfs:label 'Centro de Sangue e da Transplantação de Lisboa Área Funcional do Sangue'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-9.13333 38.71667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lisbon" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Lisbon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2267057/> ;
+    ] ; 
+    .

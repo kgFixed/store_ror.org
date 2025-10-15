@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05kvtff09> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Changsha Supercomputing Center'^^xsd:string@en ; 
+    org:abbreviation 'NSCC'^^xsd:string@en ; 
+    org:alternativeName 'NSCC-Changsha'^^xsd:string@en ; 
+    org:alternativeName 'National Supercomputing Center in Changsha'^^xsd:string@en ; 
+    org:alternativeName '湖南大学国家超级计算长沙中心'^^xsd:string@zh ; 
+    schema:url <http://nscc.hnu.edu.cn> ; 
+    schema:mainEntityOfPage <https://nscc.hnu.edu.cn> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05htk5m33> ;
+        rdfs:label 'Hunan University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.97087 28.19874)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Changsha" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Hunan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1815577/> ;
+    ] ; 
+    .

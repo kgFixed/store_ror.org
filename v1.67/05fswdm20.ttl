@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05fswdm20> a org:Organization ;
+    rdfs:label 'Galderma (Switzerland)'^^xsd:string ;
+    schema:name 'Galderma (Switzerland)'^^xsd:string ;
+    schema:foundingDate "1981"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2020-07-06"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.galderma.com/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Galderma> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100009754> ;
+    schema:sameAs <https://grid.ac/institutions/grid.508294.2> ;
+    schema:sameAs <http://isni.org/isni/0000000406192728> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034kxvk28> ;
+        rdfs:label 'Galderma (France)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rdxvn05> ;
+        rdfs:label 'Galderma (United States)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01j308435> ;
+        rdfs:label 'Galeria Geraldes da Silva'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.63282 46.516)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lausanne" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "Vaud" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2659994/> ;
+    ] ; 
+    .

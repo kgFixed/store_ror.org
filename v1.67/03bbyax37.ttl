@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03bbyax37> a org:Organization ;
+    rdfs:label 'Spintronics Research Network of Japan'^^xsd:string ;
+    schema:name 'Spintronics Research Network of Japan'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2021-04-06"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'Spin-RNJ'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.csrn.t.u-tokyo.ac.jp/outline_en/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.509963.0> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02kn6nx58> ;
+        rdfs:label 'Keio University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/035t8zc32> ;
+        rdfs:label 'The University of Osaka'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01dq60k83> ;
+        rdfs:label 'Tohoku University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/057zh3y96> ;
+        rdfs:label 'The University of Tokyo'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.69171 35.6895)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tokyo" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Tokyo" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1850147/> ;
+    ] ; 
+    .

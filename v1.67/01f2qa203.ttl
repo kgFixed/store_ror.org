@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01f2qa203> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CNAP'^^xsd:string@es ; 
+    org:alternativeName 'Centro Nacional de Áreas Protegidas de Cuba'^^xsd:string@es ; 
+    org:alternativeName 'National Center for Protected Areas'^^xsd:string@en ; 
+    schema:url <http://snap.cu> ; 
+    schema:mainEntityOfPage <https://www.snap.cu> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.38304 23.13302)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Havana" ;
+            schema:addressCountry "CU" ;
+            schema:addressRegion "Havana" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Cuba" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3553478/> ;
+    ] ; 
+    .

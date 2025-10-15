@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04dyzk191> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Aras Branch'^^xsd:string@en ; 
+    org:alternativeName 'Islamic Azad University of Aras'^^xsd:string@en ; 
+    org:alternativeName 'دانشگاه آزاد اسلامی واحد ارس'^^xsd:string@fa ; 
+    org:alternativeName 'واحد ارس'^^xsd:string@fa ; 
+    schema:url <http://aras.iau.ir> ; 
+    schema:mainEntityOfPage <https://aras.iau.ir> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01kzn7k21> ;
+        rdfs:label 'Islamic Azad University, Tehran'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(45.9168 38.83343)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Shahrestān-e Jolfā" ;
+            schema:addressCountry "IR" ;
+            schema:addressRegion "East Azerbaijan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Iran" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/449431/> ;
+    ] ; 
+    .

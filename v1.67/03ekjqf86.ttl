@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03ekjqf86> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1907"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Darwin Museum'^^xsd:string@en ; 
+    org:abbreviation 'SDM'^^xsd:string@en ; 
+    schema:url <http://darwinmuseum.ru> ; 
+    schema:mainEntityOfPage <https://www.darwinmuseum.ru> ;
+    owl:sameAs <https://ru.wikipedia.org/wiki/%25D0%2593%25D0%25BE%25D1%2581%25D1%2583%25D0%25B4%25D0%25B0%25D1%2580%25D1%2581%25D1%2582%25D0%25B2%25D0%25B5%25D0%25BD%25D0%25BD%25D1%258B%25D0%25B9_%25D0%2594%25D0%25B0%25D1%2580%25D0%25B2%25D0%25B8%25D0%25BD%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9_%25D0%25BC%25D1%2583%25D0%25B7%25D0%25B5%25D0%25B9> ; 
+    schema:sameAs <http://isni.org/isni/000000012221303X> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Moscow" ;
+            schema:addressCountry "RU" ;
+            schema:addressRegion "Moscow" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Russia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/524901/> ;
+    ] ; 
+    .

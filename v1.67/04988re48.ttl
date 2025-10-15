@@ -1,0 +1,170 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04988re48> a org:Organization ;
+    rdfs:label 'Polytechnic Institute of Porto'^^xsd:string ;
+    schema:name 'Polytechnic Institute of Porto'^^xsd:string ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Porto Polytechnic'^^xsd:string@en ; 
+    schema:url <http://ipp.pt> ; 
+    schema:mainEntityOfPage <https://www.ipp.pt/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Polytechnic_Institute_of_Porto> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100007157> ;
+    schema:sameAs <https://grid.ac/institutions/grid.410926.8> ;
+    schema:sameAs <http://isni.org/isni/0000000121918636> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04h7zpy51> ;
+        rdfs:label 'Instituto Superior de Engenharia do Porto'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fe63682> ;
+        rdfs:label 'Instituto de Etnomusicologia - Centro de Estudos em Música e Dança'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05e6z8230> ;
+        rdfs:label 'BioMark Sensor Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00131es19> ;
+        rdfs:label 'Centro de Estudos Interculturais'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fwme054> ;
+        rdfs:label 'Centro de Estudos Organizacionais e Sociais'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03sg03b15> ;
+        rdfs:label 'Centro de Inovação e Investigação em Ciências Empresariais e Sistemas de Informação'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016w95s77> ;
+        rdfs:label 'Centro de Inovação em Engenharia e Tecnologia Industrial'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038p71r52> ;
+        rdfs:label 'Centro de Investigação e Desenvolvimento em Engenharia Mecânica'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02s3rf023> ;
+        rdfs:label 'Centro de Investigação e Inovação em Educação'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00g1rv562> ;
+        rdfs:label 'Centro de Investigação e Intervenção na Leitura'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02dhqpx10> ;
+        rdfs:label 'Centro de Investigação em Estudos Interdisciplinares'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034dv1544> ;
+        rdfs:label 'Centro de Investigação em Saúde e Ambiente'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03rvzaf62> ;
+        rdfs:label 'Escola Superior de Música e das Artes do Espectáculo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040m5vj74> ;
+        rdfs:label 'Games Interaction and Learning Technologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03pkh6520> ;
+        rdfs:label 'Grupo de Investigação em Engenharia e Computação Inteligente para a Inovação e o Desenvolvimento'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nn56080> ;
+        rdfs:label 'Grupo de Reação e Análises Químicas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03936xk86> ;
+        rdfs:label 'Laboratório de Engenharia Matemática do Instituto Politécnico do Porto'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033yvsr74> ;
+        rdfs:label 'Laboratório de Reabilitação Psicossocial'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/014s45j06> ;
+        rdfs:label 'Laboratório de Sistemas Autónomos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03031sb11> ;
+        rdfs:label 'Unidade de e-Learning e Inovação Pedagógica'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01h9ygv15> ;
+        rdfs:label 'Unidade de Investigação em Media Artes e Design'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.61099 41.14961)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Porto" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Porto" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2735943/> ;
+    ] ; 
+    .

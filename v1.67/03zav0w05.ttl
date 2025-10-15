@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03zav0w05> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'IUT Dijon'^^xsd:string@fr ; 
+    org:alternativeName 'IUT Dijon Auxerre Nevers'^^xsd:string@fr ; 
+    org:alternativeName 'IUT Dijon-Auxerre'^^xsd:string@fr ; 
+    org:alternativeName 'Institut Universitaire de Technologie Campus de Dijon'^^xsd:string@fr ; 
+    org:alternativeName 'Institut Universitaire de Technologie de Dijon-Auxerre-Nevers'^^xsd:string@fr ; 
+    schema:url <http://iutdijon.u-bourgogne.fr> ; 
+    schema:mainEntityOfPage <https://iutdijon.u-bourgogne.fr> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00g700j37> ;
+        rdfs:label 'Université Bourgogne Europe'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.01667 47.31667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Dijon" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Bourgogne-Franche-Comté" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3021372/> ;
+    ] ; 
+    .

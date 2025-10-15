@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0032jvj22> a org:Organization ;
+    rdfs:label 'Regenerative NanoMedicine'^^xsd:string ;
+    schema:name 'Regenerative NanoMedicine'^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2019-02-17"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Active Biomaterials and Tissue Engineering'^^xsd:string@en ; 
+    org:alternativeName 'Osteoarticular and Dental Regenerative Nanomedicine'^^xsd:string@en ; 
+    org:abbreviation 'RNM'^^xsd:string@None ; 
+    schema:url <http://regmed.fr> ; 
+    schema:mainEntityOfPage <https://www.regmed.fr> ;
+    schema:sameAs <https://grid.ac/institutions/grid.503388.5> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02wy4ac67> ;
+        rdfs:label 'Délégation Alsace'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00pg6eq24> ;
+        rdfs:label 'University of Strasbourg'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.74553 48.58392)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Strasbourg" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Grand Est" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2973783/> ;
+    ] ; 
+    .

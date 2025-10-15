@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00w53b262> a org:Organization ;
+    rdfs:label 'Instituto Superior de Entre Douro e Vouga'^^xsd:string ;
+    schema:name 'Instituto Superior de Entre Douro e Vouga'^^xsd:string ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'ISVOUGA'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.isvouga.pt/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.410996.3> ;
+    schema:sameAs <http://isni.org/isni/0000000101230885> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01b6rns71> ;
+        rdfs:label 'Unidade de Investigação e Internacionalização do ISVOUGA'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.54277 40.92535)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Feira" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Aveiro" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2739723/> ;
+    ] ; 
+    .

@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03tfgky26> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2015"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'RECM'^^xsd:string@en ; 
+    org:alternativeName 'राजकीय इंजीनियरिंग कॉलेज मैनपुरी'^^xsd:string@hi ; 
+    schema:url <http://recmainpuri.in> ; 
+    schema:mainEntityOfPage <https://recmainpuri.in> ;
+    schema:sameAs <http://isni.org/isni/0000000476417849> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.02882 27.22857)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Mainpuri" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Uttar Pradesh" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1264292/> ;
+    ] ; 
+    .

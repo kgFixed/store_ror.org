@@ -1,0 +1,193 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0492wrx28> a org:Organization ;
+    rdfs:label 'Indian Council of Medical Research'^^xsd:string ;
+    schema:name 'Indian Council of Medical Research'^^xsd:string ;
+    schema:foundingDate "1911"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'ICMR'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.icmr.nic.in/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Indian_Council_of_Medical_Research> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100001411> ;
+    schema:sameAs <https://grid.ac/institutions/grid.19096.37> ;
+    schema:sameAs <http://isni.org/isni/000000041767225X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hx1vp23> ;
+        rdfs:label 'Institute of Cytology and Preventive Oncology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05etrx234> ;
+        rdfs:label 'National AIDS Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hm9f429> ;
+        rdfs:label 'National Centre for Disease Informatics and Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05kxg4a92> ;
+        rdfs:label 'National Institute for Implementation Research on Non-Communicable Diseases'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017je7s69> ;
+        rdfs:label 'National Institute for Research in Reproductive Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00k2gdw14> ;
+        rdfs:label 'National Institute for Research in Tribal Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05w7dft64> ;
+        rdfs:label 'National Institute of Cancer Prevention and Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/018azgd14> ;
+        rdfs:label 'National Institute of Cholera and Enteric Diseases'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011471042> ;
+        rdfs:label 'National Institute of Epidemiology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01mfest76> ;
+        rdfs:label 'ICMR - National Institute of Immunohaemotology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/031vxrj29> ;
+        rdfs:label 'National Institute of Malaria Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zkpmz33> ;
+        rdfs:label 'National Institute of Medical Statistics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04970qw83> ;
+        rdfs:label 'National Institute of Nutrition'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01praqa56> ;
+        rdfs:label 'National Institute of Occupational Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vfty314> ;
+        rdfs:label 'National Institute of Pathology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qp1eh12> ;
+        rdfs:label 'National Institute of Research in Tuberculosis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zy4nc24> ;
+        rdfs:label 'ICMR-National Institute of Virology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03a8gee76> ;
+        rdfs:label 'National JALMA Institute for Leprosy & Other Mycobacterial Diseases'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/020cmsc29> ;
+        rdfs:label 'Rajendra Memorial Research Institute of Medical Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00j0b8v53> ;
+        rdfs:label 'Regional Medical Research Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00600nd69> ;
+        rdfs:label 'Regional Medical Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01y720297> ;
+        rdfs:label 'Regional Medical Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qr3vg91> ;
+        rdfs:label 'Regional Medical Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ds2ap82> ;
+        rdfs:label 'Vector Control Research Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00p4dsm08> ;
+        rdfs:label 'Virus Unit'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(77.2148 28.62137)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "New Delhi" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Delhi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1261481/> ;
+    ] ; 
+    .

@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04h50g296> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Córdoba Anthropology Institute'^^xsd:string@en ; 
+    org:abbreviation 'IDACOR'^^xsd:string@es ; 
+    org:abbreviation 'IDACOR CONICET-UNC'^^xsd:string@es ; 
+    schema:url <http://idacor.conicet.gov.ar> ; 
+    schema:mainEntityOfPage <https://idacor.conicet.gov.ar> ;
+    owl:sameAs <https://es.wikipedia.org/wiki/Instituto_de_Antropolog%25C3%25ADa_de_C%25C3%25B3rdoba> ; 
+    schema:sameAs <http://isni.org/isni/0000000123030673> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03cqe8w59> ;
+        rdfs:label 'Consejo Nacional de Investigaciones Científicas y Técnicas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/056tb7j80> ;
+        rdfs:label 'Universidad Nacional de Córdoba'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-64.18853 -31.40648)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Córdoba" ;
+            schema:addressCountry "AR" ;
+            schema:addressRegion "Cordoba" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Argentina" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3860259/> ;
+    ] ; 
+    .

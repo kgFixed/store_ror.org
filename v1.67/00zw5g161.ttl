@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00zw5g161> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'ANDUAT'^^xsd:string@en ; 
+    org:abbreviation 'NDUAT'^^xsd:string@None ; 
+    org:alternativeName 'Narendra Deva University of Agriculture and Technology'^^xsd:string@en ; 
+    schema:url <http://nduat.org> ; 
+    schema:mainEntityOfPage <http://www.nduat.org> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Acharya_Narendra_Deva_University_of_Agriculture_and_Technology> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.444422.0> ;
+    schema:sameAs <http://isni.org/isni/0000000107088947> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(82.15018 26.77549)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Faizabad" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Uttar Pradesh" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1271976/> ;
+    ] ; 
+    .

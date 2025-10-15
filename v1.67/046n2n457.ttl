@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/046n2n457> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1961"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Centar SUVAG'^^xsd:string@hr ; 
+    org:alternativeName 'Centar za rehabilitaciju sluha i govora, Zagreb'^^xsd:string@hr ; 
+    org:alternativeName 'Center for the Rehabilitation of Hearing and Speech'^^xsd:string@en ; 
+    org:alternativeName 'Poliklinika SUVAG'^^xsd:string@hr ; 
+    org:alternativeName 'SUVAG Center'^^xsd:string@en ; 
+    org:alternativeName 'SUVAG Center for the Rehabilitation of Listening and Speech'^^xsd:string@en ; 
+    org:alternativeName 'SUVAG Polyclinic'^^xsd:string@en ; 
+    org:alternativeName 'SUVAG Polyclinic for Rehabilitation of Listening and Speech'^^xsd:string@en ; 
+    schema:url <http://suvag.hr> ; 
+    schema:mainEntityOfPage <https://www.suvag.hr> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.97798 45.81444)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Zagreb" ;
+            schema:addressCountry "HR" ;
+            schema:addressRegion "Zagreb" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Croatia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3186886/> ;
+    ] ; 
+    .

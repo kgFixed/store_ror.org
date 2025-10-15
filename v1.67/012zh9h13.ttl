@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/012zh9h13> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'IRTA'^^xsd:string@None ; 
+    org:abbreviation 'IRTA-CERCA'^^xsd:string@None ; 
+    org:alternativeName 'Institute for Research and Technology in Food and Agriculture'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.irta.cat> ;
+    schema:sameAs <https://grid.ac/institutions/grid.8581.4> ;
+    schema:sameAs <http://isni.org/isni/0000000119436646> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04tz2h245> ;
+        rdfs:label 'Center for Research in Agricultural Genomics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01sn0bt42> ;
+        rdfs:label 'Animal Health Research Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01bg62x04> ;
+        rdfs:label 'Generalitat de Catalunya'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01bkbaq61> ;
+        rdfs:label 'CERCA Institution'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.16667 41.63333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Caldes de Montbui" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Catalonia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3127035/> ;
+    ] ; 
+    .

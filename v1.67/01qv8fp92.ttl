@@ -1,0 +1,69 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01qv8fp92> a org:Organization ;
+    rdfs:label 'Louisiana State University Health Sciences Center New Orleans'^^xsd:string ;
+    schema:name 'Louisiana State University Health Sciences Center New Orleans'^^xsd:string ;
+    schema:foundingDate "1931"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'LSUHSC'^^xsd:string@None ; 
+    schema:url <http://lsuhsc.edu> ; 
+    schema:mainEntityOfPage <https://www.lsuhsc.edu> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/LSU_Health_Sciences_Center_New_Orleans> ; 
+    schema:sameAs <https://api.crossref.org/funders/100010519> ;
+    schema:sameAs <https://grid.ac/institutions/grid.279863.1> ;
+    schema:sameAs <http://isni.org/isni/0000000089541233> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zrb2v54> ;
+        rdfs:label 'University Medical Center New Orleans'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/022gnbj15> ;
+        rdfs:label 'Louisiana State University System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05ect4e57> ;
+        rdfs:label 'Louisiana State University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0290qyp66> ;
+        rdfs:label 'Ochsner Medical Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-90.07507 29.95465)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "New Orleans" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Louisiana" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4335045/> ;
+    ] ; 
+    .

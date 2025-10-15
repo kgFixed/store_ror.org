@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00v2cdz24> a org:Organization ;
+    rdfs:label 'CELPHEDIA'^^xsd:string ;
+    schema:name 'CELPHEDIA'^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2024-02-13"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Creation, Breeding, Phenotyping, Distribution and Archiving of model organisms'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.celphedia.eu> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01pjhvt09> ;
+        rdfs:label 'Transgénèse pour les études fonctionnelles sur les organismes modèles - Paris-Saclay'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.71523 48.52894)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Illkirch-Graffenstaden" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Grand Est" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3012834/> ;
+    ] ; 
+    .

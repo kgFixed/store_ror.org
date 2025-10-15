@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05qvvsf76> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Centre for Capacity Development - Sustainable Use of Natural Resources and Societal Change'^^xsd:string@en ; 
+    org:abbreviation 'GRO'^^xsd:string@en ; 
+    org:alternativeName 'GRÓ - International Centre for Capacity Development, Sustainability and Societal Change'^^xsd:string@en ; 
+    org:alternativeName 'GRÓ – International Centre for Capacity Development'^^xsd:string@en ; 
+    org:alternativeName 'International Centre for Capacity Development - Sustainable Use of Natural Resources and Societal Change'^^xsd:string@en ; 
+    org:alternativeName 'International Centre for Capacity Development - Sustainable Use of Natural Resources and Societal Change (GRÓ)'^^xsd:string@en ; 
+    schema:url <http://grocentre.is> ; 
+    schema:mainEntityOfPage <https://www.grocentre.is> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04h4z8k05> ;
+        rdfs:label 'UNESCO'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-21.89541 64.13548)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Reykjavik" ;
+            schema:addressCountry "IS" ;
+            schema:addressRegion "Capital Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Iceland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3413829/> ;
+    ] ; 
+    .

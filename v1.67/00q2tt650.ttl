@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00q2tt650> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'NSCC-Jinan'^^xsd:string@en ; 
+    org:abbreviation 'NSCCJN'^^xsd:string@en ; 
+    org:alternativeName 'National Supercomputing Jinan Center'^^xsd:string@en ; 
+    schema:url <http://nsccjn.cn> ; 
+    schema:mainEntityOfPage <https://nsccjn.cn> ;
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E5%259B%25BD%25E5%25AE%25B6%25E8%25B6%2585%25E7%25BA%25A7%25E8%25AE%25A1%25E7%25AE%2597%25E6%25B5%258E%25E5%258D%2597%25E4%25B8%25AD%25E5%25BF%2583> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.99722 36.66833)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Jinan" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Shandong" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1805753/> ;
+    ] ; 
+    .

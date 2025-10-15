@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00131es19> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-15"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'CEI'^^xsd:string@pt ; 
+    org:alternativeName 'Instituto Politécnico do Porto Centro de Estudos Interculturais'^^xsd:string@pt ; 
+    schema:mainEntityOfPage <https://www.iscap.pt/cei/> ;
+    schema:sameAs <http://isni.org/isni/0000000464280347> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04988re48> ;
+        rdfs:label 'Polytechnic Institute of Porto'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.66743 41.20766)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Matosinhos" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Porto" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8010584/> ;
+    ] ; 
+    .

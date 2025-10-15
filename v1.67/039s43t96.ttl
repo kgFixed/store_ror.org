@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/039s43t96> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1964"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:url <http://conservancy.org> ; 
+    schema:mainEntityOfPage <https://conservancy.org> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Conservancy_of_Southwest_Florida> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-81.79596 26.14234)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Naples" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Florida" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4165565/> ;
+    ] ; 
+    .

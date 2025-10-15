@@ -1,0 +1,301 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04z8k9a98> a org:Organization ;
+    rdfs:label 'University of Coimbra'^^xsd:string ;
+    schema:name 'University of Coimbra'^^xsd:string ;
+    schema:foundingDate "1290"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    schema:url <http://uc.pt> ; 
+    schema:mainEntityOfPage <https://www.uc.pt> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/University_of_Coimbra> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005727> ;
+    schema:sameAs <https://grid.ac/institutions/grid.8051.c> ;
+    schema:sameAs <http://isni.org/isni/0000000095114342> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043ft3840> ;
+        rdfs:label 'Centre for Research in Anthropology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01d3r6z34> ;
+        rdfs:label 'Brain Imaging Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cvzf910> ;
+        rdfs:label 'MARE - Centro de Ciências do Mar e do Ambiente'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fab7w85> ;
+        rdfs:label 'Centro de Estudos Sociais'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nzkd566> ;
+        rdfs:label 'Centro de Neurociências e Biologia Celular'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05gh16g69> ;
+        rdfs:label 'Associação para o Desenvolvimento da Aerodinâmica Industrial'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055v4a470> ;
+        rdfs:label 'Instituto de Estudos Filosóficos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03r8typ39> ;
+        rdfs:label 'Centro de Investigação em Meio Ambiente Genética e Oncobiologia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03z4npt02> ;
+        rdfs:label 'Centro de Engenharia Mecânica Materiais e Processos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00d1qw876> ;
+        rdfs:label 'Centro de Investigação em Antropologia e Saúde'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jn5bv28> ;
+        rdfs:label 'Centro de Imagem Biomédica e Investigação Translacional'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02n3jsk50> ;
+        rdfs:label 'Centro de Estudos e Investigação em Saúde'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04yyzaa40> ;
+        rdfs:label 'Centro de Investigação em Economia e Gestão'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04sa5es20> ;
+        rdfs:label 'Centro de Investigação em Engenharia dos Processos Químicos e dos Produtos da Floresta'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fxjrd39> ;
+        rdfs:label 'Universidade de Coimbra Centro de Geociências'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00p0pr527> ;
+        rdfs:label 'Centro de Estudos Clássicos e Humanísticos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01t5ta457> ;
+        rdfs:label 'Centro de Inovação em Biomedicina e Biotecnologia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02r0v5a32> ;
+        rdfs:label 'Multidisciplinary Institute of Ageing'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0172tk840> ;
+        rdfs:label 'Centro de Documentação 25 de Abril'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022ssnb78> ;
+        rdfs:label 'Universidade de Coimbra Arquivo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016adfh43> ;
+        rdfs:label 'Universidade de Coimbra Imprensa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0170cre53> ;
+        rdfs:label 'Teatro Académico de Gil Vicente'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0311zw396> ;
+        rdfs:label 'Centro de Direito Biomédico'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002wn1w29> ;
+        rdfs:label 'Centro de Direito do Consumo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03e4pc311> ;
+        rdfs:label 'Centro de Estudos Farmaceuticos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05dsdbp53> ;
+        rdfs:label 'Centro de Física Computacional'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02ksxxs60> ;
+        rdfs:label 'Centro de Literatura Portuguesa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jm8vk13> ;
+        rdfs:label 'Instituto de Direito das Empresas e do Trabalho'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03wax1305> ;
+        rdfs:label 'Instituto de Direito Penal Económico e Europeu'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0008p2x82> ;
+        rdfs:label 'Instituto de Estudos Clássicos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00hy0kp07> ;
+        rdfs:label 'Instituto Jurídico da Comunicação'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02by2rg20> ;
+        rdfs:label 'Laboratory for Advanced Computing'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03r3mh697> ;
+        rdfs:label 'Núcleo de Investigação Científica de Incêndios Florestais'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ejynq87> ;
+        rdfs:label 'National Brain Imaging Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04032fz76> ;
+        rdfs:label 'Hospitais da Universidade de Coimbra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02ht4fk33> ;
+        rdfs:label 'Instituto de Telecomunicações'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/009nk6b02> ;
+        rdfs:label 'Portuguese Additive Manufacturing Initiative'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01y55wc83> ;
+        rdfs:label 'Centro de Estudos Interdisciplinares do Século XX'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00bqs6f60> ;
+        rdfs:label 'Centro de História da Sociedade e da Cultura'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0411txc13> ;
+        rdfs:label 'Centro de Investigação da Terra e do Espaço'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04v86h471> ;
+        rdfs:label 'Incubadora Associação para o Desenvolvimento de Actividades de Incubação de Ideias e Empresas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02nfq4215> ;
+        rdfs:label 'Biblioteca das Ciências da Saúde'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05g772c20> ;
+        rdfs:label 'Biblioteca Geral da Universidade de Coimbra'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-8.41955 40.20564)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Coimbra" ;
+            schema:addressCountry "PT" ;
+            schema:addressRegion "Coimbra" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Portugal" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2740637/> ;
+    ] ; 
+    .

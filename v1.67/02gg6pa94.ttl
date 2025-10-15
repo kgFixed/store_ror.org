@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02gg6pa94> a org:Organization ;
+    rdfs:label 'Kerala Forest Research Institute'^^xsd:string ;
+    schema:name 'Kerala Forest Research Institute'^^xsd:string ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'KFRI'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.kfri.res.in/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Kerala_Forest_Research_Institute> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.462459.8> ;
+    schema:sameAs <http://isni.org/isni/0000000121897185> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/030fy4q75> ;
+        rdfs:label 'Kerala State Council for Science, Technology and Environment'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02grjkp95> ;
+        rdfs:label 'KSCSTE - Institute for Climate Change Studies'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.21667 10.51667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Thrissur" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Kerala" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1254187/> ;
+    ] ; 
+    .

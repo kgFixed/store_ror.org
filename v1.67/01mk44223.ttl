@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01mk44223> a org:Organization ;
+    rdfs:label 'IQVIA (United States)'^^xsd:string ;
+    schema:name 'IQVIA (United States)'^^xsd:string ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'IMS Health'^^xsd:string@None ; 
+    org:alternativeName 'Quintiles'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.iqvia.com/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/IQVIA> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.418848.9> ;
+    schema:sameAs <http://isni.org/isni/0000000404584007> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0394bpd20> ;
+        rdfs:label 'IQVIA (France)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00szk3r18> ;
+        rdfs:label 'IQVIA (India)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040g76k92> ;
+        rdfs:label 'IQVIA (United Kingdom)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05j5mt352> ;
+        rdfs:label 'IQVIA (Portugal)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.89862 35.99403)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Durham" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "North Carolina" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4464368/> ;
+    ] ; 
+    .

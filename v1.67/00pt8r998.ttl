@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00pt8r998> a org:Organization ;
+    rdfs:label 'National University of the Littoral'^^xsd:string ;
+    schema:name 'National University of the Littoral'^^xsd:string ;
+    schema:foundingDate "1889"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'UNL'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.unl.edu.ar/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/National_University_of_the_Littoral> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005746> ;
+    schema:sameAs <https://grid.ac/institutions/grid.10798.37> ;
+    schema:sameAs <http://isni.org/isni/0000000121729456> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0041aya12> ;
+        rdfs:label 'Centro de Investigación de Métodos Computacionales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/042765079> ;
+        rdfs:label 'Instituto Nacional de Limnología'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/057915t59> ;
+        rdfs:label 'Instituto de Agrobiotecnología del Litoral'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01kwwh635> ;
+        rdfs:label 'Instituto de Desarrollo Tecnológico para la Industria Química'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/058xqms97> ;
+        rdfs:label 'Instituto de Física del Litoral'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0238k3s54> ;
+        rdfs:label 'Centro de Estudios Sociales Interdisciplinarios del Litoral'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-60.70868 -31.64881)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Santa Fe" ;
+            schema:addressCountry "AR" ;
+            schema:addressRegion "Santa Fe" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Argentina" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3836277/> ;
+    ] ; 
+    .

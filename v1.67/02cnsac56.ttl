@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02cnsac56> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1945"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'French Institute for Demographic Studies'^^xsd:string@en ; 
+    org:abbreviation 'INED'^^xsd:string@None ; 
+    schema:url <http://ined.fr> ; 
+    schema:mainEntityOfPage <https://www.ined.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Institut_national_d%2527%25C3%25A9tudes_d%25C3%25A9mographiques> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.77048.3c> ;
+    schema:sameAs <http://isni.org/isni/0000000122867412> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cxgcr75> ;
+        rdfs:label 'Etude longitudinale française depuis l\'enfance'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00cd48p72> ;
+        rdfs:label 'Campus Condorcet'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03r83qv57> ;
+        rdfs:label 'France Cohortes'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3825 48.91111)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Aubervilliers" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6452605/> ;
+    ] ; 
+    .

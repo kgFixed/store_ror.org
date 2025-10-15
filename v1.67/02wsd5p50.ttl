@@ -1,0 +1,105 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02wsd5p50> a org:Organization ;
+    rdfs:label 'Vietnam Academy of Science and Technology'^^xsd:string ;
+    schema:name 'Vietnam Academy of Science and Technology'^^xsd:string ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'NCSR'^^xsd:string@None ; 
+    org:alternativeName 'NCSR of Vietnam'^^xsd:string@en ; 
+    org:abbreviation 'NCST'^^xsd:string@None ; 
+    org:alternativeName 'NCST of Vietnam'^^xsd:string@en ; 
+    org:alternativeName 'National Centre for Natural Science and Technology'^^xsd:string@en ; 
+    org:alternativeName 'National Centre for Natural Science and Technology of Vietnam'^^xsd:string@en ; 
+    org:alternativeName 'National Centre for Scientific Research of Vietnam'^^xsd:string@en ; 
+    org:abbreviation 'VAST'^^xsd:string@None ; 
+    org:alternativeName 'Vietnam Academy of Science'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://vast.gov.vn> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Vietnam_Academy_of_Science_and_Technology> ; 
+    schema:sameAs <https://api.crossref.org/funders/100012046> ;
+    schema:sameAs <https://grid.ac/institutions/grid.267849.6> ;
+    schema:sameAs <http://isni.org/isni/0000000121056888> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/057as5086> ;
+        rdfs:label 'Institute of Marine Geology and Geophysics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/011pd5k86> ;
+        rdfs:label 'Institute of Materials Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jr71r83> ;
+        rdfs:label 'Institute of Mathematics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04g43ky75> ;
+        rdfs:label 'Ho Chi Minh City Institute of Physics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00tp4wm41> ;
+        rdfs:label 'Institute for Tropical Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03zzgjc77> ;
+        rdfs:label 'Institute of Oceanography'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05x2wrh98> ;
+        rdfs:label 'Institute of Geological Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04vtp9n41> ;
+        rdfs:label 'Southern Institute of Ecology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rwqq797> ;
+        rdfs:label 'International Centre of Physics'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(105.84117 21.0245)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hanoi" ;
+            schema:addressCountry "VN" ;
+            schema:addressRegion "Hanoi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Vietnam" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1581130/> ;
+    ] ; 
+    .

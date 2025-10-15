@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00j0rk173> a org:Organization ;
+    rdfs:label 'Marconi University'^^xsd:string ;
+    schema:name 'Marconi University'^^xsd:string ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'GMU'^^xsd:string@None ; 
+    org:alternativeName 'Guglielmo Marconi University'^^xsd:string@en ; 
+    org:abbreviation 'USGM'^^xsd:string@None ; 
+    org:alternativeName 'Unimarconi'^^xsd:string@it ; 
+    schema:url <http://unimarconi.it> ; 
+    schema:mainEntityOfPage <https://www.unimarconi.it> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Marconi_University> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.440899.8> ;
+    schema:sameAs <http://isni.org/isni/000000041780761X> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.51133 41.89193)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rome" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "Lazio" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3169070/> ;
+    ] ; 
+    .

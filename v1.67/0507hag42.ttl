@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0507hag42> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'ESI SBA'^^xsd:string@en ; 
+    org:alternativeName 'Ecole Superieure en Informatique Sidi Bel Abbès'^^xsd:string@fr ; 
+    org:alternativeName 'Sidi Bel Abbes Computer School'^^xsd:string@en ; 
+    org:alternativeName 'مدرسة سيدي بلعباس للكمبيوت'^^xsd:string@ar ; 
+    schema:url <http://esi-sba.dz> ; 
+    schema:mainEntityOfPage <https://www.esi-sba.dz> ;
+    owl:sameAs <https://fr.wikipedia.org/wiki/%25C3%2589cole_sup%25C3%25A9rieure_en_informatique_%2528Sidi_Bel_Abb%25C3%25A8s%2529> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.63085 35.18994)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sidi Bel Abbes" ;
+            schema:addressCountry "DZ" ;
+            schema:addressRegion "Sidi Bel Abbès" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Algeria" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2481007/> ;
+    ] ; 
+    .

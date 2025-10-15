@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01p08rg37> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2025"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'ASTIEDU'^^xsd:string@uz ; 
+    schema:url <http://astiedu.uz> ; 
+    schema:mainEntityOfPage <https://web.astiedu.uz> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(72.34424 40.78206)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Andijan" ;
+            schema:addressCountry "UZ" ;
+            schema:addressRegion "Andijan Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Uzbekistan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1514588/> ;
+    ] ; 
+    .

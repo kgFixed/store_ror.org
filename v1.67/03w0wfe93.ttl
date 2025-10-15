@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03w0wfe93> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:alternativeName 'Institut de Recherche et d’Expérimentation Viticole et OEnologique des Vins d’A.O.C de la Vallée du Rhône'^^xsd:string@fr ; 
+    schema:url <http://institut-rhodanien.com> ; 
+    schema:mainEntityOfPage <https://www.institut-rhodanien.com> ;
+    schema:sameAs <http://isni.org/isni/0000000087562647> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03synvw58> ;
+        rdfs:label 'Institut Français de la Vigne et du Vin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02e2xy827> ;
+        rdfs:label 'Syndicat des vignerons des Côtes du Rhône'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.80889 44.1375)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Orange" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Provence-Alpes-Côte d'Azur" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6451580/> ;
+    ] ; 
+    .

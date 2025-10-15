@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00mv6h241> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'UOA'^^xsd:string@en ; 
+    org:alternativeName 'جامعة أقسام الواحات'^^xsd:string@ar ; 
+    schema:url <http://uoa.edu.ly> ; 
+    schema:mainEntityOfPage <https://uoa.edu.ly> ;
+    owl:sameAs <https://ar.wikipedia.org/wiki/%25D8%25AC%25D8%25A7%25D9%2585%25D8%25B9%25D8%25A9_%25D8%25A5%25D8%25AC%25D8%25AF%25D8%25A7%25D8%25A8%25D9%258A%25D8%25A7> ; 
+    schema:sameAs <http://isni.org/isni/0000000523956694> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(20.22625 30.75545)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ajdabiya" ;
+            schema:addressCountry "LY" ;
+            schema:addressRegion "Al Wāḩāt" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Libya" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/89113/> ;
+    ] ; 
+    .

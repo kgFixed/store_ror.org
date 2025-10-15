@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0091g1j61> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'ODOCS'^^xsd:string@en ; 
+    schema:url <http://odocs-tech.com> ; 
+    schema:mainEntityOfPage <https://www.odocs-tech.com/research> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(170.50361 -45.87416)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Dunedin" ;
+            schema:addressCountry "NZ" ;
+            schema:addressRegion "Otago" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "New Zealand" ;
+                schema:containedInPlace [
+                    schema:name "Oceania" ;
+                    schema:identifier "OC"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2191562/> ;
+    ] ; 
+    .

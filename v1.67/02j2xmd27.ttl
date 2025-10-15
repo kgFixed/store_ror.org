@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02j2xmd27> a org:Organization ;
+    rdfs:label 'Swedish Geotechnical Institute'^^xsd:string ;
+    schema:name 'Swedish Geotechnical Institute'^^xsd:string ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-06-24"^^xsd:date ;
+    org:abbreviation 'SGI'^^xsd:string@None ; 
+    org:alternativeName 'Statens geotekniska institut'^^xsd:string@sv ; 
+    schema:url <http://sgi.se> ; 
+    schema:mainEntityOfPage <https://www.sgi.se> ;
+    schema:sameAs <https://api.crossref.org/funders/100016779> ;
+    schema:sameAs <https://grid.ac/institutions/grid.437913.b> ;
+    schema:sameAs <http://isni.org/isni/0000000121081194> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(15.62157 58.41086)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Linköping" ;
+            schema:addressCountry "SE" ;
+            schema:addressRegion "Östergötland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Sweden" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2694762/> ;
+    ] ; 
+    .
