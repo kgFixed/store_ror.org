@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04dtrtr74> a org:Organization ;
+    rdfs:label 'IFMR Graduate School of Business'^^xsd:string ;
+    schema:name 'IFMR Graduate School of Business'^^xsd:string ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2019-02-17"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'IFMR'^^xsd:string@None ; 
+    org:abbreviation 'IFMR GSB'^^xsd:string@en ; 
+    org:alternativeName 'Institute for Financial Management and Research'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://krea.edu.in/ifmrgsb/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Institute_for_Financial_Management_and_Research> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.503749.c> ;
+    schema:sameAs <http://isni.org/isni/0000000405057057> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02nmd8z76> ;
+        rdfs:label 'Krea University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(79.83503 13.78049)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tirupati" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Andhra Pradesh" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/12680264/> ;
+    ] ; 
+    .

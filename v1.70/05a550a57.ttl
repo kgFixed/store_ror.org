@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05a550a57> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'Dolnośląska Szkoła Wyższa'^^xsd:string@pl ; 
+    org:abbreviation 'ULS'^^xsd:string@None ; 
+    org:alternativeName 'University of Lower Silesia'^^xsd:string@en ; 
+    schema:url <http://dsw.edu.pl> ; 
+    schema:url <http://uls.edu.pl> ; 
+    schema:mainEntityOfPage <https://www.dsw.edu.pl> ;
+    schema:sameAs <https://grid.ac/institutions/grid.445638.8> ;
+    schema:sameAs <http://isni.org/isni/0000000122961994> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(17.03333 51.1)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Wroclaw" ;
+            schema:addressCountry "PL" ;
+            schema:addressRegion "Lower Silesia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Poland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3081368/> ;
+    ] ; 
+    .

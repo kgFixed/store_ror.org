@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/004914a33> a org:Organization ;
+    rdfs:label 'Federal Scientific Center for Animal Husbandry named after Academician L.K. Ernst'^^xsd:string ;
+    schema:name 'Federal Scientific Center for Animal Husbandry named after Academician L.K. Ernst'^^xsd:string ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'All -Russian Research Institute of Animal Husbandry'^^xsd:string@en ; 
+    org:alternativeName 'All-Russian Research Institute of Animal Husbandry of the Rosselkhozakademiya'^^xsd:string@en ; 
+    org:abbreviation 'VIZH'^^xsd:string@None ; 
+    org:alternativeName 'VIZH named after LK Ernst'^^xsd:string@en ; 
+    schema:url <http://vij.ru> ; 
+    schema:mainEntityOfPage <https://www.vij.ru> ;
+    schema:sameAs <https://grid.ac/institutions/grid.465346.6> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05wtp9w08> ;
+        rdfs:label 'Department of Agricultural Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.58333 55.41667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Podolsk Urban Okrug" ;
+            schema:addressCountry "RU" ;
+            schema:addressRegion "Moscow Oblast" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Russia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/508091/> ;
+    ] ; 
+    .

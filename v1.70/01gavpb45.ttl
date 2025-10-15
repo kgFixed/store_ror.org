@@ -1,0 +1,128 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01gavpb45> a org:Organization ;
+    rdfs:label 'Canadian Institutes of Health Research'^^xsd:string ;
+    schema:name 'Canadian Institutes of Health Research'^^xsd:string ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'CIHR'^^xsd:string@None ; 
+    schema:url <http://cihr-irsc.gc.ca> ; 
+    schema:mainEntityOfPage <https://www.cihr-irsc.gc.ca> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Canadian_Institutes_of_Health_Research> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100000024> ;
+    schema:sameAs <https://grid.ac/institutions/grid.248883.d> ;
+    schema:sameAs <http://isni.org/isni/000000010789659X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xven060> ;
+        rdfs:label 'Institute of Indigenous Peoples\' Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044mbfr67> ;
+        rdfs:label 'Institute of Aging'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00dpztj76> ;
+        rdfs:label 'Institute of Cancer Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00bhv3b03> ;
+        rdfs:label 'Institute of Circulatory and Respiratory Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vbt0765> ;
+        rdfs:label 'Institute of Gender and Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03gwhmn95> ;
+        rdfs:label 'Institute of Genetics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0091yh482> ;
+        rdfs:label 'Institute of Health Services and Policy Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00s0b8a75> ;
+        rdfs:label 'Institute of Human Development, Child and Youth Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05wdecy17> ;
+        rdfs:label 'Institute of Infection and Immunity'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vpfss84> ;
+        rdfs:label 'Institute of Musculoskeletal Health and Arthritis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043tfr230> ;
+        rdfs:label 'Institute of Neurosciences, Mental Health and Addiction'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nct1z71> ;
+        rdfs:label 'Institute of Nutrition, Metabolism and Diabetes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dh0w640> ;
+        rdfs:label 'Institute of Population and Public Health'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052dp8730> ;
+        rdfs:label 'CIHR Skin Research Training Centre'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.69812 45.41117)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ottawa" ;
+            schema:addressCountry "CA" ;
+            schema:addressRegion "Ontario" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Canada" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6094817/> ;
+    ] ; 
+    .

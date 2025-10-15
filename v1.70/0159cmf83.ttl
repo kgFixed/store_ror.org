@@ -1,0 +1,58 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0159cmf83> a org:Organization ;
+    rdfs:label 'St Peter\'s Hospital'^^xsd:string ;
+    schema:name 'St Peter\'s Hospital'^^xsd:string ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.ashfordstpeters.nhs.uk/st-peter-s-hospital/82-st-peter-s-hospital> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/St_Peter%2527s_Hospital_(Chertsey)> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.416557.4> ;
+    schema:sameAs <http://isni.org/isni/0000000403996077> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/051p4rr20> ;
+        rdfs:label 'Ashford and St Peter\'s Hospitals NHS Foundation Trust'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/041kmwe10> ;
+        rdfs:label 'Imperial College London'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/047ybhc09> ;
+        rdfs:label 'City St George\'s, University of London'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.50782 51.38812)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Chertsey" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "England" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2653239/> ;
+    ] ; 
+    .

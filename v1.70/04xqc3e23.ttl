@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04xqc3e23> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1971"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'Tangub Agro-Industrial School'^^xsd:string@en ; 
+    org:abbreviation 'UNM'^^xsd:string@en ; 
+    org:alternativeName 'University of Northwestern Mindanao'^^xsd:string@en ; 
+    schema:url <http://nmsc.edu.ph> ; 
+    schema:mainEntityOfPage <https://www.nmsc.edu.ph> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Northwestern_Mindanao_State_College_of_Science_and_Technology> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(123.7477 8.0618)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tangub" ;
+            schema:addressCountry "PH" ;
+            schema:addressRegion "Northern Mindanao" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Philippines" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1683116/> ;
+    ] ; 
+    .

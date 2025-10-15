@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04kp61y04> a org:Organization ;
+    rdfs:label 'Association for Tertiary Education Management'^^xsd:string ;
+    schema:name 'Association for Tertiary Education Management'^^xsd:string ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'ATEM'^^xsd:string@None ; 
+    schema:url <http://atem.org.au> ; 
+    schema:mainEntityOfPage <https://www.atem.org.au> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Association_for_Tertiary_Education_Management> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100001128> ;
+    schema:sameAs <https://grid.ac/institutions/grid.470824.d> ;
+    schema:sameAs <http://isni.org/isni/0000000449077877> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(144.9879 -37.81667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "East Melbourne" ;
+            schema:addressCountry "AU" ;
+            schema:addressRegion "Victoria" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Australia" ;
+                schema:containedInPlace [
+                    schema:name "Oceania" ;
+                    schema:identifier "OC"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6952201/> ;
+    ] ; 
+    .

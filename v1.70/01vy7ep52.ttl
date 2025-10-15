@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01vy7ep52> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'ANG RK'^^xsd:string@en ; 
+    org:abbreviation 'АНГ РК'^^xsd:string@ru ; 
+    org:alternativeName 'Военный институт Внутренних войск Министерства внутренних дел Республики Казахстан'^^xsd:string@ru ; 
+    org:alternativeName 'Военный институт Национальной гвардии Республики Казахстан'^^xsd:string@ru ; 
+    org:alternativeName 'Петропавловское Высшее военное училище Внутренних войск Министерства внутренних дел Республики Казахстан'^^xsd:string@ru ; 
+    org:abbreviation 'ҚР ҰҰА'^^xsd:string@kk ; 
+    org:alternativeName 'Қазақстан Республикасы Ішкі істер министрі Ішкі әскерлерінің Жоғары әскери училищесі'^^xsd:string@kk ; 
+    org:alternativeName 'Қазақстан Республикасы Ішкі істер министрі Ішкі әскерлерінің Әскери институты'^^xsd:string@kk ; 
+    org:alternativeName 'Қазақстан Республикасы Ұлттық ұланының Әскери институты'^^xsd:string@kk ; 
+    schema:url <http://ang.edu.kz> ; 
+    schema:mainEntityOfPage <https://www.ang.edu.kz> ;
+    owl:sameAs <https://kk.wikipedia.org/wiki/%25D2%259A%25D0%25B0%25D0%25B7%25D0%25B0%25D2%259B%25D1%2581%25D1%2582%25D0%25B0%25D0%25BD_%25D0%25A0%25D0%25B5%25D1%2581%25D0%25BF%25D1%2583%25D0%25B1%25D0%25BB%25D0%25B8%25D0%25BA%25D0%25B0%25D1%2581%25D1%258B_%25D2%25B0%25D0%25BB%25D1%2582%25D1%2582%25D1%258B%25D2%259B_%25D2%25B1%25D0%25BB%25D0%25B0%25D0%25BD%25D1%258B%25D0%25BD%25D1%258B%25D2%25A3_%25D0%2590%25D0%25BA%25D0%25B0%25D0%25B4%25D0%25B5%25D0%25BC%25D0%25B8%25D1%258F%25D1%2581%25D1%258B> ; 
+    schema:sameAs <http://isni.org/isni/0000000527832541> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(69.15 54.86667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Petropavl" ;
+            schema:addressCountry "KZ" ;
+            schema:addressRegion "North Kazakhstan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Kazakhstan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1520172/> ;
+    ] ; 
+    .

@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/023azs158> a org:Organization ;
+    rdfs:label 'ICAR Research Complex for NEH Region'^^xsd:string ;
+    schema:name 'ICAR Research Complex for NEH Region'^^xsd:string ;
+    schema:foundingDate "1975"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'ICAR Research Complex for North Eastern Hill Region'^^xsd:string@en ; 
+    org:abbreviation 'RCNEH'^^xsd:string@None ; 
+    schema:url <http://icarrcer.icar.gov.in> ; 
+    schema:mainEntityOfPage <https://icar.org.in/node/488> ;
+    schema:sameAs <https://api.crossref.org/funders/501100013951> ;
+    schema:sameAs <https://grid.ac/institutions/grid.469932.3> ;
+    schema:sameAs <http://isni.org/isni/0000000122033565> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04fw54a43> ;
+        rdfs:label 'Indian Council of Agricultural Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(91.33333 25.5)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Meghalaya" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Meghalaya" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1263207/> ;
+    ] ; 
+    .

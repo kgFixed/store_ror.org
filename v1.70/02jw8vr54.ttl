@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02jw8vr54> a org:Organization ;
+    rdfs:label 'Central Marine Fisheries Research Institute'^^xsd:string ;
+    schema:name 'Central Marine Fisheries Research Institute'^^xsd:string ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'CMFRI'^^xsd:string@None ; 
+    schema:url <http://cmfri.org.in> ; 
+    schema:mainEntityOfPage <https://www.cmfri.org.in> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Central_Marine_Fisheries_Research_Institute> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100014362> ;
+    schema:sameAs <https://grid.ac/institutions/grid.462189.0> ;
+    schema:sameAs <http://isni.org/isni/0000000107074019> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04fw54a43> ;
+        rdfs:label 'Indian Council of Agricultural Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(76.26022 9.93988)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ernakulam" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Kerala" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1273874/> ;
+    ] ; 
+    .

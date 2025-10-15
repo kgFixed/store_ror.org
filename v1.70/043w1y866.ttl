@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/043w1y866> a org:Organization ;
+    rdfs:label 'National Research Centre on Mithun'^^xsd:string ;
+    schema:name 'National Research Centre on Mithun'^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'NRC on Mithun'^^xsd:string@None ; 
+    org:abbreviation 'NRCM'^^xsd:string@None ; 
+    schema:url <http://nrcmithun.icar.gov.in> ; 
+    schema:mainEntityOfPage <https://nrcmithun.icar.gov.in> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/National_Research_Centre_on_Mithun> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.465029.c> ;
+    schema:sameAs <http://isni.org/isni/0000000417621313> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04fw54a43> ;
+        rdfs:label 'Indian Council of Agricultural Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(93.7175 25.90166)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Dimapur" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Nagaland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/9747972/> ;
+    ] ; 
+    .

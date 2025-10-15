@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01qxykv20> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName '兰州工业学校'^^xsd:string@zh ; 
+    org:alternativeName '兰州工业高等专科学校'^^xsd:string@zh ; 
+    org:alternativeName '兰工院'^^xsd:string@zh ; 
+    org:alternativeName '甘肃省工业学校'^^xsd:string@zh ; 
+    schema:url <http://lzit.edu.cn> ; 
+    schema:mainEntityOfPage <https://www.lzit.edu.cn> ;
+    owl:sameAs <https://zh.wikipedia.org/wiki/%25E5%2585%25B0%25E5%25B7%259E%25E5%25B7%25A5%25E4%25B8%259A%25E5%25AD%25A6%25E9%2599%25A2> ; 
+    schema:sameAs <http://isni.org/isni/0000000090670964> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(103.83987 36.05701)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lanzhou" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Gansu" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1804430/> ;
+    ] ; 
+    .

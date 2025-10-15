@@ -1,0 +1,160 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02jet3w32> a org:Organization ;
+    rdfs:label 'LMU Klinikum'^^xsd:string ;
+    schema:name 'LMU Klinikum'^^xsd:string ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    schema:mainEntityOfPage <https://www.lmu-klinikum.de/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Klinikum_der_Universit%25C3%25A4t_M%25C3%25BCnchen> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.411095.8> ;
+    schema:sameAs <http://isni.org/isni/0000000404772585> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fw3y429> ;
+        rdfs:label 'Klinik und Poliklinik für Orthopädie, Physikalische Medizin und Rehabilitation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j546b66> ;
+        rdfs:label 'Klinik und Poliklinik für Psychiatrie und Psychotherapie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01trny179> ;
+        rdfs:label 'Klinik und Poliklinik für Strahlentherapie und Radioonkologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02794jc95> ;
+        rdfs:label 'Klinik und Poliklinik für Frauenheilkunde und Geburtshilfe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05591te55> ;
+        rdfs:label 'Ludwig-Maximilians-Universität München'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/049ajfa91> ;
+        rdfs:label 'Institut und Poliklinik für Arbeits-, Sozial- und Umweltmedizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03hxyy717> ;
+        rdfs:label 'Institut für Humangenetik'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03gfgbw10> ;
+        rdfs:label 'Institut für Prophylaxe und Epidemiologie der Kreislaufkrankheiten'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05g1y0660> ;
+        rdfs:label 'Institut für Laboratoriumsmedizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x6wax64> ;
+        rdfs:label 'Institut für Klinische Neuroimmunologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02fhhwa39> ;
+        rdfs:label 'Institut für Notfallmedizin und Medizinmanagement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02fa5cb34> ;
+        rdfs:label 'Institut für Schlaganfall- und Demenzforschung'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0431ec194> ;
+        rdfs:label 'Institut für Experimentelle Pneumologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005506478> ;
+        rdfs:label 'Institut für Chirurgische Forschung'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cmqx484> ;
+        rdfs:label 'Institut für Muskuloskelettale Medizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00nts2374> ;
+        rdfs:label 'Institut für Infektions- und Tropenmedizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03g9zwv89> ;
+        rdfs:label 'Institut für Diagnostische und Interventionelle Neuroradiologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05885p792> ;
+        rdfs:label 'Institut für Allgemeinmedizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0029hqx58> ;
+        rdfs:label 'Institut für Psychiatrische Phänomik und Genomik'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/059qe0395> ;
+        rdfs:label 'Institut für Didaktik und Ausbildungsforschung in der Medizin'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Munich" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Bavaria" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2867714/> ;
+    ] ; 
+    .

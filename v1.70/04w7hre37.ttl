@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04w7hre37> a org:Organization ;
+    rdfs:label 'University of Puerto Rico at Aguadilla'^^xsd:string ;
+    schema:name 'University of Puerto Rico at Aguadilla'^^xsd:string ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'Colegio Regional de Aguadilla'^^xsd:string@es ; 
+    org:alternativeName 'UPR Aguadilla'^^xsd:string@es ; 
+    org:alternativeName 'UPR-Aguadilla'^^xsd:string@es ; 
+    org:abbreviation 'UPRAg'^^xsd:string@None ; 
+    schema:url <http://uprag.edu> ; 
+    schema:mainEntityOfPage <https://www.uprag.edu> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Puerto_Rico_at_Aguadilla> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.449850.4> ;
+    schema:sameAs <http://isni.org/isni/0000000460391429> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02yg0nm07> ;
+        rdfs:label 'University of Puerto Rico System'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-67.15407 18.42745)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Aguadilla" ;
+            schema:addressCountry "PR" ;
+            schema:addressRegion "Aguadilla" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Puerto Rico" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4562506/> ;
+    ] ; 
+    .

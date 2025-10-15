@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01x4whx42> a org:Organization ;
+    rdfs:label 'Sangmyung University'^^xsd:string ;
+    schema:name 'Sangmyung University'^^xsd:string ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'SMU'^^xsd:string@None ; 
+    schema:url <http://smu.ac.kr> ; 
+    schema:mainEntityOfPage <https://www.smu.ac.kr/kor/index.do> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Sangmyung_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002645> ;
+    schema:sameAs <https://grid.ac/institutions/grid.263136.3> ;
+    schema:sameAs <http://isni.org/isni/0000000405332389> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.97928 37.5729)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Jongno-gu" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1845581/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.19431 36.80488)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cheonan-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Chungcheongnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1845757/> ;
+    ] ; 
+    .

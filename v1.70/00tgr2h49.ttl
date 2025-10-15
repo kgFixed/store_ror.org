@@ -1,0 +1,128 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00tgr2h49> a org:Organization ;
+    rdfs:label 'Computer Equipment and Technologies'^^xsd:string ;
+    schema:name 'Computer Equipment and Technologies'^^xsd:string ;
+    schema:foundingDate "1724"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    schema:mainEntityOfPage <http://ras.ru> ;
+    schema:sameAs <https://grid.ac/institutions/grid.466114.0> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047wbzv64> ;
+        rdfs:label 'All Russian Institute for Scientific and Technical Information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03134gf68> ;
+        rdfs:label 'Image Processing Systems Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02h6vef88> ;
+        rdfs:label 'Institute for Analytical Instrumentation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00t7t9a43> ;
+        rdfs:label 'Institute for Design Problems in Microelectronics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013w2d378> ;
+        rdfs:label 'Institute for Information Transmission Problems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fqdmq12> ;
+        rdfs:label 'Institute of Automation and Electrometry'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047f8bv22> ;
+        rdfs:label 'Institute of Computational Modeling'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02x3mf211> ;
+        rdfs:label 'Federal Research Center for Information and Computational Technologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00n8bqs64> ;
+        rdfs:label 'Institute of Informatics Problems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034fqtg16> ;
+        rdfs:label 'Institute of Microelectronics Technology and High Purity Materials'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00x0vxx91> ;
+        rdfs:label 'Institute of Physics and Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jract75> ;
+        rdfs:label 'Institute on Laser and Information Technologies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02smvmz76> ;
+        rdfs:label 'Research Institute for System Studies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ccb9w37> ;
+        rdfs:label 'St. Petersburg Institute for Informatics and Automation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05qrfxd25> ;
+        rdfs:label 'Russian Academy of Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61556 55.75222)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Moscow" ;
+            schema:addressCountry "RU" ;
+            schema:addressRegion "Moscow" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Russia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/524901/> ;
+    ] ; 
+    .

@@ -1,0 +1,209 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05591te55> a org:Organization ;
+    rdfs:label 'Ludwig-Maximilians-Universität München'^^xsd:string ;
+    schema:name 'Ludwig-Maximilians-Universität München'^^xsd:string ;
+    schema:foundingDate "1472"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'LMU'^^xsd:string@None ; 
+    org:alternativeName 'Ludwig Maximilian University of Munich'^^xsd:string@en ; 
+    org:alternativeName 'Ludwig-Maximilians-Universität in Munich'^^xsd:string@en ; 
+    org:alternativeName 'University of Munich'^^xsd:string@en ; 
+    org:alternativeName 'Universität München'^^xsd:string@de ; 
+    schema:mainEntityOfPage <https://www.lmu.de> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Ludwig_Maximilian_University_of_Munich> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005722> ;
+    schema:sameAs <https://grid.ac/institutions/grid.5252.0> ;
+    schema:sameAs <http://isni.org/isni/000000041936973X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02qqvpd39> ;
+        rdfs:label 'Zentrum für Klinische Tiermedizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025z3z560> ;
+        rdfs:label 'Munich Cluster for Systems Neurology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010wkny21> ;
+        rdfs:label 'Excellence Cluster Origins'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xrcta15> ;
+        rdfs:label 'Munich Center for Quantum Science and Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01mvrj242> ;
+        rdfs:label 'Nanosystems Initiative Munich'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032hzb643> ;
+        rdfs:label 'Center for Integrated Protein Science Munich'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002epp671> ;
+        rdfs:label 'Center for NanoScience'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04j4kfb22> ;
+        rdfs:label 'Centre for Advanced Laser Applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01h2vtb84> ;
+        rdfs:label 'Rachel Carson Center for Environment and Society'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jet3w32> ;
+        rdfs:label 'LMU Klinikum'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02nfy3535> ;
+        rdfs:label 'Munich Center for Machine Learning'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029e6qe04> ;
+        rdfs:label 'LMU Open Science Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wbcav28> ;
+        rdfs:label 'Walther-Straub-Institut für Pharmakologie und Toxikologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02jjvb954> ;
+        rdfs:label 'Collegium Carolinum'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/045495t75> ;
+        rdfs:label 'Ifo Institute for Economic Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03gc4br58> ;
+        rdfs:label 'Institut für Ethik, Geschichte und Theorie der Medizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03dftj863> ;
+        rdfs:label 'Anatomische Anstalt'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00v8kcx92> ;
+        rdfs:label 'Physiologisches Institut'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0480tmh03> ;
+        rdfs:label 'Adolf-Butenandt-Institut für Physiologische Chemie, Physikalische Biochemie und Zellbiologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016g7a124> ;
+        rdfs:label 'Institut für Medizinische Psychologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cqe8q68> ;
+        rdfs:label 'Pathologisches Institut'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04hhrpp03> ;
+        rdfs:label 'Institut für Neuropathologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05na4hm84> ;
+        rdfs:label 'Max-von-Pettenkofer-Institut für Hygiene und Medizinische Mikrobiologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01s1pqt66> ;
+        rdfs:label 'Institut für Rechtsmedizin'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01x8c0495> ;
+        rdfs:label 'Institut für Immunologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04eb1yz45> ;
+        rdfs:label 'Institut für Medizinische Informationsverarbeitung, Biometrie und Epidemiologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03tw5w184> ;
+        rdfs:label 'Institut für Kardiovaskuläre Physiologie und Pathophysiologie'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Munich" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Bavaria" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2867714/> ;
+    ] ; 
+    .

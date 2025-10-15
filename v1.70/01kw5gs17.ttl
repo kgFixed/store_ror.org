@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01kw5gs17> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'SCAS'^^xsd:string@en ; 
+    org:alternativeName 'South Central Ambulance Service'^^xsd:string@en ; 
+    org:alternativeName 'South Central Ambulance Service NHS Trust'^^xsd:string@en ; 
+    schema:url <http://scas.nhs.uk> ; 
+    schema:mainEntityOfPage <https://www.scas.nhs.uk> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/South_Central_Ambulance_Service> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.34408 50.9985)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Otterbourne" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "England" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/7293689/> ;
+    ] ; 
+    .

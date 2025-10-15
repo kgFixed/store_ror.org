@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/013fk0013> a org:Organization ;
+    rdfs:label 'Institute for the Study of Anthropic Impact and Sustainability in the Marine Environment'^^xsd:string ;
+    schema:name 'Institute for the Study of Anthropic Impact and Sustainability in the Marine Environment'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2022-08-03"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'CNR-IAS'^^xsd:string@None ; 
+    org:abbreviation 'IAS'^^xsd:string@None ; 
+    org:abbreviation 'IAS-CNR'^^xsd:string@None ; 
+    org:alternativeName 'Institute for the Study of Anthropic Impact and Sustainability in the Marine Environment of the National Research Council'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.ricercamarina.cnr.it/it/ias.php> ;
+    schema:sameAs <http://isni.org/isni/0000000484970708> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04zaypm56> ;
+        rdfs:label 'National Research Council'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.94439 44.40478)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Genoa" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "Liguria" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3176219/> ;
+    ] ; 
+    .

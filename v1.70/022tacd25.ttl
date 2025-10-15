@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/022tacd25> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1951"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'European Federation of National Engineering Associations'^^xsd:string@en ; 
+    org:abbreviation 'FEANI'^^xsd:string@fr ; 
+    org:alternativeName 'Fédération Européenne d\'Associations Nationales d\'Ingénieurs'^^xsd:string@fr ; 
+    schema:url <http://engineerseurope.com> ; 
+    schema:mainEntityOfPage <https://engineerseurope.com> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Engineers_Europe> ; 
+    schema:sameAs <http://isni.org/isni/0000000119583670> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00r20e176> ;
+        rdfs:label 'Engineers Ireland'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(4.34878 50.85045)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Brussels" ;
+            schema:addressCountry "BE" ;
+            schema:addressRegion "Brussels Capital" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Belgium" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2800866/> ;
+    ] ; 
+    .

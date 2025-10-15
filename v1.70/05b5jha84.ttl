@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05b5jha84> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'TMNA R&D'^^xsd:string@en ; 
+    org:abbreviation 'TRINA'^^xsd:string@en ; 
+    org:alternativeName 'Toyota Motor North America R&D'^^xsd:string@en ; 
+    org:alternativeName 'Toyota Research Institute North America'^^xsd:string@en ; 
+    org:alternativeName 'Toyota Research Institute of North America'^^xsd:string@en ; 
+    org:alternativeName 'Toyota Research Institute, North America'^^xsd:string@en ; 
+    schema:url <http://toyota.com> ; 
+    schema:mainEntityOfPage <https://amrd.toyota.com> ;
+    schema:sameAs <https://api.crossref.org/funders/100016680> ;
+    schema:sameAs <http://isni.org/isni/0000000476658052> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0076knn86> ;
+        rdfs:label 'Toyota Motor North America (United States)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.74088 42.27756)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ann Arbor" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Michigan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4984247/> ;
+    ] ; 
+    .

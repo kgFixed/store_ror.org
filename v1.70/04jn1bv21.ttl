@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04jn1bv21> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2017"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'IFDT'^^xsd:string@en ; 
+    org:alternativeName 'Institut für Digitale Technologien'^^xsd:string@de ; 
+    org:alternativeName 'Institute for Digital Technologies'^^xsd:string@en ; 
+    schema:url <http://ifdt.org> ; 
+    schema:mainEntityOfPage <https://www.ifdt.org> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(12.37129 51.33962)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Leipzig" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Saxony" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2879139/> ;
+    ] ; 
+    .

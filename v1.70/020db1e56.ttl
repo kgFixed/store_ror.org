@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/020db1e56> a org:Organization ;
+    rdfs:label 'Joongbu University'^^xsd:string ;
+    schema:name 'Joongbu University'^^xsd:string ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'JU'^^xsd:string@None ; 
+    schema:url <http://joongbu.ac.kr> ; 
+    schema:mainEntityOfPage <https://www.joongbu.ac.kr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Joongbu_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002504> ;
+    schema:sameAs <https://grid.ac/institutions/grid.444004.0> ;
+    schema:sameAs <http://isni.org/isni/0000000406471620> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.83333 37.66667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Goyang-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeonggi-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1842486/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.48062 36.13381)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Geumsan-gun" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Chungcheongnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1842149/> ;
+    ] ; 
+    .

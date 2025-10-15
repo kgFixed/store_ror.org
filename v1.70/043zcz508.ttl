@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/043zcz508> a org:Organization ;
+    rdfs:label 'Starfleet Academy'^^xsd:string ;
+    schema:name 'Starfleet Academy'^^xsd:string ;
+    org:status 'withdrawn'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'Space Academy'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://intl.startrek.com/database_article/starfleet-academy> ;
+    owl:sameAs <https://memory-alpha.fandom.com/wiki/Starfleet_Academy> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.431671.6> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-122.41942 37.77493)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "San Francisco" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "California" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5391959/> ;
+    ] ; 
+    .

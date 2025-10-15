@@ -1,0 +1,62 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0076knn86> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1937"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'Toyota Jidōsha'^^xsd:string@ja ; 
+    org:alternativeName 'Toyota Motor Corporation (United States)'^^xsd:string@en ; 
+    org:alternativeName 'トヨタ自動車北米技術製造会社'^^xsd:string@ja ; 
+    schema:mainEntityOfPage <https://www.toyota.com/usa/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Toyota> ; 
+    schema:sameAs <https://api.crossref.org/funders/100004362> ;
+    schema:sameAs <https://grid.ac/institutions/grid.467593.a> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02zqm6r10> ;
+        rdfs:label 'Toyota Motor Corporation (Japan)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/00w85m497> ;
+        rdfs:label 'Toyota Motor Engineering & Manufacturing North America, Inc. (United States)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05b5jha84> ;
+        rdfs:label 'Toyota Motor North America Research & Development (United States)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-118.34063 33.83585)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Torrance" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "California" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5403022/> ;
+    ] ; 
+    .

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05s2fqz02> a org:Organization ;
+    rdfs:label 'University of Puerto Rico at Utuado'^^xsd:string ;
+    schema:name 'University of Puerto Rico at Utuado'^^xsd:string ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'CORMO'^^xsd:string@None ; 
+    org:alternativeName 'Colegio Regional de la Montaña'^^xsd:string@es ; 
+    org:abbreviation 'UPR-Utuado'^^xsd:string@None ; 
+    org:abbreviation 'UPRU'^^xsd:string@None ; 
+    schema:url <http://uprutuado.edu> ; 
+    schema:mainEntityOfPage <https://www.uprutuado.edu> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Puerto_Rico_at_Utuado> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.449858.c> ;
+    schema:sameAs <http://isni.org/isni/0000000404185970> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02yg0nm07> ;
+        rdfs:label 'University of Puerto Rico System'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-66.70045 18.26551)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Utuado" ;
+            schema:addressCountry "PR" ;
+            schema:addressRegion "Utuado" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Puerto Rico" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4568490/> ;
+    ] ; 
+    .

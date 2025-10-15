@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/024enr617> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'PRSTU'^^xsd:string@en ; 
+    schema:url <http://prstu.ac.bd> ; 
+    schema:mainEntityOfPage <https://prstu.ac.bd> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Pirojpur_Science_and_Technology_University> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.00033 22.53671)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Pirojpur" ;
+            schema:addressCountry "BD" ;
+            schema:addressRegion "Barisal Division" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bangladesh" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1477494/> ;
+    ] ; 
+    .

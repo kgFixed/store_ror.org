@@ -1,0 +1,85 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02tphfq59> a org:Organization ;
+    rdfs:label 'National University of Rosario'^^xsd:string ;
+    schema:name 'National University of Rosario'^^xsd:string ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'UNR'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://unr.edu.ar> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/National_University_of_Rosario> ; 
+    schema:sameAs <https://api.crossref.org/funders/100009573> ;
+    schema:sameAs <https://grid.ac/institutions/grid.10814.3c> ;
+    schema:sameAs <http://isni.org/isni/0000000120973211> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02m19wv39> ;
+        rdfs:label 'Centro Internacional Franco-Argentino de Ciencias de la Información y de Sistemas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040me2j46> ;
+        rdfs:label 'Centro de Estudios Fotosintéticos y Bioquímicos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03v7tny92> ;
+        rdfs:label 'Institute of Physics Rosario'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x0n3178> ;
+        rdfs:label 'Instituto de Biología Molecular y Celular de Rosario'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02s040f34> ;
+        rdfs:label 'Instituto de Investigaciones en Ciencias Agrarias de Rosario'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01qkxb782> ;
+        rdfs:label 'Centro Científico Tecnólogico - Rosario'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rg98h11> ;
+        rdfs:label 'Centro de Investigaciones Feministas y Estudios de Género'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-60.63932 -32.94682)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rosario" ;
+            schema:addressCountry "AR" ;
+            schema:addressRegion "Santa Fe" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Argentina" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3838583/> ;
+    ] ; 
+    .

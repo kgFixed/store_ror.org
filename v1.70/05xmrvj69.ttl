@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05xmrvj69> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'HOOG'^^xsd:string@nl ; 
+    org:alternativeName 'Multicenter General Practitioners Organisation'^^xsd:string@en ; 
+    org:alternativeName 'Multicenter General Practitioners Organisation \'HuisartsenOrganisatie Oost-Gelderland\''^^xsd:string@None ; 
+    schema:url <http://hoogzorg.nl> ; 
+    schema:mainEntityOfPage <https://www.hoogzorg.nl> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.91969 52.18722)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Apeldoorn" ;
+            schema:addressCountry "NL" ;
+            schema:addressRegion "Gelderland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "The Netherlands" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2759705/> ;
+    ] ; 
+    .

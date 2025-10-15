@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05kyfde14> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'AMDC'^^xsd:string@en ; 
+    org:alternativeName 'Akhtar Saeed Medical & Dental College'^^xsd:string@en ; 
+    schema:url <http://amdc.edu.pk> ; 
+    schema:mainEntityOfPage <https://amdc.edu.pk> ;
+    owl:sameAs <https://ur.wikipedia.org/wiki/%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25B1_%25D8%25B3%25D8%25B9%25DB%258C%25D8%25AF_%25D9%2585%25DB%258C%25DA%2588%25DB%258C%25DA%25A9%25D9%2584_%25D8%25A7%25DB%258C%25D9%2586%25DA%2588_%25DA%2588%25DB%258C%25D9%2586%25D9%25B9%25D9%2584_%25DA%25A9%25D8%25A7%25D9%2584%25D8%25AC> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.35071 31.558)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lahore" ;
+            schema:addressCountry "PK" ;
+            schema:addressRegion "Punjab" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Pakistan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1172451/> ;
+    ] ; 
+    .

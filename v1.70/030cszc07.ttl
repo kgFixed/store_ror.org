@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/030cszc07> a org:Organization ;
+    rdfs:label 'Australian Astronomical Observatory'^^xsd:string ;
+    schema:name 'Australian Astronomical Observatory'^^xsd:string ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'AAO'^^xsd:string@None ; 
+    org:alternativeName 'Anglo-Australian Observatory'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.aao.gov.au/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Australian_Astronomical_Observatory> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004661> ;
+    schema:sameAs <https://grid.ac/institutions/grid.450420.7> ;
+    schema:sameAs <http://isni.org/isni/0000000108250002> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/006a4jj40> ;
+        rdfs:label 'Mount Stromlo Observatory'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(151.20732 -33.86785)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sydney" ;
+            schema:addressCountry "AU" ;
+            schema:addressRegion "New South Wales" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Australia" ;
+                schema:containedInPlace [
+                    schema:name "Oceania" ;
+                    schema:identifier "OC"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2147714/> ;
+    ] ; 
+    .

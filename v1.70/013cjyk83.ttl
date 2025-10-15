@@ -1,0 +1,329 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/013cjyk83> a org:Organization ;
+    rdfs:label 'Université Paris Sciences et Lettres'^^xsd:string ;
+    schema:name 'Université Paris Sciences et Lettres'^^xsd:string ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'PSL'^^xsd:string@None ; 
+    org:alternativeName 'PSL Research University'^^xsd:string@en ; 
+    org:alternativeName 'Université PSL'^^xsd:string@fr ; 
+    org:alternativeName 'Université PSL (Paris Sciences & Lettres)'^^xsd:string@fr ; 
+    org:alternativeName 'Université de recherche Paris Sciences et Lettres'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://psl.eu> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/PSL_Research_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100009517> ;
+    schema:sameAs <https://grid.ac/institutions/grid.440907.e> ;
+    schema:sameAs <http://isni.org/isni/0000000417843645> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03zx86w41> ;
+        rdfs:label 'ESPCI Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04w11tv37> ;
+        rdfs:label 'Biologie cellulaire et Cancer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032q0qd45> ;
+        rdfs:label 'La Fémis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00tf8ca96> ;
+        rdfs:label 'Musée Curie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015a85k79> ;
+        rdfs:label 'Infections Virales et Pathologie Comparée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vtagt31> ;
+        rdfs:label 'Paris Jourdan Sciences Economiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/006gzge74> ;
+        rdfs:label 'Centre de recherche sur les civilisations de l\'Asie orientale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0095dt357> ;
+        rdfs:label 'Cancer et génome: Bioinformatique, biostatistiques et épidémiologie des systèmes complexes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03t4pc386> ;
+        rdfs:label 'Cancer, Hétérogénéité, Instabilité et Plasticité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vrz7264> ;
+        rdfs:label 'Génétique et biologie du développement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01e8w0016> ;
+        rdfs:label 'Laboratoire de Neurosciences Cognitives et Computationnelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ved1v49> ;
+        rdfs:label 'Relais d\'information sur les sciences de la cognition'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k37h274> ;
+        rdfs:label 'Chimie et Biologie de la Cellule'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bgzse17> ;
+        rdfs:label 'Chimie Biologie Innovation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j7mz841> ;
+        rdfs:label 'Centre d’Archives en Philosophie, Histoire et Édition des Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02nfq1309> ;
+        rdfs:label 'Chimie et Modélisation pour la Biologie du Cancer'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04v668f18> ;
+        rdfs:label 'Institut des Matériaux Poreux de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f6tkx67> ;
+        rdfs:label 'Neuropsychologie et Imagerie de la Mémoire Humaine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03y7m8990> ;
+        rdfs:label 'Physique pour la médecine Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w1erp60> ;
+        rdfs:label 'Couplage Multi-physiques et Multi-échelles en mécanique géo-environnemental'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0557mft23> ;
+        rdfs:label 'Formation, Innovation, Recherche, Services et Transfert en Temps-Fréquence'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gapzp55> ;
+        rdfs:label 'Centre Roland Mousnier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fgntk96> ;
+        rdfs:label 'Tara Oceans Systems Ecology & Evolution'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01r19bq53> ;
+        rdfs:label 'Replication des chromosomes eucaryotes et ses points de contrôle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zgjrf98> ;
+        rdfs:label 'Fondation Sciences mathématiques de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ef65y11> ;
+        rdfs:label 'Institut de Chimie Moléculaire de Paris : organique, inorganique et biologique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04y8cs423> ;
+        rdfs:label 'École Nationale Supérieure des Mines de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029nkcm90> ;
+        rdfs:label 'Observatoire de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01920cw75> ;
+        rdfs:label 'Galaxies, Etoiles, Physique et Instrumentation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052bz7812> ;
+        rdfs:label 'Université Paris Dauphine-PSL'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05a0dhs15> ;
+        rdfs:label 'École Normale Supérieure - PSL'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013xvg556> ;
+        rdfs:label 'École Nationale des Chartes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046b3cj80> ;
+        rdfs:label 'École Pratique des Hautes Études'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01pa4h393> ;
+        rdfs:label 'Centre de Recherche et d’Enseignement de Géosciences de l’Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bgpbn64> ;
+        rdfs:label 'Groupe de Recherches en Études Indiennes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05rrxz787> ;
+        rdfs:label 'Conservatoire national supérieur d\'art dramatique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/007sc9r91> ;
+        rdfs:label 'Chimie Moléculaire, Macromoléculaire, Matériaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0459fdx51> ;
+        rdfs:label 'Fédération de Recherche sur l\'Energie Solaire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01nrtdp55> ;
+        rdfs:label 'GDR NBODY : Problème quantique à N corps en chimie et physique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05hb8m595> ;
+        rdfs:label 'PHOTOSYNTHESE'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05be9p317> ;
+        rdfs:label 'Micropesanteur Fondamentale et Appliquée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01sgwka45> ;
+        rdfs:label 'Microscopie Fonctionnelle du Vivant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01bbf9m56> ;
+        rdfs:label 'Fédération Francilienne de Mécanique - Matériaux, Structures, Procédés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03qgfy688> ;
+        rdfs:label 'Fédération Ile de France de recherche sur l\'environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03hkqjb05> ;
+        rdfs:label 'Fédération de Recherche Interactions Fondamentales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02rmk5x23> ;
+        rdfs:label 'Fédération de recherche PLAS@PAR'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00mqc8k54> ;
+        rdfs:label 'Fédération de Chimie et Matériaux de Paris-Centre'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

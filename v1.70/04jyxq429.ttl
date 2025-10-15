@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04jyxq429> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'CREATE-NET'^^xsd:string@None ; 
+    org:alternativeName 'Center of REsearch And Telecommunication Experimentations for NETworked communities'^^xsd:string@en ; 
+    org:abbreviation 'FBK CREATE-NET'^^xsd:string@en ; 
+    schema:url <http://create-net.fbk.eu> ; 
+    schema:mainEntityOfPage <https://create-net.fbk.eu> ;
+    schema:sameAs <https://grid.ac/institutions/grid.20191.3b> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01j33xk10> ;
+        rdfs:label 'Fondazione Bruno Kessler'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.12108 46.06787)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Trento" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "Trentino-Alto Adige" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3165243/> ;
+    ] ; 
+    .

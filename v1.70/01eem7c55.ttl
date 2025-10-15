@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01eem7c55> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:alternativeName 'Imagerie et Cerveau'^^xsd:string@fr ; 
+    org:alternativeName 'Imaging and Brain'^^xsd:string@en ; 
+    org:alternativeName 'UMR 1253'^^xsd:string@None ; 
+    org:alternativeName 'iBraiN'^^xsd:string@en ; 
+    schema:url <http://ibrain.univ-tours.fr> ; 
+    schema:mainEntityOfPage <https://ibrain.univ-tours.fr> ;
+    schema:sameAs <https://grid.ac/institutions/grid.462961.e> ;
+    schema:sameAs <http://isni.org/isni/0000000406381326> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02wwzvj46> ;
+        rdfs:label 'Université de Tours'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label 'Inserm'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(0.70398 47.39484)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tours" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Centre-Val de Loire" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2972191/> ;
+    ] ; 
+    .

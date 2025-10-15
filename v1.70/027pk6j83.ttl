@@ -1,0 +1,83 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/027pk6j83> a org:Organization ;
+    rdfs:label 'Madrid Institute for Advanced Studies'^^xsd:string ;
+    schema:name 'Madrid Institute for Advanced Studies'^^xsd:string ;
+    schema:foundingDate "2006"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'IMDEA'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.imdea.org/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/IMDEA> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.429045.e> ;
+    schema:sameAs <http://isni.org/isni/0000000405005230> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002tzev63> ;
+        rdfs:label 'IMDEA Energy Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04g4ezh90> ;
+        rdfs:label 'IMDEA Food'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/009s53a61> ;
+        rdfs:label 'IMDEA Materials'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02skytd81> ;
+        rdfs:label 'IMDEA Nanoscience'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04mm9fg30> ;
+        rdfs:label 'IMDEA Networks'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xvfkh51> ;
+        rdfs:label 'IMDEA Software Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rhps755> ;
+        rdfs:label 'IMDEA Water'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.70256 40.4165)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Madrid" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Madrid" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3117735/> ;
+    ] ; 
+    .

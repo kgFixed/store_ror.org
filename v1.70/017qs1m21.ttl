@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/017qs1m21> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-08-25"^^xsd:date ;
+    dct:modified "2025-08-26"^^xsd:date ;
+    org:abbreviation 'TBD'^^xsd:string@vi ; 
+    org:abbreviation 'TBDU'^^xsd:string@en ; 
+    org:alternativeName 'Thái Bình Dương'^^xsd:string@vi ; 
+    schema:url <http://tbd.edu.vn> ; 
+    schema:mainEntityOfPage <https://tbd.edu.vn> ;
+    owl:sameAs <https://vi.wikipedia.org/wiki/Tr%25C6%25B0%25E1%25BB%259Dng_%25C4%2590%25E1%25BA%25A1i_h%25E1%25BB%258Dc_Th%25C3%25A1i_B%25C3%25ACnh_D%25C6%25B0%25C6%25A1ng> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(109.16655 12.25458)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Thành Phố Nha Trang" ;
+            schema:addressCountry "VN" ;
+            schema:addressRegion "Khánh Hòa Province" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Vietnam" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1905598/> ;
+    ] ; 
+    .
