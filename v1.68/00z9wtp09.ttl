@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00z9wtp09> a org:Organization ;
+    rdfs:label 'Aichi Shukutoku University'^^xsd:string ;
+    schema:name 'Aichi Shukutoku University'^^xsd:string ;
+    schema:foundingDate "1905"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:url <http://aasa.ac.jp> ; 
+    schema:mainEntityOfPage <https://www.aasa.ac.jp> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Aichi_Shukutoku_University> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.440866.8> ;
+    schema:sameAs <http://isni.org/isni/0000000088115339> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(137.05667 35.17325)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Nagakute" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Aichi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/11611613/> ;
+    ] ; 
+    .

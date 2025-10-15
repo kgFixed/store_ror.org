@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05tbg9t18> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1932"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Asutosh College for Women'^^xsd:string@en ; 
+    schema:url <http://jogamayadevicollege.ac.in> ; 
+    schema:mainEntityOfPage <https://jogamayadevicollege.ac.in> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Jogamaya_Devi_College> ; 
+    schema:sameAs <http://isni.org/isni/0000000474789171> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(88.37368 22.54733)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kolkata" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "West Bengal" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1275005/> ;
+    ] ; 
+    .

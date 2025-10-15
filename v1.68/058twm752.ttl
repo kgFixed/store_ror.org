@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/058twm752> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1929"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'QUYHOANDH'^^xsd:string@en ; 
+    org:alternativeName 'Quy Hoa Central Leprosy - Dermatology Hospital'^^xsd:string@en ; 
+    org:alternativeName 'Quyhoa National Leprosy Dermatology Hospital'^^xsd:string@en ; 
+    schema:url <http://bvquyhoa.vn> ; 
+    schema:mainEntityOfPage <https://bvquyhoa.vn> ;
+    owl:sameAs <https://vi.wikipedia.org/wiki/B%25E1%25BB%2587nh_vi%25E1%25BB%2587n_Phong_%25E2%2580%2593_Da_li%25E1%25BB%2585u_Trung_%25C6%25B0%25C6%25A0ng_Quy_H%25C3%25B2a> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(106.46667 11.26667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Xóm Tra Gình" ;
+            schema:addressCountry "VN" ;
+            schema:addressRegion "Bình Dương Province" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Vietnam" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1560839/> ;
+    ] ; 
+    .

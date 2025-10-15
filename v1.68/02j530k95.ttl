@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02j530k95> a org:Organization ;
+    rdfs:label 'École Supérieure de Chimie Organique et Minérale'^^xsd:string ;
+    schema:name 'École Supérieure de Chimie Organique et Minérale'^^xsd:string ;
+    schema:foundingDate "1957"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'ESCOM'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://www.escom.fr/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/%25C3%2589cole_sup%25C3%25A9rieure_de_chimie_organique_et_min%25C3%25A9rale> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.466358.a> ;
+    schema:sameAs <http://isni.org/isni/0000000102252269> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04yb7z140> ;
+        rdfs:label 'Transformations Intégrées de la Matière Renouvelable'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.82606 49.41794)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Compiègne" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Hauts-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3024066/> ;
+    ] ; 
+    .

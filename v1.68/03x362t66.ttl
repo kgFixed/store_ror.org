@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03x362t66> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1936"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'HSMC'^^xsd:string@en ; 
+    org:alternativeName '충청남도 홍성의료원'^^xsd:string@ko ; 
+    schema:url <http://hsmc.or.kr> ; 
+    schema:mainEntityOfPage <https://www.hsmc.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%25B6%25A9%25EC%25B2%25AD%25EB%2582%25A8%25EB%258F%2584_%25ED%2599%258D%25EC%2584%25B1%25EC%259D%2598%25EB%25A3%258C%25EC%259B%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000503540974> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.665 36.6009)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hongseong" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Chungcheongnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1844174/> ;
+    ] ; 
+    .

@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05ta6qn61> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1990"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'DEMC'^^xsd:string@en ; 
+    schema:url <http://demc.kr> ; 
+    schema:mainEntityOfPage <https://www.demc.kr> ;
+    schema:sameAs <http://isni.org/isni/0000000406186424> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04336k829> ;
+        rdfs:label 'Dong-Eui University Korean Medicine Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/041hem229> ;
+        rdfs:label 'Dong-Eui Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.03004 35.10168)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Busan" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Busan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1838524/> ;
+    ] ; 
+    .

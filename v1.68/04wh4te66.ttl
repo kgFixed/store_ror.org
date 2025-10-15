@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04wh4te66> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1989"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'KSRI'^^xsd:string@en ; 
+    org:alternativeName '한국견직연구원'^^xsd:string@ko ; 
+    schema:url <http://ksri.re.kr> ; 
+    schema:mainEntityOfPage <https://www.ksri.re.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25ED%2595%259C%25EA%25B5%25AD%25EC%258B%25A4%25ED%2581%25AC%25EC%2597%25B0%25EA%25B5%25AC%25EC%259B%2590> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.08472 35.19278)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Jinju" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeongsangnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1846052/> ;
+    ] ; 
+    .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05m8bez85> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1918"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'PMZ'^^xsd:string@en ; 
+    org:alternativeName 'Переславль-Залесский историко-архитектурный и художественный музей-заповедник'^^xsd:string@ru ; 
+    org:alternativeName 'Переславский музей-заповедник'^^xsd:string@ru ; 
+    schema:url <http://museumpereslavl.ru> ; 
+    schema:mainEntityOfPage <https://www.museumpereslavl.ru> ;
+    owl:sameAs <https://ru.wikipedia.org/wiki/%25D0%259F%25D0%25B5%25D1%2580%25D0%25B5%25D1%2581%25D0%25BB%25D0%25B0%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9_%25D0%25BC%25D1%2583%25D0%25B7%25D0%25B5%25D0%25B9-%25D0%25B7%25D0%25B0%25D0%25BF%25D0%25BE%25D0%25B2%25D0%25B5%25D0%25B4%25D0%25BD%25D0%25B8%25D0%25BA> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(38.85966 56.73912)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Pereslavl'-Zalesskiy" ;
+            schema:addressCountry "RU" ;
+            schema:addressRegion "Yaroslavl Oblast" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Russia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/511359/> ;
+    ] ; 
+    .

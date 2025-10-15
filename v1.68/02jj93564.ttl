@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02jj93564> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'UPSA'^^xsd:string@None ; 
+    schema:url <http://upsa.es> ; 
+    schema:mainEntityOfPage <https://www.upsa.es> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Pontifical_University_of_Salamanca> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.449312.9> ;
+    schema:sameAs <http://isni.org/isni/0000000109464360> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.66388 40.96882)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Salamanca" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Castille and León" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3111108/> ;
+    ] ; 
+    .

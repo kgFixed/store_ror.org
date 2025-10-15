@@ -1,0 +1,131 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04ezk3x31> a org:Organization ;
+    rdfs:label 'Université Toulouse - Jean Jaurès'^^xsd:string ;
+    schema:name 'Université Toulouse - Jean Jaurès'^^xsd:string ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'UT2'^^xsd:string@None ; 
+    org:abbreviation 'UT2J'^^xsd:string@None ; 
+    org:abbreviation 'UTJJ'^^xsd:string@None ; 
+    org:alternativeName 'Universitat de Tolosa-Joan Jaurés, Campus du Mirail'^^xsd:string@fr ; 
+    org:alternativeName 'University of Toulouse-Jean Jaurès'^^xsd:string@en ; 
+    org:alternativeName 'Université Toulouse 2 - Jean Jaurès'^^xsd:string@fr ; 
+    org:alternativeName 'Université de Toulouse-Le Mirail'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www.univ-tlse2.fr/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Toulouse-Jean_Jaur%25C3%25A8s> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.410542.6> ;
+    schema:sameAs <http://isni.org/isni/000000040486042X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02hbzmb19> ;
+        rdfs:label 'Centre d\'Étude et de Recherche Travail Organisation Pouvoir'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/029cj5595> ;
+        rdfs:label 'Laboratoire Cognition, Langues, Langage, Ergonomie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04m5rvb18> ;
+        rdfs:label 'Laboratoire Interdisciplinaire Solidarités Sociétés Territoires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05tcnbj64> ;
+        rdfs:label 'Laboratoire d’Étude et de Recherche sur l’Économie, les Politiques et les Systèmes Sociaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/014vp6c30> ;
+        rdfs:label 'Institut de Mathématiques de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pfm5x27> ;
+        rdfs:label 'Travaux et Recherches Archéologiques sur les Cultures, les Espaces et les Sociétés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00v99wx36> ;
+        rdfs:label 'Unité de Recherche Interdisplinaire Octogone'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bxfc994> ;
+        rdfs:label 'Laboratoire d\'Études et de Recherches Appliquées en Sciences Sociales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01p4g5p84> ;
+        rdfs:label 'Géographie de l\'environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04daj8721> ;
+        rdfs:label 'France, Amériques, Espagne, Sociétés, Pouvoirs, Acteurs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021hb4c69> ;
+        rdfs:label 'Centre de Recherche et d\'Études Germaniques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02nst4e33> ;
+        rdfs:label 'Education, Formation, Travail, Savoirs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04m69ya83> ;
+        rdfs:label 'Théâtre antique : textes, histoire et réception'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01ahyrz84> ;
+        rdfs:label 'Université de Toulouse'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Toulouse" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Occitanie" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2972315/> ;
+    ] ; 
+    .

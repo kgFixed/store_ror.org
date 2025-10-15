@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02drdmm93> a org:Organization ;
+    rdfs:label 'Chinese Academy of Medical Sciences & Peking Union Medical College'^^xsd:string ;
+    schema:name 'Chinese Academy of Medical Sciences & Peking Union Medical College'^^xsd:string ;
+    schema:foundingDate "1956"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2019-11-07"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'CAMS'^^xsd:string@None ; 
+    org:abbreviation 'CAMS&PUMC'^^xsd:string@None ; 
+    org:alternativeName 'Chinese Academy of Medical Sciences'^^xsd:string@en ; 
+    org:abbreviation 'PUMC'^^xsd:string@None ; 
+    org:alternativeName 'Peking Union Medical College'^^xsd:string@en ; 
+    org:alternativeName '中国医学科学院'^^xsd:string@zh ; 
+    org:alternativeName '北京协和医学院'^^xsd:string@zh ; 
+    schema:mainEntityOfPage <http://www.cams.ac.cn/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Peking_Union_Medical_College> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100019018> ;
+    schema:sameAs <https://grid.ac/institutions/grid.506261.6> ;
+    schema:sameAs <http://isni.org/isni/0000000107067839> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0311ezn83> ;
+        rdfs:label 'State Key Laboratory of Virus Genetic Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055qbch41> ;
+        rdfs:label 'Institute of Basic Medical Sciences of the Chinese Academy of Medical Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04kn56m50> ;
+        rdfs:label 'Institute of Chinese Materia Medica'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03x937183> ;
+        rdfs:label 'Cancer Hospital of Chinese Academy of Medical Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01z6cw088> ;
+        rdfs:label 'Chinese Academy of Medical Sciences Dermatology Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0590dnz19> ;
+        rdfs:label 'Fu Wai Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04n16t016> ;
+        rdfs:label 'Institute of Hematology & Blood Diseases Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04jztag35> ;
+        rdfs:label 'Peking Union Medical College Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03cve4549> ;
+        rdfs:label 'Tsinghua University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Beijing" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Beijing" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1816670/> ;
+    ] ; 
+    .

@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0304hg989> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'GNDI'^^xsd:string@en ; 
+    schema:url <http://gndi.re.kr> ; 
+    schema:mainEntityOfPage <https://www.gndi.re.kr> ;
+    schema:sameAs <http://isni.org/isni/0000000508142836> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.68111 35.22806)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Changwon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeongsangnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1846326/> ;
+    ] ; 
+    .

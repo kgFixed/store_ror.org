@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02qdbgx97> a org:Organization ;
+    rdfs:label 'Geisinger Health System'^^xsd:string ;
+    schema:name 'Geisinger Health System'^^xsd:string ;
+    schema:foundingDate "1915"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'GHS'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.geisinger.org/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Geisinger_Health_System> ; 
+    schema:sameAs <https://api.crossref.org/funders/100001126> ;
+    schema:sameAs <https://grid.ac/institutions/grid.280776.c> ;
+    schema:sameAs <http://isni.org/isni/0000000403941447> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00sq30w29> ;
+        rdfs:label 'Autism & Developmental Medicine Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04h3x0y40> ;
+        rdfs:label 'Geisinger Lewistown Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j9npf54> ;
+        rdfs:label 'Geisinger Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0585yvd38> ;
+        rdfs:label 'Geisinger Neuroscience Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04580ts27> ;
+        rdfs:label 'Geisinger Wyoming Valley Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bqfk210> ;
+        rdfs:label 'Geisinger Commonwealth School of Medicine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.61273 40.96342)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Danville" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Pennsylvania" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5186327/> ;
+    ] ; 
+    .

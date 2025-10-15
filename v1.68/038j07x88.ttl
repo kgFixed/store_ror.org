@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/038j07x88> a org:Organization ;
+    rdfs:label 'Dr. Vitthalrao Vikhe Patil Foundation’s Medical College'^^xsd:string ;
+    schema:name 'Dr. Vitthalrao Vikhe Patil Foundation’s Medical College'^^xsd:string ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Dr. Vithalrao Vikhe Patil Foundation\'s Medical College and Hospital, Ahmednagar'^^xsd:string@es ; 
+    org:alternativeName 'P.D.V.V.P.F\'S Medical College'^^xsd:string@en ; 
+    org:abbreviation 'VIMS'^^xsd:string@en ; 
+    org:abbreviation 'VIMSCH'^^xsd:string@en ; 
+    schema:url <http://vimsmch.edu.in> ; 
+    schema:mainEntityOfPage <https://www.vimsmch.edu.in> ;
+    schema:sameAs <https://grid.ac/institutions/grid.496583.5> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04grkj883> ;
+        rdfs:label 'Maharashtra University of Health Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.73843 19.09457)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ahilyanagar" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Maharashtra" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1279228/> ;
+    ] ; 
+    .

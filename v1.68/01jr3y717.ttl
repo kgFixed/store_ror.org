@@ -1,0 +1,78 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01jr3y717> a org:Organization ;
+    rdfs:label 'Ohio University'^^xsd:string ;
+    schema:name 'Ohio University'^^xsd:string ;
+    schema:foundingDate "1804"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:mainEntityOfPage <https://www.ohio.edu> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Ohio_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/100008076> ;
+    schema:sameAs <https://grid.ac/institutions/grid.20627.31> ;
+    schema:sameAs <http://isni.org/isni/0000000106687841> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/006hbbw23> ;
+        rdfs:label 'Ohio University Eastern'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fxqx152> ;
+        rdfs:label 'Ohio University Chillicothe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/039eaqm23> ;
+        rdfs:label 'Ohio University Southern'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03kf4rc21> ;
+        rdfs:label 'Ohio University Lancaster'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0561zqn56> ;
+        rdfs:label 'University System of Ohio'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qv7ha25> ;
+        rdfs:label 'Ohio University Zanesville'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.10126 39.32924)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Athens" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Ohio" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4505542/> ;
+    ] ; 
+    .

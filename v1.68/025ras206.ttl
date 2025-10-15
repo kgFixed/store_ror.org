@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/025ras206> a org:Organization ;
+    rdfs:label 'Ningbo Municipal People\'s Government'^^xsd:string ;
+    schema:name 'Ningbo Municipal People\'s Government'^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:mainEntityOfPage <http://english.ningbo.gov.cn/> ;
+    schema:sameAs <https://api.crossref.org/funders/501100003847> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453403.5> ;
+    schema:sameAs <http://isni.org/isni/0000000417633322> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016jygy11> ;
+        rdfs:label 'Ningbo Municipal Education Bureau'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gskyj95> ;
+        rdfs:label 'Ningbo Science and Technology Bureau'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.54945 29.87819)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ningbo" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Zhejiang" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1799397/> ;
+    ] ; 
+    .

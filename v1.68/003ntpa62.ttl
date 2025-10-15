@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/003ntpa62> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1940"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'KSMC'^^xsd:string@en ; 
+    org:alternativeName '강원도 삼척의료원'^^xsd:string@ko ; 
+    org:alternativeName '삼척의료원'^^xsd:string@ko ; 
+    schema:url <http://ksmc.or.kr> ; 
+    schema:mainEntityOfPage <https://www.ksmc.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B0%2595%25EC%259B%2590%25ED%258A%25B9%25EB%25B3%2584%25EC%259E%2590%25EC%25B9%2598%25EB%258F%2584%25EC%2582%25BC%25EC%25B2%2599%25EC%259D%2598%25EB%25A3%258C%25EC%259B%2590> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.16626 37.45013)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Samcheok-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gangwon-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8604737/> ;
+    ] ; 
+    .

@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/047n24c95> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Captains Carreer Course'^^xsd:string@en ; 
+    org:abbreviation 'EsAO'^^xsd:string@pt ; 
+    org:alternativeName 'Officers Improvement Academy'^^xsd:string@en ; 
+    org:alternativeName 'Officers\' Improvement School'^^xsd:string@en ; 
+    org:alternativeName 'School for Improvement of Officers'^^xsd:string@en ; 
+    schema:url <http://esao.eb.mil.br> ; 
+    schema:mainEntityOfPage <https://www.esao.eb.mil.br> ;
+    owl:sameAs <https://pt.wikipedia.org/wiki/Escola_de_Aperfei%25C3%25A7oamento_de_Oficiais> ; 
+    schema:sameAs <http://isni.org/isni/0000000479218554> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-43.18223 -22.90642)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rio de Janeiro" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "Rio de Janeiro" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3451190/> ;
+    ] ; 
+    .

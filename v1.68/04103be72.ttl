@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04103be72> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'OHP'^^xsd:string@en ; 
+    org:alternativeName 'أوبري حبوش فارما'^^xsd:string@ar ; 
+    schema:url <http://oubari-habboush.com> ; 
+    schema:mainEntityOfPage <https://oubari-habboush.com> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(36.29128 33.5102)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Damascus" ;
+            schema:addressCountry "SY" ;
+            schema:addressRegion "Dimashq" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Syria" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/170654/> ;
+    ] ; 
+    .

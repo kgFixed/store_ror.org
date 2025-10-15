@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04b7fym73> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2020"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-09-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Khulna Medical University, Khulna'^^xsd:string@en ; 
+    org:abbreviation 'SHMU'^^xsd:string@en ; 
+    org:alternativeName 'Sheikh Hasina Medical University'^^xsd:string@en ; 
+    org:alternativeName 'Sheikh Hasina Medical University, Khulna'^^xsd:string@en ; 
+    org:alternativeName 'শেখ হাসিনা মেডিকেল বিশ্ববিদ্যালয়, খুলনা'^^xsd:string@bn ; 
+    schema:url <http://shmu.ac.bd> ; 
+    schema:mainEntityOfPage <https://shmu.ac.bd> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Khulna_Medical_University> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(89.33333 22.5)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Khulna" ;
+            schema:addressCountry "BD" ;
+            schema:addressRegion "Khulna Division" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bangladesh" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1337211/> ;
+    ] ; 
+    .

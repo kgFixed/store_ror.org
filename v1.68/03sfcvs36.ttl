@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03sfcvs36> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'VCTN'^^xsd:string@en ; 
+    org:alternativeName 'Vikas College of Engineering and Technology, Nunna'^^xsd:string@en ; 
+    org:alternativeName 'Vikas Educational Institutions'^^xsd:string@en ; 
+    org:alternativeName 'Vikas Engineering Campus in Nunna'^^xsd:string@en ; 
+    schema:url <http://vikasinstitutionsnunna.org> ; 
+    schema:mainEntityOfPage <https://vikasinstitutionsnunna.org> ;
+    schema:sameAs <http://isni.org/isni/0000000517860151> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(80.6466 16.50745)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Vijayawada" ;
+            schema:addressCountry "IN" ;
+            schema:addressRegion "Andhra Pradesh" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "India" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1253184/> ;
+    ] ; 
+    .

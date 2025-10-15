@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05cfy3e91> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'KATS'^^xsd:string@en ; 
+    org:alternativeName '국립공원기술원'^^xsd:string@ko ; 
+    org:alternativeName '국립기술품질원'^^xsd:string@ko ; 
+    org:alternativeName '기술표준원'^^xsd:string@ko ; 
+    schema:url <http://kats.go.kr> ; 
+    schema:mainEntityOfPage <https://www.kats.go.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B5%25AD%25EA%25B0%2580%25EA%25B8%25B0%25EC%2588%25A0%25ED%2591%259C%25EC%25A4%2580%25EC%259B%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000511023627> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/008nkqk13> ;
+        rdfs:label 'Ministry of Trade, Industry and Energy'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.6807 36.92602)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Eumseong-gun" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "North Chungcheong" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1833704/> ;
+    ] ; 
+    .

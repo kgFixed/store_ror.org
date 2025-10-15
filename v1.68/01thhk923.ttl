@@ -1,0 +1,66 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01thhk923> a org:Organization ;
+    rdfs:label 'Dongshin University'^^xsd:string ;
+    schema:name 'Dongshin University'^^xsd:string ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.dsu.ac.kr/cms/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Dongshin_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002473> ;
+    schema:sameAs <https://grid.ac/institutions/grid.412069.8> ;
+    schema:sameAs <http://isni.org/isni/0000000417704266> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04v3ym002> ;
+        rdfs:label 'Dongshin University Naju Korean Medicine Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04zg0cs74> ;
+        rdfs:label 'Dongshin University Mokpo Korean Medicine Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03gvw5538> ;
+        rdfs:label 'Dongshin University Gwangju Korean Medicine Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01x7q0308> ;
+        rdfs:label 'Dongshin Korean Medicine Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.7175 35.0292)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Naju" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Jeollanam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1840536/> ;
+    ] ; 
+    .

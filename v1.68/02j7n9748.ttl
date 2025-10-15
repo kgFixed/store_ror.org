@@ -1,0 +1,82 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02j7n9748> a org:Organization ;
+    rdfs:label 'Lancashire Teaching Hospitals NHS Foundation Trust'^^xsd:string ;
+    schema:name 'Lancashire Teaching Hospitals NHS Foundation Trust'^^xsd:string ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.lancsteachinghospitals.nhs.uk/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Lancashire_Teaching_Hospitals_NHS_Foundation_Trust> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.440181.8> ;
+    schema:sameAs <http://isni.org/isni/0000000404564815> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01hm85r97> ;
+        rdfs:label 'Chorley and South Ribble Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bk3rn37> ;
+        rdfs:label 'Lytham Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05kpx1157> ;
+        rdfs:label 'Royal Preston Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/010jbqd54> ;
+        rdfs:label 'University of Lancashire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05gd22996> ;
+        rdfs:label 'University of Cumbria'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/027m9bs27> ;
+        rdfs:label 'University of Manchester'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02wn5qz54> ;
+        rdfs:label 'University of St Andrews'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-2.70452 53.76282)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Preston" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "England" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2639912/> ;
+    ] ; 
+    .

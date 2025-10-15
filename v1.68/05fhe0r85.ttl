@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05fhe0r85> a org:Organization ;
+    rdfs:label 'Agency for Defense Development'^^xsd:string ;
+    schema:name 'Agency for Defense Development'^^xsd:string ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'ADD'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.add.re.kr/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Agency_for_Defense_Development> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100005073> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453167.2> ;
+    schema:sameAs <http://isni.org/isni/000000040621566X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04bjg9m96> ;
+        rdfs:label 'Defense Acquisition Program Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01em4e880> ;
+        rdfs:label 'Korea Institute for Defense Analyses'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.38493 36.34913)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Daejeon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Daejeon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835235/> ;
+    ] ; 
+    .

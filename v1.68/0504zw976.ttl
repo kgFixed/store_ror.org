@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0504zw976> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'CAMC'^^xsd:string@en ; 
+    org:alternativeName '충청남도 천안의료원'^^xsd:string@ko ; 
+    schema:url <http://camc.or.kr> ; 
+    schema:mainEntityOfPage <https://www.camc.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%25B6%25A9%25EC%25B2%25AD%25EB%2582%25A8%25EB%258F%2584_%25EC%25B2%259C%25EC%2595%2588%25EC%259D%2598%25EB%25A3%2584%25EC%259B%2590> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.1522 36.8065)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cheonan" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Chungcheongnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1845759/> ;
+    ] ; 
+    .

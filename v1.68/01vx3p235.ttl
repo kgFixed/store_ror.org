@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01vx3p235> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'AMC'^^xsd:string@en ; 
+    org:alternativeName '경상북도 안동의료원'^^xsd:string@ko ; 
+    schema:url <http://amc.or.kr> ; 
+    schema:mainEntityOfPage <https://amc.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B2%25BD%25EC%2583%2581%25EB%25B6%2581%25EB%258F%2584%25EC%2595%2588%25EB%258F%2599%25EC%259D%2598%25EB%25A3%258C%25EC%259B%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000403922684> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.72275 36.56636)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Andong" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeongsangbuk-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1846986/> ;
+    ] ; 
+    .

@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02ffh4228> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'IMTAvH'^^xsd:string@es ; 
+    org:alternativeName 'Tropical Alexander von Humboldt'^^xsd:string@es ; 
+    schema:url <http://imtavh.cayetano.edu.pe> ; 
+    schema:mainEntityOfPage <https://imtavh.cayetano.edu.pe> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Instituto_de_Medicina_Tropical_Alexander_von_Humboldt> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03yczjf25> ;
+        rdfs:label 'Universidad Peruana Cayetano Heredia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00mtrzx11> ;
+        rdfs:label 'Hospital Nacional Cayetano Heredia'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.90432 -12.0179)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lima" ;
+            schema:addressCountry "PE" ;
+            schema:addressRegion "Lima region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Peru" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8349601/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-71.9512 -13.53128)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Wanchaq" ;
+            schema:addressCountry "PE" ;
+            schema:addressRegion "Cuzco Department" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Peru" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8350919/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-73.43284 -3.7823)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Iquitos" ;
+            schema:addressCountry "PE" ;
+            schema:addressRegion "Loreto" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Peru" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8350666/> ;
+    ] ; 
+    .

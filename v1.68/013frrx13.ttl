@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/013frrx13> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1962"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Korea Land and Housing Corporation LHI'^^xsd:string@en ; 
+    org:alternativeName 'LH Land and Housing Institute'^^xsd:string@en ; 
+    org:abbreviation 'LHI'^^xsd:string@en ; 
+    org:alternativeName 'Land & Housing Institute'^^xsd:string@en ; 
+    org:alternativeName '한국토지주택공사 토지주택연구원'^^xsd:string@ko ; 
+    schema:url <http://lhri.lh.or.kr> ; 
+    schema:mainEntityOfPage <https://lhri.lh.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25ED%2586%25A0%25EC%25A7%2580%25EC%25A3%25BC%25ED%2583%259D%25EC%2597%25B0%25EA%25B5%25AC%25EC%259B%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000459299836> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.38493 36.34913)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Daejeon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Daejeon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835235/> ;
+    ] ; 
+    .

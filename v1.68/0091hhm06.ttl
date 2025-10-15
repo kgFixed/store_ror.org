@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0091hhm06> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'WKUGH'^^xsd:string@en ; 
+    schema:url <http://wkugh.com> ; 
+    schema:mainEntityOfPage <https://wkugh.com> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%259B%2590%25EA%25B4%2591%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590_%25EA%25B4%2591%25EC%25A3%25BC%25ED%2595%259C%25EB%25B0%25A9%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000524420808> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/006776986> ;
+        rdfs:label 'Wonkwang University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.91556 35.15472)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Gwangju" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gwangju" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1841811/> ;
+    ] ; 
+    .

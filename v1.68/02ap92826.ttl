@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02ap92826> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:url <http://ra.ac.ae> ; 
+    schema:mainEntityOfPage <https://ra.ac.ae> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Rabdan_Academy> ; 
+    schema:sameAs <http://isni.org/isni/0000000459038396> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(54.39696 24.45118)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Abu Dhabi" ;
+            schema:addressCountry "AE" ;
+            schema:addressRegion "Abu Dhabi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Arab Emirates" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/292968/> ;
+    ] ; 
+    .

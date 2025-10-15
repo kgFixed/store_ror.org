@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00fz8k419> a org:Organization ;
+    rdfs:label 'HFR Freiburg Kantonsspital'^^xsd:string ;
+    schema:name 'HFR Freiburg Kantonsspital'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'HFR Fribourg'^^xsd:string@None ; 
+    org:alternativeName 'HFR Fribourg - Hôpital cantonal'^^xsd:string@fr ; 
+    org:alternativeName 'Hôpital Cantonal Fribourg'^^xsd:string@fr ; 
+    org:alternativeName 'Kantonsspital Freiburg'^^xsd:string@de ; 
+    org:alternativeName 'freiburger spital (HFR) Universitäres Lehr- und Forschungsspital'^^xsd:string@de ; 
+    org:alternativeName 'hôpital fribourgeois (HFR) Hôpital de formation universitaire et de recherche'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www.h-fr.ch/de/unsere-standorte/hfr-freiburg-kantonsspital> ;
+    schema:sameAs <https://grid.ac/institutions/grid.413366.5> ;
+    schema:sameAs <http://isni.org/isni/0000000405117283> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/022fs9h90> ;
+        rdfs:label 'University of Fribourg'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(7.15128 46.80237)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Fribourg" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "Fribourg" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2660718/> ;
+    ] ; 
+    .

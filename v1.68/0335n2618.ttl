@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0335n2618> a org:Organization ;
+    rdfs:label 'Jiangsu Agricultural Science and Technology Innovation Fund'^^xsd:string ;
+    schema:name 'Jiangsu Agricultural Science and Technology Innovation Fund'^^xsd:string ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'JASTIF'^^xsd:string@None ; 
+    org:alternativeName 'Jiangsu Provincial Agricultural Science and Technology Independent Innovation Fund'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.jsnyzzcx.cn/> ;
+    schema:sameAs <https://api.crossref.org/funders/100007540> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453312.2> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04ac0qk71> ;
+        rdfs:label 'Department of Finance of Jiangsu Province'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/001f9e125> ;
+        rdfs:label 'Jiangsu Academy of Agricultural Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(120.59538 31.30408)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Suzhou" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Jiangsu" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1886760/> ;
+    ] ; 
+    .

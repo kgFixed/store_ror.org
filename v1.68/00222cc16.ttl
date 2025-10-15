@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00222cc16> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'YDH'^^xsd:string@en ; 
+    org:alternativeName 'Yeongdeok Asan Hospital for recuperation'^^xsd:string@en ; 
+    org:alternativeName '영덕병원'^^xsd:string@ko ; 
+    org:alternativeName '영덕아산요양병원'^^xsd:string@ko ; 
+    schema:url <http://ydh.asanfoundation.or.kr> ; 
+    schema:mainEntityOfPage <https://ydh.asanfoundation.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%2598%2581%25EB%258D%2595%25EC%2595%2584%25EC%2582%25B0%25EC%259A%2594%25EC%2596%2591%25EB%25B3%2591%25EC%259B%2590> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05pa68763> ;
+        rdfs:label 'Asan Foundation'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.31078 36.48125)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Yeongdeok-gun" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeongsangbuk-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1832577/> ;
+    ] ; 
+    .

@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01wzvw032> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Antenne universitaire de Cambrai'^^xsd:string@fr ; 
+    org:alternativeName 'Antenne universitaire de Maubeuge'^^xsd:string@fr ; 
+    org:alternativeName 'Centre universitaire de Valenciennes'^^xsd:string@fr ; 
+    org:abbreviation 'UPHF'^^xsd:string@fr ; 
+    org:abbreviation 'UVHC'^^xsd:string@fr ; 
+    org:alternativeName 'Univ. Valenciennes'^^xsd:string@fr ; 
+    org:alternativeName 'Université des Tertiales (Valenciennes, Nord)'^^xsd:string@fr ; 
+    org:alternativeName 'Université du Mont-Houy (Valenciennes, Nord)'^^xsd:string@fr ; 
+    org:alternativeName 'Université polytechnique Hauts-de-France'^^xsd:string@fr ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/02ezch769> ;
+        rdfs:label 'Université Polytechnique Hauts-de-France'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(3.52506 50.35909)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Valenciennes" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Hauts-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2971041/> ;
+    ] ; 
+    .

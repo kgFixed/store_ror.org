@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01fva0642> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2018"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2024-09-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'BD Digital University'^^xsd:string@en ; 
+    org:abbreviation 'BDU'^^xsd:string@en ; 
+    org:alternativeName 'Bangabandhu Digital University'^^xsd:string@en ; 
+    org:alternativeName 'Bangabandhu Sheikh Mujibur Rahman Digital University'^^xsd:string@en ; 
+    org:alternativeName 'Bangladesh Digital University'^^xsd:string@en ; 
+    org:alternativeName 'Digital University'^^xsd:string@en ; 
+    org:alternativeName 'বঙ্গবন্ধু শেখ মুজিবুর রহমান ডিজিটাল ইউনিভার্সিটি, বাংলাদেশ'^^xsd:string@bn ; 
+    schema:url <http://bdu.ac.bd> ; 
+    schema:mainEntityOfPage <https://bdu.ac.bd> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Gazipur_Digital_University> ; 
+    schema:sameAs <http://isni.org/isni/0000000480043050> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.42234 23.99844)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Gazipur" ;
+            schema:addressCountry "BD" ;
+            schema:addressRegion "Dhaka Division" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bangladesh" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1200109/> ;
+    ] ; 
+    .

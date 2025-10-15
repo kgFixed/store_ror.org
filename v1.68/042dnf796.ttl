@@ -1,0 +1,131 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/042dnf796> a org:Organization ;
+    rdfs:label 'National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    schema:name 'National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    schema:foundingDate "1993"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'NAMS'^^xsd:string@None ; 
+    org:alternativeName 'NAMS Ukraine'^^xsd:string@uk ; 
+    schema:mainEntityOfPage <http://www.amnu.gov.ua/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.419973.1> ;
+    schema:sameAs <http://isni.org/isni/0000000495341405> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04b2m4n31> ;
+        rdfs:label 'Filatov Institute of Eye Diseases and Tissue Therapy of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017wx6w12> ;
+        rdfs:label 'Institute of Blood Pathology and Transfusion Medicine of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0353fey10> ;
+        rdfs:label 'Institute of Gastroenterology of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04abbs137> ;
+        rdfs:label 'Institute of Genetic and Regenerative Medicine of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/000889019> ;
+        rdfs:label 'Institute of Nephrology of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/026fxjf64> ;
+        rdfs:label 'Institute of Otolaryngology named after Prof. A.I. Kolomiychenko of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gtb4z22> ;
+        rdfs:label 'Institute of Pediatrics, Obstetrics, and Gynecology named after acad. O.M. Lukyanova of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0032n4537> ;
+        rdfs:label 'Institute of Pharmacology and Toxicology of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01wctk517> ;
+        rdfs:label 'Institute of Urology of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00afzhq19> ;
+        rdfs:label 'L.T. Malaya National Therapy Institute of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01t7qjd50> ;
+        rdfs:label 'L.V. Gromashevsky Institute of Epidemiology and Infectious Diseases of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023w5bf45> ;
+        rdfs:label 'Romodanov Neurosurgery Institute of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02crmrs33> ;
+        rdfs:label 'Sytenko Institute of Spine and Joint Pathology of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05g467k04> ;
+        rdfs:label 'Mechnikov Institute of Microbiology and Immunology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bxf0m67> ;
+        rdfs:label 'Scientific-Practical Center of Endovascular Neuroradiology of the National Academy of Medical Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kyiv" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Kyiv City" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/703448/> ;
+    ] ; 
+    .

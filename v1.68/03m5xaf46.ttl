@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03m5xaf46> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1968"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'FAI'^^xsd:string@pt ; 
+    org:alternativeName 'University Center of Adamantina'^^xsd:string@en ; 
+    schema:url <http://fai.com.br> ; 
+    schema:mainEntityOfPage <https://www.fai.com.br> ;
+    schema:sameAs <http://isni.org/isni/0000000505973976> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-51.06669 -21.59136)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Adamantina" ;
+            schema:addressCountry "BR" ;
+            schema:addressRegion "São Paulo" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Brazil" ;
+                schema:containedInPlace [
+                    schema:name "South America" ;
+                    schema:identifier "SA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3473156/> ;
+    ] ; 
+    .

@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01bk2mc10> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2019"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Kolping Hochschule für Gesundheit und Soziales'^^xsd:string@de ; 
+    org:alternativeName 'Kolping University of Applied Sciences for Health and Social Sciences'^^xsd:string@en ; 
+    schema:url <http://kolping.de> ; 
+    schema:mainEntityOfPage <https://www.kolping-hochschule.de> ;
+    owl:sameAs <https://de.wikipedia.org/wiki/Kolping_Hochschule> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.95 50.93333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cologne" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "North Rhine-Westphalia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2886242/> ;
+    ] ; 
+    .

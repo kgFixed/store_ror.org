@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/040ybh559> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'NIHHS'^^xsd:string@en ; 
+    org:alternativeName '농촌진흥청 원예연구소'^^xsd:string@ko ; 
+    schema:url <http://nihhs.go.kr> ; 
+    schema:mainEntityOfPage <https://www.nihhs.go.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B5%25AD%25EB%25A6%25BD%25EC%259B%2590%25EC%2598%2588%25ED%258A%25B9%25EC%259E%2591%25EA%25B3%25BC%25ED%2595%2599%25EC%259B%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000459984972> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03xs9yg50> ;
+        rdfs:label 'Rural Development Administration'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.14752 35.84509)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Wanju" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Jeollabuk-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1833466/> ;
+    ] ; 
+    .

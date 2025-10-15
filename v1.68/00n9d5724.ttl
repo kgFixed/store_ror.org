@@ -1,0 +1,57 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00n9d5724> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1974"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'FES Cuautitlán'^^xsd:string@es ; 
+    org:alternativeName 'FES Cuautitlán, UNAM'^^xsd:string@es ; 
+    org:abbreviation 'FESC'^^xsd:string@es ; 
+    org:abbreviation 'FESC, UNAM'^^xsd:string@es ; 
+    org:alternativeName 'Facultad de Estudios Superiores Cuautitlán, Universidad Nacional Autónoma de México'^^xsd:string@es ; 
+    org:alternativeName 'Universidad Nacional Autónoma de México, Facultad de Estudios Superiores Cuautitlán'^^xsd:string@es ; 
+    schema:url <http://cuautitlan.unam.mx> ; 
+    schema:mainEntityOfPage <https://www.cuautitlan.unam.mx> ;
+    owl:sameAs <https://es.wikipedia.org/wiki/Facultad_de_Estudios_Superiores_Cuautitl%25C3%25A1n> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01tmp8f25> ;
+        rdfs:label 'Universidad Nacional Autónoma de México'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00szdrw29> ;
+        rdfs:label 'Facultad de Estudios Superiores Aragón'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.21598 19.64388)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cuautitlán Izcalli" ;
+            schema:addressCountry "MX" ;
+            schema:addressRegion "México" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Mexico" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3515807/> ;
+    ] ; 
+    .

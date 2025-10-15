@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01gr8hx37> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1921"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'GCMC'^^xsd:string@en ; 
+    org:alternativeName '경상북도 김천의료원'^^xsd:string@ko ; 
+    schema:url <http://gcmc.or.kr> ; 
+    schema:mainEntityOfPage <https://www.gcmc.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B2%25BD%25EC%2583%2581%25EB%25B6%2581%25EB%258F%2584%25EA%25B9%2580%25EC%25B2%259C%25EC%259D%2598%25EB%25A3%258C%25EC%259B%2590> ; 
+    schema:sameAs <http://isni.org/isni/0000000446540774> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(128.11981 36.12176)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Gimcheon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeongsangbuk-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1842944/> ;
+    ] ; 
+    .

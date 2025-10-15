@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0209j4f64> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1976"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:url <http://uphsl.edu.ph> ; 
+    schema:mainEntityOfPage <https://uphsl.edu.ph> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(121.08071 14.34267)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Biñan" ;
+            schema:addressCountry "PH" ;
+            schema:addressRegion "Calabarzon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Philippines" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1725115/> ;
+    ] ; 
+    .

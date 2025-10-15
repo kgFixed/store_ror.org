@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01xtb7181> a org:Organization ;
+    rdfs:label 'Lviv State University of Internal Affairs'^^xsd:string ;
+    schema:name 'Lviv State University of Internal Affairs'^^xsd:string ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2019-02-17"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    schema:mainEntityOfPage <http://lvduvs.edu.ua/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.501914.8> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05cf5m708> ;
+        rdfs:label 'Lviv Scientific Research Forensic Center of the Ministry of Internal Affairs of Ukraine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(24.02324 49.83826)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lviv" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Lviv" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/702550/> ;
+    ] ; 
+    .

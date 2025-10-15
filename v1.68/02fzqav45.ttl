@@ -1,0 +1,109 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02fzqav45> a org:Organization ;
+    rdfs:label 'State Council of the People\'s Republic of China'^^xsd:string ;
+    schema:name 'State Council of the People\'s Republic of China'^^xsd:string ;
+    schema:foundingDate "1954"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:alternativeName 'Central People\'s Government'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://english.gov.cn/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/State_Council_of_the_People%2527s_Republic_of_China> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003412> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453053.4> ;
+    schema:sameAs <http://isni.org/isni/0000000122031789> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021jpad90> ;
+        rdfs:label 'General Administration of Sport of China'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ckt8b96> ;
+        rdfs:label 'Ministry of Agriculture and Rural Affairs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rmvjy83> ;
+        rdfs:label 'Ministry of Civil Affairs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01mv9t934> ;
+        rdfs:label 'Ministry of Education of the People\'s Republic of China'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015x8jm48> ;
+        rdfs:label 'Ministry of Housing and Urban-Rural Development'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00anm2x55> ;
+        rdfs:label 'Ministry of Justice'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kxqx159> ;
+        rdfs:label 'Ministry of Natural Resources'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/027s68j25> ;
+        rdfs:label 'Ministry of Science and Technology of the People\'s Republic of China'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008zm7t63> ;
+        rdfs:label 'National Bureau of Statistics of China'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052eegr76> ;
+        rdfs:label 'National Health and Family Planning Commission'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002k1r174> ;
+        rdfs:label 'State-owned Assets Supervision and Administration Commission of the State Council'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(116.39723 39.9075)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Beijing" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Beijing" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1816670/> ;
+    ] ; 
+    .

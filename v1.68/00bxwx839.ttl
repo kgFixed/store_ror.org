@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00bxwx839> a org:Organization ;
+    rdfs:label 'Italian Publishers Association'^^xsd:string ;
+    schema:name 'Italian Publishers Association'^^xsd:string ;
+    schema:foundingDate "1869"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'AIE'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.aie.it/English.aspx> ;
+    schema:sameAs <https://grid.ac/institutions/grid.431814.b> ;
+    schema:sameAs <http://isni.org/isni/0000000110342256> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05mz9t398> ;
+        rdfs:label 'mEDRA'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.18951 45.46427)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Milan" ;
+            schema:addressCountry "IT" ;
+            schema:addressRegion "Lombardy" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Italy" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3173435/> ;
+    ] ; 
+    .

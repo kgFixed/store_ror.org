@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02aghm194> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1958"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'NACF'^^xsd:string@en ; 
+    org:abbreviation 'NH'^^xsd:string@en ; 
+    org:alternativeName 'Nonghyup National Agricultural Cooperative Federation'^^xsd:string@en ; 
+    org:alternativeName '농협'^^xsd:string@ko ; 
+    schema:url <http://nonghyup.com> ; 
+    schema:mainEntityOfPage <https://www.nonghyup.com> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EB%2586%258D%25EC%2597%2585%25ED%2598%2591%25EB%258F%2599%25EC%25A1%25B0%25ED%2595%25A9_(%25EB%258C%2580%25ED%2595%259C%25EB%25AF%25BC%25EA%25B5%25AD)> ; 
+    schema:sameAs <http://isni.org/isni/0000000468176985> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04k9ke985> ;
+        rdfs:label 'Nonghyup Future Strategy Research Institute (South Korea)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/051dczx73> ;
+        rdfs:label 'Nonghyup Food Research Institute (South Korea)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835848/> ;
+    ] ; 
+    .

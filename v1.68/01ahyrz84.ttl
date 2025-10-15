@@ -1,0 +1,163 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01ahyrz84> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2024"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-07-15"^^xsd:date ;
+    org:abbreviation 'UT'^^xsd:string@fr ; 
+    schema:url <http://univ-tlse3.fr> ; 
+    schema:mainEntityOfPage <https://www.univ-tlse3.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Toulouse> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100004718> ;
+    schema:sameAs <http://isni.org/isni/000000010723035X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/02v6kpv12> ;
+        rdfs:label 'Université Toulouse III - Paul Sabatier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/027ankh97> ;
+        rdfs:label 'Université Toulouse Capitole'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ezk3x31> ;
+        rdfs:label 'Université Toulouse - Jean Jaurès'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02v6kpv12> ;
+        rdfs:label 'Université Toulouse III - Paul Sabatier'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033p9g875> ;
+        rdfs:label 'Institut National Polytechnique de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01h8pf755> ;
+        rdfs:label 'Institut National des Sciences Appliquées de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04gyj6s21> ;
+        rdfs:label 'Institut Superieur de l\'Aeronautique et de l\'Espace (ISAE-SUPAERO)'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03078mv10> ;
+        rdfs:label 'Centre Universitaire Jean-François-Champollion'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022zdgq74> ;
+        rdfs:label 'École Nationale de l’Aviation Civile'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01fdvj254> ;
+        rdfs:label 'École Nationale d\'Ingénieurs de Tarbes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019xp4858> ;
+        rdfs:label 'École Nationale Supérieure d\'Architecture de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03m3gzv89> ;
+        rdfs:label 'École Nationale Vétérinaire de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ac68784> ;
+        rdfs:label 'École Nationale Supérieure de Formation de l’Enseignement Agricole'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04155vc40> ;
+        rdfs:label 'Institut Catholique d\'Arts et Métiers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00bq8vv83> ;
+        rdfs:label 'IMT Mines Albi'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0349y2q65> ;
+        rdfs:label 'École Supérieure de Commerce de Toulouse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03tvs6n06> ;
+        rdfs:label 'Centre de microcaractérisation Raimond Castaing'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02k7ask46> ;
+        rdfs:label 'CALMIP'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03j65n394> ;
+        rdfs:label 'Laboratoire d\'Excellence TULIP'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019v7sr25> ;
+        rdfs:label 'Développement Embryonnaire, Fertilité et Environnement'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(1.44367 43.60426)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Toulouse" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Occitanie" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2972315/> ;
+    ] ; 
+    .
