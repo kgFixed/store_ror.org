@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00njwz164> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2020-07-06"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Jyoban Hospital'^^xsd:string@ja ; 
+    org:alternativeName 'ときわ会常磐病院'^^xsd:string@ja ; 
+    org:alternativeName '常磐病院'^^xsd:string@ja ; 
+    schema:mainEntityOfPage <https://www.tokiwa.or.jp/hospital/jyoban/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.507981.2> ;
+    schema:sameAs <http://isni.org/isni/0000000459350742> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.88333 37.05)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Iwaki" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Fukushima" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2112539/> ;
+    ] ; 
+    .

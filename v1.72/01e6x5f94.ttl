@@ -1,0 +1,38 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01e6x5f94> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'KCMCU'^^xsd:string@en ; 
+    schema:url <http://kcmcu.ac.tz> ; 
+    schema:mainEntityOfPage <https://kcmcu.ac.tz> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.33333 -3.35)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Moshi" ;
+            schema:addressCountry "TZ" ;
+            schema:addressRegion "Kilimanjaro" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Tanzania" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/153209/> ;
+    ] ; 
+    .

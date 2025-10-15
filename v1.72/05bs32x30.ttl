@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05bs32x30> a org:Organization ;
+    rdfs:label 'Silvaco (United Kingdom)'^^xsd:string ;
+    schema:name 'Silvaco (United Kingdom)'^^xsd:string ;
+    schema:foundingDate "1984"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Silvaco Europe Ltd'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.silvaco.com/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.451296.d> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05cd7jh29> ;
+        rdfs:label 'Silvaco Group, Inc. (United States)'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-0.07656 52.33251)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Saint Ives" ;
+            schema:addressCountry "GB" ;
+            schema:addressRegion "England" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United Kingdom" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2638776/> ;
+    ] ; 
+    .

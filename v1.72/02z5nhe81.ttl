@@ -1,0 +1,458 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02z5nhe81> a org:Organization ;
+    rdfs:label 'National Oceanic and Atmospheric Administration'^^xsd:string ;
+    schema:name 'National Oceanic and Atmospheric Administration'^^xsd:string ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'NOAA'^^xsd:string@None ; 
+    org:alternativeName 'National Oceanic & Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'National Oceanographic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. DOC National Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Department of Commerce Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Department of Commerce. National Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Dept. of Commerce National Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. National Oceanic & Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. National Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. National Oceanographic Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. National Oceanographic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States Department of Commerce National Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States Department of Commerce Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States Dept. of Commerce National Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States National Oceanic & Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States National Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States National Oceanographic Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States National Oceanographic and Atmospheric Administration'^^xsd:string@en ; 
+    org:alternativeName 'United States Oceanic and Atmospheric Administration'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.noaa.gov/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/National_Oceanic_and_Atmospheric_Administration> ; 
+    schema:sameAs <https://api.crossref.org/funders/100000192> ;
+    schema:sameAs <https://grid.ac/institutions/grid.3532.7> ;
+    schema:sameAs <http://isni.org/isni/0000000112662261> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04j23ff69> ;
+        rdfs:label 'Alaska Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yn1nr06> ;
+        rdfs:label 'California Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ksx6c70> ;
+        rdfs:label 'Connecticut Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038rzmb16> ;
+        rdfs:label 'Delaware Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01j5kpq29> ;
+        rdfs:label 'Florida Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0014w1417> ;
+        rdfs:label 'Georgia Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rrxb840> ;
+        rdfs:label 'Guam Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vg14f79> ;
+        rdfs:label 'Illinois Indiana Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05k70qf45> ;
+        rdfs:label 'Lake Champlain Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045by4v54> ;
+        rdfs:label 'Louisiana Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03fg5ns40> ;
+        rdfs:label 'MIT Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04g3ykc66> ;
+        rdfs:label 'Maine Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03db51w68> ;
+        rdfs:label 'Maryland Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015tnsz82> ;
+        rdfs:label 'Michigan Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01n6agm35> ;
+        rdfs:label 'Minnesota Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04vzsq290> ;
+        rdfs:label 'Mississippi Alabama Sea Grant Consortium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04r0wrp59> ;
+        rdfs:label 'NOAA National Centers for Environmental Information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007qwym43> ;
+        rdfs:label 'NOAA National Environmental Satellite Data and Information Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02k4h0334> ;
+        rdfs:label 'NOAA National Ocean Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033mqx355> ;
+        rdfs:label 'NOAA National Marine Fisheries Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00h8b7583> ;
+        rdfs:label 'National Tsunami Warning Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00tgqzw13> ;
+        rdfs:label 'NOAA National Weather Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/037f7zx95> ;
+        rdfs:label 'New Hampshire Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04haaft31> ;
+        rdfs:label 'New Jersey Sea Grant Consortium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/031m8s392> ;
+        rdfs:label 'New York Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01kgxxx41> ;
+        rdfs:label 'North Carolina Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/018qsef31> ;
+        rdfs:label 'Northern Gulf Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032h87485> ;
+        rdfs:label 'Office of Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ggd2r74> ;
+        rdfs:label 'Office of Marine and Aviation Operations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05xqpda80> ;
+        rdfs:label 'NOAA Ocean Exploration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kgve346> ;
+        rdfs:label 'NOAA Oceanic and Atmospheric Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xfvky15> ;
+        rdfs:label 'Ohio Sea Grant College Program'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046107075> ;
+        rdfs:label 'Oregon Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033r52n02> ;
+        rdfs:label 'Pennsylvania Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05t7fg049> ;
+        rdfs:label 'Puerto Rico Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/018nbcn37> ;
+        rdfs:label 'Rhode Island Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03zzjgp12> ;
+        rdfs:label 'South Carolina Sea Grant Consortium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ds51411> ;
+        rdfs:label 'Texas Sea Grant College Program'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053598c22> ;
+        rdfs:label 'University of Hawaiʻi Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0444fnd49> ;
+        rdfs:label 'University of Southern California Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05c6y9623> ;
+        rdfs:label 'Virginia Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047fr0y29> ;
+        rdfs:label 'Washington Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/035hx7715> ;
+        rdfs:label 'Wisconsin Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05370mv03> ;
+        rdfs:label 'Woods Hole Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03yn06t56> ;
+        rdfs:label 'NOAA Center for Satellite Applications and Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/052pywd95> ;
+        rdfs:label 'NOAA Office of Science Support'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054bfvp24> ;
+        rdfs:label 'Cooperative Institute for Climate, Ocean, & Ecosystem Studies'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04c3j6v84> ;
+        rdfs:label 'California Cooperative Oceanic Fisheries Investigations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01z3tfx80> ;
+        rdfs:label 'NOAA Office of Geostationary Earth Orbit Observations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017z8h955> ;
+        rdfs:label 'NOAA Office of Low Earth Orbit Observations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0432dh318> ;
+        rdfs:label 'NOAA Office of Common Services'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03m2f9j08> ;
+        rdfs:label 'NOAA Office of Satellite Ground Services'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00cg22c97> ;
+        rdfs:label 'NOAA Office of Satellite and Product Operations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ypd8a97> ;
+        rdfs:label 'NOAA Office of System Architecture and Advanced Planning'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jb34965> ;
+        rdfs:label 'NOAA Systems Architecture and Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02pkedj80> ;
+        rdfs:label 'NOAA Office of Projects, Planning, and Analysis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0312jvg82> ;
+        rdfs:label 'NOAA Office of Space Weather Observations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04chq2495> ;
+        rdfs:label 'United States Department of Commerce'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/01h6c8126> ;
+        rdfs:label 'Environmental Science Services Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/01x9q3k71> ;
+        rdfs:label 'United States Coast and Geodetic Survey'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01dy3j343> ;
+        rdfs:label 'Community Coordinated Modeling Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01fpdvr35> ;
+        rdfs:label 'National Integrated Drought Information System'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01hp6xm80> ;
+        rdfs:label 'NCCOS Hollings Marine Laboratory'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05ych8012> ;
+        rdfs:label 'Massachusetts Office of Coastal Zone Management'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01srarb97> ;
+        rdfs:label 'Olympic Coast Discovery Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/019q0z051> ;
+        rdfs:label 'Rocky Mountain Advanced Computing Consortium'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Washington" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "District of Columbia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4140963/> ;
+    ] ; 
+    .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01tck1990> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1969"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'CMCDJ'^^xsd:string@en ; 
+    org:alternativeName 'Daejeon St. Mary\'s Hospital'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.cmcdj.or.kr/> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B0%2580%25ED%2586%25A8%25EB%25A6%25AD%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590_%25EB%258C%2580%25EC%25A0%2584%25EC%2584%25B1%25EB%25AA%25A8%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.470171.4> ;
+    schema:sameAs <http://isni.org/isni/0000000406472025> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01fpnj063> ;
+        rdfs:label 'Catholic University of Korea'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03qg6r976> ;
+        rdfs:label 'The Catholic University of Korea Catholic Medical Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.38493 36.34913)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Daejeon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Daejeon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835235/> ;
+    ] ; 
+    .

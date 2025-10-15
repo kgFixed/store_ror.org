@@ -1,0 +1,172 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/058rymf81> a org:Organization ;
+    rdfs:label 'National Research Council of Science and Technology'^^xsd:string ;
+    schema:name 'National Research Council of Science and Technology'^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'NST'^^xsd:string@en ; 
+    org:alternativeName '기초기술연구회'^^xsd:string@ko ; 
+    org:alternativeName '산업기술연구회'^^xsd:string@ko ; 
+    schema:url <http://nst.re.kr> ; 
+    schema:mainEntityOfPage <https://www.nst.re.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B5%25AD%25EA%25B0%2580%25EA%25B3%25BC%25ED%2595%2599%25EA%25B8%25B0%25EC%2588%25A0%25EC%2597%25B0%25EA%25B5%25AC%25ED%259A%258C> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100008783> ;
+    schema:sameAs <https://grid.ac/institutions/grid.483893.d> ;
+    schema:sameAs <http://isni.org/isni/0000000464083343> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01k4yrm29> ;
+        rdfs:label 'Korea Institute of Science & Technology Information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03g03dn68> ;
+        rdfs:label 'Green Technology Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05kzfa883> ;
+        rdfs:label 'Korea Institute of Science and Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0417sdw47> ;
+        rdfs:label 'Korea Basic Science Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/028jp5z02> ;
+        rdfs:label 'Korea Food Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ep23f07> ;
+        rdfs:label 'Korea Research Institute of Bioscience and Biotechnology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005rpmt10> ;
+        rdfs:label 'Korea Institute of Oriental Medicine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04gzcxt97> ;
+        rdfs:label 'Korea Railroad Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ysstz10> ;
+        rdfs:label 'Electronics and Telecommunications Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rg5mm74> ;
+        rdfs:label 'National Security Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qcq9d74> ;
+        rdfs:label 'Korea Institute of Machinery & Materials'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rwkhb30> ;
+        rdfs:label 'Korea Institute of Materials Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01wpjm123> ;
+        rdfs:label 'Ministry of Science and ICT'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'predecessor'^^xsd:string ;
+        org:member <https://ror.org/039fwba89> ;
+        rdfs:label 'Korea Research Council for Industrial Science and Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01dcefd69> ;
+        rdfs:label 'World Institute of Kimchi'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qfph657> ;
+        rdfs:label 'Korea Institute of Industrial Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/035enhp47> ;
+        rdfs:label 'Korea Institute of Civil Engineering and Building Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013yz9b19> ;
+        rdfs:label 'Korea Institute of Fusion Energy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01az7b475> ;
+        rdfs:label 'Korea Research Institute of Standards and Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0298pes53> ;
+        rdfs:label 'Korea Institute of Energy Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01xb4fs50> ;
+        rdfs:label 'Korea Atomic Energy Research Institute'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sejong" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Sejong-si" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/11523293/> ;
+    ] ; 
+    .

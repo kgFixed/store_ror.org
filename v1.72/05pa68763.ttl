@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05pa68763> a org:Organization ;
+    rdfs:label 'Asan Foundation'^^xsd:string ;
+    schema:name 'Asan Foundation'^^xsd:string ;
+    schema:foundingDate "1977"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    schema:url <http://asanfoundation.or.kr> ; 
+    schema:mainEntityOfPage <http://www.asanfoundation.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%2595%2584%25EC%2582%25B0%25EC%2582%25AC%25ED%259A%258C%25EB%25B3%25B5%25EC%25A7%2580%25EC%259E%25AC%25EB%258B%25A8> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.490618.2> ;
+    schema:sameAs <http://isni.org/isni/0000000121685510> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002v9pb51> ;
+        rdfs:label 'Jeongeup Asan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bw6qq24> ;
+        rdfs:label 'Boryeong Asan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00j2y4070> ;
+        rdfs:label 'Hongcheon Asan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0303qjm02> ;
+        rdfs:label 'Boseong Asan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/041segm15> ;
+        rdfs:label 'Geumgang Asan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00222cc16> ;
+        rdfs:label 'Yeongdeok Asan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03s5q0090> ;
+        rdfs:label 'Asan Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03pw3x387> ;
+        rdfs:label 'Gangneung Asan Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127 37.58333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835847/> ;
+    ] ; 
+    .

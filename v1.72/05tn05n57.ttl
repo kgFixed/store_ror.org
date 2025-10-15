@@ -1,0 +1,96 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05tn05n57> a org:Organization ;
+    rdfs:label 'Hanyang University Medical Center'^^xsd:string ;
+    schema:name 'Hanyang University Medical Center'^^xsd:string ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'HYUMC'^^xsd:string@None ; 
+    schema:url <http://hyumc.com> ; 
+    schema:mainEntityOfPage <https://www.hyumc.com> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25ED%2595%259C%25EC%2596%2591%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590_%25EC%259D%2598%25EB%25A3%258C%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.411986.3> ;
+    schema:sameAs <http://isni.org/isni/0000000446715423> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02dd1bz43> ;
+        rdfs:label 'Hanyang University Hospital for Rheumatic Disease'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00v6w5255> ;
+        rdfs:label 'Hanyang University International Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04n76mm80> ;
+        rdfs:label 'Hanyang University Seoul Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/046865y68> ;
+        rdfs:label 'Hanyang University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/055zxjg88> ;
+        rdfs:label 'Changwon Hanmaeum Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02rdw6h67> ;
+        rdfs:label 'Hanmaeum Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04sf78n69> ;
+        rdfs:label 'Sangnam Hanmaeum Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02f9avj37> ;
+        rdfs:label 'Hanyang University Guri Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/046865y68> ;
+        rdfs:label 'Hanyang University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835848/> ;
+    ] ; 
+    .

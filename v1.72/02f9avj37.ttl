@@ -1,0 +1,52 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02f9avj37> a org:Organization ;
+    rdfs:label 'Hanyang University Guri Hospital'^^xsd:string ;
+    schema:name 'Hanyang University Guri Hospital'^^xsd:string ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    schema:mainEntityOfPage <https://guri.hyumc.com/> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25ED%2595%259C%25EC%2596%2591%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590%25EA%25B5%25AC%25EB%25A6%25AC%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.412145.7> ;
+    schema:sameAs <http://isni.org/isni/0000000406473212> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/046865y68> ;
+        rdfs:label 'Hanyang University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05tn05n57> ;
+        rdfs:label 'Hanyang University Medical Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.1394 37.5986)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Guri-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeonggi-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1841988/> ;
+    ] ; 
+    .

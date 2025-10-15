@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00mznnx78> a org:Organization ;
+    rdfs:label 'Auguste-Viktoria-Klinik'^^xsd:string ;
+    schema:name 'Auguste-Viktoria-Klinik'^^xsd:string ;
+    schema:foundingDate "1903"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2021-09-23"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    schema:mainEntityOfPage <https://www.muehlenkreiskliniken.de/auguste-viktoria-klinik> ;
+    schema:sameAs <https://grid.ac/institutions/grid.512814.b> ;
+    schema:sameAs <http://isni.org/isni/0000000475910340> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(8.80365 52.20699)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Bad Oeynhausen" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "North Rhine-Westphalia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2953386/> ;
+    ] ; 
+    .

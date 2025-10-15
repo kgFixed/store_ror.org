@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0113xme87> a org:Organization ;
+    rdfs:label 'Korea Energy Economics Institute'^^xsd:string ;
+    schema:name 'Korea Energy Economics Institute'^^xsd:string ;
+    schema:foundingDate "1986"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'KEEI'^^xsd:string@en ; 
+    schema:url <http://keei.re.kr> ; 
+    schema:mainEntityOfPage <https://www.keei.re.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%2597%2590%25EB%2584%2588%25EC%25A7%2580%25EA%25B2%25BD%25EC%25A0%259C%25EC%2597%25B0%25EA%25B5%25AC%25EC%259B%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003674> ;
+    schema:sameAs <https://grid.ac/institutions/grid.467726.6> ;
+    schema:sameAs <http://isni.org/isni/0000000406473546> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/012zp9903> ;
+        rdfs:label 'National Research Council for Economics Humanities and Social Science'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(129.31667 35.53722)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ulsan" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Ulsan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1833747/> ;
+    ] ; 
+    .

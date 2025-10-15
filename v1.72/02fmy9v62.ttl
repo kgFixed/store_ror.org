@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02fmy9v62> a org:Organization ;
+    rdfs:label 'Institute of Fruit Tree and Tea Science'^^xsd:string ;
+    schema:name 'Institute of Fruit Tree and Tea Science'^^xsd:string ;
+    schema:foundingDate "2001"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'NARO Institute of Fruit Tree Science'^^xsd:string@en ; 
+    org:abbreviation 'NIFTS'^^xsd:string@None ; 
+    org:alternativeName 'National Institute of Fruit Tree Science'^^xsd:string@en ; 
+    org:alternativeName 'National Institute of Fruit Tree Science, NARO'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.naro.affrc.go.jp/english/laboratory/nifts/index.html> ;
+    schema:sameAs <https://grid.ac/institutions/grid.482552.c> ;
+    schema:sameAs <http://isni.org/isni/0000000110122624> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/023v4bd62> ;
+        rdfs:label 'National Agriculture and Food Research Organization'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.11667 36.08333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Tsukuba" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Ibaraki" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2110681/> ;
+    ] ; 
+    .
