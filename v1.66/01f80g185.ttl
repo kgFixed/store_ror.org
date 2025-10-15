@@ -1,0 +1,103 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01f80g185> a org:Organization ;
+    rdfs:label 'World Health Organization'^^xsd:string ;
+    schema:name 'World Health Organization'^^xsd:string ;
+    schema:foundingDate "1948"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-05-20"^^xsd:date ;
+    org:abbreviation 'WHO'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.who.int/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/World_Health_Organization> ; 
+    schema:sameAs <https://api.crossref.org/funders/100004423> ;
+    schema:sameAs <https://grid.ac/institutions/grid.3575.4> ;
+    schema:sameAs <http://isni.org/isni/0000000121633745> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/021jq8741> ;
+        rdfs:label 'Alliance for Health Policy and Systems Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rtx9382> ;
+        rdfs:label 'World Health Organization Regional Office for Africa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01rz37c55> ;
+        rdfs:label 'World Health Organization Regional Office for Europe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wae9s43> ;
+        rdfs:label 'World Health Organization Regional Office for South-East Asia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008kev776> ;
+        rdfs:label 'World Health Organization Regional Office for the Americas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01h4ywk72> ;
+        rdfs:label 'World Health Organization Regional Office for the Eastern Mediterranean'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04nfvby78> ;
+        rdfs:label 'World Health Organization Regional Office for the Western Pacific'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046j7pv84> ;
+        rdfs:label 'Special Programme for Research and Training in Tropical Diseases'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05t99je22> ;
+        rdfs:label 'Unitaid'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00v452281> ;
+        rdfs:label 'Centre international de recherche sur le cancer'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.14569 46.20222)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Geneva" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "Geneva" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2660646/> ;
+    ] ; 
+    .

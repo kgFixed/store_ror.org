@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/020s2ee41> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2024-11-18"^^xsd:date ;
+    dct:modified "2025-05-20"^^xsd:date ;
+    org:abbreviation 'IBCSB'^^xsd:string@en ; 
+    org:alternativeName 'Institute of Bioenergy Crops and Sugar Beet National Academy of Agrarian Sciences of Ukraine'^^xsd:string@en ; 
+    org:alternativeName 'Інститут біоенергетичних культур і цукрових буряків Національної академії аграрних наук України'^^xsd:string@uk ; 
+    schema:url <http://bio.gov.ua> ; 
+    schema:mainEntityOfPage <https://bio.gov.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2586%25D0%25BD%25D1%2581%25D1%2582%25D0%25B8%25D1%2582%25D1%2583%25D1%2582_%25D0%25B1%25D1%2596%25D0%25BE%25D0%25B5%25D0%25BD%25D0%25B5%25D1%2580%25D0%25B3%25D0%25B5%25D1%2582%25D0%25B8%25D1%2587%25D0%25BD%25D0%25B8%25D1%2585_%25D0%25BA%25D1%2583%25D0%25BB%25D1%258C%25D1%2582%25D1%2583%25D1%2580_%25D1%2596_%25D1%2586%25D1%2583%25D0%25BA%25D1%2580%25D0%25BE%25D0%25B2%25D0%25B8%25D1%2585_%25D0%25B1%25D1%2583%25D1%2580%25D1%258F%25D0%25BA%25D1%2596%25D0%25B2_%25D0%259D%25D0%2590%25D0%2590%25D0%259D_%25D0%25A3%25D0%25BA%25D1%2580%25D0%25B0%25D1%2597%25D0%25BD%25D0%25B8> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/001040111> ;
+        rdfs:label 'National Academy of Agrarian Sciences of Ukraine'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kyiv" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Kyiv City" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/703448/> ;
+    ] ; 
+    .

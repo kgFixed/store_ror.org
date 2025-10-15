@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00axf5s51> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1944"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-05-19"^^xsd:date ;
+    dct:modified "2025-05-20"^^xsd:date ;
+    org:alternativeName 'Kartographia'^^xsd:string@en ; 
+    org:alternativeName 'Kartohrafiia'^^xsd:string@en ; 
+    org:abbreviation 'SSPE'^^xsd:string@en ; 
+    org:alternativeName 'SSPE "Kartographia"'^^xsd:string@en ; 
+    org:alternativeName 'ДНВП «Картографія»'^^xsd:string@uk ; 
+    org:alternativeName 'Картографія'^^xsd:string@uk ; 
+    schema:url <http://kgf.com.ua> ; 
+    schema:mainEntityOfPage <https://kgf.com.ua> ;
+    owl:sameAs <https://uk.wikipedia.org/wiki/%25D0%2594%25D0%259D%25D0%2592%25D0%259F_%25C2%25AB%25D0%259A%25D0%25B0%25D1%2580%25D1%2582%25D0%25BE%25D0%25B3%25D1%2580%25D0%25B0%25D1%2584%25D1%2596%25D1%258F%25C2%25BB> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(30.5238 50.45466)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kyiv" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Kyiv City" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/703448/> ;
+    ] ; 
+    .

@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0563ebm96> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1943"^^xsd:gYear ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-05-19"^^xsd:date ;
+    dct:modified "2025-05-20"^^xsd:date ;
+    org:alternativeName 'Air Force Development Test Center'^^xsd:string@en ; 
+    org:alternativeName 'Air Proving Ground'^^xsd:string@en ; 
+    org:alternativeName 'Air Proving Ground Center'^^xsd:string@en ; 
+    org:alternativeName 'Air Proving Ground Command'^^xsd:string@en ; 
+    org:alternativeName 'Armament Development and Test Center'^^xsd:string@en ; 
+    org:alternativeName 'Armament Division'^^xsd:string@en ; 
+    org:alternativeName 'Army Air Forces Center'^^xsd:string@en ; 
+    org:alternativeName 'Army Air Forces Proving Ground Command'^^xsd:string@en ; 
+    org:alternativeName 'Army Air Forces School of Applied Tactics'^^xsd:string@en ; 
+    org:alternativeName 'Army Air Forces Tactical Center'^^xsd:string@en ; 
+    org:alternativeName 'Munitions Systems Division'^^xsd:string@en ; 
+    org:alternativeName 'U.S. Air Force Air Armament Center'^^xsd:string@en ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/0595f4b08> ;
+        rdfs:label 'U.S. Air Force Life Cycle Management Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-86.51896 30.47527)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Eglin AFB" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Florida" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6301745/> ;
+    ] ; 
+    .
