@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0405trq15> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'ESR'^^xsd:string@None ; 
+    org:alternativeName 'Institute of Environmental Science and Research'^^xsd:string@en ; 
+    org:alternativeName 'PHF Science'^^xsd:string@en ; 
+    schema:url <http://esr.cri.nz> ; 
+    schema:url <http://phfscience.nz> ; 
+    schema:mainEntityOfPage <https://www.phfscience.nz> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Institute_of_Environmental_Science_and_Research> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003961> ;
+    schema:sameAs <https://grid.ac/institutions/grid.419706.d> ;
+    schema:sameAs <http://isni.org/isni/000000012234622X> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(174.85 -41.13333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Porirua" ;
+            schema:addressCountry "NZ" ;
+            schema:addressRegion "Wellington Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "New Zealand" ;
+                schema:containedInPlace [
+                    schema:name "Oceania" ;
+                    schema:identifier "OC"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2184397/> ;
+    ] ; 
+    .

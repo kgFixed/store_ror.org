@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04and7w57> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1952"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Fishery Research Institute, Bureau of Fisheries, Department of Agriculture and Forestry of Guangdong Province'^^xsd:string@en ; 
+    org:abbreviation 'PRFRI'^^xsd:string@en ; 
+    org:alternativeName '中国水产科学研究院珠江水产研究所'^^xsd:string@zh ; 
+    org:alternativeName '国家水产总局珠江水产研究所'^^xsd:string@zh ; 
+    org:alternativeName '广东省人民政府农业厅水产局水产研究所'^^xsd:string@zh ; 
+    schema:url <http://prfri.ac.cn> ; 
+    schema:mainEntityOfPage <https://www.prfri.ac.cn/index.htm> ;
+    schema:sameAs <http://isni.org/isni/0000000089393744> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02bwk9n38> ;
+        rdfs:label 'Chinese Academy of Fishery Sciences'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.25 23.11667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Guangzhou" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Guangdong" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1809858/> ;
+    ] ; 
+    .

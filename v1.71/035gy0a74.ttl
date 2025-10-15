@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/035gy0a74> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2007"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'POLKESPI'^^xsd:string@id ; 
+    org:alternativeName 'Poltekkes Permata Indonesia'^^xsd:string@id ; 
+    schema:url <http://permataindonesia.ac.id> ; 
+    schema:mainEntityOfPage <https://pmb.permataindonesia.ac.id> ;
+    schema:sameAs <http://isni.org/isni/0000000403750560> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(110.35556 -7.71556)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sleman" ;
+            schema:addressCountry "ID" ;
+            schema:addressRegion "Yogyakarta" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Indonesia" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1626754/> ;
+    ] ; 
+    .

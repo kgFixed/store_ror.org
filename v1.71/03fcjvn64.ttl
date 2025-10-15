@@ -1,0 +1,166 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03fcjvn64> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Inria Nancy - Grand-Est research centre'^^xsd:string@fr ; 
+    schema:mainEntityOfPage <https://www.inria.fr/fr/centre-inria-universite-lorraine> ;
+    schema:sameAs <https://grid.ac/institutions/grid.457353.3> ;
+    schema:sameAs <http://isni.org/isni/0000000114113805> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02kvxyf05> ;
+        rdfs:label 'Institut national de recherche en sciences et technologies du numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0325tbk69> ;
+        rdfs:label 'CAMUS: Compilation pour les Architectures MUlti-processeurs et multi-coeurS'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04e835403> ;
+        rdfs:label 'MIMESIS: Simulation médicale guidée par les données'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05c6e6w24> ;
+        rdfs:label 'PASTA: Processus Aléatoires Spatio-Temporels et Applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008kj1d63> ;
+        rdfs:label 'SIMBA: Inférence Statistique et Modélisation pour les Applications Biologiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03de2ht59> ;
+        rdfs:label 'MACARON: Apprentissage automatique pour des méthodes numériques optimisées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bj6gc92> ;
+        rdfs:label 'SPHINX: Heterogeneous Systems: Inverse Problems, Control and Stabilization, Simulation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05rv46r52> ;
+        rdfs:label 'LARSEN: Autonomie et interaction au long cours pour des robots en environnements potentiellement sensorisés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xc7ww16> ;
+        rdfs:label 'SEMAGRAMME: Analyse Sémantique de la Langue'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0440j7g03> ;
+        rdfs:label 'VERIDIS: Modeling and Verification of Distributed Algorithms and Systems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03w9t3v76> ;
+        rdfs:label 'MOCQUA: Modèles de calcul émergents'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02n848x19> ;
+        rdfs:label 'PIXEL: Structurer des formes géométriques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0005fxe59> ;
+        rdfs:label 'TANGRAM: Recalage visuel avec des modèles physiquement réalistes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02m9pkf41> ;
+        rdfs:label 'CAPSID: Computational Algorithms for Protein Structures and Interactions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034kszc22> ;
+        rdfs:label 'CARAMBA: Cryptology, arithmetic : algebraic methods for better algorithms'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mv3qy73> ;
+        rdfs:label 'MULTISPEECH: La parole multimodale en interaction'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019yhsq25> ;
+        rdfs:label 'PESTO: Techniques de Preuves pour les Protocoles de Sécurité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/048c8c312> ;
+        rdfs:label 'MFX: Informatique graphique pour la fabrication numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/034zjpe43> ;
+        rdfs:label 'GAMBLE: Géométrie, Algorithmes et Modèles Bien au-delà du Linéaire et de l\'Euclidien'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03kdymn35> ;
+        rdfs:label 'COAST: Web Scale Trustworthy Collaborative Service Systems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vk6my81> ;
+        rdfs:label 'RESIST: Résilience et élasticité pour la mise à l\'échelle et la sécurité des systèmes en réseaux dynamiques'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.15283 48.67333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Villers-lès-Nancy" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Grand Est" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2968368/> ;
+    ] ; 
+    .

@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03344ty51> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1939"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName '独立行政法人国立病院機構 宮城病院'^^xsd:string@ja ; 
+    schema:url <http://mail.hosp.go.jp> ; 
+    schema:url <http://miyagi.hosp.go.jp> ; 
+    schema:mainEntityOfPage <https://miyagi.hosp.go.jp> ;
+    owl:sameAs <https://ja.wikipedia.org/wiki/%25E5%259B%259B%25E5%259B%25BD%25E7%25AB%258B%25E7%2597%2585%25E9%2599%25A2%25E6%25A9%259F%25E6%25A7%258B%25E5%25AE%25AE%25E5%259F%258E%25E9%2599%25A2> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(140.85111 38.035)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Watari" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Miyagi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2110586/> ;
+    ] ; 
+    .

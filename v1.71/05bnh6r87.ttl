@@ -1,0 +1,212 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05bnh6r87> a org:Organization ;
+    rdfs:label 'Cornell University'^^xsd:string ;
+    schema:name 'Cornell University'^^xsd:string ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'CU'^^xsd:string@None ; 
+    schema:url <http://cornell.edu> ; 
+    schema:mainEntityOfPage <https://www.cornell.edu> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Cornell_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/100007231> ;
+    schema:sameAs <https://grid.ac/institutions/grid.5386.8> ;
+    schema:sameAs <http://isni.org/isni/000000041936877X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/031m8s392> ;
+        rdfs:label 'New York Sea Grant'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ycy6g75> ;
+        rdfs:label 'New York Space Grant Consortium'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00j52pq61> ;
+        rdfs:label 'New York State College of Agriculture & Life Sciences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04r17kf39> ;
+        rdfs:label 'New York State College of Veterinary Medicine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zg6dt46> ;
+        rdfs:label 'New York State School of Industrial and Labor Relations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/047g2xp14> ;
+        rdfs:label 'New York State University College of Human Ecology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02r109517> ;
+        rdfs:label 'Weill Cornell Medicine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00k86w020> ;
+        rdfs:label 'Cornell Lab of Ornithology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03h0qhk21> ;
+        rdfs:label 'Cornell Atkinson Center for Sustainability'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pw1zg89> ;
+        rdfs:label 'PARADIM'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012qsrr25> ;
+        rdfs:label 'Cornell University Agricultural Experiment Station'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00m2zh467> ;
+        rdfs:label 'arXiv'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02sp1z620> ;
+        rdfs:label 'Burke Medical Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04dnsc767> ;
+        rdfs:label 'Burke Rehabilitation Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/027zt9171> ;
+        rdfs:label 'Houston Methodist'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/035a72598> ;
+        rdfs:label 'Lincoln Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01skxn174> ;
+        rdfs:label 'Lower Manhattan Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02yrq0923> ;
+        rdfs:label 'Memorial Sloan Kettering Cancer Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/016m8pd54> ;
+        rdfs:label 'Morgan Stanley Children\'s Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03f91xw18> ;
+        rdfs:label 'Museum of the Earth'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01j17xg39> ;
+        rdfs:label 'New York Hospital Queens'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04929s478> ;
+        rdfs:label 'NewYork–Presbyterian Brooklyn Methodist Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03gzbrs57> ;
+        rdfs:label 'NewYork–Presbyterian Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05dvpaj72> ;
+        rdfs:label 'The Rogosin Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05v5hg569> ;
+        rdfs:label 'Weill Cornell Medical College in Qatar'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00yzb1d91> ;
+        rdfs:label 'Wyckoff Heights Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00mkh7345> ;
+        rdfs:label 'Hubbard Brook Long Term Ecological Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05cshtm26> ;
+        rdfs:label 'Great Lakes Research Consortium'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-76.49661 42.44063)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ithaca" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "New York" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5122432/> ;
+    ] ; 
+    .

@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02p9mw189> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2012"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Z. H. Sikder University of Science & Technology'^^xsd:string@en ; 
+    org:abbreviation 'ZHSUST'^^xsd:string@en ; 
+    schema:url <http://zhsust.ac.bd> ; 
+    schema:mainEntityOfPage <https://zhsust.ac.bd> ;
+    owl:sameAs <https://bn.wikipedia.org/wiki/%25E0%25A6%259C%25E0%25A7%2587%25E0%25A6%25A1_%25E0%25A6%258F%25E0%25A6%2587%25E0%25A6%259A_%25E0%25A6%25B8%25E0%25A6%25BF%25E0%25A6%2595%25E0%25A6%25A6%25E0%25A6%25BE%25E0%25A6%25B0_%25E0%25A6%25AC%25E0%25A6%25BF%25E0%25A6%259C%25E0%25A7%258D%25E0%25A6%259E%25E0%25A6%25BE%25E0%25A6%25A8_%25E0%25A6%2593_%25E0%25A6%25AA%25E0%25A7%258D%25E0%25A6%25B0%25E0%25A6%25AF%25E0%25A7%2581%25E0%25A6%2595%25E0%25A7%258D%25E0%25A6%25A4%25E0%25A6%25BF_%25E0%25A6%25AC%25E0%25A6%25BF%25E0%25A6%25B6%25E0%25A7%258D%25E0%25A6%25AC%25E0%25A6%25AC%25E0%25A6%25BF%25E0%25A6%25A6%25E0%25A7%258D%25E0%25A6%25AF%25E0%25A6%25BE%25E0%25A6%25B2%25E0%25A6%25AF%25E0%25A6%25BC> ; 
+    schema:sameAs <http://isni.org/isni/0000000446837578> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(90.47285 23.23908)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kārtikpur" ;
+            schema:addressCountry "BD" ;
+            schema:addressRegion "Dhaka Division" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Bangladesh" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1198358/> ;
+    ] ; 
+    .

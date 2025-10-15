@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00zp0pb38> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Virginia Department of Energy'^^xsd:string@en ; 
+    org:alternativeName 'Virginia Department of Mines, Minerals and Energy'^^xsd:string@en ; 
+    schema:url <http://energy.virginia.gov> ; 
+    schema:mainEntityOfPage <https://www.energy.virginia.gov> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03vtv7935> ;
+        rdfs:label 'Virginia Division of Geology and Mineral Resources'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005gh7453> ;
+        rdfs:label 'Virginia Division of Mineral Mining'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.46026 37.55376)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Richmond" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Virginia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4781708/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-82.7471 36.88176)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Big Stone Gap" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Virginia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4747554/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-78.47668 38.02931)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Charlottesville" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Virginia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4752031/> ;
+    ] ; 
+    .

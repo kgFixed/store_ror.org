@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/031bs2a09> a org:Organization ;
+    rdfs:label 'Ukrainian State University of Chemical Technology'^^xsd:string ;
+    schema:name 'Ukrainian State University of Chemical Technology'^^xsd:string ;
+    schema:foundingDate "1930"^^xsd:gYear ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'УДХТУ'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://udhtu.edu.ua> ;
+    schema:sameAs <https://grid.ac/institutions/grid.445406.7> ;
+    schema:sameAs <http://isni.org/isni/0000000417961238> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/052pe2w94> ;
+        rdfs:label 'Ukrainian State University of Science and Technologies'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(35.04066 48.46664)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Dnipro" ;
+            schema:addressCountry "UA" ;
+            schema:addressRegion "Dnipropetrovsk" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Ukraine" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/709930/> ;
+    ] ; 
+    .

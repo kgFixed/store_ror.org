@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/016d4xa49> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Plattform zeithistorischer Archive'^^xsd:string@de ; 
+    org:abbreviation 'PzpA'^^xsd:string@de ; 
+    org:alternativeName 'Verein Plattform zeithistorischer politischer Archive'^^xsd:string@de ; 
+    schema:url <http://zeithistorische-archive.at> ; 
+    schema:mainEntityOfPage <https://www.zeithistorische-archive.at> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01awx2523> ;
+        rdfs:label 'Forschungsinstitut für politisch-historische Studien der Dr.-Wilfried-Haslauer-Bibliothek'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04935k107> ;
+        rdfs:label 'Verein für Geschichte der Arbeiterbewegung'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01512ky61> ;
+        rdfs:label 'Karl von Vogelsang-Institut'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00pqz5a68> ;
+        rdfs:label 'Kreisky-Archiv'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Vienna" ;
+            schema:addressCountry "AT" ;
+            schema:addressRegion "Vienna" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Austria" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2761369/> ;
+    ] ; 
+    .

@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03ryjaa17> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Dinamika University'^^xsd:string@en ; 
+    org:alternativeName 'STIKOM Surabaya'^^xsd:string@id ; 
+    org:alternativeName 'STMIK STIKOM Surabaya'^^xsd:string@id ; 
+    org:alternativeName 'Sekolah Tinggi Manajemen Informatika dan Teknik Komputer Surabaya'^^xsd:string@id ; 
+    org:abbreviation 'UNDIKA'^^xsd:string@id ; 
+    schema:url <http://dinamika.ac.id> ; 
+    schema:mainEntityOfPage <https://www.dinamika.ac.id> ;
+    owl:sameAs <https://id.wikipedia.org/wiki/Universitas_Dinamika> ; 
+    schema:sameAs <http://isni.org/isni/0000000510888055> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(112.75083 -7.24917)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Surabaya" ;
+            schema:addressCountry "ID" ;
+            schema:addressRegion "East Java" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Indonesia" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1625822/> ;
+    ] ; 
+    .

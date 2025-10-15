@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01na2qs84> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2004"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'ASMI'^^xsd:string@en ; 
+    org:alternativeName 'Asian International University named after Satkynbai Tentishev'^^xsd:string@en ; 
+    org:alternativeName 'Asian Medical Institute, Kyrgyzstan'^^xsd:string@en ; 
+    org:alternativeName 'Satkynbai Tentishev Memorial Asian Medical Institute'^^xsd:string@en ; 
+    org:alternativeName 'Tentishev Asian Medical Institute'^^xsd:string@en ; 
+    org:abbreviation 'АзМИ'^^xsd:string@ru ; 
+    org:alternativeName 'Азиатский Медицинский Институт им.С.Тентишева'^^xsd:string@ru ; 
+    schema:url <http://asmi.edu.kg> ; 
+    schema:mainEntityOfPage <https://asmi.edu.kg> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Asian_Medical_Institute%252C_Kyrgyzstan> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(74.85077 42.89106)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kant" ;
+            schema:addressCountry "KG" ;
+            schema:addressRegion "Chuy Region" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Kyrgyzstan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1528193/> ;
+    ] ; 
+    .

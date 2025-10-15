@@ -1,0 +1,342 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00davry38> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'TecNM'^^xsd:string@None ; 
+    schema:url <http://tecnm.mx> ; 
+    schema:mainEntityOfPage <https://www.tecnm.mx> ;
+    schema:sameAs <https://api.crossref.org/funders/100012725> ;
+    schema:sameAs <https://grid.ac/institutions/grid.484694.3> ;
+    schema:sameAs <http://isni.org/isni/0000000459887021> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0302jbz39> ;
+        rdfs:label 'Instituto Tecnológico de Boca del Río'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05p299b07> ;
+        rdfs:label 'Instituto Tecnológico Superior de Los Reyes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0460tzy11> ;
+        rdfs:label 'Instituto Tecnológico de La Paz'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04w0a0617> ;
+        rdfs:label 'Instituto Tecnológico de San Luis Potosí'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xbw4a70> ;
+        rdfs:label 'Instituto Tecnólogico de La Laguna'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nq33970> ;
+        rdfs:label 'Instituto Tecnológico Superior Zacatecas Norte'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03dgrff29> ;
+        rdfs:label 'Instituto Tecnológico Superior de Loreto'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01brjce02> ;
+        rdfs:label 'Instituto Tecnológico Superior de Atlixco'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03t5a9538> ;
+        rdfs:label 'Instituto Tecnologico Superior de Misantla'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04zjhw235> ;
+        rdfs:label 'Instituto Tecnológico Superior de Acatlán de Osorio'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01d6p8r58> ;
+        rdfs:label 'Instituto Tecnológico de Ciudad Guzmán'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02sftkh09> ;
+        rdfs:label 'Instituto Tecnológico Superior de Centla'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01da06998> ;
+        rdfs:label 'Instituto Tecnológico Superior de Irapuato'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01hjh7h09> ;
+        rdfs:label 'Tecnológico de Estudios Superiores de Cuautitlán Izcalli'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01w8zj169> ;
+        rdfs:label 'Instituto Tecnológico de Tuxtepec'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0336f3190> ;
+        rdfs:label 'Tecnológico Nacional de México Campus Cancún'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00dds0202> ;
+        rdfs:label 'Instituto Tecnológico Superior de Cananea'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0248dkz36> ;
+        rdfs:label 'Tecnológico Nacional de México, Campus Pachuca'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03bmwyk24> ;
+        rdfs:label 'Tecnológico Nacional de México de Ciudad Jiménez'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033xr5946> ;
+        rdfs:label 'Tecnológico Nacional de México Campus Ciudad Valles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zv2b697> ;
+        rdfs:label 'Tecnológico de Estudios Superiores de Valle de Bravo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kj53224> ;
+        rdfs:label 'Tecnológico Nacional de México Campus Ciudad Serdán'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00965mv68> ;
+        rdfs:label 'Tecnológico Nacional de México Campus San Juan de los Ríos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qqb8y62> ;
+        rdfs:label 'Instituto Tecnológico Superior del Occidente del Estado de Hidalgo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/019kjfs29> ;
+        rdfs:label 'Instituto Tecnológico Superior de Calkiní'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00e59cf80> ;
+        rdfs:label 'Instituto Tecnológico Superior de Naranjos'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03k3t2d52> ;
+        rdfs:label 'Tecnológico Nacional de México Campus San Martín Texmelucan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046ee4w71> ;
+        rdfs:label 'Instituto Tecnologico de Delicias'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008eg1b26> ;
+        rdfs:label 'Instituto Tecnológico Superior de Perote'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04bjtbt12> ;
+        rdfs:label 'Instituto Tecnológico Superior de Lerdo'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00dbv4g17> ;
+        rdfs:label 'Instituto Tecnológico de Zitácuaro'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02mgmvf72> ;
+        rdfs:label 'Instituto Tecnológico de Zacatepec'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05wc2hs84> ;
+        rdfs:label 'Instituto Tecnológico Superior de Huauchinango'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02kry3y94> ;
+        rdfs:label 'Tecnológico de Estudios Superiores de Jocotitlán'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03m66j484> ;
+        rdfs:label 'Instituto Tecnológico de Lázaro Cárdenas'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xyf9e18> ;
+        rdfs:label 'Instituto Tecnológico de Tehuacán'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054w40x57> ;
+        rdfs:label 'Villahermosa Institute of Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04m28hd07> ;
+        rdfs:label 'Instituto Tecnológico de Tlalnepantla'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04f6z5785> ;
+        rdfs:label 'Instituto Tecnológico Superior de Salvatierra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056rez340> ;
+        rdfs:label 'Instituto Tecnológico de Agua Prieta'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/001gedw60> ;
+        rdfs:label 'Instituto Tecnológico Superior de Huichapan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0526kmt93> ;
+        rdfs:label 'Tecnológico de Estudios Superiores de Tianguistenco'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00gcaxc92> ;
+        rdfs:label 'Instituto Tecnológico Superior de la Región Sierra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02yy6gj83> ;
+        rdfs:label 'Instituto Tecnológico Superior de Tlaxco'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05bpk5567> ;
+        rdfs:label 'Instituto Tecnológico Superior de San Luis Potosí, Capital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02e1c4h55> ;
+        rdfs:label 'Secretariat of Public Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/011tppt04> ;
+        rdfs:label 'Tecnológico de Estudios Superiores de San Felipe del Progreso'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00yt2gw85> ;
+        rdfs:label 'Instituto Tecnológico de Cuautla'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00edcak12> ;
+        rdfs:label 'Instituto Tecnológico Superior de Purísima del Rincón'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0433s0254> ;
+        rdfs:label 'Instituto Tecnológico de Morelia'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-99.12766 19.42847)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Mexico City" ;
+            schema:addressCountry "MX" ;
+            schema:addressRegion "Mexico City" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Mexico" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3530597/> ;
+    ] ; 
+    .

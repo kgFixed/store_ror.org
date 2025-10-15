@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/001rdaz60> a org:Organization ;
+    rdfs:label 'Bavarian Academy of Sciences and Humanities'^^xsd:string ;
+    schema:name 'Bavarian Academy of Sciences and Humanities'^^xsd:string ;
+    schema:foundingDate "1759"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'BADW'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://badw.de> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Bavarian_Academy_of_Sciences_and_Humanities> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100007306> ;
+    schema:sameAs <https://grid.ac/institutions/grid.423977.c> ;
+    schema:sameAs <http://isni.org/isni/0000000109403517> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00h539j16> ;
+        rdfs:label 'Bavarian Research Institute for Digital Transformation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05558nw16> ;
+        rdfs:label 'Leibniz Supercomputing Centre'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008ebma82> ;
+        rdfs:label 'Historische Kommission bei der Bayerischen Akademie der Wissenschaften'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01dex6p39> ;
+        rdfs:label 'Walther Meissner Institute'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(11.57549 48.13743)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Munich" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Bavaria" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2867714/> ;
+    ] ; 
+    .

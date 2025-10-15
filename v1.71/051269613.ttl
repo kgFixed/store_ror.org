@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/051269613> a org:Organization ;
+    rdfs:label 'National Forensic Institute'^^xsd:string ;
+    schema:name 'National Forensic Institute'^^xsd:string ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'NFS'^^xsd:string@en ; 
+    org:alternativeName 'National Forensic Service'^^xsd:string@en ; 
+    schema:url <http://nfs.go.kr> ; 
+    schema:mainEntityOfPage <https://www.nfs.go.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B5%25AD%25EB%25A6%25BD%25EA%25B3%25BC%25ED%2595%2599%25EC%2588%2598%25EC%2582%25AC%25EC%2597%25B0%25EA%25B5%25AC%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.419645.b> ;
+    schema:sameAs <http://isni.org/isni/0000000417985790> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/010gtx568> ;
+        rdfs:label 'Ministry of the Interior and Safety'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.94528 37.35139)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Wŏnju" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gangwon-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1833105/> ;
+    ] ; 
+    .

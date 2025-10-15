@@ -1,0 +1,138 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/026839t73> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2022"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0315e5x55> ;
+        rdfs:label 'Inria Saclay - Île de France'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05xtj5718> ;
+        rdfs:label 'M3DISIM: Mathematical and Mechanical Modeling with Data Interaction in Simulations for Medicine'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016sv6m22> ;
+        rdfs:label 'PARTOUT: Automatisation et ReprésenTation: fOndation du calcUl et de la déducTion'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04fvec703> ;
+        rdfs:label 'TROPICAL: Méthodes tropicales: structures, algorithmes et interactions'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038tm0s98> ;
+        rdfs:label 'QURIOSITY: Communication et Traitement Quantiques de l\'Information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05b2jnz57> ;
+        rdfs:label 'BENAGIL: Systèmes répartis performants et sûrs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007h9pt55> ;
+        rdfs:label 'COMETE: Vie privée, équité et robustesse dans la gestion de l\'information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nyav747> ;
+        rdfs:label 'IDEFIX: Solution d\'Equations Differentielles pour l\'Imagerie et la physique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01n51g238> ;
+        rdfs:label 'POEMS: Propagation des Ondes : Etude Mathématique et Simulation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vxs7536> ;
+        rdfs:label 'GRACE: Geometry, arithmetic, algorithms, codes and encryption'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/003m5dy43> ;
+        rdfs:label 'ASCII: Analyse d’interactions stochastiques intelligentes et coopératives'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/054a4nn03> ;
+        rdfs:label 'CEDAR: Analyse et traitement de données complexes à grande échelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03jqma326> ;
+        rdfs:label 'FAIRPLAY: IA coopérative : équité, vie privée, incitations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04pkmtd21> ;
+        rdfs:label 'GEOMERIX: La Géometrie au Service du Numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025n6m978> ;
+        rdfs:label 'MERGE: Mathématiques pour l’évolution, la reproduction, la croissance et l’émergence'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04wgfew19> ;
+        rdfs:label 'PLATON: Quantification des Incertitudes en calcul scientifique pour l’ingénierie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02e6ym289> ;
+        rdfs:label 'RANDOPT: Optimisation par algorithmes stochastiques'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.24972 48.71833)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Palaiseau" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6446184/> ;
+    ] ; 
+    .

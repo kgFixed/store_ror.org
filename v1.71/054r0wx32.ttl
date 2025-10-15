@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/054r0wx32> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2023-11-08"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Hospital Research Foundation Group'^^xsd:string@en ; 
+    org:alternativeName 'Spinnaker Health Research Foundation'^^xsd:string@en ; 
+    schema:url <http://hospitalresearch.org.au> ; 
+    schema:mainEntityOfPage <https://hospitalresearch.org.au> ;
+    schema:sameAs <https://api.crossref.org/funders/501100022560> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/042c8nz45> ;
+        rdfs:label 'South Metropolitan Health Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/027p0bm56> ;
+        rdfs:label 'Fiona Stanley Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(115.74557 -32.05632)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Fremantle" ;
+            schema:addressCountry "AU" ;
+            schema:addressRegion "Western Australia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Australia" ;
+                schema:containedInPlace [
+                    schema:name "Oceania" ;
+                    schema:identifier "OC"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2071223/> ;
+    ] ; 
+    .

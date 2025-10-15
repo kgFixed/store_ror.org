@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04gj5px28> a org:Organization ;
+    rdfs:label 'Inha University Hospital'^^xsd:string ;
+    schema:name 'Inha University Hospital'^^xsd:string ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName '인하대학교 의과대학 부속병원'^^xsd:string@ko ; 
+    schema:url <http://inha.com> ; 
+    schema:mainEntityOfPage <https://www.inha.com> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%259D%25B8%25ED%2595%2598%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590_%25EC%259D%2598%25EA%25B3%25BC%25EB%258C%2580%25ED%2595%2599_%25EB%25B6%2580%25EC%2586%258D%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100016257> ;
+    schema:sameAs <https://grid.ac/institutions/grid.411605.7> ;
+    schema:sameAs <http://isni.org/isni/0000000406480025> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01easw929> ;
+        rdfs:label 'Inha University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.70515 37.45646)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Incheon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Incheon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1843564/> ;
+    ] ; 
+    .

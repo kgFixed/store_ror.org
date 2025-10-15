@@ -1,0 +1,247 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04040yw90> a org:Organization ;
+    rdfs:label 'Inria Rennes - Bretagne Atlantique Research Centre'^^xsd:string ;
+    schema:name 'Inria Rennes - Bretagne Atlantique Research Centre'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.inria.fr/centre/rennes> ;
+    schema:sameAs <https://grid.ac/institutions/grid.457354.4> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02kvxyf05> ;
+        rdfs:label 'Institut national de recherche en sciences et technologies du numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/007k1sp19> ;
+        rdfs:label 'HYBRID: 3D interaction with virtual environments using body and mind'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02v0g3b09> ;
+        rdfs:label 'CAPSULE: Cryptographie Appliquée et Sécurité des Implémentations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/002sjzb46> ;
+        rdfs:label 'HYCOMES: Modélisation hybride & conception par contrats pour les systèmes embarqués multi-physiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03p28de55> ;
+        rdfs:label 'VIRTUS: Nous, virtuels'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04abbt041> ;
+        rdfs:label 'PIRAT: Protection de l\'information et résistances aux attaques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00q8gze35> ;
+        rdfs:label 'RAINBOW: robotique interactive et référencée capteurs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0421ngv68> ;
+        rdfs:label 'SUSHI: Sécurité à l\'interface logiciel/matériel'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0159yvt51> ;
+        rdfs:label 'LACODAM: Fouille de données collaborative à grande échelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xkg0532> ;
+        rdfs:label 'LINKMEDIA: Creating and exploiting explicit links between multimedia fragments'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03g7tsb60> ;
+        rdfs:label 'EPICURE: Analyse sémantique et compilation pour la sécurité des environnements d\'exécution'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/038mncb54> ;
+        rdfs:label 'MIMETIC: Analysis-Synthesis Approach for Virtual Human Simulation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xnkqg56> ;
+        rdfs:label 'TARAN: Architectures matérielles spécialisées pour l\'ère post loi-de-Moore'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00077hj81> ;
+        rdfs:label 'DEVINE: Vérification efficace pour des systèmes distribués fiables'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05pj0t051> ;
+        rdfs:label 'MAGELLAN: Infrastructures Informatiques Fiables, Responsables, et Décentralisées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00w25wb51> ;
+        rdfs:label 'ODYSSEY: Océan Dynamique Observations Analyse'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03fedwt95> ;
+        rdfs:label 'SAIRPICO: Imagerie Spatio-Temporelle, Intelligence Artificielle et Calcul Numérique pour la Biologie Cellulaire et Chemobiologie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/059z1ye11> ;
+        rdfs:label 'PACAP: Pushing Architecture and Compilation for Application Performance'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03856b930> ;
+        rdfs:label 'MINGUS: Schémas numériques géométriques multi-échelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/015b80x98> ;
+        rdfs:label 'SIMSMART: SIMulation pARTiculaire de Modèles Stochastiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03p3amd86> ;
+        rdfs:label 'COMBO: Biomécanique et Méthodes Numériques pour l\'analyse de l\'interaction humain-systèmes hors du laboratoire'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03wt8n129> ;
+        rdfs:label 'STACK: Pile logicielle pour les infrastructures massivement géo distribuées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v2cwj11> ;
+        rdfs:label 'COMPACT: Compression de donn\'ees visuelles massives'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00c9pnr51> ;
+        rdfs:label 'I4S: Inférence pour les InfraStructures Intelligentes et Instrumentées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05qgc7m36> ;
+        rdfs:label 'WIDE: le monde est distribué - Vers une exploration des tensions entre grande échelle et coordination'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/022jb9a19> ;
+        rdfs:label 'SEAMLESS: Interaction et collaboration fluides à travers le continuum réalité-virtualité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/035vnpg93> ;
+        rdfs:label 'KERDATA: Stockage et traitement de données sur le continuum Edge-Cloud-HPC'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/053wq2p27> ;
+        rdfs:label 'ARTISHAU: Intelligence artificielle : sécurité, traçabilité et audit'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0194hft57> ;
+        rdfs:label 'DIVERSE: Diversity-centric Software Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/043ja9593> ;
+        rdfs:label 'DYLISS: Dynamics, Logics and Inference for biological Systems and Sequences'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gamk045> ;
+        rdfs:label 'GALLINETTE: Gallinette : vers une nouvelle génération d\'assistant à la preuve'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rttk466> ;
+        rdfs:label 'GENSCALE: Algorithmes pour les données génomiques : passage à l\'échelle, précision, frugalité'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qgdxq75> ;
+        rdfs:label 'ERMINE: Gestion et mesures des opérations et de l\'économie des réseaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005g9fg60> ;
+        rdfs:label 'MALT: Apprentissage Automatique avec Contraintes Temporelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00hr9sq71> ;
+        rdfs:label 'EMPENN: Neuroimagerie: méthodes et applications'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-1.67429 48.11198)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Rennes" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Brittany" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2983990/> ;
+    ] ; 
+    .

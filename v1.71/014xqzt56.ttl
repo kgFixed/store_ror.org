@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/014xqzt56> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1955"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'BMC'^^xsd:string@en ; 
+    org:alternativeName 'Boramae Medical Center'^^xsd:string@en ; 
+    org:abbreviation 'SMG-SNU BMC'^^xsd:string@en ; 
+    org:alternativeName 'Seoul Metropolitan Boramae Hospital'^^xsd:string@en ; 
+    org:alternativeName 'Seoul Municipal Yeoungdeungpo Hospital'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://en.brmh.org/index.do> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%2584%259C%25EC%259A%25B8%25ED%258A%25B9%25EB%25B3%2584%25EC%258B%259C_%25EB%25B3%25B4%25EB%259D%25BC%25EB%25A7%25A4%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.412479.d> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01z4nnt86> ;
+        rdfs:label 'Seoul National University Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/002wfgr58> ;
+        rdfs:label 'Seoul Metropolitan Government'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835848/> ;
+    ] ; 
+    .
