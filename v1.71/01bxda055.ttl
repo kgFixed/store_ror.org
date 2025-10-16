@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01bxda055> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1979"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'ANCS'^^xsd:string@en ; 
+    org:abbreviation 'ANSBI'^^xsd:string@en ; 
+    org:alternativeName 'Alamo Navajo Community School'^^xsd:string@en ; 
+    schema:url <http://ansbi.org> ; 
+    schema:mainEntityOfPage <https://ansbi.org> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Alamo_Navajo_School_Board> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-107.51088 34.42089)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Alamo" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "New Mexico" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/5454546/> ;
+    ] ; 
+    .

@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01zz42w05> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'ASA'^^xsd:string@en ; 
+    org:alternativeName 'Academy of Sciences of Afghanistan'^^xsd:string@en ; 
+    org:alternativeName 'Afghanistan Academy of Sciences'^^xsd:string@en ; 
+    schema:url <http://asa.gov.af> ; 
+    schema:mainEntityOfPage <https://asa.gov.af> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Academy_of_Sciences_of_Afghanistan> ; 
+    schema:sameAs <http://isni.org/isni/0000000419367301> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(69.17233 34.52813)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kabul" ;
+            schema:addressCountry "AF" ;
+            schema:addressRegion "Kabul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Afghanistan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1138958/> ;
+    ] ; 
+    .

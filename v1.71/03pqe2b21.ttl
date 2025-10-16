@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03pqe2b21> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2023"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Larkano University'^^xsd:string@en ; 
+    org:alternativeName 'University of Larkano'^^xsd:string@en ; 
+    org:alternativeName 'UoLrk'^^xsd:string@en ; 
+    schema:url <http://uolrk.edu.pk> ; 
+    schema:mainEntityOfPage <https://uolrk.edu.pk> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Larkano> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(68.21204 27.55898)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Larkana" ;
+            schema:addressCountry "PK" ;
+            schema:addressRegion "Sindh" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Pakistan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1172128/> ;
+    ] ; 
+    .

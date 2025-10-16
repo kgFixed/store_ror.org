@@ -1,0 +1,235 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05eyd5d35> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.inria.fr/centre/paris> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03cjm2544> ;
+        rdfs:label 'Centre Inria de Sorbonne Université'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02kvxyf05> ;
+        rdfs:label 'Institut national de recherche en sciences et technologies du numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04dpcfm57> ;
+        rdfs:label 'ALPINES: Algorithms and parallel tools for integrated numerical simulations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/051dcvw72> ;
+        rdfs:label 'ANGE: Analyse Numérique, Géophysique et Environnement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wpx0e31> ;
+        rdfs:label 'ARAMIS: Algorithmes, modèles et méthodes pour les images et les signaux du cerveau humain sain et pathologique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fg1yv24> ;
+        rdfs:label 'CAGE: Contrôle et géométrie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04t1xhf26> ;
+        rdfs:label 'COMMEDIA: Mathématiques et calcul scientifique pour les applications bio-médicales'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04e2h0037> ;
+        rdfs:label 'QUANTIC: QUANTum Information Circuits'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05rnwy495> ;
+        rdfs:label 'ALMANACH: Modélisation et analyse linguistique automatique et humanités computationnelles'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nryz461> ;
+        rdfs:label 'PROSECCO: Programming securely with cryptography'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00e5h1370> ;
+        rdfs:label 'SERENA: Simulation for the Environment: Reliable and Efficient Numerical Algorithms'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/033f87p02> ;
+        rdfs:label 'PICUBE: Les assistants à la démonstration au cœur du raisonnement mathématique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jpms184> ;
+        rdfs:label 'NERV: Neuroingénierie des systèmes pour modéliser et interfacer les réseaux cérébraux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00rzkah64> ;
+        rdfs:label 'MUSCLEES: Compréhension mathématique multi-échelles d\'écosystèmes vivants complexes avec structures émergentes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05pp95825> ;
+        rdfs:label 'MOKAPLAN: Avancées en calcul numérique des variations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04881ht90> ;
+        rdfs:label 'MIMOVE: Middleware on the Move'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013c4e161> ;
+        rdfs:label 'KOPERNIC: Adapter le raisonnement pire cas à différentes criticités'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/024tnzs33> ;
+        rdfs:label 'COSMIQ: Cryptologie symétrique, cryptologie fondée sur les codes et information quantique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01qemch77> ;
+        rdfs:label 'CAMBIUM: Langages de programmation : systèmes de types, concurrence, preuve de programme'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055gkws08> ;
+        rdfs:label 'ASTRA: Systèmes de transport automatisés et sécurisés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jkb9r34> ;
+        rdfs:label 'ARGO: Apprentissage, graphes et optimisation distribuée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ppjg142> ;
+        rdfs:label 'AIO: Mise en réseau fiable, sans fil à faible consommation et micro-robotique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05a6hqa33> ;
+        rdfs:label 'EPIMETHEE: Approches expérimentales et numériques pour explorer le cerveau des insectes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02wakmj41> ;
+        rdfs:label 'ANTIQUE: Analyse Statique par Interprétation Abstraite'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04zpj8n12> ;
+        rdfs:label 'CASCADE: Conception et Analyse de Systèmes pour la Confidentialité et l\'Authentification de Données et d\'Entitées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04c96ng72> ;
+        rdfs:label 'WILLOW: Vision par ordinateur incarnée'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xn8xq53> ;
+        rdfs:label 'VALDA: Valeur à partir des données'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02njc8q57> ;
+        rdfs:label 'DYOGENE: Dynamics of Geometric Networks'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0485z7y90> ;
+        rdfs:label 'SIERRA: Apprentissage Statistique et optimisation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05089qr23> ;
+        rdfs:label 'WHISPER: Well Honed Infrastructure Software for Programming Environments and Runtimes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02tnfe688> ;
+        rdfs:label 'PARKAS: Parallélisme de Kahn Synchrone'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05pv6tc14> ;
+        rdfs:label 'MATHERIALS: MATHematics for MatERIALS'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/016z8nq35> ;
+        rdfs:label 'MATHRISK: Mathematical Risk handling'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

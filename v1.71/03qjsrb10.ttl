@@ -1,0 +1,61 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03qjsrb10> a org:Organization ;
+    rdfs:label 'Soonchunhyang University'^^xsd:string ;
+    schema:name 'Soonchunhyang University'^^xsd:string ;
+    schema:foundingDate "1978"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'SCH'^^xsd:string@None ; 
+    schema:mainEntityOfPage <https://homepage.sch.ac.kr/sch/index.jsp?epTicket=LOG> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Soonchunhyang_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002560> ;
+    schema:sameAs <https://grid.ac/institutions/grid.412674.2> ;
+    schema:sameAs <http://isni.org/isni/0000000417736524> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bj3z035> ;
+        rdfs:label 'Soonchunhyang University Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05eqxpf83> ;
+        rdfs:label 'Soonchunhyang University Hospital Seoul'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03wg7b808> ;
+        rdfs:label 'Soonchunhyang University Hospital Bucheon'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835848/> ;
+    ] ; 
+    .

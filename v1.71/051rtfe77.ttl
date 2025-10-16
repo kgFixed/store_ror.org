@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/051rtfe77> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2008"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'SHLR'^^xsd:string@None ; 
+    org:alternativeName 'Schweizer Hochschule für Logopädie Rorschach'^^xsd:string@de ; 
+    org:abbreviation 'hlo'^^xsd:string@de ; 
+    schema:url <http://hlo.ch> ; 
+    schema:url <http://shlr.ch> ; 
+    schema:mainEntityOfPage <https://www.hlo.ch> ;
+    schema:sameAs <https://grid.ac/institutions/grid.469491.7> ;
+    schema:sameAs <http://isni.org/isni/000000040450760X> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.37477 47.42391)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Saint Gallen" ;
+            schema:addressCountry "CH" ;
+            schema:addressRegion "Saint Gallen" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Switzerland" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2658822/> ;
+    ] ; 
+    .

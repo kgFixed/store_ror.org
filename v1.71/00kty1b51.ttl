@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00kty1b51> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'company'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'TideTron'^^xsd:string@en ; 
+    org:alternativeName 'Tidetron Bioworks Technology'^^xsd:string@en ; 
+    org:alternativeName 'Tidetron Bioworks Technology (Guangzhou) Co., Ltd.'^^xsd:string@en ; 
+    org:alternativeName '万物生长'^^xsd:string@zh ; 
+    org:alternativeName '态创'^^xsd:string@zh ; 
+    org:alternativeName '态创生物科技'^^xsd:string@zh ; 
+    org:alternativeName '态创生物科技（广州）有限公司'^^xsd:string@zh ; 
+    schema:url <http://tidetronbio.com> ; 
+    schema:mainEntityOfPage <https://www.tidetronbio.com> ;
+    schema:sameAs <http://isni.org/isni/0000000512499395> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(113.25222 23.10056)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Haizhu Qu" ;
+            schema:addressCountry "CN" ;
+            schema:addressRegion "Guangdong" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "China" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/6571341/> ;
+    ] ; 
+    .

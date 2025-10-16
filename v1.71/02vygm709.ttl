@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02vygm709> a org:Organization ;
+    rdfs:label 'Incheon Medical Center'^^xsd:string ;
+    schema:name 'Incheon Medical Center'^^xsd:string ;
+    schema:foundingDate "1883"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2020-07-06"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'ICMC'^^xsd:string@en ; 
+    org:alternativeName 'Incheon Metropolitan Medical Center'^^xsd:string@en ; 
+    org:alternativeName '인천광역시 의료원'^^xsd:string@ko ; 
+    org:alternativeName '인천광역시의료원'^^xsd:string@ko ; 
+    schema:url <http://icmc.or.kr> ; 
+    schema:mainEntityOfPage <https://www.icmc.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%259D%25B8%25EC%25B2%259C%25EA%25B4%2591%25EC%2597%25AD%25EC%258B%259C%25EC%259D%2598%25EB%25A3%258C%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.508282.5> ;
+    schema:sameAs <http://isni.org/isni/0000000404482510> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.70515 37.45646)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Incheon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Incheon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1843564/> ;
+    ] ; 
+    .

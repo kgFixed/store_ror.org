@@ -1,0 +1,60 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02x6rcb77> a org:Organization ;
+    rdfs:label 'Máxima Medisch Centrum'^^xsd:string ;
+    schema:name 'Máxima Medisch Centrum'^^xsd:string ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'MMC'^^xsd:string@None ; 
+    schema:url <http://mmc.nl> ; 
+    schema:mainEntityOfPage <https://www.mmc.nl> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/M%25C3%25A1xima_Medisch_Centrum> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.414711.6> ;
+    schema:sameAs <http://isni.org/isni/0000000404774812> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02jz4aj89> ;
+        rdfs:label 'Maastricht University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/016xsfp80> ;
+        rdfs:label 'Radboud University Nijmegen'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/02c2kyt77> ;
+        rdfs:label 'Eindhoven University of Technology'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(5.40278 51.41833)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Veldhoven" ;
+            schema:addressCountry "NL" ;
+            schema:addressRegion "North Brabant" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "The Netherlands" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2745706/> ;
+    ] ; 
+    .

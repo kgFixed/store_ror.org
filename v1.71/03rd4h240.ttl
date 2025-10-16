@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03rd4h240> a org:Organization ;
+    rdfs:label 'Office of Electricity Delivery and Energy Reliability'^^xsd:string ;
+    schema:name 'Office of Electricity Delivery and Energy Reliability'^^xsd:string ;
+    schema:foundingDate "2003"^^xsd:gYear ;
+    org:status 'withdrawn'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'OE'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://energy.gov/oe/office-electricity-delivery-and-energy-reliability> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Office_of_Electricity_Delivery_and_Energy_Reliability> ; 
+    schema:sameAs <https://api.crossref.org/funders/100006130> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453355.1> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01bj3aw27> ;
+        rdfs:label 'United States Department of Energy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/02y6dp041> ;
+        rdfs:label 'Office of Electricity'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Washington" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "District of Columbia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4140963/> ;
+    ] ; 
+    .

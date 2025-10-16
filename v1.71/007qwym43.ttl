@@ -1,0 +1,142 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/007qwym43> a org:Organization ;
+    rdfs:label 'NOAA National Environmental Satellite Data and Information Service'^^xsd:string ;
+    schema:name 'NOAA National Environmental Satellite Data and Information Service'^^xsd:string ;
+    schema:foundingDate "1982"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'NESDIS'^^xsd:string@None ; 
+    org:abbreviation 'NOAA NESDIS'^^xsd:string@None ; 
+    org:alternativeName 'NOAA Satellite and Information Service'^^xsd:string@en ; 
+    org:alternativeName 'National Environmental Satellite Data and Information Service'^^xsd:string@en ; 
+    schema:mainEntityOfPage <http://www.nesdis.noaa.gov/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/National_Environmental_Satellite,_Data,_and_Information_Service> ; 
+    schema:sameAs <https://api.crossref.org/funders/100018608> ;
+    schema:sameAs <https://grid.ac/institutions/grid.422703.0> ;
+    schema:sameAs <http://isni.org/isni/0000000106602940> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03yn06t56> ;
+        rdfs:label 'NOAA Center for Satellite Applications and Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/023sgdn25> ;
+        rdfs:label 'NOAA Near Earth Orbit Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04qaf2y58> ;
+        rdfs:label 'NOAA International & Interagency Affairs Division'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005sm0w71> ;
+        rdfs:label 'NOAA Geostationary Extended Observations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rcakp17> ;
+        rdfs:label 'NOAA Geostationary Operational Environmental Satellites'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04r0wrp59> ;
+        rdfs:label 'NOAA National Centers for Environmental Information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label 'National Oceanic and Atmospheric Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01z3tfx80> ;
+        rdfs:label 'NOAA Office of Geostationary Earth Orbit Observations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/017z8h955> ;
+        rdfs:label 'NOAA Office of Low Earth Orbit Observations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0432dh318> ;
+        rdfs:label 'NOAA Office of Common Services'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03m2f9j08> ;
+        rdfs:label 'NOAA Office of Satellite Ground Services'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00cg22c97> ;
+        rdfs:label 'NOAA Office of Satellite and Product Operations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ypd8a97> ;
+        rdfs:label 'NOAA Office of System Architecture and Advanced Planning'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02jb34965> ;
+        rdfs:label 'NOAA Systems Architecture and Engineering'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02pkedj80> ;
+        rdfs:label 'NOAA Office of Projects, Planning, and Analysis'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0312jvg82> ;
+        rdfs:label 'NOAA Office of Space Weather Observations'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.02609 38.99067)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Silver Spring" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Maryland" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4369596/> ;
+    ] ; 
+    .
