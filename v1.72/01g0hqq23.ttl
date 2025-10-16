@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01g0hqq23> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'IITP'^^xsd:string@None ; 
+    org:alternativeName 'Institute of Information and Communications Technology Planning and Evaluation'^^xsd:string@en ; 
+    org:alternativeName '정보통신기술진흥센터'^^xsd:string@ko ; 
+    schema:url <http://iitp.kr> ; 
+    schema:mainEntityOfPage <https://iitp.kr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Institute_for_Information_and_Communications_Technology_Promotion> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100010418> ;
+    schema:sameAs <https://grid.ac/institutions/grid.484308.3> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01wpjm123> ;
+        rdfs:label 'Ministry of Science and ICT'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.38493 36.34913)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Daejeon" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Daejeon" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835235/> ;
+    ] ; 
+    .

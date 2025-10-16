@@ -1,0 +1,81 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/058pdbn81> a org:Organization ;
+    rdfs:label 'Dankook University'^^xsd:string ;
+    schema:name 'Dankook University'^^xsd:string ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'DKU'^^xsd:string@None ; 
+    org:abbreviation 'DU'^^xsd:string@None ; 
+    schema:url <http://dankook.ac.kr> ; 
+    schema:mainEntityOfPage <https://www.dankook.ac.kr/web/kor> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Dankook_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002467> ;
+    schema:sameAs <https://grid.ac/institutions/grid.411982.7> ;
+    schema:sameAs <http://isni.org/isni/0000000107054288> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04y897m55> ;
+        rdfs:label 'Dankook University Dental Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/05v0qpv28> ;
+        rdfs:label 'Dankook University Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05v0qpv28> ;
+        rdfs:label 'Dankook University Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.10648 37.32787)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Jukjeon-dong" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeonggi-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/8691531/> ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.1522 36.8065)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cheonan" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Chungcheongnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1845759/> ;
+    ] ; 
+    .

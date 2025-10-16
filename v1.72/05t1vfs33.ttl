@@ -1,0 +1,41 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05t1vfs33> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1912"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'FLFR'^^xsd:string@en ; 
+    org:alternativeName 'Fort Lauderdale Fire Department'^^xsd:string@en ; 
+    org:alternativeName 'Fort Lauderdale Fire-Rescue Department'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.fortlauderdale.gov/government/departments-a-h/fire-rescue> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Fort_Lauderdale_Fire-Rescue_Department> ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-80.14338 26.12231)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Fort Lauderdale" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Florida" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4155966/> ;
+    ] ; 
+    .

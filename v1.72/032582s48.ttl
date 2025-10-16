@@ -1,0 +1,63 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/032582s48> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1878"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Besançon Astronomical Observatory'^^xsd:string@en ; 
+    org:alternativeName 'Besançon Observatory'^^xsd:string@fr ; 
+    org:abbreviation 'OSU THETA'^^xsd:string@fr ; 
+    org:alternativeName 'OSU Théta'^^xsd:string@fr ; 
+    org:alternativeName 'Observatoire de Besançon'^^xsd:string@fr ; 
+    org:alternativeName 'Observatoire des sciences de l\'Univers de Besançon'^^xsd:string@fr ; 
+    org:alternativeName 'Observatory for Universe Sciences of Franche-Comté Burgundy'^^xsd:string@en ; 
+    org:abbreviation 'THETA'^^xsd:string@fr ; 
+    org:alternativeName 'UMS 3245'^^xsd:string@None ; 
+    org:alternativeName 'Unité d\'Appui et de Recherche THETA'^^xsd:string@fr ; 
+    schema:url <http://theta.obs-besancon.fr> ; 
+    schema:mainEntityOfPage <https://theta.obs-besancon.fr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Besan%25C3%25A7on_Astronomical_Observatory> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.440396.c> ;
+    schema:sameAs <http://isni.org/isni/000000011516257X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04kdfz702> ;
+        rdfs:label 'Institut National des Sciences de l\'Univers'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/004fmxv66> ;
+        rdfs:label 'Franche-Comté Électronique Mécanique Thermique et Optique - Sciences et Technologies'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(6.01815 47.24878)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Besançon" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Bourgogne-Franche-Comté" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3033123/> ;
+    ] ; 
+    .

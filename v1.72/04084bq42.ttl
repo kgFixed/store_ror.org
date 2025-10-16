@@ -1,0 +1,42 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04084bq42> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'UMDC'^^xsd:string@en ; 
+    org:alternativeName 'United Medical & Dental College'^^xsd:string@en ; 
+    org:alternativeName 'United Medical and Dental College, Korangi'^^xsd:string@en ; 
+    schema:url <http://umdc.edu.pk> ; 
+    schema:mainEntityOfPage <https://umdc.edu.pk> ;
+    schema:sameAs <http://isni.org/isni/0000000459953789> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(67.0104 24.8608)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Karachi" ;
+            schema:addressCountry "PK" ;
+            schema:addressRegion "Sindh" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Pakistan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1174872/> ;
+    ] ; 
+    .

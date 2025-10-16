@@ -1,0 +1,55 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05v0qpv28> a org:Organization ;
+    rdfs:label 'Dankook University Hospital'^^xsd:string ;
+    schema:name 'Dankook University Hospital'^^xsd:string ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'DKUH'^^xsd:string@en ; 
+    org:alternativeName '단국대학교의과대학부속병원'^^xsd:string@ko ; 
+    schema:url <http://dkuh.co.kr> ; 
+    schema:mainEntityOfPage <https://www.dkuh.co.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EB%258B%25A8%25EA%25B5%25AD%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.411983.6> ;
+    schema:sameAs <http://isni.org/isni/0000000406471313> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/058pdbn81> ;
+        rdfs:label 'Dankook University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/058pdbn81> ;
+        rdfs:label 'Dankook University'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.1522 36.8065)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Cheonan" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Chungcheongnam-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1845759/> ;
+    ] ; 
+    .

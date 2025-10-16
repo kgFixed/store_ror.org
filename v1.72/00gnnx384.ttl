@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00gnnx384> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-06-24"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Universitätsverlag Kassel'^^xsd:string@de ; 
+    org:abbreviation 'kup'^^xsd:string@en ; 
+    schema:url <http://kup.uni-kassel.de> ; 
+    schema:mainEntityOfPage <https://kup.uni-kassel.de> ;
+    owl:sameAs <https://de.wikipedia.org/wiki/Kassel_University_Press> ; 
+    schema:sameAs <http://isni.org/isni/0000000485167001> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04zc7p361> ;
+        rdfs:label 'University of Kassel'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.5 51.31667)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Kassel" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Hesse" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2892518/> ;
+    ] ; 
+    .

@@ -1,0 +1,77 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03011gg73> a org:Organization ;
+    rdfs:label 'Institut de Recherche Dupuy de Lôme'^^xsd:string ;
+    schema:name 'Institut de Recherche Dupuy de Lôme'^^xsd:string ;
+    schema:foundingDate "2016"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2019-02-17"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'IRDL'^^xsd:string@None ; 
+    schema:url <http://irdl.fr> ; 
+    schema:mainEntityOfPage <https://www.irdl.fr> ;
+    schema:sameAs <https://grid.ac/institutions/grid.503209.d> ;
+    schema:sameAs <http://isni.org/isni/0000000483427092> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02ypw0a72> ;
+        rdfs:label 'École nationale d\'ingénieurs de Brest'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/04ed7fw48> ;
+        rdfs:label 'Université de Bretagne Sud'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/0372th171> ;
+        rdfs:label 'Université de Bretagne Occidentale'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label 'Centre National de la Recherche Scientifique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/059n54003> ;
+        rdfs:label 'École nationale supérieure de techniques avancées Bretagne'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00s19x989> ;
+        rdfs:label 'CNRS Ingénierie'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-3.37177 47.74817)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Lorient" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Brittany" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2997577/> ;
+    ] ; 
+    .
