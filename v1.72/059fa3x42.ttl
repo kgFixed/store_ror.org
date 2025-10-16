@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/059fa3x42> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1988"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'KIC'^^xsd:string@en ; 
+    org:abbreviation 'KICJ'^^xsd:string@en ; 
+    org:alternativeName 'Korean Institute of Criminology'^^xsd:string@en ; 
+    org:alternativeName '한국형사정책연구원'^^xsd:string@ko ; 
+    schema:url <http://kicj.re.kr> ; 
+    schema:mainEntityOfPage <https://www.kicj.re.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25ED%2595%259C%25EA%25B5%25AD%25ED%2598%2595%25EC%2582%25AC%25C2%25B7%25EB%25B2%2595%25EB%25AC%25B4%25EC%25A0%2595%25EC%25B1%2585%25EC%2597%25B0%25EA%25B5%25AC%25EC%259B%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003724> ;
+    schema:sameAs <https://grid.ac/institutions/grid.454140.0> ;
+    schema:sameAs <http://isni.org/isni/0000000406480666> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/012zp9903> ;
+        rdfs:label 'National Research Council for Economics Humanities and Social Science'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835848/> ;
+    ] ; 
+    .

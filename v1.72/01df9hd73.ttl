@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01df9hd73> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1949"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'ISR'^^xsd:string@en ; 
+    org:alternativeName 'University of Michigan Institute for Social Research'^^xsd:string@en ; 
+    schema:url <http://isr.umich.edu> ; 
+    schema:mainEntityOfPage <https://isr.umich.edu> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/University_of_Michigan_Institute_for_Social_Research> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00jmfr291> ;
+        rdfs:label 'University of Michigan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02q7mkh03> ;
+        rdfs:label 'Inter-university Consortium for Political and Social Research'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-83.74088 42.27756)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Ann Arbor" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Michigan" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4984247/> ;
+    ] ; 
+    .

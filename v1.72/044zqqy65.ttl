@@ -1,0 +1,151 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/044zqqy65> a org:Organization ;
+    rdfs:label 'National Park Service'^^xsd:string ;
+    schema:name 'National Park Service'^^xsd:string ;
+    schema:foundingDate "1916"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'NPS'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.nps.gov/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/National_Park_Service> ; 
+    schema:sameAs <https://api.crossref.org/funders/100007516> ;
+    schema:sameAs <https://grid.ac/institutions/grid.454846.f> ;
+    schema:sameAs <http://isni.org/isni/0000000123313972> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04rw5yk74> ;
+        rdfs:label 'Yellowstone National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vpxf870> ;
+        rdfs:label 'Grand Teton National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02pbyft41> ;
+        rdfs:label 'Southwest Alaska Inventory and Monitoring Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04cbgjc24> ;
+        rdfs:label 'Petrified Forest National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0411d8q28> ;
+        rdfs:label 'Waco Mammoth National Monument'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05f685734> ;
+        rdfs:label 'Crater Lake National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0445j8v47> ;
+        rdfs:label 'Yosemite National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0095bgs14> ;
+        rdfs:label 'Grand Canyon National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05jnvkm15> ;
+        rdfs:label 'Voyageurs National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04hh72v06> ;
+        rdfs:label 'Big Bend National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04cq7sd97> ;
+        rdfs:label 'Wrangell–St. Elias National Park and Preserve'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00fc2ss05> ;
+        rdfs:label 'Badlands National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02xyazb71> ;
+        rdfs:label 'Biscayne National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/046tzsh56> ;
+        rdfs:label 'Channel Islands National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xfvq521> ;
+        rdfs:label 'Death Valley National Park'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03v0pmy70> ;
+        rdfs:label 'United States Department of the Interior'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/012j2vh13> ;
+        rdfs:label 'Denali National Park and Preserve'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013095052> ;
+        rdfs:label 'Everglades National Park'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-77.03637 38.89511)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Washington" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "District of Columbia" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4140963/> ;
+    ] ; 
+    .

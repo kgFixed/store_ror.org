@@ -1,0 +1,73 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04sze3c15> a org:Organization ;
+    rdfs:label 'Yonsei University Health System'^^xsd:string ;
+    schema:name 'Yonsei University Health System'^^xsd:string ;
+    schema:foundingDate "1885"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'YUHS'^^xsd:string@en ; 
+    org:alternativeName '연세의료원'^^xsd:string@ko ; 
+    schema:url <http://yuhs.severance.healthcare> ; 
+    schema:mainEntityOfPage <https://yuhs.severance.healthcare> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EC%2597%25B0%25EC%2584%25B8%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590_%25EC%259D%2598%25EB%25A3%258C%25EC%259B%2590> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.413046.4> ;
+    schema:sameAs <http://isni.org/isni/0000000404394086> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02fzwdc59> ;
+        rdfs:label 'Yonsei University Dental Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0357msq30> ;
+        rdfs:label 'Yongin Severance Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04ajwkn20> ;
+        rdfs:label 'Gangnam Severance Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01wjejq96> ;
+        rdfs:label 'Yonsei University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044kjp413> ;
+        rdfs:label 'Severance Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835848/> ;
+    ] ; 
+    .

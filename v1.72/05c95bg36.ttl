@@ -1,0 +1,79 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05c95bg36> a org:Organization ;
+    rdfs:label 'Laboratoire de Physique des Plasmas'^^xsd:string ;
+    schema:name 'Laboratoire de Physique des Plasmas'^^xsd:string ;
+    schema:foundingDate "2009"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'LPP'^^xsd:string@fr ; 
+    org:abbreviation 'LPTP'^^xsd:string@fr ; 
+    org:alternativeName 'Laboratoire de physique et technologie des plasmas'^^xsd:string@fr ; 
+    org:alternativeName 'Laboratory of Plasma Physics'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.lpp.polytechnique.fr> ;
+    schema:sameAs <https://grid.ac/institutions/grid.463932.9> ;
+    schema:sameAs <http://isni.org/isni/0000000403702526> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00s19x989> ;
+        rdfs:label 'CNRS Ingénierie'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/029nkcm90> ;
+        rdfs:label 'Observatoire de Paris'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02en5vm52> ;
+        rdfs:label 'Sorbonne Université'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05hy3tk52> ;
+        rdfs:label 'École Polytechnique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03xjwb503> ;
+        rdfs:label 'Université Paris-Saclay'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02feahw73> ;
+        rdfs:label 'Centre National de la Recherche Scientifique'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.2498 48.71828)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Palaiseau" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988758/> ;
+    ] ; 
+    .

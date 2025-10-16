@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01ddqfh11> a org:Organization ;
+    rdfs:label 'Institut Droit et Santé'^^xsd:string ;
+    schema:name 'Institut Droit et Santé'^^xsd:string ;
+    schema:foundingDate "2014"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2023-08-17"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Health Law Institute'^^xsd:string@en ; 
+    org:abbreviation 'IDS'^^xsd:string@None ; 
+    org:alternativeName 'U 1145'^^xsd:string@None ; 
+    org:alternativeName 'U1145'^^xsd:string@None ; 
+    org:alternativeName 'UMRS 1145'^^xsd:string@None ; 
+    org:alternativeName 'UMRS1145'^^xsd:string@None ; 
+    schema:mainEntityOfPage <http://www.institutdroitsante.fr> ;
+    schema:sameAs <http://isni.org/isni/0000000122863083> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02vjkv261> ;
+        rdfs:label 'Inserm'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05f82e368> ;
+        rdfs:label 'Université Paris Cité'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(2.3488 48.85341)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Paris" ;
+            schema:addressCountry "FR" ;
+            schema:addressRegion "Île-de-France" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "France" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2988507/> ;
+    ] ; 
+    .

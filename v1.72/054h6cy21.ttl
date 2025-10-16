@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/054h6cy21> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'College of Technical Sciences, Bani Walid'^^xsd:string@en ; 
+    org:alternativeName 'Faculty of Technical Sciences - Bani Walid'^^xsd:string@en ; 
+    schema:url <http://ctsbw.edu.ly> ; 
+    schema:mainEntityOfPage <https://ctsbw.edu.ly> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(13.98354 31.74554)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Bani Walid" ;
+            schema:addressCountry "LY" ;
+            schema:addressRegion "Mişrātah" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Libya" ;
+                schema:containedInPlace [
+                    schema:name "Africa" ;
+                    schema:identifier "AF"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2218840/> ;
+    ] ; 
+    .

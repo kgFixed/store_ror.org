@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01r47w237> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2023"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'CAIR-Nepal'^^xsd:string@en ; 
+    org:alternativeName 'Center for Artificial Intelligence (AI) Research Nepal'^^xsd:string@en ; 
+    schema:url <http://cair-nepal.org> ; 
+    schema:mainEntityOfPage <https://cair-nepal.org> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(87.47323 26.61069)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Morang" ;
+            schema:addressCountry "NP" ;
+            schema:addressRegion "Koshi" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Nepal" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/12095492/> ;
+    ] ; 
+    .

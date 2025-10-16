@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/055ggwx94> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'JAMSTEC Yokohama Institute for Earth Sciences'^^xsd:string@en ; 
+    org:abbreviation 'YES'^^xsd:string@en ; 
+    org:alternativeName 'Yokohama Institute for Earth Sciences (YES)'^^xsd:string@en ; 
+    org:alternativeName '横浜研究所'^^xsd:string@ja ; 
+    schema:mainEntityOfPage <https://www.jamstec.go.jp/e/about/access/yokohama.html> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/059qg2m13> ;
+        rdfs:label 'Japan Agency for Marine-Earth Science and Technology'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(139.65 35.43333)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Yokohama" ;
+            schema:addressCountry "JP" ;
+            schema:addressRegion "Kanagawa" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Japan" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1848354/> ;
+    ] ; 
+    .

@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/009g8rq41> a org:Organization ;
+    rdfs:label 'Ministry of Agriculture, Food and Rural Affairs'^^xsd:string ;
+    schema:name 'Ministry of Agriculture, Food and Rural Affairs'^^xsd:string ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'MAFRA'^^xsd:string@None ; 
+    org:alternativeName 'Ministry of Agriculture'^^xsd:string@en ; 
+    org:alternativeName 'Nongnim Chucksan Sikpum-bu'^^xsd:string@None ; 
+    schema:url <http://mafra.go.kr> ; 
+    schema:mainEntityOfPage <http://www.mafra.go.kr> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Agriculture,_Food_and_Rural_Affairs_(South_Korea)> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003624> ;
+    schema:sameAs <https://grid.ac/institutions/grid.419888.4> ;
+    schema:sameAs <http://isni.org/isni/0000000459486949> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02chzeh21> ;
+        rdfs:label 'National Institute of Fisheries Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/044eq7773> ;
+        rdfs:label 'Korea Seed & Variety Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025mxgc68> ;
+        rdfs:label 'National Agricultural Products Quality Management Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00vn4ec76> ;
+        rdfs:label 'Korea National College of Agriculture and Fisheries'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03xs9yg50> ;
+        rdfs:label 'Rural Development Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label 'Government of the Republic of Korea'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00avq9860> ;
+        rdfs:label 'Korea Rural Economic Institute'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Sejong" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Sejong-si" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/11523293/> ;
+    ] ; 
+    .

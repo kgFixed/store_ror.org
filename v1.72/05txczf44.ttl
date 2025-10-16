@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05txczf44> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'LIAG'^^xsd:string@None ; 
+    org:alternativeName 'Leibniz Institute for Applied Geophysics'^^xsd:string@en ; 
+    org:alternativeName 'Leibniz-Institut für Angewandte Geophysik'^^xsd:string@de ; 
+    schema:url <http://liag-institut.de> ; 
+    schema:mainEntityOfPage <https://www.liag-institut.de> ;
+    schema:sameAs <https://api.crossref.org/funders/501100004114> ;
+    schema:sameAs <https://grid.ac/institutions/grid.461783.f> ;
+    schema:sameAs <http://isni.org/isni/0000000100732402> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.73322 52.37052)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hanover" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Lower Saxony" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2910831/> ;
+    ] ; 
+    .

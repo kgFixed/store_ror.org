@@ -1,0 +1,51 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/035enhp47> a org:Organization ;
+    rdfs:label 'Korea Institute of Civil Engineering and Building Technology'^^xsd:string ;
+    schema:name 'Korea Institute of Civil Engineering and Building Technology'^^xsd:string ;
+    schema:foundingDate "1983"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'KICT'^^xsd:string@None ; 
+    org:alternativeName 'Korea Institute of Construction Technology'^^xsd:string@en ; 
+    schema:url <http://kict.re.kr> ; 
+    schema:mainEntityOfPage <https://www.kict.re.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25ED%2595%259C%25EA%25B5%25AD%25EA%25B1%25B4%25EC%2584%25A4%25EA%25B8%25B0%25EC%2588%25A0%25EC%2597%25B0%25EA%25B5%25AC%25EC%259B%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003698> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453485.b> ;
+    schema:sameAs <http://isni.org/isni/000000009003276X> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/058rymf81> ;
+        rdfs:label 'National Research Council of Science and Technology'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.835 37.65639)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Goyang-si" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Gyeonggi-do" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1842485/> ;
+    ] ; 
+    .

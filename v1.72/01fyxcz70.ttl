@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01fyxcz70> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'DOIF'^^xsd:string@en ; 
+    org:alternativeName 'Digital Object Identifier Foundation'^^xsd:string@en ; 
+    org:abbreviation 'IDF'^^xsd:string@en ; 
+    org:alternativeName 'International DOI Foundation'^^xsd:string@en ; 
+    schema:url <http://doi.org> ; 
+    schema:mainEntityOfPage <https://www.doi.org> ;
+    owl:sameAs <https://de.wikipedia.org/wiki/International_DOI_Foundation> ; 
+    schema:sameAs <http://isni.org/isni/0000000087210350> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-75.54659 39.74595)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Wilmington" ;
+            schema:addressCountry "US" ;
+            schema:addressRegion "Delaware" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "United States" ;
+                schema:containedInPlace [
+                    schema:name "North America" ;
+                    schema:identifier "NA"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/4145381/> ;
+    ] ; 
+    .

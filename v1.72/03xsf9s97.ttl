@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03xsf9s97> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1865"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'archive'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Erlebnis-Zoo Hannover'^^xsd:string@de ; 
+    org:alternativeName 'Hannover Adventure Zoo'^^xsd:string@en ; 
+    org:alternativeName 'Hannover Zoo'^^xsd:string@en ; 
+    org:alternativeName 'Zoo Hannover'^^xsd:string@de ; 
+    org:alternativeName 'Zoo Hannover GmbH'^^xsd:string@de ; 
+    schema:url <http://erlebnis-zoo.de> ; 
+    schema:url <http://zoo-hannover.de> ; 
+    schema:mainEntityOfPage <https://www.zoo-hannover.de> ;
+    owl:sameAs <https://de.wikipedia.org/wiki/Erlebnis-Zoo_Hannover> ; 
+    schema:sameAs <http://isni.org/isni/0000000103448079> ;
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(9.73322 52.37052)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Hanover" ;
+            schema:addressCountry "DE" ;
+            schema:addressRegion "Lower Saxony" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Germany" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/2910831/> ;
+    ] ; 
+    .

@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04anxv382> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1997"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-08-06"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:alternativeName 'Federal Scientific and Clinical Center for Sports Medicine of the Federal Biomedical Agency'^^xsd:string@en ; 
+    org:abbreviation 'NCSM'^^xsd:string@en ; 
+    org:alternativeName 'National Center for Sports Medicine of the Federal Medical and Biological Agency'^^xsd:string@en ; 
+    org:alternativeName 'Национальный центр спортивной медицины'^^xsd:string@ru ; 
+    org:alternativeName 'ФГБУ НЦСМ ФМБА России'^^xsd:string@ru ; 
+    schema:url <http://sportfmba.ru> ; 
+    schema:mainEntityOfPage <https://www.sportfmba.ru> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/052ay8m85> ;
+        rdfs:label 'Federal Medical-Biological Agency'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(37.61781 55.75204)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Moscow" ;
+            schema:addressCountry "RU" ;
+            schema:addressRegion "Moscow" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Russia" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/524901/> ;
+    ] ; 
+    .

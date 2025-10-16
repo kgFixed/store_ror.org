@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03pw3x387> a org:Organization ;
+    rdfs:label 'Gangneung Asan Hospital'^^xsd:string ;
+    schema:name 'Gangneung Asan Hospital'^^xsd:string ;
+    schema:foundingDate "1996"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    schema:url <http://gnah.co.kr> ; 
+    schema:mainEntityOfPage <https://www.gnah.co.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B0%2595%25EB%25A6%2589%25EC%2595%2584%25EC%2582%25B0%25EB%25B3%2591%25EC%259B%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003411> ;
+    schema:sameAs <https://grid.ac/institutions/grid.415292.9> ;
+    schema:sameAs <http://isni.org/isni/0000000406473052> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05pa68763> ;
+        rdfs:label 'Asan Foundation'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Seoul" ;
+            schema:addressCountry "KR" ;
+            schema:addressRegion "Seoul" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "South Korea" ;
+                schema:containedInPlace [
+                    schema:name "Asia" ;
+                    schema:identifier "AS"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/1835848/> ;
+    ] ; 
+    .

@@ -1,0 +1,65 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00kj4ev13> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "2002"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-10-05"^^xsd:date ;
+    dct:modified "2025-10-06"^^xsd:date ;
+    org:abbreviation 'SESPA'^^xsd:string@es ; 
+    schema:url <http://astursalud.es> ; 
+    schema:mainEntityOfPage <https://www.astursalud.es> ;
+    owl:sameAs <https://es.wikipedia.org/wiki/Servicio_de_Salud_del_Principado_de_Asturias> ; 
+    schema:sameAs <http://isni.org/isni/0000000095043505> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03v85ar63> ;
+        rdfs:label 'Central University Hospital of Asturias'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03yw66316> ;
+        rdfs:label 'Hospital Universitario De Cabueñes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05x6qqf62> ;
+        rdfs:label 'Hospital Valle del Nalón'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/003zecf96> ;
+        rdfs:label 'Hospital San Agustin'^^xsd:string ;
+    ] ; 
+    schema:location [
+        a schema:Place ;
+        geo:asWKT "POINT(-5.84476 43.36029)"^^geo:wktLiteral ;
+        schema:address [
+            schema:addressLocality "Oviedo" ;
+            schema:addressCountry "ES" ;
+            schema:addressRegion "Asturias" ;
+            dct:spatial [
+                a dct:Location ;
+                schema:name "Spain" ;
+                schema:containedInPlace [
+                    schema:name "Europe" ;
+                    schema:identifier "EU"
+                ]
+            ]
+        ] ;
+        owl:sameAs <http://sws.geonames.org/3114711/> ;
+    ] ; 
+    .
