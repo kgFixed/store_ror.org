@@ -1,0 +1,72 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01p262204> a org:Organization ;
+    rdfs:label 'Ministry of Education'^^xsd:string ;
+    schema:name 'Ministry of Education'^^xsd:string ;
+    schema:foundingDate "2013"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'MOE'^^xsd:string; 
+    schema:mainEntityOfPage <http://english.moe.go.kr/> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Education_(South_Korea)> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002701> ;
+    schema:sameAs <https://grid.ac/institutions/grid.452901.b> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/020r4p198> ;
+        rdfs:label 'Korea Education and Research Information Service'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00ajg8t71> ;
+        rdfs:label 'Korean Educational Development Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04xbpez43> ;
+        rdfs:label 'National Institute for International Education'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label 'Government of the Republic of Korea'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/00ajg8t71> ;
+        rdfs:label 'Korean Educational Development Institute'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Sejong" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Sejong-si" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/11523293/> ;
+        ] ; 
+    .

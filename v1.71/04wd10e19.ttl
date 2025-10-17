@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04wd10e19> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1947"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Andong National University'^^xsd:string@en ; 
+    org:abbreviation 'GKNU'^^xsd:string; 
+    org:alternativeName 'Gyeongbuk Provincial College'^^xsd:string@en ; 
+    org:alternativeName '경북도립대학교'^^xsd:string@ko ; 
+    org:alternativeName '안동대학교'^^xsd:string@ko ; 
+    schema:mainEntityOfPage <https://www.gknu.ac.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B5%25AD%25EB%25A6%25BD%25EA%25B2%25BD%25EA%25B5%25AD%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002441> ;
+    schema:sameAs <https://grid.ac/institutions/grid.252211.7> ;
+    schema:sameAs <http://isni.org/isni/0000000122992686> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(128.72275 36.56636)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Andong" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Gyeongsangbuk-do" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1846986/> ;
+        ] ; 
+    .

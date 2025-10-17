@@ -1,0 +1,39 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04022gq47> a org:Organization ;
+    rdfs:label 'Measurement Standards Laboratory of New Zealand'^^xsd:string ;
+    schema:name 'Measurement Standards Laboratory of New Zealand'^^xsd:string ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2022-08-03"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'MSL'^^xsd:string; 
+    schema:mainEntityOfPage <https://www.measurement.govt.nz> ;
+    schema:sameAs <http://isni.org/isni/0000000495278573> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(174.91667 -41.21667)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Lower Hutt" ;
+                schema:addressCountry "NZ" ;
+                schema:addressRegion "Wellington Region" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "New Zealand" ;
+                    schema:containedInPlace [
+                        schema:name "Oceania" ;
+                        schema:identifier "OC"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/2188164/> ;
+        ] ; 
+    .

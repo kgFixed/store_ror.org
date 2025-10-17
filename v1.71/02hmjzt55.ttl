@@ -1,0 +1,132 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02hmjzt55> a org:Organization ;
+    rdfs:label 'National Research and Innovation Agency'^^xsd:string ;
+    schema:name 'National Research and Innovation Agency'^^xsd:string ;
+    schema:foundingDate "2021"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2022-11-28"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'BRIN'^^xsd:string; 
+    schema:url <http://brin.go.id> ; 
+    schema:mainEntityOfPage <https://www.brin.go.id> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/National_Research_and_Innovation_Agency> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100020638> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05h1e3230> ;
+        rdfs:label 'Politeknik Teknologi Nuklir Indonesia'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04mb62065> ;
+        rdfs:label 'Direktorat Riset Dan Pengabdian Kepada Masyarakat'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00jm1tr64> ;
+        rdfs:label 'Research Center for Applied Zoology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/055cj5j49> ;
+        rdfs:label 'Research Organization for Nuclear Energy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03gh4w223> ;
+        rdfs:label 'Organisasi Riset Penerbangan dan Antariksa'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/008d63v91> ;
+        rdfs:label 'Organisasi Riset Pertanian dan Pangan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03kzxw561> ;
+        rdfs:label 'Organisasi Riset Arkeologi, Bahasa, dan Sastra'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01q4tpx91> ;
+        rdfs:label 'Organisasi Riset Kebumian dan Maritim'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04s7axt30> ;
+        rdfs:label 'Organisasi Riset Elektronika dan Informatika'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01gb44154> ;
+        rdfs:label 'Organisasi Riset Energi dan Manufaktur'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04db35b65> ;
+        rdfs:label 'Organisasi Riset Tata Kelola Pemerintahan, Ekonomi, dan Kesejahteraan Masyarakat'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00mt1j222> ;
+        rdfs:label 'Organisasi Riset Kesehatan'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/027a3v841> ;
+        rdfs:label 'Organisasi Riset Nanoteknologi dan Material'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02qt1y483> ;
+        rdfs:label 'Organisasi Riset Ilmu Pengetahuan Sosial dan Humaniora'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01vy73689> ;
+        rdfs:label 'Organisasi Riset Hayati dan Lingkungan'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(106.84513 -6.21462)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Jakarta" ;
+                schema:addressCountry "ID" ;
+                schema:addressRegion "Jakarta" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Indonesia" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1642911/> ;
+        ] ; 
+    .

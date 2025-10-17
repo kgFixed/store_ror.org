@@ -1,0 +1,133 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04eej9726> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.inria.fr/en/centre/lille> ;
+    schema:sameAs <https://grid.ac/institutions/grid.457352.2> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02kvxyf05> ;
+        rdfs:label 'Institut national de recherche en sciences et technologies du numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nqng710> ;
+        rdfs:label 'FUN: self-organizing Future Ubiquitous Network'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05ghgkk68> ;
+        rdfs:label 'LINKS: Requêtes pour données dynamiques liées'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01jc9hv70> ;
+        rdfs:label 'MAGNET: Machine Learning in Information Networks'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04z5j4a93> ;
+        rdfs:label 'LOKI: Technologie et connaissance pour l\'Interaction'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02m8aq428> ;
+        rdfs:label 'VALSE: Contrôle en temps fini et estimation pour des systèmes distribués'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0110mcx69> ;
+        rdfs:label 'SYCOMORES: Analyse symbolique et conception orientée composants pour des systèmes embarqués temps-réel modulaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00zm0ea22> ;
+        rdfs:label 'EVREF: Évolution réflexive des systèmes logiciels éternels'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0240qp408> ;
+        rdfs:label 'RAPSODI: Approximations numériques fiables pour les systèmes dissipatifs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03eyty988> ;
+        rdfs:label 'SPIRALS: Self-adaptation for distributed services and large software systems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04zja0e38> ;
+        rdfs:label 'BONUS: Optimisation de grande taille et calcul large échelle'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05sk9zb20> ;
+        rdfs:label 'MODAL: MOdel for Data Analysis and Learning'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00hxn0m30> ;
+        rdfs:label 'INOCS: Optimisation intégrée pour problèmes à structure complexe'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/040dpfz92> ;
+        rdfs:label 'PARADYSE: Systèmes de particules et systèmes dynamiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00n7ba848> ;
+        rdfs:label 'DEFROST: Logiciels pour robots déformables'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/025wa0q37> ;
+        rdfs:label 'SCOOL: Prise de décision séquentielle dans l\'incertain'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(3.16664 50.61669)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Villeneuve-d'Ascq" ;
+                schema:addressCountry "FR" ;
+                schema:addressRegion "Hauts-de-France" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "France" ;
+                    schema:containedInPlace [
+                        schema:name "Europe" ;
+                        schema:identifier "EU"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/6543862/> ;
+        ] ; 
+    .

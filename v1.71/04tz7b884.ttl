@@ -1,0 +1,46 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04tz7b884> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2025-07-15"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Nowon Eulji Medical Center'^^xsd:string@en ; 
+    schema:url <http://eulji.or.kr> ; 
+    schema:mainEntityOfPage <https://www.eulji.or.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EB%2585%25B8%25EC%259B%2590%25EC%259D%2584%25EC%25A7%2580%25EB%258C%2580%25ED%2595%2599%25EA%25B5%2590%25EB%25B3%2591%25EC%259B%2590> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/059x9n677> ;
+        rdfs:label 'Eulji Medical Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Seoul" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Seoul" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1835848/> ;
+        ] ; 
+    .

@@ -1,0 +1,95 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/006776986> a org:Organization ;
+    rdfs:label 'Wonkwang University'^^xsd:string ;
+    schema:name 'Wonkwang University'^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.wku.ac.kr/> ;
+    owl:sameAs <http://en.wikipedia.org/wiki/Wonkwang_University> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100002569> ;
+    schema:sameAs <https://grid.ac/institutions/grid.410899.d> ;
+    schema:sameAs <http://isni.org/isni/0000000405334755> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03qng4b58> ;
+        rdfs:label 'Wonkwang University Sanbon Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03rfpav60> ;
+        rdfs:label 'Wonkwang University Dental Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0091hhm06> ;
+        rdfs:label 'Wonkwang University Gwangju Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04hgb7n06> ;
+        rdfs:label 'Wonkwang University Oriental Medical Hospital Jeonju'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/010hc8153> ;
+        rdfs:label 'Wonkwang University Korean Medicine Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xanaq50> ;
+        rdfs:label 'Wonkwang University Daejeon Dental Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0454sq974> ;
+        rdfs:label 'Wonkwang University Sanbon Dental Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0183m5185> ;
+        rdfs:label 'Wonkwang University Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0183m5185> ;
+        rdfs:label 'Wonkwang University Hospital'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(126.95444 35.94389)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Iksan" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Jeollabuk-do" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1843491/> ;
+        ] ; 
+    .

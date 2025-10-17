@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/059x9n677> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1995"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'EMC'^^xsd:string; 
+    org:alternativeName 'Eulji General Hospital'^^xsd:string@en ; 
+    org:alternativeName 'Eulji University Medical Center'^^xsd:string@en ; 
+    org:alternativeName '을지대학교병원'^^xsd:string@ko ; 
+    schema:url <http://emc.ac.kr> ; 
+    schema:mainEntityOfPage <https://www.emc.ac.kr> ;
+    schema:sameAs <https://grid.ac/institutions/grid.414642.1> ;
+    schema:sameAs <http://isni.org/isni/0000000406047715> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01bj9w612> ;
+        rdfs:label 'Eulji University Gangnam Eulji Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01ghq5e75> ;
+        rdfs:label 'Eulji University Uijeongbu Eulji Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04tz7b884> ;
+        rdfs:label 'Eulji University Nowon Eulji Medical Center'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0367gm239> ;
+        rdfs:label 'Daejeon Eulji Medical Center, Eulji University'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/005bty106> ;
+        rdfs:label 'Eulji University'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Seoul" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Seoul" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1835848/> ;
+        ] ; 
+    .

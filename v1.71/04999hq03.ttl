@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04999hq03> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1901"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2019-11-07"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Klinikum Brandenburg'^^xsd:string@de ; 
+    schema:url <http://uk-brandenburg.de> ; 
+    schema:mainEntityOfPage <https://www.uk-brandenburg.de> ;
+    schema:sameAs <https://grid.ac/institutions/grid.506532.7> ;
+    schema:sameAs <http://isni.org/isni/0000000406364630> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04839sh14> ;
+        rdfs:label 'Medizinische Hochschule Brandenburg Theodor Fontane'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(12.55 52.41667)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Brandenburg" ;
+                schema:addressCountry "DE" ;
+                schema:addressRegion "Brandenburg" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Germany" ;
+                    schema:containedInPlace [
+                        schema:name "Europe" ;
+                        schema:identifier "EU"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/2945358/> ;
+        ] ; 
+    .

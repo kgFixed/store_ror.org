@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/031w4pe69> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1919"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Center of Volcanology and Geological Disaster Mitigation of Indonesia'^^xsd:string@en ; 
+    org:abbreviation 'PVMBG'^^xsd:string; 
+    org:alternativeName 'Volcanological Survey of Indonesia'^^xsd:string@en ; 
+    schema:url <http://vsi.esdm.go.id> ; 
+    schema:mainEntityOfPage <https://vsi.esdm.go.id> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Volcanological_Survey_of_Indonesia> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00w1baj53> ;
+        rdfs:label 'Kementerian Energi dan Sumber Daya Mineral'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(107.60694 -6.92222)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Bandung" ;
+                schema:addressCountry "ID" ;
+                schema:addressRegion "West Java" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Indonesia" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1650357/> ;
+        ] ; 
+    .

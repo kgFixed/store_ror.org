@@ -1,0 +1,56 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02tsanh21> a org:Organization ;
+    rdfs:label 'National Cancer Center'^^xsd:string ;
+    schema:name 'National Cancer Center'^^xsd:string ;
+    schema:foundingDate "2000"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'healthcare'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'NCC'^^xsd:string; 
+    schema:url <http://ncc.re.kr> ; 
+    schema:mainEntityOfPage <https://www.ncc.re.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B5%25AD%25EB%25A6%25BD%25EC%2595%2594%25EC%2584%25BC%25ED%2584%25B0> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003645> ;
+    schema:sameAs <https://grid.ac/institutions/grid.410914.9> ;
+    schema:sameAs <http://isni.org/isni/0000000406289810> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05fgmqm64> ;
+        rdfs:label 'National Cancer Center Hospital'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/00vxgjw72> ;
+        rdfs:label 'Ministry of Health and Welfare'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(126.835 37.65639)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Goyang-si" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Gyeonggi-do" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1842485/> ;
+        ] ; 
+    .

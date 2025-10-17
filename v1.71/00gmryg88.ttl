@@ -1,0 +1,50 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00gmryg88> a org:Organization ;
+    rdfs:label 'National Radio Research Agency'^^xsd:string ;
+    schema:name 'National Radio Research Agency'^^xsd:string ;
+    schema:foundingDate "2011"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'RRA'^^xsd:string; 
+    schema:url <http://rra.go.kr> ; 
+    schema:mainEntityOfPage <https://www.rra.go.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EA%25B5%25AD%25EB%25A6%25BD%25EC%25A0%2584%25ED%258C%258C%25EC%2597%25B0%25EA%25B5%25AC%25EC%259B%2590> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003656> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453235.6> ;
+    schema:sameAs <http://isni.org/isni/0000000458970229> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01wpjm123> ;
+        rdfs:label 'Ministry of Science and ICT'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(126.7175 35.0292)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Naju" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Jeollanam-do" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1840536/> ;
+        ] ; 
+    .

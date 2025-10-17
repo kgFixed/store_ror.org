@@ -1,0 +1,75 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/05aah2q92> a org:Organization ;
+    rdfs:label 'Fraunhofer USA'^^xsd:string ;
+    schema:name 'Fraunhofer USA'^^xsd:string ;
+    schema:foundingDate "1994"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    schema:mainEntityOfPage <http://www.fraunhofer.org/> ;
+    schema:sameAs <https://grid.ac/institutions/grid.426697.8> ;
+    schema:sameAs <http://isni.org/isni/0000000094592887> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05sz9gw20> ;
+        rdfs:label 'Fraunhofer USA Center Mid-Atlantic CMA'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04jkjhn93> ;
+        rdfs:label 'Fraunhofer USA Center for Laser Applications'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05nq3xc14> ;
+        rdfs:label 'Fraunhofer USA Center for Manufacturing Innovation'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03dtejd64> ;
+        rdfs:label 'Fraunhofer USA Center for Molecular Biotechnology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03c3jbs89> ;
+        rdfs:label 'Fraunhofer USA Center for Sustainable Energy Systems'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05hkkdn48> ;
+        rdfs:label 'Fraunhofer-Gesellschaft'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-83.47021 42.37143)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Plymouth" ;
+                schema:addressCountry "US" ;
+                schema:addressRegion "Michigan" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "United States" ;
+                    schema:containedInPlace [
+                        schema:name "North America" ;
+                        schema:identifier "NA"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/5006059/> ;
+        ] ; 
+    .

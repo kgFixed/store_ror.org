@@ -1,0 +1,190 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00n8d6z93> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1967"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Centre de recherche Inria Grenoble - Rhône-Alpes'^^xsd:string@fr ; 
+    org:alternativeName 'Inria Grenoble - Rhône-Alpes research centre'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.inria.fr/fr/centre-inria-universite-grenoble-alpes> ;
+    schema:sameAs <https://grid.ac/institutions/grid.457351.1> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02kvxyf05> ;
+        rdfs:label 'Institut national de recherche en sciences et technologies du numérique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02s3zbq77> ;
+        rdfs:label 'QINFO: Traitement optimal de l\'information avec des dispositifs quantiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02b3vs478> ;
+        rdfs:label 'PRIVATICS: Modèles, architectures et outils pour la protection de la vie privée dans la société de l\'information'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04z4sqq49> ;
+        rdfs:label 'CHROMA: Robots coopératifs et adaptés à la présence humaine en environnements'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/013f2p073> ;
+        rdfs:label 'STEEP: Soutenabilité, Territoires, Environnement, Economie et Politique'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00wvtes77> ;
+        rdfs:label 'MORPHEO: Capture et Analyses de Formes en Mouvement'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/04x550321> ;
+        rdfs:label 'ROBOTLEARN: Apprentissage, perception et commande pour des robots sociaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03v4jvx71> ;
+        rdfs:label 'TRIPOP: Modélisation, simulation et commande des systèmes dynamiques non lisses'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01nc10f70> ;
+        rdfs:label 'STATIFY: Modèles statistiques bayésiens et des valeurs extrêmes pour données structurées et de grande dimension'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02s3b7375> ;
+        rdfs:label 'ANIMA: Création et mise en scène des univers narratifs animés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/05hq7wc19> ;
+        rdfs:label 'MICROCOSME: Analyse, ingénierie et contrôle des micro-organismes'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/032j1fw45> ;
+        rdfs:label 'DANCE: Dynamique et contrôle des réseaux'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/03ctyg534> ;
+        rdfs:label 'ELAN: modELisation de l\'Apparence des phénomènes Non-linéaires'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02j7awn61> ;
+        rdfs:label 'MAVERICK: Modèles et Algorithmes pour la Visualisation et le Rendu'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02zws8w42> ;
+        rdfs:label 'AIRSEA: Mathématiques et calcul scientifique appliqués aux écoulements océaniques et atmosphériques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02a2awp29> ;
+        rdfs:label 'THOTH: Apprentissage de modèles visuels à partir de données massives'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056hxch81> ;
+        rdfs:label 'CORSE: Compiler Optimization and Run-time SystEms'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/045ff8v85> ;
+        rdfs:label 'CTRL-A: Commande pour systèmes informatiques autonomiques'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02t6zvp46> ;
+        rdfs:label 'CONVECS: Construction de systèmes concurrents vérifiés'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01pgzvb06> ;
+        rdfs:label 'KRAKOS: Conception de couches systèmes performantes, robustes, sécurisées, flexibles, et moins énergivores'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02cksep19> ;
+        rdfs:label 'TYREX: Types and Reasoning for the Web'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/01zn4dj88> ;
+        rdfs:label 'SPADES: Programmation de systèmes embarqués sûrs et adaptatifs'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0381pta47> ;
+        rdfs:label 'MOEX: Evolution de la connaissance'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/056th3f83> ;
+        rdfs:label 'POLARIS: Évaluation et optimisation des performances des grandes infrastructures'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/024cwyh09> ;
+        rdfs:label 'DATAMOVE: Mouvements de données pour le calcul haute performance'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(5.8017 45.22537)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Montbonnot-Saint-Martin" ;
+                schema:addressCountry "FR" ;
+                schema:addressRegion "Auvergne-Rhône-Alpes" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "France" ;
+                    schema:containedInPlace [
+                        schema:name "Europe" ;
+                        schema:identifier "EU"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/2992908/> ;
+        ] ; 
+    .

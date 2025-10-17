@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03zqjy339> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Ministry of Post, Telegraph and Telephone'^^xsd:string@en ; 
+    org:alternativeName 'PTT Turkish Post'^^xsd:string@en ; 
+    org:alternativeName 'Posta Telefon Telgraf'^^xsd:string@tr ; 
+    org:alternativeName 'Posta ve Telgraf Teşkilatı Anonim Şirketi'^^xsd:string@tr ; 
+    org:alternativeName 'T.C. Post and Telegraph Organization'^^xsd:string@en ; 
+    org:alternativeName 'T.C. Posta ve Telgraf Teşkilatı'^^xsd:string@tr ; 
+    org:alternativeName 'Turkish Post'^^xsd:string@en ; 
+    schema:url <http://ptt.gov.tr> ; 
+    schema:mainEntityOfPage <https://www.ptt.gov.tr> ;
+    owl:sameAs <https://tr.wikipedia.org/wiki/PTT> ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(32.85427 39.91987)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Ankara" ;
+                schema:addressCountry "TR" ;
+                schema:addressRegion "Ankara" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Türkiye" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/323786/> ;
+        ] ; 
+    .

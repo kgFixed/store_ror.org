@@ -1,0 +1,59 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/03qehyx72> a org:Organization ;
+    rdfs:label 'Ministry of Patriots and Veterans Affairs'^^xsd:string ;
+    schema:name 'Ministry of Patriots and Veterans Affairs'^^xsd:string ;
+    schema:foundingDate "1985"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'MPVA'^^xsd:string; 
+    org:alternativeName 'Patriots and Veterans Administration Agency'^^xsd:string@en ; 
+    org:alternativeName 'Soldiers\' Affairs Agency'^^xsd:string@en ; 
+    org:alternativeName '국가보훈처'^^xsd:string@ko ; 
+    schema:url <http://mpva.go.kr> ; 
+    schema:mainEntityOfPage <http://www.mpva.go.kr> ;
+    owl:sameAs <https://ko.wikipedia.org/wiki/%25EB%258C%2580%25ED%2595%259C%25EB%25AF%25BC%25EA%25B5%25AD_%25EA%25B5%25AD%25EA%25B0%2580%25EB%25B3%25B4%25ED%259B%2588%25EB%25B6%2580> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100003568> ;
+    schema:sameAs <https://grid.ac/institutions/grid.454165.7> ;
+    schema:sameAs <http://isni.org/isni/0000000458969500> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/019xm3p48> ;
+        rdfs:label 'Government of the Republic of Korea'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/00xhz2q61> ;
+        rdfs:label 'Veterans Health Service Medical Center'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(127.29223 36.59245)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Sejong" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Sejong-si" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/11523293/> ;
+        ] ; 
+    .

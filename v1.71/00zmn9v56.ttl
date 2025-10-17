@@ -1,0 +1,43 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00zmn9v56> a org:Organization ;
+    rdfs:label 'Ludwig Boltzmann Institut für Epilepsie und Neuromuskuläre Erkrankungen'^^xsd:string ;
+    schema:name 'Ludwig Boltzmann Institut für Epilepsie und Neuromuskuläre Erkrankungen'^^xsd:string ;
+    schema:foundingDate "1992"^^xsd:gYear ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    schema:sameAs <https://grid.ac/institutions/grid.454389.7> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01v1jam04> ;
+        rdfs:label 'Ludwig Boltzmann Gesellschaft'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(16.37208 48.20849)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Vienna" ;
+                schema:addressCountry "AT" ;
+                schema:addressRegion "Vienna" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Austria" ;
+                    schema:containedInPlace [
+                        schema:name "Europe" ;
+                        schema:identifier "EU"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/2761369/> ;
+        ] ; 
+    .

@@ -1,0 +1,108 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/039fwba89> a org:Organization ;
+    rdfs:label 'Korea Research Council for Industrial Science and Technology'^^xsd:string ;
+    schema:name 'Korea Research Council for Industrial Science and Technology'^^xsd:string ;
+    schema:foundingDate "1999"^^xsd:gYear ;
+    org:status 'inactive'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    org:classification 'funder'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'KRCF'^^xsd:string; 
+    schema:mainEntityOfPage <http://eng.krcf.re.kr/> ;
+    schema:sameAs <https://api.crossref.org/funders/501100003666> ;
+    schema:sameAs <https://grid.ac/institutions/grid.453071.4> ;
+    schema:sameAs <http://isni.org/isni/0000000403817753> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/008nkqk13> ;
+        rdfs:label 'Ministry of Trade, Industry and Energy'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/03ctacd45> ;
+        rdfs:label 'Korea Electrotechnology Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/028jp5z02> ;
+        rdfs:label 'Korea Food Research Institute'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0298pes53> ;
+        rdfs:label 'Korea Institute of Energy Research'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/044k0pw44> ;
+        rdfs:label 'Korea Institute of Geoscience and Mineral Resources'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/04qfph657> ;
+        rdfs:label 'Korea Institute of Industrial Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01qcq9d74> ;
+        rdfs:label 'Korea Institute of Machinery & Materials'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/01rwkhb30> ;
+        rdfs:label 'Korea Institute of Materials Science'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/0159w2913> ;
+        rdfs:label 'Korea Institute of Toxicology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/043k4kk20> ;
+        rdfs:label 'Korea Research Institute of Chemical Technology'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'successor'^^xsd:string ;
+        org:member <https://ror.org/058rymf81> ;
+        rdfs:label 'National Research Council of Science and Technology'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(126.9784 37.566)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Seoul" ;
+                schema:addressCountry "KR" ;
+                schema:addressRegion "Seoul" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "South Korea" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1835848/> ;
+        ] ; 
+    .

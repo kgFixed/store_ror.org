@@ -1,0 +1,44 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00zmy1708> a org:Organization ;
+    rdfs:label 'Maryhill School of Theology'^^xsd:string ;
+    schema:name 'Maryhill School of Theology'^^xsd:string ;
+    schema:foundingDate "1972"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'education'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'CICM Maryhill School of Theology'^^xsd:string@en ; 
+    org:alternativeName 'Congregation of the Immaculate Heart of Mary Maryhill School of Theology'^^xsd:string@en ; 
+    org:abbreviation 'MST'^^xsd:string; 
+    schema:url <http://cicmmst.edu.ph> ; 
+    schema:mainEntityOfPage <https://cicmmst.edu.ph> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Maryhill_School_of_Theology> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.469008.3> ;
+    schema:sameAs <http://isni.org/isni/0000000406396552> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(121.0509 14.6488)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Quezon City" ;
+                schema:addressCountry "PH" ;
+                schema:addressRegion "National Capital Region" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Philippines" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1692192/> ;
+        ] ; 
+    .

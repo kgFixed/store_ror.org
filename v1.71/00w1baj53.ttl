@@ -1,0 +1,48 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00w1baj53> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'funder'^^xsd:string ; 
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'Department of Energy and Mineral Resources'^^xsd:string@en ; 
+    org:alternativeName 'Department of Mining and Energy'^^xsd:string@en ; 
+    schema:url <http://esdm.go.id> ; 
+    schema:mainEntityOfPage <https://www.esdm.go.id> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/Ministry_of_Energy_and_Mineral_Resources_%2528Indonesia%2529> ; 
+    schema:sameAs <https://api.crossref.org/funders/501100013167> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/031w4pe69> ;
+        rdfs:label 'Pusat Vulkanologi dan Mitigasi Bencana Geologi'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(106.83333 -6.18333)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Kota Administrasi Jakarta Pusat" ;
+                schema:addressCountry "ID" ;
+                schema:addressRegion "Jakarta" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Indonesia" ;
+                    schema:containedInPlace [
+                        schema:name "Asia" ;
+                        schema:identifier "AS"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/1642908/> ;
+        ] ; 
+    .

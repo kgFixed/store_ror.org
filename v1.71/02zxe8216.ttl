@@ -1,0 +1,53 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/02zxe8216> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1922"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'nonprofit'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'IASPEI'^^xsd:string; 
+    schema:url <http://iaspei.org> ; 
+    schema:mainEntityOfPage <http://iaspei.org> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/International_Association_of_Seismology_and_Physics_of_the_Earth%2527s_Interior> ; 
+    schema:sameAs <http://isni.org/isni/0000000121750896> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/01jachm79> ;
+        rdfs:label 'International Union of Geodesy and Geophysics'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/0109bv193> ;
+        rdfs:label 'International Federation of Digital Seismograph Networks'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(11.04773 59.97375)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Kjeller" ;
+                schema:addressCountry "NO" ;
+                schema:addressRegion "Akershus" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Norway" ;
+                    schema:containedInPlace [
+                        schema:name "Europe" ;
+                        schema:identifier "EU"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/3150191/> ;
+        ] ; 
+    .

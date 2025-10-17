@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/00q3jak84> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1963"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:alternativeName 'InCor'^^xsd:string@pt ; 
+    org:alternativeName 'Institute for Cardiopulmonary Diseases'^^xsd:string@en ; 
+    org:alternativeName 'Instituto de Doenças Cardiopulmonares'^^xsd:string@pt ; 
+    org:alternativeName 'Instituto do Coração do Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo'^^xsd:string@pt ; 
+    schema:url <http://incor.usp.br> ; 
+    schema:mainEntityOfPage <https://www2.incor.usp.br/sites/incor2024/> ;
+    owl:sameAs <https://pt.wikipedia.org/wiki/Instituto_do_Cora%25C3%25A7%25C3%25A3o_do_Hospital_das_Cl%25C3%25ADnicas_da_FMUSP> ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/03se9eg94> ;
+        rdfs:label 'Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-46.63611 -23.5475)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "São Paulo" ;
+                schema:addressCountry "BR" ;
+                schema:addressRegion "São Paulo" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Brazil" ;
+                    schema:containedInPlace [
+                        schema:name "South America" ;
+                        schema:identifier "SA"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/3448439/> ;
+        ] ; 
+    .

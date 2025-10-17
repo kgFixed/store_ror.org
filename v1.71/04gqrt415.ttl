@@ -1,0 +1,45 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/04gqrt415> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    schema:foundingDate "1895"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'other'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'ANSW'^^xsd:string; 
+    org:alternativeName 'Ambulance Service of New South Wales'^^xsd:string@en ; 
+    org:alternativeName 'Civil Ambulance and Transport Brigade'^^xsd:string@en ; 
+    org:alternativeName 'New South Wales Ambulance'^^xsd:string@en ; 
+    schema:url <http://ambulance.nsw.gov.au> ; 
+    schema:mainEntityOfPage <https://www.ambulance.nsw.gov.au> ;
+    owl:sameAs <https://en.wikipedia.org/wiki/New_South_Wales_Ambulance> ; 
+    schema:sameAs <https://grid.ac/institutions/grid.466480.8> ;
+    schema:sameAs <http://isni.org/isni/0000000091713671> ;
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(151.06828 -33.84983)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Sydney Olympic Park" ;
+                schema:addressCountry "AU" ;
+                schema:addressRegion "New South Wales" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Australia" ;
+                    schema:containedInPlace [
+                        schema:name "Oceania" ;
+                        schema:identifier "OC"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/9972947/> ;
+        ] ; 
+    .

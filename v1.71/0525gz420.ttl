@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/0525gz420> a org:Organization ;
+    rdfs:label 'Fraunhofer Center for Maritime Logistics and Services'^^xsd:string ;
+    schema:name 'Fraunhofer Center for Maritime Logistics and Services'^^xsd:string ;
+    schema:foundingDate "2010"^^xsd:gYear ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'facility'^^xsd:string ; 
+    dct:created "2018-11-14"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'CML'^^xsd:string; 
+    org:alternativeName 'Fraunhofer CML'^^xsd:string@de ; 
+    schema:mainEntityOfPage <http://www.cml.fraunhofer.de/en.html> ;
+    schema:sameAs <https://grid.ac/institutions/grid.469859.f> ;
+    schema:sameAs <http://isni.org/isni/0000000459292685> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/05hkkdn48> ;
+        rdfs:label 'Fraunhofer-Gesellschaft'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(9.99302 53.55073)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Hamburg" ;
+                schema:addressCountry "DE" ;
+                schema:addressRegion "Hamburg" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "Germany" ;
+                    schema:containedInPlace [
+                        schema:name "Europe" ;
+                        schema:identifier "EU"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/2911298/> ;
+        ] ; 
+    .

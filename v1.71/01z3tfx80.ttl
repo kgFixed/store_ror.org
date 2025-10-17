@@ -1,0 +1,74 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://ror.org/01z3tfx80> a org:Organization ;
+    rdfs:label ''^^xsd:string ;
+    schema:name ''^^xsd:string ;
+    org:status 'active'^^xsd:string ;
+    org:classification 'government'^^xsd:string ; 
+    dct:created "2025-09-19"^^xsd:date ;
+    dct:modified "2025-09-22"^^xsd:date ;
+    org:abbreviation 'GEO'^^xsd:string; 
+    org:alternativeName 'Office of Geostationary Earth Orbit Observations'^^xsd:string@en ; 
+    schema:mainEntityOfPage <https://www.nesdis.noaa.gov/about/our-offices/office-of-geostationary-earth-orbit-observations> ;
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/02z5nhe81> ;
+        rdfs:label 'National Oceanic and Atmospheric Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'parent'^^xsd:string ;
+        org:member <https://ror.org/027ka1x80> ;
+        rdfs:label 'National Aeronautics and Space Administration'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02rcakp17> ;
+        rdfs:label 'NOAA Geostationary Operational Environmental Satellites'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/02295tc31> ;
+        rdfs:label 'NOAA Geostationary Operation Environmental Satellite-R Series'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'child'^^xsd:string ;
+        org:member <https://ror.org/005sm0w71> ;
+        rdfs:label 'NOAA Geostationary Extended Observations'^^xsd:string ;
+    ] ; 
+    org:hasLink [
+        a org:Membership ;
+        org:role 'related'^^xsd:string ;
+        org:member <https://ror.org/007qwym43> ;
+        rdfs:label 'NOAA National Environmental Satellite Data and Information Service'^^xsd:string ;
+    ] ; 
+    schema:location [
+            a schema:Place ;
+            geo:asWKT "POINT(-76.87553 39.00455)"^^geo:wktLiteral ;
+            schema:address [
+                schema:addressLocality "Greenbelt" ;
+                schema:addressCountry "US" ;
+                schema:addressRegion "Maryland" ;
+                dct:spatial [
+                    a dct:Location ;
+                    schema:name "United States" ;
+                    schema:containedInPlace [
+                        schema:name "North America" ;
+                        schema:identifier "NA"
+                    ]
+                ]
+            ] ;
+            owl:sameAs <http://sws.geonames.org/4356847/> ;
+        ] ; 
+    .
